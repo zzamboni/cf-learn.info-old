@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+{% if page.postheader %}{% assign h1header = page.postheader %}{% else %}{% assign h1header = page.posttitle %}{% endif %}
 <head>
       <meta name="width" content="500" />
       <script src="http://assets3.posterous.com/javascripts/vendor/modernizr.custom.09241.js?1323909550" type="text/javascript"></script>
@@ -1089,7 +1090,7 @@ header#page_header hgroup h1,article header h1,aside#sidebar section h1,.profile
 <td style="height:100%;">
     <header id="page_header">
         
-          <h1 class="header_image"><a href="http://cf-learn.posterous.com" title="Learning CFEngine 3" rel="index"><img src="http://s3.amazonaws.com/files.posterous.com/headers/5682949/scaled500.jpg?1323844768" alt="" width="179" /></a></h1>
+          <h1 class="header_image"><a href="http://cf-learn.info/" title="Learning CFEngine 3" rel="index"><img src="http://s3.amazonaws.com/files.posterous.com/headers/5682949/scaled500.jpg?1323844768" alt="" width="179" /></a></h1>
         
         
         
@@ -1124,7 +1125,7 @@ header#page_header hgroup h1,article header h1,aside#sidebar section h1,.profile
                 <header>
                     
                     
-                        <h1><a href="{{ page.pageurl }}">{{ page.posttitle }}</a></h1>
+                        <h1><a href="{{ page.pageurl }}">{{ h1header }}</a></h1>
                     
                     
                   <div class="editbox">
@@ -1155,11 +1156,6 @@ header#page_header hgroup h1,article header h1,aside#sidebar section h1,.profile
 
         <aside id="sidebar">
                 <section id="profile">
-                  <h1>
-                    <!-- <a href="http://posterous.com/spaces/cf-learn" title="Get the book's profile">
-                      <img class="profile_image" src="http://posterous.com/images/profile/missing-user-75.png" alt="Get the book" />
-                    </a> -->
-                  </h1>
                     <a href="http://shop.oreilly.com/product/0636920022022.do" class="profile-link">Get the book</a>
                   <div class="profile small">
                       <p>You can purchase the book at the <a href="http://shop.oreilly.com/product/0636920022022.do">O'Reilly shop</a>. Use code AUTHD for a discount.</p>
