@@ -30,3 +30,5 @@ as a security consultant. I live in
 with my awesome wife and our two beautiful daughters.
 
 You can visit my personal website and blog at [http://zzamboni.org/]().
+
+You should follow me on [Twitter](http://twitter.com/zzamboni).
