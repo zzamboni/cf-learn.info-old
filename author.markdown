@@ -31,4 +31,6 @@ with my awesome wife and our two beautiful daughters.
 
 You can visit my personal website and blog at [http://zzamboni.org/]().
 
-You should follow me on [Twitter](http://twitter.com/zzamboni).
+If you want to send me a direct message, please use the [contact form](contact.html).
+
+*You should follow me on [Twitter](http://twitter.com/zzamboni).*
