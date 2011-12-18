@@ -1,0 +1,17 @@
+---
+layout: cf-learn
+title: Learning CFEngine 3
+pageurl: http://cf-learn.info/
+posttitle: Page not found
+postheader: Well, how about that
+navsection: 404
+---
+
+It seems you have tried to access a page that does not exist. Possibly
+a broken link or a mistyped URL.
+
+If you got here through a link on this same site, would you please let
+me know about it?
+
+Otherwise, just try the links on the left, or the search box on the
+right.
