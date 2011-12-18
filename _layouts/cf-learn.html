@@ -1193,21 +1193,14 @@ header#page_header hgroup h1,article header h1,aside#sidebar section h1,.profile
               
     
                 
-              
-<div id="cse-search-form" style="width: 100%;">Loading</div>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-<script type="text/javascript"> 
-  google.load('search', '1', {language : 'en', style : google.loader.themes.MINIMALIST});
-  google.setOnLoadCallback(function() {
-    var customSearchControl = new google.search.CustomSearchControl(
-      '007336107369566601471:oi21x8fl1dg');
-
-    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-    var options = new google.search.DrawOptions();
-    options.enableSearchboxOnly("http://cf-learn.info/search.html");
-    customSearchControl.draw('cse-search-form', options);
-  }, true);
-</script>
+                  <section id="search">
+                    <form class="search" action="search.html" method="get">
+                      <input name="sort" type="hidden" value="" />
+                      <input name="search" class="text" id="searchbox" type="text" value="" />
+                      <input class="submit" id="searchbox_button" type="submit" value="Search" style="display:none" />
+                    </form>
+                    <div class="posterous_ojs" data-posterous-search-box="true" data-posterous-search-button-id="searchbox_button" data-posterous-search-box-id="searchbox"></div>
+                  </section>
 
                   <section id="rss">
                     <a href="http://feeds.feedburner.com/cf-learn" rel="alternate" type="application/rss+xml">Subscribe to the blog</a>
