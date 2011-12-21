@@ -1,0 +1,7 @@
+vars:
+  "suffixes"   slist => { ".${sys.fqhost}", ".${sys.domain}", ".${sys.flavour}",
+                          ".${sys.ostype}", "" };
+files:
+  "/etc/hosts"
+    copy_from => mycopy("$(repository)/etc/hosts$(suffixes)"),
+    preserve => "true",

@@ -1,0 +1,31 @@
+bundle agent configfiles
+{
+ vars:  
+   # Files to edit
+   "files[sysctlconf]" string => "/etc/sysctl.conf";
+   "files[sshdconfig]" string => "/etc/ssh/sshd_config";
+   "files[inittab]"    string => "/etc/inittab";
+   
+
+ methods:
+   "backup"  usebundle => backup_files("configfiles.files");
+   "sysctl"  usebundle => edit_sysctl;
+   "sshd"    usebundle => edit_sshd;
+   "inittab" usebundle => edit_inittab;
+   "users"   usebundle => manage_users("configfiles.users");
+}
+
+bundle agent backup_files(id)
+{
+ vars:
+   "allfiles"  slist => getindices("$(id)");
+   "backupdst" string => "/mnt/fileserver/cfenginebackups-$(sys.cdate)";
+
+ files:
+   "$(backupst)/."
+     create => "true";
+
+   "$(backupdst)/$(allfiles)"
+     comment => "Ensure we have a backup of previous versions of $(allfiles)",
+     copy_from => local_cp("$(allfiles)");
+}

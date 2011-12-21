@@ -1,0 +1,42 @@
+body common control
+{
+   bundlesequence => { "copyfiles" };
+}
+
+# Use single copy for all files
+body agent control
+{
+   files_single_copy => { ".*" };
+}
+
+bundle agent copyfiles
+{
+ vars:
+   # Suffixes to try, in most-specific to most-general order. This must include the
+   # empty suffix at the end, for the most general file.
+   "copysuffixes"    slist => { ".${sys.fqhost}", ".${sys.uqhost}", ".${sys.domain}",
+			        ".${sys.flavour}", ".${sys.ostype}", "" };
+   # List of files to copy
+   "filestocopy"     slist => { "/etc/hosts", "/etc/motd" };
+   "dirstocopy"      slist => { "${sys.workdir}/bin", "/usr/local/bin" };
+   # Source of the files
+   "repo"            string => "/mnt/fileserver/cfengine/files";
+   # Destination for the files
+   # Make it something other than empty to test copy operation, e.g.
+   # "dest" string => "/tmp/testdest";
+   "dest"            string => "";
+
+ files:
+   "$(dest)/$(filestocopy)"
+     copy_from => hierarchical_copy("$(filestocopy)");
+
+   "$(dest)/$(dirstocopy)"
+     copy_from => hierarchical_copy("$(dirstocopy)"),
+     depth_search => recurse("inf");
+}
+
+body copy_from hierarchical_copy(from)
+{
+   source => "${copyfiles.repo}/$(from)${copyfiles.copysuffixes}";
+   compare => "digest";
+}
