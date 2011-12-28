@@ -34,9 +34,9 @@ the [errata](http://oreilly.com/catalog/errata.csp?isbn=0636920022022)
 are working already. I encourage you to participate and provide
 feedback, ideas and questions.
 
-Thank you for visiting! I hope you
-find it useful. Please let me know if you find anything broken or
-missing, or if you have any comments or suggestions.
+Thank you for visiting! I hope you find it useful. Please [let me
+know](http://cf-learn.info/contact.html) if you find anything broken
+or missing, or if you have any comments or suggestions.
 
 ## About CFEngine
 
