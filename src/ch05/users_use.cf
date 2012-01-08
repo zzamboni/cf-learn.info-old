@@ -1,0 +1,23 @@
+bundle agent manage_users
+{
+vars:
+  ### Users to create
+  "users[root][fullname]"  string => "System administrator";
+  "users[root][uid]"       string => "0";
+  "users[root][gid]"       string => "0";
+  "users[root][home]"      string => "/root";
+  "users[root][shell]"     string => "/bin/bash";
+  "users[root][flags]"     string => "-o -m";
+  "users[root][password]"  string => "FkDMzhB1WnOp2";
+
+  "users[zamboni][fullname]"  string => "Diego Zamboni";
+  "users[zamboni][uid]"       string => "501";
+  "users[zamboni][gid]"       string => "users";
+  "users[zamboni][home]"      string => "/home/zamboni";
+  "users[zamboni][shell]"     string => "/bin/bash";
+  "users[zamboni][flags]"     string => "-m";
+  "users[zamboni][password]"  string => "dk52ia209rfuh";
+
+methods:
+  "users"   usebundle => create_users("manage_users.users");
+}

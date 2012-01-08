@@ -1,0 +1,21 @@
+body common control 
+{
+  bundlesequence => { "login_banner" };
+  inputs => { "cfengine_stdlib.cf" }; 
+}
+
+bundle agent login_banner
+{
+  vars:
+    "template_file" string => "/var/cfengine/templates/motd_template.txt";   
+    "motd_file"     string => "/tmp/motd"; 
+		
+  files:
+  "$(motd_file)"   
+    handle => "set_login_banner",
+    comment => "Ensure the login banner is set to the authorized text",
+    create => "true",
+    perms => m("744"),
+    edit_defaults => empty,
+    edit_line => expand_template("$(template_file)"); 
+}

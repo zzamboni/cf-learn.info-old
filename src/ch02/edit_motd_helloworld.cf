@@ -1,0 +1,25 @@
+body common control
+{
+  bundlesequence => { "edit_motd" };
+}
+
+bundle agent edit_motd
+{
+vars:
+  "motd" string => "/etc/motd";
+
+files:
+  "$(motd)"
+    edit_line => addmessage,
+    create => "true";
+
+reports:
+  cfengine::
+    "Hello world!";
+}
+
+bundle edit_line addmessage
+{
+  insert_lines:
+    "This system is managed by cfengine ${sys.cf_version}";
+}
