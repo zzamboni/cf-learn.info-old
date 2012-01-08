@@ -1,3 +1,13 @@
+---
+layout: cf-learn
+title: Learning CFEngine 3
+pageurl: /code/ch03/sshd_config2.cf.html
+posttitle: Code > Chapter 3 > sshd_config2.cf
+navsection: code
+---
+
+[(download this file)](/src/ch03/sshd_config2.cf)
+{% highlight cf3 %}
 vars:
   # SSHD configuration to set
   "sshd[Protocol]"       string => "2";
@@ -17,3 +27,7 @@ commands:
     "/etc/init.d/sshd reload"
       handle  => "sshd_restart",
       comment => "Restart sshd if the configuration file was modified";
+
+{% endhighlight %}
+
+{% include codeindex.markdown %}
