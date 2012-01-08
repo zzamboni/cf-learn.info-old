@@ -6,34 +6,34 @@ posttitle: Code > Chapter 2 > edit_motd_helloworld.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch02/edit_motd_helloworld.cf)
-{% highlight cf3 %}
-body common control
-{
-  bundlesequence => { "edit_motd" };
-}
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch02/edit_motd_helloworld.cf)
 
-bundle agent edit_motd
-{
-vars:
-  "motd" string => "/etc/motd";
+<div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
+<span class="p">{</span>
+  <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;edit_motd&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-files:
-  "$(motd)"
-    edit_line => addmessage,
-    create => "true";
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">edit_motd</span>
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
+  <span class="p">&quot;</span><span class="nv">motd</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/etc/motd&quot;</span><span class="p">;</span>
 
-reports:
-  cfengine::
-    "Hello world!";
-}
+<span class="kd">files</span><span class="p">:</span>
+  <span class="s">&quot;</span><span class="si">$(motd)</span><span class="s">&quot;</span>
+    <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">addmessage</span><span class="p">,</span>
+    <span class="kr">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
 
-bundle edit_line addmessage
-{
-  insert_lines:
-    "This system is managed by cfengine ${sys.cf_version}";
-}
+<span class="kd">reports</span><span class="p">:</span>
+  <span class="nc">cfengine</span><span class="p">::</span>
+    <span class="s">&quot;Hello world!&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-{% endhighlight %}
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">addmessage</span>
+<span class="p">{</span>
+  <span class="kd">insert_lines</span><span class="p">:</span>
+    <span class="s">&quot;This system is managed by cfengine </span><span class="si">${sys.cf_version}</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

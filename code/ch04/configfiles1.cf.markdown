@@ -6,43 +6,42 @@ posttitle: Code > Chapter 4 > configfiles1.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch04/configfiles1.cf)
-{% highlight cf3 %}
-bundle agent configfiles 
-{
-vars:  
-  # Files to edit
-  "files[sysctl]" string => "/etc/sysctl.conf"; 
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch04/configfiles1.cf)
 
-  # Sysctl variables to set
-  "sysctl[net.ipv4.tcp_syncookies]"               string => "1"; 
-  "sysctl[net.ipv4.conf.all.accept_source_route]" string => "0";
-  "sysctl[net.ipv4.conf.all.accept_redirects]"    string => "0";
-  "sysctl[net.ipv4.conf.all.rp_filter]"           string => "1";
-  "sysctl[net.ipv4.conf.all.log_martians]"        string => "1";
+<div class="highlight"><pre><span class="k">bundle</span> <span class="k">agent</span> <span class="nf">configfiles</span> 
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>  
+  <span class="c"># Files to edit</span>
+  <span class="p">&quot;</span><span class="nv">files[sysctl]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/etc/sysctl.conf&quot;</span><span class="p">;</span> 
 
-methods: 
-  "sysctl"  usebundle => edit_sysctl;
-}
+  <span class="c"># Sysctl variables to set</span>
+  <span class="p">&quot;</span><span class="nv">sysctl[net.ipv4.tcp_syncookies]</span><span class="p">&quot;</span>               <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;1&quot;</span><span class="p">;</span> 
+  <span class="p">&quot;</span><span class="nv">sysctl[net.ipv4.conf.all.accept_source_route]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;0&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">sysctl[net.ipv4.conf.all.accept_redirects]</span><span class="p">&quot;</span>    <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;0&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">sysctl[net.ipv4.conf.all.rp_filter]</span><span class="p">&quot;</span>           <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;1&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">sysctl[net.ipv4.conf.all.log_martians]</span><span class="p">&quot;</span>        <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;1&quot;</span><span class="p">;</span>
 
-bundle agent edit_sysctl
-{
-files: 
-  "$(configfiles.files[sysctl])"
-    handle => "edit_sysctl",
-    comment => "Make sure sysctl.conf contains desired configuration settings",
-    create => "true",
-    edit_line => set_variable_values("configfiles.sysctl"), 
-    classes => if_repaired("sysctl_modified"); 
+<span class="kd">methods</span><span class="p">:</span> 
+  <span class="s">&quot;sysctl&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_sysctl</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">edit_sysctl</span>
+<span class="p">{</span>
+<span class="kd">files</span><span class="p">:</span> 
+  <span class="s">&quot;</span><span class="si">$(configfiles.files[sysctl])</span><span class="s">&quot;</span>
+    <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_sysctl&quot;</span><span class="p">,</span>
+    <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Make sure sysctl.conf contains desired configuration settings&quot;</span><span class="p">,</span>
+    <span class="kr">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">,</span>
+    <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_variable_values</span><span class="p">(</span><span class="s">&quot;configfiles.sysctl&quot;</span><span class="p">),</span> 
+    <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_repaired</span><span class="p">(</span><span class="s">&quot;sysctl_modified&quot;</span><span class="p">);</span> 
  
-commands: 
-  sysctl_modified.!no_restarts::
-    "/sbin/sysctl -p"
-    handle => "reload_sysctl",
-    comment => "Make sure new sysctl settings are loaded";
-}
+<span class="kd">commands</span><span class="p">:</span> 
+  <span class="nc">sysctl_modified.!no_restarts</span><span class="p">::</span>
+    <span class="s">&quot;/sbin/sysctl -p&quot;</span>
+    <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;reload_sysctl&quot;</span><span class="p">,</span>
+    <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Make sure new sysctl settings are loaded&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 
-
-{% endhighlight %}
 
 {% include codeindex.markdown %}

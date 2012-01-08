@@ -6,26 +6,26 @@ posttitle: Code > Chapter 3 > vars_array_examples.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch03/vars_array_examples.cf)
-{% highlight cf3 %}
-body common control {
-  bundlesequence => { "test" };
-}
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch03/vars_array_examples.cf)
 
-bundle agent test
-{
-  vars:
-    "user[name]"       string => "zamboni";
-    "user[fullname]"   string => "Diego Zamboni";
-    "user[home]"       string => "/home/zamboni";
+<div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span> <span class="p">{</span>
+  <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;test&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-    "fields" slist => getindices("user");
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">test</span>
+<span class="p">{</span>
+  <span class="kd">vars</span><span class="p">:</span>
+    <span class="p">&quot;</span><span class="nv">user[name]</span><span class="p">&quot;</span>       <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;zamboni&quot;</span><span class="p">;</span>
+    <span class="p">&quot;</span><span class="nv">user[fullname]</span><span class="p">&quot;</span>   <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;Diego Zamboni&quot;</span><span class="p">;</span>
+    <span class="p">&quot;</span><span class="nv">user[home]</span><span class="p">&quot;</span>       <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/home/zamboni&quot;</span><span class="p">;</span>
 
-  reports:
-    cfengine::
-      "user[$(fields)] = $(user[$(fields)])";
-}
+    <span class="p">&quot;</span><span class="nv">fields</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;user&quot;</span><span class="p">);</span>
 
-{% endhighlight %}
+  <span class="kd">reports</span><span class="p">:</span>
+    <span class="nc">cfengine</span><span class="p">::</span>
+      <span class="s">&quot;user[</span><span class="si">$(fields)</span><span class="s">] = </span><span class="si">$(user[$(fields)])</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

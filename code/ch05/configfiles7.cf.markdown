@@ -6,64 +6,65 @@ posttitle: Code > Chapter 5 > configfiles7.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch05/configfiles7.cf)
-{% highlight cf3 %}
-body common control
-{
-      bundlesequence => { "configfiles" };
-}
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch05/configfiles7.cf)
 
-bundle agent configfiles
-{
-  vars:  
-      # Files to edit
-      "files[sysctl]" string => "/etc/sysctl.conf";
-      "files[sshd]" string => "/etc/ssh/sshd_config";
-      "files[inittab]"    string => "/etc/inittab";
+<div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
+<span class="p">{</span>
+      <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;configfiles&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">configfiles</span>
+<span class="p">{</span>
+  <span class="kd">vars</span><span class="p">:</span>  
+      <span class="c"># Files to edit</span>
+      <span class="p">&quot;</span><span class="nv">files[sysctl]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/etc/sysctl.conf&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">files[sshd]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/etc/ssh/sshd_config&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">files[inittab]</span><span class="p">&quot;</span>    <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/etc/inittab&quot;</span><span class="p">;</span>
       
 
-      "file_id" slist => getindices("files");
+      <span class="p">&quot;</span><span class="nv">file_id</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;files&quot;</span><span class="p">);</span>
 
-  methods:
-      "backup"  usebundle => backup_files("configfiles.files");
-      "$(file_id)"  usebundle => "edit_$(file_id)";
-      "users"   usebundle => manage_users("configfiles.users");
-}
+  <span class="kd">methods</span><span class="p">:</span>
+      <span class="s">&quot;backup&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">backup_files</span><span class="p">(</span><span class="s">&quot;configfiles.files&quot;</span><span class="p">);</span>
+      <span class="s">&quot;</span><span class="si">$(file_id)</span><span class="s">&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_</span><span class="si">$(file_id)</span><span class="s">&quot;</span><span class="p">;</span>
+      <span class="s">&quot;users&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">manage_users</span><span class="p">(</span><span class="s">&quot;configfiles.users&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-bundle agent backup_files(param)
-{
-  reports:
-    cfengine::
-      "backup_files";
-}
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">backup_files</span><span class="p">(</span><span class="nv">param</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">reports</span><span class="p">:</span>
+    <span class="nc">cfengine</span><span class="p">::</span>
+      <span class="s">&quot;backup_files&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle agent edit_sysctl
-{
-  reports:
-    cfengine::
-      "edit_sysctlconf: $(configfiles.files[sysctl])";
-}
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">edit_sysctl</span>
+<span class="p">{</span>
+  <span class="kd">reports</span><span class="p">:</span>
+    <span class="nc">cfengine</span><span class="p">::</span>
+      <span class="s">&quot;edit_sysctlconf: </span><span class="si">$(configfiles.files[sysctl])</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle agent edit_sshd
-{
-  reports:
-    cfengine::
-      "edit_sshdconfig: $(configfiles.files[sshd])";
-}
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">edit_sshd</span>
+<span class="p">{</span>
+  <span class="kd">reports</span><span class="p">:</span>
+    <span class="nc">cfengine</span><span class="p">::</span>
+      <span class="s">&quot;edit_sshdconfig: </span><span class="si">$(configfiles.files[sshd])</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle agent edit_inittab
-{
-  reports:
-    cfengine::
-      "edit_inittab: $(configfiles.files[inittab])";
-}
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">edit_inittab</span>
+<span class="p">{</span>
+  <span class="kd">reports</span><span class="p">:</span>
+    <span class="nc">cfengine</span><span class="p">::</span>
+      <span class="s">&quot;edit_inittab: </span><span class="si">$(configfiles.files[inittab])</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle agent manage_users(param)
-{
-  reports:
-    cfengine::
-      "manage_users";
-}
-{% endhighlight %}
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">manage_users</span><span class="p">(</span><span class="nv">param</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">reports</span><span class="p">:</span>
+    <span class="nc">cfengine</span><span class="p">::</span>
+      <span class="s">&quot;manage_users&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

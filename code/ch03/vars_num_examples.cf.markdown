@@ -6,30 +6,30 @@ posttitle: Code > Chapter 3 > vars_num_examples.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch03/vars_num_examples.cf)
-{% highlight cf3 %}
-body common control {
-  bundlesequence => { "test" };
-}
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch03/vars_num_examples.cf)
 
-bundle agent test
-{
-  vars:
-    "i1" int => "25";
-    "i2" int => "10k";
-    "i3" int => "10K";
-    "r1" real => "1.2";
-    "r2" real => "10e-5";
+<div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span> <span class="p">{</span>
+  <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;test&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-  reports:
-    cfengine::
-      "i1 = $(i1)";
-      "i2 = $(i2)";
-      "i3 = $(i3)";
-      "r1 = $(r1)";
-      "r2 = $(r2)";
-}
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">test</span>
+<span class="p">{</span>
+  <span class="kd">vars</span><span class="p">:</span>
+    <span class="p">&quot;</span><span class="nv">i1</span><span class="p">&quot;</span> <span class="kt">int</span> <span class="o">=&gt;</span> <span class="s">&quot;25&quot;</span><span class="p">;</span>
+    <span class="p">&quot;</span><span class="nv">i2</span><span class="p">&quot;</span> <span class="kt">int</span> <span class="o">=&gt;</span> <span class="s">&quot;10k&quot;</span><span class="p">;</span>
+    <span class="p">&quot;</span><span class="nv">i3</span><span class="p">&quot;</span> <span class="kt">int</span> <span class="o">=&gt;</span> <span class="s">&quot;10K&quot;</span><span class="p">;</span>
+    <span class="p">&quot;</span><span class="nv">r1</span><span class="p">&quot;</span> <span class="kt">real</span> <span class="o">=&gt;</span> <span class="s">&quot;1.2&quot;</span><span class="p">;</span>
+    <span class="p">&quot;</span><span class="nv">r2</span><span class="p">&quot;</span> <span class="kt">real</span> <span class="o">=&gt;</span> <span class="s">&quot;10e-5&quot;</span><span class="p">;</span>
 
-{% endhighlight %}
+  <span class="kd">reports</span><span class="p">:</span>
+    <span class="nc">cfengine</span><span class="p">::</span>
+      <span class="s">&quot;i1 = </span><span class="si">$(i1)</span><span class="s">&quot;</span><span class="p">;</span>
+      <span class="s">&quot;i2 = </span><span class="si">$(i2)</span><span class="s">&quot;</span><span class="p">;</span>
+      <span class="s">&quot;i3 = </span><span class="si">$(i3)</span><span class="s">&quot;</span><span class="p">;</span>
+      <span class="s">&quot;r1 = </span><span class="si">$(r1)</span><span class="s">&quot;</span><span class="p">;</span>
+      <span class="s">&quot;r2 = </span><span class="si">$(r2)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

@@ -6,25 +6,26 @@ posttitle: Code > Chapter 5 > host_classes1.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch05/host_classes1.cf)
-{% highlight cf3 %}
-bundle agent config
-{
-  classes:
-      "websrv"    or => { "websrv1_domain_com",
-                          "websrv2_domain_com",
-                          "websrv3_domain_com"
-                        };
-      "dnssrv"    or => { "dnssrv1_domain_com",
-                          "dnssrv2_domain_com"
-                        };
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch05/host_classes1.cf)
+
+<div class="highlight"><pre><span class="k">bundle</span> <span class="k">agent</span> <span class="nf">config</span>
+<span class="p">{</span>
+  <span class="kd">classes</span><span class="p">:</span>
+      <span class="s">&quot;websrv&quot;</span>    <span class="kr">or</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;websrv1_domain_com&quot;</span><span class="p">,</span>
+                          <span class="s">&quot;websrv2_domain_com&quot;</span><span class="p">,</span>
+                          <span class="s">&quot;websrv3_domain_com&quot;</span>
+                        <span class="p">};</span>
+      <span class="s">&quot;dnssrv&quot;</span>    <span class="kr">or</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;dnssrv1_domain_com&quot;</span><span class="p">,</span>
+                          <span class="s">&quot;dnssrv2_domain_com&quot;</span>
+                        <span class="p">};</span>
       
-  methods:
-    websrv::
-      "config_websrv"   usebundle => config_websrv;
-    dnssrv::
-      "config_dnssrv"   usebundle => conig_dnssrv;
-}
-{% endhighlight %}
+  <span class="kd">methods</span><span class="p">:</span>
+    <span class="nc">websrv</span><span class="p">::</span>
+      <span class="s">&quot;config_websrv&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">config_websrv</span><span class="p">;</span>
+    <span class="nc">dnssrv</span><span class="p">::</span>
+      <span class="s">&quot;config_dnssrv&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">conig_dnssrv</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

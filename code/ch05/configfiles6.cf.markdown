@@ -6,40 +6,40 @@ posttitle: Code > Chapter 5 > configfiles6.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch05/configfiles6.cf)
-{% highlight cf3 %}
-bundle agent configfiles
-{
- vars:  
-   # Files to edit
-   "files[sysctlconf]" string => "/etc/sysctl.conf";
-   "files[sshdconfig]" string => "/etc/ssh/sshd_config";
-   "files[inittab]"    string => "/etc/inittab";
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch05/configfiles6.cf)
+
+<div class="highlight"><pre><span class="k">bundle</span> <span class="k">agent</span> <span class="nf">configfiles</span>
+<span class="p">{</span>
+ <span class="kd">vars</span><span class="p">:</span>  
+   <span class="c"># Files to edit</span>
+   <span class="p">&quot;</span><span class="nv">files[sysctlconf]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/etc/sysctl.conf&quot;</span><span class="p">;</span>
+   <span class="p">&quot;</span><span class="nv">files[sshdconfig]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/etc/ssh/sshd_config&quot;</span><span class="p">;</span>
+   <span class="p">&quot;</span><span class="nv">files[inittab]</span><span class="p">&quot;</span>    <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/etc/inittab&quot;</span><span class="p">;</span>
    
 
- methods:
-   "backup"  usebundle => backup_files("configfiles.files");
-   "sysctl"  usebundle => edit_sysctl;
-   "sshd"    usebundle => edit_sshd;
-   "inittab" usebundle => edit_inittab;
-   "users"   usebundle => manage_users("configfiles.users");
-}
+ <span class="kd">methods</span><span class="p">:</span>
+   <span class="s">&quot;backup&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">backup_files</span><span class="p">(</span><span class="s">&quot;configfiles.files&quot;</span><span class="p">);</span>
+   <span class="s">&quot;sysctl&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_sysctl</span><span class="p">;</span>
+   <span class="s">&quot;sshd&quot;</span>    <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_sshd</span><span class="p">;</span>
+   <span class="s">&quot;inittab&quot;</span> <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_inittab</span><span class="p">;</span>
+   <span class="s">&quot;users&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">manage_users</span><span class="p">(</span><span class="s">&quot;configfiles.users&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-bundle agent backup_files(id)
-{
- vars:
-   "allfiles"  slist => getindices("$(id)");
-   "backupdst" string => "/mnt/fileserver/cfenginebackups-$(sys.cdate)";
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">backup_files</span><span class="p">(</span><span class="nv">id</span><span class="p">)</span>
+<span class="p">{</span>
+ <span class="kd">vars</span><span class="p">:</span>
+   <span class="p">&quot;</span><span class="nv">allfiles</span><span class="p">&quot;</span>  <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(id)</span><span class="s">&quot;</span><span class="p">);</span>
+   <span class="p">&quot;</span><span class="nv">backupdst</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/mnt/fileserver/cfenginebackups-</span><span class="si">$(sys.cdate)</span><span class="s">&quot;</span><span class="p">;</span>
 
- files:
-   "$(backupst)/."
-     create => "true";
+ <span class="kd">files</span><span class="p">:</span>
+   <span class="s">&quot;</span><span class="si">$(backupst)</span><span class="s">/.&quot;</span>
+     <span class="kr">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
 
-   "$(backupdst)/$(allfiles)"
-     comment => "Ensure we have a backup of previous versions of $(allfiles)",
-     copy_from => local_cp("$(allfiles)");
-}
+   <span class="s">&quot;</span><span class="si">$(backupdst)</span><span class="s">/</span><span class="si">$(allfiles)</span><span class="s">&quot;</span>
+     <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Ensure we have a backup of previous versions of </span><span class="si">$(allfiles)</span><span class="s">&quot;</span><span class="p">,</span>
+     <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(allfiles)</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
 
-{% endhighlight %}
 
 {% include codeindex.markdown %}

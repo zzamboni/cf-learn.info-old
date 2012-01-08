@@ -6,272 +6,271 @@ posttitle: Code > Chapter 3 > default-promises.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch03/default-promises.cf)
-{% highlight cf3 %}
-###############################################################################
-#
-#   promises.cf - Basic Policy for Community
-#
-###############################################################################
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch03/default-promises.cf)
 
-body common control
-{
- bundlesequence => { "main" };
+<div class="highlight"><pre><span class="c">###############################################################################</span>
+<span class="c">#</span>
+<span class="c">#   promises.cf - Basic Policy for Community</span>
+<span class="c">#</span>
+<span class="c">###############################################################################</span>
 
- inputs => { 
-            "cfengine_stdlib.cf", 
-           };
+<span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
+<span class="p">{</span>
+ <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;main&quot;</span> <span class="p">};</span>
 
- version => "Community Promises.cf 1.0.0";
-}
+ <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> 
+            <span class="s">&quot;cfengine_stdlib.cf&quot;</span><span class="p">,</span> 
+           <span class="p">};</span>
 
-###############################################################################
+ <span class="kr">version</span> <span class="o">=&gt;</span> <span class="s">&quot;Community Promises.cf 1.0.0&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle agent main
-{
- reports:
-  am_policy_hub::
-   "--> I'm a policy hub."
-      comment => "Display message on screen/email",
-       handle => "main_reports_i_am_hub";
+<span class="c">###############################################################################</span>
 
-  !am_policy_hub::
-   "--> $(sys.policy_hub) is my policy hub."
-      comment => "Display message on screen/email",
-       handle => "main_reports_is_my_hub";
-   "--> CFE is running on $(sys.fqhost)"
-      comment => "Display message on screen/email",
-       handle => "main_reports_cfe_running";
-}
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">main</span>
+<span class="p">{</span>
+ <span class="kd">reports</span><span class="p">:</span>
+  <span class="nc">am_policy_hub</span><span class="p">::</span>
+   <span class="s">&quot;--&gt; I&#39;m a policy hub.&quot;</span>
+      <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Display message on screen/email&quot;</span><span class="p">,</span>
+       <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;main_reports_i_am_hub&quot;</span><span class="p">;</span>
 
-###############################################################################
-#
-# common def
-#  - common/global variables and classes here  
-#
-###############################################################################
+  <span class="nc">!am_policy_hub</span><span class="p">::</span>
+   <span class="s">&quot;--&gt; </span><span class="si">$(sys.policy_hub)</span><span class="s"> is my policy hub.&quot;</span>
+      <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Display message on screen/email&quot;</span><span class="p">,</span>
+       <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;main_reports_is_my_hub&quot;</span><span class="p">;</span>
+   <span class="s">&quot;--&gt; CFE is running on </span><span class="si">$(sys.fqhost)</span><span class="s">&quot;</span>
+      <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Display message on screen/email&quot;</span><span class="p">,</span>
+       <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;main_reports_cfe_running&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle common def
-{
- vars:
+<span class="c">###############################################################################</span>
+<span class="c">#</span>
+<span class="c"># common def</span>
+<span class="c">#  - common/global variables and classes here  </span>
+<span class="c">#</span>
+<span class="c">###############################################################################</span>
 
-  # Begin change # Your domain name, for use in access control
+<span class="k">bundle</span> <span class="k">common</span> <span class="nf">def</span>
+<span class="p">{</span>
+ <span class="kd">vars</span><span class="p">:</span>
 
-     "domain"  string => "example.com",
-              comment => "Define a global domain for all hosts",
-               handle => "common_def_vars_domain";
+  <span class="c"># Begin change # Your domain name, for use in access control</span>
 
-  # List here the IP masks that we grant access to on the server
+     <span class="p">&quot;</span><span class="nv">domain</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;example.com&quot;</span><span class="p">,</span>
+              <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Define a global domain for all hosts&quot;</span><span class="p">,</span>
+               <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;common_def_vars_domain&quot;</span><span class="p">;</span>
 
-    "acl" slist => { 
-                   "$(sys.policy_hub)/16"  # Assume /16 LAN clients to start with
+  <span class="c"># List here the IP masks that we grant access to on the server</span>
 
-                 #  "2001:700:700:3.*", 
-                 #  "217.77.34.18", 
-                 #  "217.77.34.19",
-                   },
-       comment => "Define an acl for the machines to be granted accesses",
-        handle => "common_def_vars_acl"; 
+    <span class="p">&quot;</span><span class="nv">acl</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> 
+                   <span class="s">&quot;</span><span class="si">$(sys.policy_hub)</span><span class="s">/16&quot;</span>  <span class="c"># Assume /16 LAN clients to start with</span>
 
-  # End change #
+                 <span class="c">#  &quot;2001:700:700:3.*&quot;, </span>
+                 <span class="c">#  &quot;217.77.34.18&quot;, </span>
+                 <span class="c">#  &quot;217.77.34.19&quot;,</span>
+                   <span class="p">},</span>
+       <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Define an acl for the machines to be granted accesses&quot;</span><span class="p">,</span>
+        <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;common_def_vars_acl&quot;</span><span class="p">;</span> 
 
-  "dir_masterfiles" string => translatepath("$(sys.workdir)/masterfiles"),
-                   comment => "Define masterfiles path",
-                    handle => "common_def_vars_dir_masterfiles";
+  <span class="c"># End change #</span>
 
-}
+  <span class="p">&quot;</span><span class="nv">dir_masterfiles</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="nf">translatepath</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(sys.workdir)</span><span class="s">/masterfiles&quot;</span><span class="p">),</span>
+                   <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Define masterfiles path&quot;</span><span class="p">,</span>
+                    <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;common_def_vars_dir_masterfiles&quot;</span><span class="p">;</span>
 
-###############################################################################
-# This part is for cf-agent 
-#
-# Settings describing the details of the fixed behavioural promises made by 
-# cf-agent.
-###############################################################################
+<span class="p">}</span>
 
-body agent control
+<span class="c">###############################################################################</span>
+<span class="c"># This part is for cf-agent </span>
+<span class="c">#</span>
+<span class="c"># Settings describing the details of the fixed behavioural promises made by </span>
+<span class="c"># cf-agent.</span>
+<span class="c">###############################################################################</span>
 
-{
-# Global default for time that must elapse before promise will be rechecked.
-# Don't keep any promises.
+<span class="k">body</span> <span class="k">agent</span> <span class="k">control</span>
 
- any::
+<span class="p">{</span>
+<span class="c"># Global default for time that must elapse before promise will be rechecked.</span>
+<span class="c"># Don&#39;t keep any promises.</span>
 
- # This should normally be set to an interval like 1-5 mins
- # We set it to one initially to avoid confusion.
+ <span class="nc">any</span><span class="p">::</span>
 
-  ifelapsed => "1";
+ <span class="c"># This should normally be set to an interval like 1-5 mins</span>
+ <span class="c"># We set it to one initially to avoid confusion.</span>
 
- # Do not send IP/name during server connection if address resolution is broken.
- # Comment it out if you do NOT have a problem with DNS
+  <span class="kr">ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;1&quot;</span><span class="p">;</span>
 
-  skipidentify => "true";
+ <span class="c"># Do not send IP/name during server connection if address resolution is broken.</span>
+ <span class="c"># Comment it out if you do NOT have a problem with DNS</span>
 
- # Environment variables based on Distro
+  <span class="kr">skipidentify</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
 
- debian::
-  environment => { 
-                  "DEBIAN_FRONTEND=noninteractive",
-#                  "APT_LISTBUGS_FRONTEND=none",
-#                  "APT_LISTCHANGES_FRONTEND=none",
-                 };
+ <span class="c"># Environment variables based on Distro</span>
 
-}
+ <span class="nc">debian</span><span class="p">::</span>
+  <span class="kr">environment</span> <span class="o">=&gt;</span> <span class="p">{</span> 
+                  <span class="s">&quot;DEBIAN_FRONTEND=noninteractive&quot;</span><span class="p">,</span>
+<span class="c">#                  &quot;APT_LISTBUGS_FRONTEND=none&quot;,</span>
+<span class="c">#                  &quot;APT_LISTCHANGES_FRONTEND=none&quot;,</span>
+                 <span class="p">};</span>
 
-###############################################################################
-# This part is for cf-serverd
-#
-# Server controls are mainly about determining access policy for the connection 
-# protocol: i.e. access to the server itself. 
-# Access to specific files must be granted in addition. 
-###############################################################################
+<span class="p">}</span>
 
-body server control 
-{
- denybadclocks         => "false";
- allowconnects         => { "127.0.0.1" , "::1", @(def.acl) };
- allowallconnects      => { "127.0.0.1" , "::1", @(def.acl) };
- trustkeysfrom         => { "127.0.0.1" , "::1", @(def.acl) };
+<span class="c">###############################################################################</span>
+<span class="c"># This part is for cf-serverd</span>
+<span class="c">#</span>
+<span class="c"># Server controls are mainly about determining access policy for the connection </span>
+<span class="c"># protocol: i.e. access to the server itself. </span>
+<span class="c"># Access to specific files must be granted in addition. </span>
+<span class="c">###############################################################################</span>
 
- skipverify            => { ".*$(def.domain)", "127.0.0.1" , "::1", @(def.acl) };
+<span class="k">body</span> <span class="k">server</span> <span class="k">control</span> 
+<span class="p">{</span>
+ <span class="kr">denybadclocks</span>         <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+ <span class="kr">allowconnects</span>         <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;127.0.0.1&quot;</span> <span class="p">,</span> <span class="s">&quot;::1&quot;</span><span class="p">,</span> <span class="nv">@(def.acl)</span> <span class="p">};</span>
+ <span class="kr">allowallconnects</span>      <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;127.0.0.1&quot;</span> <span class="p">,</span> <span class="s">&quot;::1&quot;</span><span class="p">,</span> <span class="nv">@(def.acl)</span> <span class="p">};</span>
+ <span class="kr">trustkeysfrom</span>         <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;127.0.0.1&quot;</span> <span class="p">,</span> <span class="s">&quot;::1&quot;</span><span class="p">,</span> <span class="nv">@(def.acl)</span> <span class="p">};</span>
 
- allowusers            => { "root" };
- maxconnections        => "100";
+ <span class="kr">skipverify</span>            <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;.*</span><span class="si">$(def.domain)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;127.0.0.1&quot;</span> <span class="p">,</span> <span class="s">&quot;::1&quot;</span><span class="p">,</span> <span class="nv">@(def.acl)</span> <span class="p">};</span>
 
-# Uncomment the line below to allow remote users to run 
-# cf-agent through cf-runagent
+ <span class="kr">allowusers</span>            <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;root&quot;</span> <span class="p">};</span>
+ <span class="kr">maxconnections</span>        <span class="o">=&gt;</span> <span class="s">&quot;100&quot;</span><span class="p">;</span>
 
-# cfruncommand          => "$(sys.cf_agent)";
-}
+<span class="c"># Uncomment the line below to allow remote users to run </span>
+<span class="c"># cf-agent through cf-runagent</span>
 
-###############################################################################
+<span class="c"># cfruncommand          =&gt; &quot;$(sys.cf_agent)&quot;;</span>
+<span class="p">}</span>
 
-bundle server access_rules()
-{
- access:
+<span class="c">###############################################################################</span>
 
-  any::
+<span class="k">bundle</span> <span class="k">server</span> <span class="nf">access_rules</span><span class="p">()</span>
+<span class="p">{</span>
+ <span class="kd">access</span><span class="p">:</span>
 
-   "$(def.dir_masterfiles)"
-       handle => "server_access_rule_grant_access_policy",
-      comment => "Grant access to the policy updates",
-        admit => { ".*$(def.domain)", @(def.acl) };
+  <span class="nc">any</span><span class="p">::</span>
 
-# Uncomment the promise below to allow cf-runagent to
-# access cf-agent on *NIX system
-#
-#   "$(sys.workdir)/bin/cf-agent"
-#       handle => "server_access_rule_grant_access_cfagent_linux",
-#      comment => "Grant access to cf-agent (for cf-runagent)",
-#        admit => { ".*$(def.domain)", @(def.acl) };
+   <span class="s">&quot;</span><span class="si">$(def.dir_masterfiles)</span><span class="s">&quot;</span>
+       <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;server_access_rule_grant_access_policy&quot;</span><span class="p">,</span>
+      <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Grant access to the policy updates&quot;</span><span class="p">,</span>
+        <span class="kr">admit</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;.*</span><span class="si">$(def.domain)</span><span class="s">&quot;</span><span class="p">,</span> <span class="nv">@(def.acl)</span> <span class="p">};</span>
 
-# Uncomment the promise below to allow cf-runagent to
-# access cf-agent on Windows machines
-#	
-#  "c:\program files\cfengine\bin\cf-agent.exe"
-#
-#    handle => "server_access_rule_grant_access_cfagent_windows",
-#    comment => "Grant access to the agent (for cf-runagent)",
-#    admit   => { ".*$(def.domain)", @(def.acl) };	
+<span class="c"># Uncomment the promise below to allow cf-runagent to</span>
+<span class="c"># access cf-agent on *NIX system</span>
+<span class="c">#</span>
+<span class="c">#   &quot;$(sys.workdir)/bin/cf-agent&quot;</span>
+<span class="c">#       handle =&gt; &quot;server_access_rule_grant_access_cfagent_linux&quot;,</span>
+<span class="c">#      comment =&gt; &quot;Grant access to cf-agent (for cf-runagent)&quot;,</span>
+<span class="c">#        admit =&gt; { &quot;.*$(def.domain)&quot;, @(def.acl) };</span>
+
+<span class="c"># Uncomment the promise below to allow cf-runagent to</span>
+<span class="c"># access cf-agent on Windows machines</span>
+<span class="c">#	</span>
+<span class="c">#  &quot;c:\program files\cfengine\bin\cf-agent.exe&quot;</span>
+<span class="c">#</span>
+<span class="c">#    handle =&gt; &quot;server_access_rule_grant_access_cfagent_windows&quot;,</span>
+<span class="c">#    comment =&gt; &quot;Grant access to the agent (for cf-runagent)&quot;,</span>
+<span class="c">#    admit   =&gt; { &quot;.*$(def.domain)&quot;, @(def.acl) };	</span>
 	
- roles:
+ <span class="kd">roles</span><span class="p">:</span>
 
-# Use roles to allow specific remote cf-runagent users to
-# define certain soft-classes when running cf-agent on this host	
-#  "emergency"  authorize => { "root" };
+<span class="c"># Use roles to allow specific remote cf-runagent users to</span>
+<span class="c"># define certain soft-classes when running cf-agent on this host	</span>
+<span class="c">#  &quot;emergency&quot;  authorize =&gt; { &quot;root&quot; };</span>
 	
-}
+<span class="p">}</span>
 
-###############################################################################
-# This part is for cf-execd
-#
-# These body settings determine the behaviour of cf-execd, including scheduling
-# times and output capture to $(sys.workdir)/outputs and relay via email.
-###############################################################################
+<span class="c">###############################################################################</span>
+<span class="c"># This part is for cf-execd</span>
+<span class="c">#</span>
+<span class="c"># These body settings determine the behaviour of cf-execd, including scheduling</span>
+<span class="c"># times and output capture to $(sys.workdir)/outputs and relay via email.</span>
+<span class="c">###############################################################################</span>
 
-body executor control
-{
- any::
+<span class="k">body</span> <span class="k">executor</span> <span class="k">control</span>
+<span class="p">{</span>
+ <span class="nc">any</span><span class="p">::</span>
 
-  splaytime  => "1";
-  mailto     => "cfengine@$(def.domain)";
-  mailfrom   => "cfengine@$(sys.host).$(def.domain)";
-  smtpserver => "localhost";
+  <span class="kr">splaytime</span>  <span class="o">=&gt;</span> <span class="s">&quot;1&quot;</span><span class="p">;</span>
+  <span class="kr">mailto</span>     <span class="o">=&gt;</span> <span class="s">&quot;cfengine@</span><span class="si">$(def.domain)</span><span class="s">&quot;</span><span class="p">;</span>
+  <span class="kr">mailfrom</span>   <span class="o">=&gt;</span> <span class="s">&quot;cfengine@</span><span class="si">$(sys.host)</span><span class="s">.</span><span class="si">$(def.domain)</span><span class="s">&quot;</span><span class="p">;</span>
+  <span class="kr">smtpserver</span> <span class="o">=&gt;</span> <span class="s">&quot;localhost&quot;</span><span class="p">;</span>
 
-# Default:
-#
-# schedule => { "Min00", "Min05", "Min10", "Min15", "Min20", 
-#               "Min25", "Min30", "Min35", "Min40", "Min45",
-#               "Min50", "Min55" };
+<span class="c"># Default:</span>
+<span class="c">#</span>
+<span class="c"># schedule =&gt; { &quot;Min00&quot;, &quot;Min05&quot;, &quot;Min10&quot;, &quot;Min15&quot;, &quot;Min20&quot;, </span>
+<span class="c">#               &quot;Min25&quot;, &quot;Min30&quot;, &quot;Min35&quot;, &quot;Min40&quot;, &quot;Min45&quot;,</span>
+<span class="c">#               &quot;Min50&quot;, &quot;Min55&quot; };</span>
 
-# The full path and command to the executable run by default (overriding builtin).
-# cf-twin needs its own safe environment because of the update mechanism
+<span class="c"># The full path and command to the executable run by default (overriding builtin).</span>
+<span class="c"># cf-twin needs its own safe environment because of the update mechanism</span>
 
- linux::
-  exec_command => "$(sys.cf_twin) -f failsafe.cf && $(sys.cf_agent)";
+ <span class="nc">linux</span><span class="p">::</span>
+  <span class="kr">exec_command</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(sys.cf_twin)</span><span class="s"> -f failsafe.cf &amp;&amp; </span><span class="si">$(sys.cf_agent)</span><span class="s">&quot;</span><span class="p">;</span>
 
-}
+<span class="p">}</span>
 
-###############################################################################
-# This part is for cf-report
-#
-# Determines a list of reports to write into the build directory. 
-# The format may be in text, html or xml format.
-###############################################################################
+<span class="c">###############################################################################</span>
+<span class="c"># This part is for cf-report</span>
+<span class="c">#</span>
+<span class="c"># Determines a list of reports to write into the build directory. </span>
+<span class="c"># The format may be in text, html or xml format.</span>
+<span class="c">###############################################################################</span>
 
-body reporter control
-{
- any::
+<span class="k">body</span> <span class="k">reporter</span> <span class="k">control</span>
+<span class="p">{</span>
+ <span class="nc">any</span><span class="p">::</span>
 
-  reports => { 
-             "all" 
-             };
+  <span class="kr">reports</span> <span class="o">=&gt;</span> <span class="p">{</span> 
+             <span class="s">&quot;all&quot;</span> 
+             <span class="p">};</span>
 
-  build_directory => "$(sys.workdir)/reports";
-  report_output   => "html";
-  style_sheet => "/cf_enterprise.css";
+  <span class="kr">build_directory</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(sys.workdir)</span><span class="s">/reports&quot;</span><span class="p">;</span>
+  <span class="kr">report_output</span>   <span class="o">=&gt;</span> <span class="s">&quot;html&quot;</span><span class="p">;</span>
+  <span class="kr">style_sheet</span> <span class="o">=&gt;</span> <span class="s">&quot;/cf_enterprise.css&quot;</span><span class="p">;</span>
 
-}
+<span class="p">}</span>
 
-###############################################################################
-# This part is for cf-runagent
-#
-# The most important parameter here is the list of hosts that the agent will 
-# poll for connections.
-###############################################################################
+<span class="c">###############################################################################</span>
+<span class="c"># This part is for cf-runagent</span>
+<span class="c">#</span>
+<span class="c"># The most important parameter here is the list of hosts that the agent will </span>
+<span class="c"># poll for connections.</span>
+<span class="c">###############################################################################</span>
 
-body runagent control
-{
-# A list of hosts to contact when using cf-runagent
+<span class="k">body</span> <span class="k">runagent</span> <span class="k">control</span>
+<span class="p">{</span>
+<span class="c"># A list of hosts to contact when using cf-runagent</span>
 
- any::
+ <span class="nc">any</span><span class="p">::</span>
 
-  hosts => { "127.0.0.1" };
+  <span class="kr">hosts</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;127.0.0.1&quot;</span> <span class="p">};</span>
 
-# , "myhost.example.com:5308", ...
+<span class="c"># , &quot;myhost.example.com:5308&quot;, ...</span>
 
-}
+<span class="p">}</span>
 
-###############################################################################
-# This part is for cf-monitord
-#
-# The system defaults will be sufficient for most users. 
-# This configurability potential, however, will be a key to developing 
-# the integrated monitoring capabilities of CFE.
-###############################################################################
+<span class="c">###############################################################################</span>
+<span class="c"># This part is for cf-monitord</span>
+<span class="c">#</span>
+<span class="c"># The system defaults will be sufficient for most users. </span>
+<span class="c"># This configurability potential, however, will be a key to developing </span>
+<span class="c"># the integrated monitoring capabilities of CFE.</span>
+<span class="c">###############################################################################</span>
 
-body monitor control
-{
- any::
-  forgetrate => "0.7";
-  histograms => "true";
-#  tcpdump => "false";
-#  tcpdumpcommand => "/usr/sbin/tcpdump -t -n -v";
+<span class="k">body</span> <span class="k">monitor</span> <span class="k">control</span>
+<span class="p">{</span>
+ <span class="nc">any</span><span class="p">::</span>
+  <span class="kr">forgetrate</span> <span class="o">=&gt;</span> <span class="s">&quot;0.7&quot;</span><span class="p">;</span>
+  <span class="kr">histograms</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="c">#  tcpdump =&gt; &quot;false&quot;;</span>
+<span class="c">#  tcpdumpcommand =&gt; &quot;/usr/sbin/tcpdump -t -n -v&quot;;</span>
 
-}
+<span class="p">}</span>
 
-###############################################################################
+<span class="c">###############################################################################</span>
+</pre></div>
 
-
-{% endhighlight %}
 
 {% include codeindex.markdown %}

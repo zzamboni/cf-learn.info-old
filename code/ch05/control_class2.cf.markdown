@@ -6,30 +6,31 @@ posttitle: Code > Chapter 5 > control_class2.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch05/control_class2.cf)
-{% highlight cf3 %}
-body common control
-{
-      bundlesequence => { "test" };
-}
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch05/control_class2.cf)
 
-bundle common g
-{
-  vars:
-      "class_file" string => "/var/cfengine/site/classes.txt";
-      "class_strs" slist => readstringlist("$(class_file)", "#.*?$", "\s+", "inf", "inf");
-  classes:
-      "$(class_strs)"  expression => "any";
-}
+<div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
+<span class="p">{</span>
+      <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;test&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-bundle agent test
-{
-  reports:
-    no_restarts::
-      "no_restarts is defined";
-    foobar::
-      "foobar is defined";
-}
-{% endhighlight %}
+<span class="k">bundle</span> <span class="k">common</span> <span class="nf">g</span>
+<span class="p">{</span>
+  <span class="kd">vars</span><span class="p">:</span>
+      <span class="p">&quot;</span><span class="nv">class_file</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/var/cfengine/site/classes.txt&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">class_strs</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">readstringlist</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(class_file)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;#.*?$&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="se">\s</span><span class="s">+&quot;</span><span class="p">,</span> <span class="s">&quot;inf&quot;</span><span class="p">,</span> <span class="s">&quot;inf&quot;</span><span class="p">);</span>
+  <span class="kd">classes</span><span class="p">:</span>
+      <span class="s">&quot;</span><span class="si">$(class_strs)</span><span class="s">&quot;</span>  <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="s">&quot;any&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">test</span>
+<span class="p">{</span>
+  <span class="kd">reports</span><span class="p">:</span>
+    <span class="nc">no_restarts</span><span class="p">::</span>
+      <span class="s">&quot;no_restarts is defined&quot;</span><span class="p">;</span>
+    <span class="nc">foobar</span><span class="p">::</span>
+      <span class="s">&quot;foobar is defined&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

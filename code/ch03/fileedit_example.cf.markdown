@@ -6,25 +6,24 @@ posttitle: Code > Chapter 3 > fileedit_example.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch03/fileedit_example.cf)
-{% highlight cf3 %}
-bundle agent editexample
-{
-files:
-  "/etc/motd"
-    create => "true",
-    edit_line => insert_lines("Unauthorized use will be prosecuted"),
-    edit_defaults => backup_timestamp;
-}
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch03/fileedit_example.cf)
 
-body edit_defaults backup_timestamp
-{
-  empty_file_before_editing => "false";
-  edit_backup => "timestamp";
-  max_file_size => "300000";
-}
+<div class="highlight"><pre><span class="k">bundle</span> <span class="k">agent</span> <span class="nf">editexample</span>
+<span class="p">{</span>
+<span class="kd">files</span><span class="p">:</span>
+  <span class="s">&quot;/etc/motd&quot;</span>
+    <span class="kr">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">,</span>
+    <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">insert_lines</span><span class="p">(</span><span class="s">&quot;Unauthorized use will be prosecuted&quot;</span><span class="p">),</span>
+    <span class="kr">edit_defaults</span> <span class="o">=&gt;</span> <span class="nf">backup_timestamp</span><span class="p">;</span>
+<span class="p">}</span>
 
+<span class="k">body</span> <span class="k">edit_defaults</span> <span class="nf">backup_timestamp</span>
+<span class="p">{</span>
+  <span class="kr">empty_file_before_editing</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+  <span class="kr">edit_backup</span> <span class="o">=&gt;</span> <span class="s">&quot;timestamp&quot;</span><span class="p">;</span>
+  <span class="kr">max_file_size</span> <span class="o">=&gt;</span> <span class="s">&quot;300000&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
 
-{% endhighlight %}
 
 {% include codeindex.markdown %}

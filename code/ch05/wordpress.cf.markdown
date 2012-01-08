@@ -6,323 +6,323 @@ posttitle: Code > Chapter 5 > wordpress.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch05/wordpress.cf)
-{% highlight cf3 %}
-#!/var/cfengine/bin/cf-agent -KIf
-#
-# Author: Aleksey Tsalolikhin <atsaloli.tech@gmail.com>, Diego Zamboni <diego.zamboni@cfengine.com>
-# OS: linux
-# Tested: ubuntu
-#
-# Install and configure WordPress:
-#	1. Install Infrastructure:
-#		1.1. Install httpd and mod_php and PHP MySQL client.
-#		1.2. Install MySQL server.
-#			1.2.1. Create WordPress User in MySQL.
-#			1.2.2. Create WordPress Database in MySQL.
-#		1.3. Make sure httpd and MySQL servers are running.
-#	2. Install the PHP application (WordPress)
-#		2.1. Download tarball with the latest version of WordPress PHP application.
-#		2.2. Extract it into the httpd document root where it can be run by the Web server.
-#		2.3. Create WordPress config file wp-config.php from wp-config-sample.php that's shipped with WordPress.
-#		2.4. Tweak wp-config.php to put in the data needed to establish database connection (db name, db username and password).
-#
-#
-# Sample usage:
-#
-#   body common control
-#   {
-#     bundlesequence => { wp_install("g.wp_config") };
-#     inputs => { "cfengine_stdlib.cf", "wordpress_installer.cf" };
-#   }
-#   
-#   bundle common g
-#   {
-#   vars:
-#     "wp_config[DB_NAME]"      string => "wordpress";
-#     "wp_config[DB_USER]"      string => "wordpress";
-#     "wp_config[DB_PASSWORD]"  string => "lopsa10linux";
-#     debian::
-#       "wp_config[_htmlroot]"     string => "/var/www";
-#     redhat::
-#       "wp_config[_htmlroot]"     string => "/var/www/html";
-#     any::
-#       "wp_config[_wp_dir]"       string => "$(wp_config[_htmlroot])/blog";
-#   }
-#
-# Any parameters in wp_config that do not start with an underscore (_) will be
-# edited/added to the wp-config.php file. You can use this to modify any
-# other Wordpress parameters you want, for example:
-#   "wp_config[AUTH_KEY]" string => "foobarbaz";
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch05/wordpress.cf)
 
-######################################################################
-# Public entry points
-######################################################################
+<div class="highlight"><pre><span class="c">#!/var/cfengine/bin/cf-agent -KIf</span>
+<span class="c">#</span>
+<span class="c"># Author: Aleksey Tsalolikhin &lt;atsaloli.tech@gmail.com&gt;, Diego Zamboni &lt;diego.zamboni@cfengine.com&gt;</span>
+<span class="c"># OS: linux</span>
+<span class="c"># Tested: ubuntu</span>
+<span class="c">#</span>
+<span class="c"># Install and configure WordPress:</span>
+<span class="c">#	1. Install Infrastructure:</span>
+<span class="c">#		1.1. Install httpd and mod_php and PHP MySQL client.</span>
+<span class="c">#		1.2. Install MySQL server.</span>
+<span class="c">#			1.2.1. Create WordPress User in MySQL.</span>
+<span class="c">#			1.2.2. Create WordPress Database in MySQL.</span>
+<span class="c">#		1.3. Make sure httpd and MySQL servers are running.</span>
+<span class="c">#	2. Install the PHP application (WordPress)</span>
+<span class="c">#		2.1. Download tarball with the latest version of WordPress PHP application.</span>
+<span class="c">#		2.2. Extract it into the httpd document root where it can be run by the Web server.</span>
+<span class="c">#		2.3. Create WordPress config file wp-config.php from wp-config-sample.php that&#39;s shipped with WordPress.</span>
+<span class="c">#		2.4. Tweak wp-config.php to put in the data needed to establish database connection (db name, db username and password).</span>
+<span class="c">#</span>
+<span class="c">#</span>
+<span class="c"># Sample usage:</span>
+<span class="c">#</span>
+<span class="c">#   body common control</span>
+<span class="c">#   {</span>
+<span class="c">#     bundlesequence =&gt; { wp_install(&quot;g.wp_config&quot;) };</span>
+<span class="c">#     inputs =&gt; { &quot;cfengine_stdlib.cf&quot;, &quot;wordpress_installer.cf&quot; };</span>
+<span class="c">#   }</span>
+<span class="c">#   </span>
+<span class="c">#   bundle common g</span>
+<span class="c">#   {</span>
+<span class="c">#   vars:</span>
+<span class="c">#     &quot;wp_config[DB_NAME]&quot;      string =&gt; &quot;wordpress&quot;;</span>
+<span class="c">#     &quot;wp_config[DB_USER]&quot;      string =&gt; &quot;wordpress&quot;;</span>
+<span class="c">#     &quot;wp_config[DB_PASSWORD]&quot;  string =&gt; &quot;lopsa10linux&quot;;</span>
+<span class="c">#     debian::</span>
+<span class="c">#       &quot;wp_config[_htmlroot]&quot;     string =&gt; &quot;/var/www&quot;;</span>
+<span class="c">#     redhat::</span>
+<span class="c">#       &quot;wp_config[_htmlroot]&quot;     string =&gt; &quot;/var/www/html&quot;;</span>
+<span class="c">#     any::</span>
+<span class="c">#       &quot;wp_config[_wp_dir]&quot;       string =&gt; &quot;$(wp_config[_htmlroot])/blog&quot;;</span>
+<span class="c">#   }</span>
+<span class="c">#</span>
+<span class="c"># Any parameters in wp_config that do not start with an underscore (_) will be</span>
+<span class="c"># edited/added to the wp-config.php file. You can use this to modify any</span>
+<span class="c"># other Wordpress parameters you want, for example:</span>
+<span class="c">#   &quot;wp_config[AUTH_KEY]&quot; string =&gt; &quot;foobarbaz&quot;;</span>
 
-# Make sure wordpress is installed and configured correctly.
-# Mandatory parameters in the "params" array:
-#   DB_NAME
-#   DB_USER
-#   DB_PASSWORD
-#   _htmlroot
-#   _wp_dir (final wordpress install directory)
-bundle agent wp_install(params)
-{
-  methods:
-      "wp_vars"  usebundle => wp_vars("$(params)");
-      "wp_pkgs"  usebundle => wp_packages_installed("wp_vars.conf");
-      "wp_svcs"  usebundle => wp_services_up("wp_vars.conf");
-      "wp_tar"   usebundle => wp_tarball_is_present("wp_vars.conf");
-      "wp_xpnd"  usebundle => wp_tarball_is_unrolled("wp_vars.conf"); 
-      "wp_mysql" usebundle => wp_mysql_configuration("wp_vars.conf"); 
-      "wp_cfgcp" usebundle => wp_config_exists("wp_vars.conf");
-      "wp_cfg"   usebundle => wp_is_properly_configured("wp_vars.conf");
-}
+<span class="c">######################################################################</span>
+<span class="c"># Public entry points</span>
+<span class="c">######################################################################</span>
 
-# Make sure wordpress is configured correctly. It must be installed already.
-# Mandatory parameters in the "params" array:
-#   _wp_dir (directory where wordpress is installed)
-bundle agent wp_config(params)
-{
-  methods:
-      "wp_vars"  usebundle => wp_vars("$(params)");
-      "wp_cfgcp" usebundle => wp_config_exists("wp_vars.conf");
-      "wp_cfg"   usebundle => wp_is_properly_configured("wp_vars.conf");
-}
+<span class="c"># Make sure wordpress is installed and configured correctly.</span>
+<span class="c"># Mandatory parameters in the &quot;params&quot; array:</span>
+<span class="c">#   DB_NAME</span>
+<span class="c">#   DB_USER</span>
+<span class="c">#   DB_PASSWORD</span>
+<span class="c">#   _htmlroot</span>
+<span class="c">#   _wp_dir (final wordpress install directory)</span>
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_install</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">methods</span><span class="p">:</span>
+      <span class="s">&quot;wp_vars&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">wp_vars</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(params)</span><span class="s">&quot;</span><span class="p">);</span>
+      <span class="s">&quot;wp_pkgs&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">wp_packages_installed</span><span class="p">(</span><span class="s">&quot;wp_vars.conf&quot;</span><span class="p">);</span>
+      <span class="s">&quot;wp_svcs&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">wp_services_up</span><span class="p">(</span><span class="s">&quot;wp_vars.conf&quot;</span><span class="p">);</span>
+      <span class="s">&quot;wp_tar&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">wp_tarball_is_present</span><span class="p">(</span><span class="s">&quot;wp_vars.conf&quot;</span><span class="p">);</span>
+      <span class="s">&quot;wp_xpnd&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">wp_tarball_is_unrolled</span><span class="p">(</span><span class="s">&quot;wp_vars.conf&quot;</span><span class="p">);</span> 
+      <span class="s">&quot;wp_mysql&quot;</span> <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">wp_mysql_configuration</span><span class="p">(</span><span class="s">&quot;wp_vars.conf&quot;</span><span class="p">);</span> 
+      <span class="s">&quot;wp_cfgcp&quot;</span> <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">wp_config_exists</span><span class="p">(</span><span class="s">&quot;wp_vars.conf&quot;</span><span class="p">);</span>
+      <span class="s">&quot;wp_cfg&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">wp_is_properly_configured</span><span class="p">(</span><span class="s">&quot;wp_vars.conf&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-#############################################
+<span class="c"># Make sure wordpress is configured correctly. It must be installed already.</span>
+<span class="c"># Mandatory parameters in the &quot;params&quot; array:</span>
+<span class="c">#   _wp_dir (directory where wordpress is installed)</span>
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_config</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">methods</span><span class="p">:</span>
+      <span class="s">&quot;wp_vars&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">wp_vars</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(params)</span><span class="s">&quot;</span><span class="p">);</span>
+      <span class="s">&quot;wp_cfgcp&quot;</span> <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">wp_config_exists</span><span class="p">(</span><span class="s">&quot;wp_vars.conf&quot;</span><span class="p">);</span>
+      <span class="s">&quot;wp_cfg&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">wp_is_properly_configured</span><span class="p">(</span><span class="s">&quot;wp_vars.conf&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-bundle agent wp_vars(params)   
-{
-  vars:
-      "wp_dir"             string => "$($(params)[_wp_dir])";
-      # Default configuration values. Internal parameters start with _
-      "conf[_tarfile]"      string => "/root/wordpress-latest.tar.gz",   
-                            policy => "overridable";   
-      "conf[_downloadurl]"  string => "http://wordpress.org/latest.tar.gz",
-                            policy => "overridable";
-      "conf[_wp_config]"    string => "$(wp_dir)/wp-config.php",
-                            policy => "overridable";
-      "conf[_wp_cfgsample]" string => "$(wp_dir)/wp-config-sample.php",
-                            policy => "overridable";
-    debian::   
-      "conf[_sys_servicecmd]" string => "/usr/sbin/service",
-                              policy => "overridable";
-      "conf[_sys_apachesrv]"  string => "apache2",
-                              policy => "overridable";
-    redhat::
-      "conf[_sys_servicecmd]" string => "/sbin/service",
-                              policy => "overridable";
-      "conf[_sys_apachesrv]"  string => "httpd",
-                              policy => "overridable";
-    any::   
-      # Copy configuration parameters passed, into a local array
-      "param_keys"          slist  => getindices("$(params)");   
-      "conf[$(param_keys)]" string => "$($(params)[$(param_keys)])",
-                            policy => "overridable";
-}
+<span class="c">#############################################</span>
 
-bundle agent wp_report_params(params)
-{
-  vars:
-      "keys" slist => getindices("$(params)");
-  reports:
-    cfengine_3::
-      "$(keys) = $($(params)[$(keys)])";
-}
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_vars</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>   
+<span class="p">{</span>
+  <span class="kd">vars</span><span class="p">:</span>
+      <span class="p">&quot;</span><span class="nv">wp_dir</span><span class="p">&quot;</span>             <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$($(params)[_wp_dir])</span><span class="s">&quot;</span><span class="p">;</span>
+      <span class="c"># Default configuration values. Internal parameters start with _</span>
+      <span class="p">&quot;</span><span class="nv">conf[_tarfile]</span><span class="p">&quot;</span>      <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/root/wordpress-latest.tar.gz&quot;</span><span class="p">,</span>   
+                            <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>   
+      <span class="p">&quot;</span><span class="nv">conf[_downloadurl]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;http://wordpress.org/latest.tar.gz&quot;</span><span class="p">,</span>
+                            <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">conf[_wp_config]</span><span class="p">&quot;</span>    <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(wp_dir)</span><span class="s">/wp-config.php&quot;</span><span class="p">,</span>
+                            <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">conf[_wp_cfgsample]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(wp_dir)</span><span class="s">/wp-config-sample.php&quot;</span><span class="p">,</span>
+                            <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+    <span class="nc">debian</span><span class="p">::</span>   
+      <span class="p">&quot;</span><span class="nv">conf[_sys_servicecmd]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/sbin/service&quot;</span><span class="p">,</span>
+                              <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">conf[_sys_apachesrv]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;apache2&quot;</span><span class="p">,</span>
+                              <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+    <span class="nc">redhat</span><span class="p">::</span>
+      <span class="p">&quot;</span><span class="nv">conf[_sys_servicecmd]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/sbin/service&quot;</span><span class="p">,</span>
+                              <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">conf[_sys_apachesrv]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;httpd&quot;</span><span class="p">,</span>
+                              <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+    <span class="nc">any</span><span class="p">::</span>   
+      <span class="c"># Copy configuration parameters passed, into a local array</span>
+      <span class="p">&quot;</span><span class="nv">param_keys</span><span class="p">&quot;</span>          <span class="kt">slist</span>  <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(params)</span><span class="s">&quot;</span><span class="p">);</span>   
+      <span class="p">&quot;</span><span class="nv">conf[$(param_keys)]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$($(params)[$(param_keys)])</span><span class="s">&quot;</span><span class="p">,</span>
+                            <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle agent wp_packages_installed(params)
-{
-  vars:
-    debian::  
-      "desired_package" slist => { 
-                                   "apache2", 
-                                   "php5",
-                                   "php5-mysql",
-                                   "mysql-server",
-                                 };
-    redhat::
-      "desired_package" slist => { 
-                                   "httpd",
-                                   "php",
-                                   "php-mysql",
-                                   "mysql-server",
-                                 };
-  packages:  
-      "$(desired_package)"
-        package_policy => "add",
-        package_method => generic,
-        classes => if_repaired("packages_added");
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_report_params</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">vars</span><span class="p">:</span>
+      <span class="p">&quot;</span><span class="nv">keys</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(params)</span><span class="s">&quot;</span><span class="p">);</span>
+  <span class="kd">reports</span><span class="p">:</span>
+    <span class="nc">cfengine_3</span><span class="p">::</span>
+      <span class="s">&quot;</span><span class="si">$(keys)</span><span class="s"> = </span><span class="si">$($(params)[$(keys)])</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-  commands:
-    packages_added::  
-      "$($(params)[_sys_servicecmd]) $($(params)[_sys_apachesrv]) graceful" 
-        comment => "Restarting httpd so it can pick up new modules.";
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_packages_installed</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">vars</span><span class="p">:</span>
+    <span class="nc">debian</span><span class="p">::</span>  
+      <span class="p">&quot;</span><span class="nv">desired_package</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> 
+                                   <span class="s">&quot;apache2&quot;</span><span class="p">,</span> 
+                                   <span class="s">&quot;php5&quot;</span><span class="p">,</span>
+                                   <span class="s">&quot;php5-mysql&quot;</span><span class="p">,</span>
+                                   <span class="s">&quot;mysql-server&quot;</span><span class="p">,</span>
+                                 <span class="p">};</span>
+    <span class="nc">redhat</span><span class="p">::</span>
+      <span class="p">&quot;</span><span class="nv">desired_package</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> 
+                                   <span class="s">&quot;httpd&quot;</span><span class="p">,</span>
+                                   <span class="s">&quot;php&quot;</span><span class="p">,</span>
+                                   <span class="s">&quot;php-mysql&quot;</span><span class="p">,</span>
+                                   <span class="s">&quot;mysql-server&quot;</span><span class="p">,</span>
+                                 <span class="p">};</span>
+  <span class="kd">packages</span><span class="p">:</span>  
+      <span class="s">&quot;</span><span class="si">$(desired_package)</span><span class="s">&quot;</span>
+        <span class="kr">package_policy</span> <span class="o">=&gt;</span> <span class="s">&quot;add&quot;</span><span class="p">,</span>
+        <span class="kr">package_method</span> <span class="o">=&gt;</span> <span class="nf">generic</span><span class="p">,</span>
+        <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_repaired</span><span class="p">(</span><span class="s">&quot;packages_added&quot;</span><span class="p">);</span>
 
-}
+  <span class="kd">commands</span><span class="p">:</span>
+    <span class="nc">packages_added</span><span class="p">::</span>  
+      <span class="s">&quot;</span><span class="si">$($(params)[_sys_servicecmd])</span><span class="s"> </span><span class="si">$($(params)[_sys_apachesrv])</span><span class="s"> graceful&quot;</span> 
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Restarting httpd so it can pick up new modules.&quot;</span><span class="p">;</span>
 
-#############################################
+<span class="p">}</span>
 
-bundle agent wp_services_up(params)
-{
-  processes:
-    debian:: 
-      "/usr/sbin/mysqld" restart_class => "start_mysqld";
-      "/usr/sbin/apache2"  restart_class => "start_httpd";
-    redhat::
-      "^mysqld" restart_class => "start_mysqld";
-      "^httpd"  restart_class => "start_httpd";
+<span class="c">#############################################</span>
 
-  commands: 
-    start_mysqld::
-      "$($(params)[_sys_servicecmd]) mysql start";
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_services_up</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">processes</span><span class="p">:</span>
+    <span class="nc">debian</span><span class="p">::</span> 
+      <span class="s">&quot;/usr/sbin/mysqld&quot;</span> <span class="kr">restart_class</span> <span class="o">=&gt;</span> <span class="s">&quot;start_mysqld&quot;</span><span class="p">;</span>
+      <span class="s">&quot;/usr/sbin/apache2&quot;</span>  <span class="kr">restart_class</span> <span class="o">=&gt;</span> <span class="s">&quot;start_httpd&quot;</span><span class="p">;</span>
+    <span class="nc">redhat</span><span class="p">::</span>
+      <span class="s">&quot;^mysqld&quot;</span> <span class="kr">restart_class</span> <span class="o">=&gt;</span> <span class="s">&quot;start_mysqld&quot;</span><span class="p">;</span>
+      <span class="s">&quot;^httpd&quot;</span>  <span class="kr">restart_class</span> <span class="o">=&gt;</span> <span class="s">&quot;start_httpd&quot;</span><span class="p">;</span>
 
-    start_httpd::
-      "$($(params)[_sys_servicecmd]) $($(params)[_sys_apachesrv]) start" ;
-}
+  <span class="kd">commands</span><span class="p">:</span> 
+    <span class="nc">start_mysqld</span><span class="p">::</span>
+      <span class="s">&quot;</span><span class="si">$($(params)[_sys_servicecmd])</span><span class="s"> mysql start&quot;</span><span class="p">;</span>
 
-#############################################
+    <span class="nc">start_httpd</span><span class="p">::</span>
+      <span class="s">&quot;</span><span class="si">$($(params)[_sys_servicecmd])</span><span class="s"> </span><span class="si">$($(params)[_sys_apachesrv])</span><span class="s"> start&quot;</span> <span class="p">;</span>
+<span class="p">}</span>
 
-bundle agent wp_tarball_is_present(params)
-{
-  classes: 
-      "wordpress_tarball_is_present" expression => fileexists("$($(params)[_tarfile])");
+<span class="c">#############################################</span>
 
-  commands: 
-    !wordpress_tarball_is_present::
-      "/usr/bin/wget -q -O $($(params)[_tarfile]) $($(params)[_downloadurl])"
-        comment => "Downloading latest version of WordPress.";
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_tarball_is_present</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">classes</span><span class="p">:</span> 
+      <span class="s">&quot;wordpress_tarball_is_present&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_tarfile])</span><span class="s">&quot;</span><span class="p">);</span>
 
-  reports: 
-    wordpress_tarball_is_present::
-      "WordPress tarball is on disk.";
-}
+  <span class="kd">commands</span><span class="p">:</span> 
+    <span class="nc">!wordpress_tarball_is_present</span><span class="p">::</span>
+      <span class="s">&quot;/usr/bin/wget -q -O </span><span class="si">$($(params)[_tarfile])</span><span class="s"> </span><span class="si">$($(params)[_downloadurl])</span><span class="s">&quot;</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Downloading latest version of WordPress.&quot;</span><span class="p">;</span>
 
-#############################################
+  <span class="kd">reports</span><span class="p">:</span> 
+    <span class="nc">wordpress_tarball_is_present</span><span class="p">::</span>
+      <span class="s">&quot;WordPress tarball is on disk.&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle agent wp_tarball_is_unrolled(params)
-{
-  classes: 
-      "wordpress_src_dir_is_present" expression => fileexists("$($(params)[_htmlroot])/wordpress");
-      "wordpress_final_dir_is_present" expression => fileexists("$($(params)[_wp_dir])");
+<span class="c">#############################################</span>
 
-  reports:
-    wordpress_final_dir_is_present::
-      "WordPress directory is present.";
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_tarball_is_unrolled</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">classes</span><span class="p">:</span> 
+      <span class="s">&quot;wordpress_src_dir_is_present&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_htmlroot])</span><span class="s">/wordpress&quot;</span><span class="p">);</span>
+      <span class="s">&quot;wordpress_final_dir_is_present&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_wp_dir])</span><span class="s">&quot;</span><span class="p">);</span>
 
-  commands:
-    !wordpress_final_dir_is_present&!wordpress_src_dir_is_present:: 
-      "/bin/tar -xzf $($(params)[_tarfile])"
-        comment => "Unrolling wordpress tarball to $($(params)[_htmlroot])/wordpress.",
-        contain => in_dir_shell("$($(params)[_htmlroot])");
-    wordpress_src_dir_is_present&!wordpress_final_dir_is_present::
-      "/bin/mv $($(params)[_htmlroot])/wordpress $($(params)[_wp_dir])"
-        comment => "Rename unrolled directory into its final destination $($(params)[_wp_dir])";
-}
+  <span class="kd">reports</span><span class="p">:</span>
+    <span class="nc">wordpress_final_dir_is_present</span><span class="p">::</span>
+      <span class="s">&quot;WordPress directory is present.&quot;</span><span class="p">;</span>
 
-#############################################
+  <span class="kd">commands</span><span class="p">:</span>
+    <span class="nc">!wordpress_final_dir_is_present&amp;!wordpress_src_dir_is_present</span><span class="p">::</span> 
+      <span class="s">&quot;/bin/tar -xzf </span><span class="si">$($(params)[_tarfile])</span><span class="s">&quot;</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Unrolling wordpress tarball to </span><span class="si">$($(params)[_htmlroot])</span><span class="s">/wordpress.&quot;</span><span class="p">,</span>
+        <span class="kr">contain</span> <span class="o">=&gt;</span> <span class="nf">in_dir_shell</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_htmlroot])</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="nc">wordpress_src_dir_is_present&amp;!wordpress_final_dir_is_present</span><span class="p">::</span>
+      <span class="s">&quot;/bin/mv </span><span class="si">$($(params)[_htmlroot])</span><span class="s">/wordpress </span><span class="si">$($(params)[_wp_dir])</span><span class="s">&quot;</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Rename unrolled directory into its final destination </span><span class="si">$($(params)[_wp_dir])</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle agent wp_mysql_configuration(params)
-{
-  commands:
-      "/usr/bin/mysql -u root -e \"
-      CREATE DATABASE IF NOT EXISTS $($(params)[DB_NAME]);
-      GRANT ALL PRIVILEGES ON $($(params)[DB_NAME]).*
-      TO '$($(params)[DB_USER])'@localhost
-      IDENTIFIED BY '$($(params)[DB_PASSWORD])';
-      FLUSH PRIVILEGES;\"
-";
-}
+<span class="c">#############################################</span>
 
-#############################################
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_mysql_configuration</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">commands</span><span class="p">:</span>
+      <span class="s">&quot;/usr/bin/mysql -u root -e </span><span class="se">\&quot;</span><span class="s"></span>
+<span class="s">      CREATE DATABASE IF NOT EXISTS </span><span class="si">$($(params)[DB_NAME])</span><span class="s">;</span>
+<span class="s">      GRANT ALL PRIVILEGES ON </span><span class="si">$($(params)[DB_NAME])</span><span class="s">.*</span>
+<span class="s">      TO &#39;</span><span class="si">$($(params)[DB_USER])</span><span class="s">&#39;@localhost</span>
+<span class="s">      IDENTIFIED BY &#39;</span><span class="si">$($(params)[DB_PASSWORD])</span><span class="s">&#39;;</span>
+<span class="s">      FLUSH PRIVILEGES;</span><span class="se">\&quot;</span><span class="s"></span>
+<span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle agent wp_config_exists(params)
-{
-  classes:
-     "wordpress_config_file_exists"  
-        expression => fileexists("$($(params)[_wp_config])");
+<span class="c">#############################################</span>
 
-  files:
-    !wordpress_config_file_exists::  
-      "$($(params)[_wp_config])"
-        copy_from => backup_local_cp("$($(params)[_wp_cfgsample])");
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_config_exists</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">classes</span><span class="p">:</span>
+     <span class="s">&quot;wordpress_config_file_exists&quot;</span>  
+        <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_wp_config])</span><span class="s">&quot;</span><span class="p">);</span>
 
-  reports:
-    wordpress_config_file_exists::
-      "WordPress config file $($(params)[_wp_config]) is present";
-    !wordpress_config_file_exists::
-      "WordPress config file $($(params)[_wp_config]) is not present";
-}
+  <span class="kd">files</span><span class="p">:</span>
+    <span class="nc">!wordpress_config_file_exists</span><span class="p">::</span>  
+      <span class="s">&quot;</span><span class="si">$($(params)[_wp_config])</span><span class="s">&quot;</span>
+        <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">backup_local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_wp_cfgsample])</span><span class="s">&quot;</span><span class="p">);</span>
 
-#############################################
+  <span class="kd">reports</span><span class="p">:</span>
+    <span class="nc">wordpress_config_file_exists</span><span class="p">::</span>
+      <span class="s">&quot;WordPress config file </span><span class="si">$($(params)[_wp_config])</span><span class="s"> is present&quot;</span><span class="p">;</span>
+    <span class="nc">!wordpress_config_file_exists</span><span class="p">::</span>
+      <span class="s">&quot;WordPress config file </span><span class="si">$($(params)[_wp_config])</span><span class="s"> is not present&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle agent wp_is_properly_configured(params)
-{
-  vars:
-      "allparams" slist => getindices("$(params)"); 
-    secondpass::
-      "wpparams"  slist => grep("[^_].*", "allparams");
+<span class="c">#############################################</span>
 
-  classes:
-      "secondpass" expression => isvariable("allparams");
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_is_properly_configured</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">vars</span><span class="p">:</span>
+      <span class="p">&quot;</span><span class="nv">allparams</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(params)</span><span class="s">&quot;</span><span class="p">);</span> 
+    <span class="nc">secondpass</span><span class="p">::</span>
+      <span class="p">&quot;</span><span class="nv">wpparams</span><span class="p">&quot;</span>  <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">grep</span><span class="p">(</span><span class="s">&quot;[^_].*&quot;</span><span class="p">,</span> <span class="s">&quot;allparams&quot;</span><span class="p">);</span>
 
-  files:
-    "$($(params)[_wp_config])" 
-      edit_line => replace_or_add("define\('$(wpparams)', *(?!'$($(params)[$(wpparams)]))'.*",
-				  "define('$(wpparams)', '$($(params)[$(wpparams)])');");
-}
+  <span class="kd">classes</span><span class="p">:</span>
+      <span class="s">&quot;secondpass&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">isvariable</span><span class="p">(</span><span class="s">&quot;allparams&quot;</span><span class="p">);</span>
 
-#############################################
+  <span class="kd">files</span><span class="p">:</span>
+    <span class="s">&quot;</span><span class="si">$($(params)[_wp_config])</span><span class="s">&quot;</span> 
+      <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">replace_or_add</span><span class="p">(</span><span class="s">&quot;define</span><span class="se">\(</span><span class="s">&#39;</span><span class="si">$(wpparams)</span><span class="s">&#39;, *(?!&#39;</span><span class="si">$($(params)[$(wpparams)])</span><span class="s">)&#39;.*&quot;</span><span class="p">,</span>
+				  <span class="s">&quot;define(&#39;</span><span class="si">$(wpparams)</span><span class="s">&#39;, &#39;</span><span class="si">$($(params)[$(wpparams)])</span><span class="s">&#39;);&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-# This is not included in the standard method sequence called from wp_install because
-# it has not been fully tested and is not something everyone would want to do. If
-# you want it, add it specifically to your bundlesequence.
+<span class="c">#############################################</span>
 
-bundle agent wp_allow_http_inbound(params)
-{
-  files:
-    redhat:: # tested on RHEL only, file location may vary based on Linux distro or OS
-      "/etc/sysconfig/iptables"
-        edit_line => wp_insert_HTTP_allow_rule_before_the_accept_established_tcp_conns_rule,
-        comment => "insert HTTP allow rule into /etc/sysconfig/iptables",
-        classes => if_repaired("iptables_edited");
+<span class="c"># This is not included in the standard method sequence called from wp_install because</span>
+<span class="c"># it has not been fully tested and is not something everyone would want to do. If</span>
+<span class="c"># you want it, add it specifically to your bundlesequence.</span>
 
-  commands: 
-    iptables_edited::
-      "/sbin/service iptables restart"
-        comment => "Restarting iptables to load new config";
-}
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_allow_http_inbound</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">files</span><span class="p">:</span>
+    <span class="nc">redhat</span><span class="p">::</span> <span class="c"># tested on RHEL only, file location may vary based on Linux distro or OS</span>
+      <span class="s">&quot;/etc/sysconfig/iptables&quot;</span>
+        <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">wp_insert_HTTP_allow_rule_before_the_accept_established_tcp_conns_rule</span><span class="p">,</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;insert HTTP allow rule into /etc/sysconfig/iptables&quot;</span><span class="p">,</span>
+        <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_repaired</span><span class="p">(</span><span class="s">&quot;iptables_edited&quot;</span><span class="p">);</span>
 
-bundle edit_line wp_insert_HTTP_allow_rule_before_the_accept_established_tcp_conns_rule(params)
-{
-  vars:
-      "http_rule" string => "-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT";
+  <span class="kd">commands</span><span class="p">:</span> 
+    <span class="nc">iptables_edited</span><span class="p">::</span>
+      <span class="s">&quot;/sbin/service iptables restart&quot;</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Restarting iptables to load new config&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-  insert_lines:
-      "$(http_rule)"
-        location => wp_before_the_accept_established_tcp_conns_rule;
-}
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">wp_insert_HTTP_allow_rule_before_the_accept_established_tcp_conns_rule</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="kd">vars</span><span class="p">:</span>
+      <span class="p">&quot;</span><span class="nv">http_rule</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT&quot;</span><span class="p">;</span>
 
-body location wp_before_the_accept_established_tcp_conns_rule
-{
-      before_after => "before";
-      first_last => "first";
-      select_line_matching => "^-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT.*";
-}
+  <span class="kd">insert_lines</span><span class="p">:</span>
+      <span class="s">&quot;</span><span class="si">$(http_rule)</span><span class="s">&quot;</span>
+        <span class="kr">location</span> <span class="o">=&gt;</span> <span class="nf">wp_before_the_accept_established_tcp_conns_rule</span><span class="p">;</span>
+<span class="p">}</span>
 
-# Todo:
-#
-#
-# MySQL:
-# - submit a patch to the MySQL folks to add a non-interactive version of /usr/bin/mysql_secure_installation
-# - secure mysql instance with a non-interactive version of /usr/bin/mysql_secure_installation once it is available
-# - change the root password using /usr/bin/mysqladmin -u root password 'new-password'
-# - secure mysql instance by: removing the test databases and anonymous user created by default
-#
-# httpd:
-# - instead of hardcoding "/var/www/html", derive httpd document root on the fly from /etc/httpd/conf/httpd.conf
-#   DocumentRoot using Function readstringlist
+<span class="k">body</span> <span class="k">location</span> <span class="nf">wp_before_the_accept_established_tcp_conns_rule</span>
+<span class="p">{</span>
+      <span class="kr">before_after</span> <span class="o">=&gt;</span> <span class="s">&quot;before&quot;</span><span class="p">;</span>
+      <span class="kr">first_last</span> <span class="o">=&gt;</span> <span class="s">&quot;first&quot;</span><span class="p">;</span>
+      <span class="kr">select_line_matching</span> <span class="o">=&gt;</span> <span class="s">&quot;^-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT.*&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-{% endhighlight %}
+<span class="c"># Todo:</span>
+<span class="c">#</span>
+<span class="c">#</span>
+<span class="c"># MySQL:</span>
+<span class="c"># - submit a patch to the MySQL folks to add a non-interactive version of /usr/bin/mysql_secure_installation</span>
+<span class="c"># - secure mysql instance with a non-interactive version of /usr/bin/mysql_secure_installation once it is available</span>
+<span class="c"># - change the root password using /usr/bin/mysqladmin -u root password &#39;new-password&#39;</span>
+<span class="c"># - secure mysql instance by: removing the test databases and anonymous user created by default</span>
+<span class="c">#</span>
+<span class="c"># httpd:</span>
+<span class="c"># - instead of hardcoding &quot;/var/www/html&quot;, derive httpd document root on the fly from /etc/httpd/conf/httpd.conf</span>
+<span class="c">#   DocumentRoot using Function readstringlist</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

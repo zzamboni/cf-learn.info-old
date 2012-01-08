@@ -6,1835 +6,1835 @@ posttitle: Code > Chapter 5 > cfengine_stdlib.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch05/cfengine_stdlib.cf)
-{% highlight cf3 %}
-###########################################################################
-#  Copyright (C) Cfengine AS
-# 
-#  This program is free software; you can redistribute it and/or modify it
-#  under the terms of the GNU Lesser General Public License LGPL as published by the
-#  Free Software Foundation; version 3.
-#   
-#  This program is distributed in the hope that it will be useful,
-#  but WITHOUT ANY WARRANTY; without even the implied warranty of
-#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#  GNU General Public License for more details.
-#
-#  To the extent this program is licensed as part of the Enterprise
-#  versions of Cfengine, the applicable Commerical Open Source License
-#  (COSL) may apply to this file if you as a licensee so wish it. See
-#  included file COSL.txt.
-###########################################################################
-#
-# Cfengine Community Open Promise-Body Library
-#
-# This initiative started by Cfengine promotes a
-# standardized set of names and promise specifications
-# for template functionality within Cfengine 3.
-#
-# The aim is to promote an industry standard for
-# naming of configuration patterns, leading to a
-# de facto middleware of standardized syntax.
-#
-# Names should be intuitive and parameters should be
-# minimal to assist readability and comprehensibility.
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch05/cfengine_stdlib.cf)
 
-# Contributions to this file are voluntarily given to
-# the cfengine community, and are moderated by Cfengine.
-# No liability or warranty for misuse is implied.
-#
-# If you add to this file, please try to make the
-# contributions "self-documenting". Comments made
-# after the bundle/body statement are retained in
-# the online docs
-#
+<div class="highlight"><pre><span class="c">###########################################################################</span>
+<span class="c">#  Copyright (C) Cfengine AS</span>
+<span class="c"># </span>
+<span class="c">#  This program is free software; you can redistribute it and/or modify it</span>
+<span class="c">#  under the terms of the GNU Lesser General Public License LGPL as published by the</span>
+<span class="c">#  Free Software Foundation; version 3.</span>
+<span class="c">#   </span>
+<span class="c">#  This program is distributed in the hope that it will be useful,</span>
+<span class="c">#  but WITHOUT ANY WARRANTY; without even the implied warranty of</span>
+<span class="c">#  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span>
+<span class="c">#  GNU General Public License for more details.</span>
+<span class="c">#</span>
+<span class="c">#  To the extent this program is licensed as part of the Enterprise</span>
+<span class="c">#  versions of Cfengine, the applicable Commerical Open Source License</span>
+<span class="c">#  (COSL) may apply to this file if you as a licensee so wish it. See</span>
+<span class="c">#  included file COSL.txt.</span>
+<span class="c">###########################################################################</span>
+<span class="c">#</span>
+<span class="c"># Cfengine Community Open Promise-Body Library</span>
+<span class="c">#</span>
+<span class="c"># This initiative started by Cfengine promotes a</span>
+<span class="c"># standardized set of names and promise specifications</span>
+<span class="c"># for template functionality within Cfengine 3.</span>
+<span class="c">#</span>
+<span class="c"># The aim is to promote an industry standard for</span>
+<span class="c"># naming of configuration patterns, leading to a</span>
+<span class="c"># de facto middleware of standardized syntax.</span>
+<span class="c">#</span>
+<span class="c"># Names should be intuitive and parameters should be</span>
+<span class="c"># minimal to assist readability and comprehensibility.</span>
 
-# Subversion : $Rev$
-# For Cfengine Core: 3.1.0
+<span class="c"># Contributions to this file are voluntarily given to</span>
+<span class="c"># the cfengine community, and are moderated by Cfengine.</span>
+<span class="c"># No liability or warranty for misuse is implied.</span>
+<span class="c">#</span>
+<span class="c"># If you add to this file, please try to make the</span>
+<span class="c"># contributions &quot;self-documenting&quot;. Comments made</span>
+<span class="c"># after the bundle/body statement are retained in</span>
+<span class="c"># the online docs</span>
+<span class="c">#</span>
 
-###################################################
-# If you find Cfengine useful, please consider    #
-# purchasing a commercial version of the software.#
-###################################################
+<span class="c"># Subversion : $Rev$</span>
+<span class="c"># For Cfengine Core: 3.1.0</span>
 
-###################################################
-# edit_line bundles
-###################################################
+<span class="c">###################################################</span>
+<span class="c"># If you find Cfengine useful, please consider    #</span>
+<span class="c"># purchasing a commercial version of the software.#</span>
+<span class="c">###################################################</span>
 
-bundle edit_line insert_lines(lines)
-{
-insert_lines:
+<span class="c">###################################################</span>
+<span class="c"># edit_line bundles</span>
+<span class="c">###################################################</span>
 
-  "$(lines)"
-    comment => "Append lines if they don't exist";
-}
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">insert_lines</span><span class="p">(</span><span class="nv">lines</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kd">insert_lines</span><span class="p">:</span>
 
-##
+  <span class="s">&quot;</span><span class="si">$(lines)</span><span class="s">&quot;</span>
+    <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Append lines if they don&#39;t exist&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle edit_line insert_file(templatefile)
-{
-insert_lines:
+<span class="c">##</span>
 
-   "$(templatefile)"
-            comment => "Insert the template file into the file being edited",
-        insert_type => "file";
-}
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">insert_file</span><span class="p">(</span><span class="nv">templatefile</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kd">insert_lines</span><span class="p">:</span>
 
-##
+   <span class="s">&quot;</span><span class="si">$(templatefile)</span><span class="s">&quot;</span>
+            <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Insert the template file into the file being edited&quot;</span><span class="p">,</span>
+        <span class="kr">insert_type</span> <span class="o">=&gt;</span> <span class="s">&quot;file&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle edit_line comment_lines_matching(regex,comment)
+<span class="c">##</span>
 
- # Comment lines of a file matching a regex
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">comment_lines_matching</span><span class="p">(</span><span class="nv">regex</span><span class="p">,</span><span class="nv">comment</span><span class="p">)</span>
 
-{
-replace_patterns:
+ <span class="c"># Comment lines of a file matching a regex</span>
+
+<span class="p">{</span>
+<span class="kd">replace_patterns</span><span class="p">:</span>
 	 
- "^($(regex))$" 
+ <span class="s">&quot;^(</span><span class="si">$(regex)</span><span class="s">)$&quot;</span> 
 
-     replace_with => comment("$(comment)"),
-          comment => "Search and replace string";
-}
+     <span class="kr">replace_with</span> <span class="o">=&gt;</span> <span class="nf">comment</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(comment)</span><span class="s">&quot;</span><span class="p">),</span>
+          <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Search and replace string&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 	 
-##
+<span class="c">##</span>
 	 
-bundle edit_line uncomment_lines_matching(regex,comment)
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">uncomment_lines_matching</span><span class="p">(</span><span class="nv">regex</span><span class="p">,</span><span class="nv">comment</span><span class="p">)</span>
 	 
- # Uncomment lines of a file where the regex matches
- # the text after the comment string
+ <span class="c"># Uncomment lines of a file where the regex matches</span>
+ <span class="c"># the text after the comment string</span>
 	 
-{
-replace_patterns:
+<span class="p">{</span>
+<span class="kd">replace_patterns</span><span class="p">:</span>
  
- "^$(comment)\s?($(regex))$" 
+ <span class="s">&quot;^</span><span class="si">$(comment)</span><span class="se">\s</span><span class="s">?(</span><span class="si">$(regex)</span><span class="s">)$&quot;</span> 
 
-       replace_with => uncomment,
-            comment => "Uncomment lines matching a regular expression";
-}
+       <span class="kr">replace_with</span> <span class="o">=&gt;</span> <span class="nf">uncomment</span><span class="p">,</span>
+            <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Uncomment lines matching a regular expression&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 	 
-##
+<span class="c">##</span>
 
-bundle edit_line comment_lines_containing(regex,comment)
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">comment_lines_containing</span><span class="p">(</span><span class="nv">regex</span><span class="p">,</span><span class="nv">comment</span><span class="p">)</span>
 
- # Comment lines of a file containing a regex
+ <span class="c"># Comment lines of a file containing a regex</span>
 
-{
-replace_patterns:
+<span class="p">{</span>
+<span class="kd">replace_patterns</span><span class="p">:</span>
  
- "^(.*$(regex).*)$" 
+ <span class="s">&quot;^(.*</span><span class="si">$(regex)</span><span class="s">.*)$&quot;</span> 
 
-     replace_with => comment("$(comment)"),
-          comment => "Comment out lines in a file";
-}
+     <span class="kr">replace_with</span> <span class="o">=&gt;</span> <span class="nf">comment</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(comment)</span><span class="s">&quot;</span><span class="p">),</span>
+          <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Comment out lines in a file&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 	 
-##
+<span class="c">##</span>
 	 
-bundle edit_line uncomment_lines_containing(regex,comment)
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">uncomment_lines_containing</span><span class="p">(</span><span class="nv">regex</span><span class="p">,</span><span class="nv">comment</span><span class="p">)</span>
 	 
- # Uncomment lines of a file where the regex matches
- # the text after the comment string
+ <span class="c"># Uncomment lines of a file where the regex matches</span>
+ <span class="c"># the text after the comment string</span>
 	 
-{
-replace_patterns:
+<span class="p">{</span>
+<span class="kd">replace_patterns</span><span class="p">:</span>
  
- "^$(comment)\s?(.*$(regex).*)$" 
+ <span class="s">&quot;^</span><span class="si">$(comment)</span><span class="se">\s</span><span class="s">?(.*</span><span class="si">$(regex)</span><span class="s">.*)$&quot;</span> 
 
-    replace_with => uncomment,
-         comment => "Uncomment a line containing a fragment";
-}
+    <span class="kr">replace_with</span> <span class="o">=&gt;</span> <span class="nf">uncomment</span><span class="p">,</span>
+         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Uncomment a line containing a fragment&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line delete_lines_matching(regex)
-{
-delete_lines:
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">delete_lines_matching</span><span class="p">(</span><span class="nv">regex</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kd">delete_lines</span><span class="p">:</span>
 
-  "$(regex)"
+  <span class="s">&quot;</span><span class="si">$(regex)</span><span class="s">&quot;</span>
 
-     comment => "Delete lines matching regular expressions";
-}
+     <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Delete lines matching regular expressions&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line warn_lines_matching(regex)
-{
-delete_lines:
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">warn_lines_matching</span><span class="p">(</span><span class="nv">regex</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kd">delete_lines</span><span class="p">:</span>
 
-  "$(regex)"  
+  <span class="s">&quot;</span><span class="si">$(regex)</span><span class="s">&quot;</span>  
 
-   comment => "Warn about lines in a file",
-    action => warn_only;
-}
+   <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Warn about lines in a file&quot;</span><span class="p">,</span>
+    <span class="kr">action</span> <span class="o">=&gt;</span> <span class="nf">warn_only</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line append_if_no_line(str)
-{
-insert_lines:
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">append_if_no_line</span><span class="p">(</span><span class="nv">str</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kd">insert_lines</span><span class="p">:</span>
 
- "$(str)"
+ <span class="s">&quot;</span><span class="si">$(str)</span><span class="s">&quot;</span>
 
-     comment => "Append a line to the file if it doesn't already exist";
-}
+     <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Append a line to the file if it doesn&#39;t already exist&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line append_if_no_lines(list)
-{
-insert_lines:
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">append_if_no_lines</span><span class="p">(</span><span class="nv">list</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kd">insert_lines</span><span class="p">:</span>
 
- "$(list)"
+ <span class="s">&quot;</span><span class="si">$(list)</span><span class="s">&quot;</span>
 
-   comment => "Append lines to the file if they don't already exist";
-}
+   <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Append lines to the file if they don&#39;t already exist&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line replace_line_end(start,end)
-#
-# Lines starting with "$(start)" will get the ending given in "$(end)",
-# whitespaces will be left unmodified.
-# For example, replace_line_end("ftp", "2121/tcp") would replace
-# "ftp             21/tcp"
-# with 
-# "ftp             2121/tcp"
-{
-field_edits:
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">replace_line_end</span><span class="p">(</span><span class="nv">start</span><span class="p">,</span><span class="nv">end</span><span class="p">)</span>
+<span class="c">#</span>
+<span class="c"># Lines starting with &quot;$(start)&quot; will get the ending given in &quot;$(end)&quot;,</span>
+<span class="c"># whitespaces will be left unmodified.</span>
+<span class="c"># For example, replace_line_end(&quot;ftp&quot;, &quot;2121/tcp&quot;) would replace</span>
+<span class="c"># &quot;ftp             21/tcp&quot;</span>
+<span class="c"># with </span>
+<span class="c"># &quot;ftp             2121/tcp&quot;</span>
+<span class="p">{</span>
+<span class="kd">field_edits</span><span class="p">:</span>
 
-   "\s*$(start)\s.*"
-      edit_field => line("(^|\s)$(start)\s*", "2", "$(end)","set");
-}
+   <span class="s">&quot;</span><span class="se">\s</span><span class="s">*</span><span class="si">$(start)</span><span class="se">\s</span><span class="s">.*&quot;</span>
+      <span class="kr">edit_field</span> <span class="o">=&gt;</span> <span class="nf">line</span><span class="p">(</span><span class="s">&quot;(^|</span><span class="se">\s</span><span class="s">)</span><span class="si">$(start)</span><span class="se">\s</span><span class="s">*&quot;</span><span class="p">,</span> <span class="s">&quot;2&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(end)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;set&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line append_to_line_end(start,end)
-#
-# Lines starting with "$(start)" and not ending with "$(end)"
-# will get appended with "$(end)", whitespaces will be left unmodified.
-# For example, append_to_line_end("kernel", "vga=791") would replace
-# "kernel /boot/vmlinuz root=/dev/sda7"
-# with 
-# "kernel /boot/vmlinuz root=/dev/sda7 resume=/dev/sda9 vga=791"
-#
-# WARNING: Be careful not to have multiple promises matching the same line,
-#          which would result in the line growing indefinetively.
-{
-field_edits:
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">append_to_line_end</span><span class="p">(</span><span class="nv">start</span><span class="p">,</span><span class="nv">end</span><span class="p">)</span>
+<span class="c">#</span>
+<span class="c"># Lines starting with &quot;$(start)&quot; and not ending with &quot;$(end)&quot;</span>
+<span class="c"># will get appended with &quot;$(end)&quot;, whitespaces will be left unmodified.</span>
+<span class="c"># For example, append_to_line_end(&quot;kernel&quot;, &quot;vga=791&quot;) would replace</span>
+<span class="c"># &quot;kernel /boot/vmlinuz root=/dev/sda7&quot;</span>
+<span class="c"># with </span>
+<span class="c"># &quot;kernel /boot/vmlinuz root=/dev/sda7 resume=/dev/sda9 vga=791&quot;</span>
+<span class="c">#</span>
+<span class="c"># WARNING: Be careful not to have multiple promises matching the same line,</span>
+<span class="c">#          which would result in the line growing indefinetively.</span>
+<span class="p">{</span>
+<span class="kd">field_edits</span><span class="p">:</span>
 
-   "\s*$(start)\s.*"
-      edit_field => line("(^|\s)$(start)\s*", "2", "$(end)","append");
-}
+   <span class="s">&quot;</span><span class="se">\s</span><span class="s">*</span><span class="si">$(start)</span><span class="se">\s</span><span class="s">.*&quot;</span>
+      <span class="kr">edit_field</span> <span class="o">=&gt;</span> <span class="nf">line</span><span class="p">(</span><span class="s">&quot;(^|</span><span class="se">\s</span><span class="s">)</span><span class="si">$(start)</span><span class="se">\s</span><span class="s">*&quot;</span><span class="p">,</span> <span class="s">&quot;2&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(end)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;append&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line resolvconf(search,list)
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">resolvconf</span><span class="p">(</span><span class="nv">search</span><span class="p">,</span><span class="nv">list</span><span class="p">)</span>
 
- # search is the search domains with space
- # list is an slist of nameserver addresses
+ <span class="c"># search is the search domains with space</span>
+ <span class="c"># list is an slist of nameserver addresses</span>
 
-{
-delete_lines:
+<span class="p">{</span>
+<span class="kd">delete_lines</span><span class="p">:</span>
 
-  "search.*"     comment => "Reset search lines from resolver";
-  "nameserver.*" comment => "Reset nameservers in resolver";
+  <span class="s">&quot;search.*&quot;</span>     <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Reset search lines from resolver&quot;</span><span class="p">;</span>
+  <span class="s">&quot;nameserver.*&quot;</span> <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Reset nameservers in resolver&quot;</span><span class="p">;</span>
 
-insert_lines:
+<span class="kd">insert_lines</span><span class="p">:</span>
 
-  "search $(search)"    comment => "Add search domains to resolver";
-  "nameserver $(list)"  comment => "Add name servers to resolver";
-}
+  <span class="s">&quot;search </span><span class="si">$(search)</span><span class="s">&quot;</span>    <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Add search domains to resolver&quot;</span><span class="p">;</span>
+  <span class="s">&quot;nameserver </span><span class="si">$(list)</span><span class="s">&quot;</span>  <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Add name servers to resolver&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line set_variable_values(v) 
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">set_variable_values</span><span class="p">(</span><span class="nv">v</span><span class="p">)</span> 
 
- # Sets the RHS of variables in the file of the form
- #   LHS = RHS
- # Adds a new line if no LHS exists, repairs RHS values if one does exist
- #
- # To use:
- #   1) Define an array, where the keys are the LHS and the values are the RHS
- #        "stuff[lhs-1]" string => "rhs1";
- #        "stuff[lhs-2]" string => "rhs2";
- #   2) The parameter passed to the edit_line promise is the fully qualified
- #      name of the array (i.e., "bundlename.stuff") WITHOUT any "$" or "@"
+ <span class="c"># Sets the RHS of variables in the file of the form</span>
+ <span class="c">#   LHS = RHS</span>
+ <span class="c"># Adds a new line if no LHS exists, repairs RHS values if one does exist</span>
+ <span class="c">#</span>
+ <span class="c"># To use:</span>
+ <span class="c">#   1) Define an array, where the keys are the LHS and the values are the RHS</span>
+ <span class="c">#        &quot;stuff[lhs-1]&quot; string =&gt; &quot;rhs1&quot;;</span>
+ <span class="c">#        &quot;stuff[lhs-2]&quot; string =&gt; &quot;rhs2&quot;;</span>
+ <span class="c">#   2) The parameter passed to the edit_line promise is the fully qualified</span>
+ <span class="c">#      name of the array (i.e., &quot;bundlename.stuff&quot;) WITHOUT any &quot;$&quot; or &quot;@&quot;</span>
 
-{
-vars:
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
 
-  "index" slist => getindices("$(v)"); 
+  <span class="p">&quot;</span><span class="nv">index</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(v)</span><span class="s">&quot;</span><span class="p">);</span> 
 
-  # Be careful if the index string contains funny chars
+  <span class="c"># Be careful if the index string contains funny chars</span>
 
-  "cindex[$(index)]" string => canonify("$(index)"); 
+  <span class="p">&quot;</span><span class="nv">cindex[$(index)]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="nf">canonify</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(index)</span><span class="s">&quot;</span><span class="p">);</span> 
 
-field_edits: 
+<span class="kd">field_edits</span><span class="p">:</span> 
 
-  # match a line starting like the key = something
+  <span class="c"># match a line starting like the key = something</span>
 
-  "\s*$(index)\s*=.*" 
+  <span class="s">&quot;</span><span class="se">\s</span><span class="s">*</span><span class="si">$(index)</span><span class="se">\s</span><span class="s">*=.*&quot;</span> 
 
-     edit_field => col("=","2","$($(v)[$(index)])","set"), 
-        classes => if_ok("$(cindex[$(index)])_in_file"),   
-        comment => "Match a line starting like key = something";
+     <span class="kr">edit_field</span> <span class="o">=&gt;</span> <span class="nf">col</span><span class="p">(</span><span class="s">&quot;=&quot;</span><span class="p">,</span><span class="s">&quot;2&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$($(v)[$(index)])</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;set&quot;</span><span class="p">),</span> 
+        <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_ok</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(cindex[$(index)])</span><span class="s">_in_file&quot;</span><span class="p">),</span>   
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Match a line starting like key = something&quot;</span><span class="p">;</span>
 
-insert_lines: 
+<span class="kd">insert_lines</span><span class="p">:</span> 
 
-  "$(index)=$($(v)[$(index)])",
+  <span class="s">&quot;</span><span class="si">$(index)</span><span class="s">=</span><span class="si">$($(v)[$(index)])</span><span class="s">&quot;</span><span class="p">,</span>
 
-         comment => "Insert a variable definition",
-      ifvarclass => "!$(cindex[$(index)])_in_file";
-}
+         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Insert a variable definition&quot;</span><span class="p">,</span>
+      <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;!</span><span class="si">$(cindex[$(index)])</span><span class="s">_in_file&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line set_config_values(v)
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">set_config_values</span><span class="p">(</span><span class="nv">v</span><span class="p">)</span>
 
- # Sets the RHS of configuration items in the file of the form
- #   LHS RHS
- # If the line is commented out with #, it gets uncommented first.
- # Adds a new line if none exists.
- # The argument is the fully-qualified name of an associative array containing v[LHS]="rhs"
+ <span class="c"># Sets the RHS of configuration items in the file of the form</span>
+ <span class="c">#   LHS RHS</span>
+ <span class="c"># If the line is commented out with #, it gets uncommented first.</span>
+ <span class="c"># Adds a new line if none exists.</span>
+ <span class="c"># The argument is the fully-qualified name of an associative array containing v[LHS]=&quot;rhs&quot;</span>
  
-{
-vars:
-  "index" slist => getindices("$(v)"); 
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
+  <span class="p">&quot;</span><span class="nv">index</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(v)</span><span class="s">&quot;</span><span class="p">);</span> 
 
-  # Be careful if the index string contains funny chars
-  "cindex[$(index)]" string => canonify("$(index)");
+  <span class="c"># Be careful if the index string contains funny chars</span>
+  <span class="p">&quot;</span><span class="nv">cindex[$(index)]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="nf">canonify</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(index)</span><span class="s">&quot;</span><span class="p">);</span>
 
-replace_patterns: 
-  # If the line is there, maybe commented out, uncomment and replace with
-  # the correct value
-  "^\s*($(index)\s+(?!$($(v)[$(index)])).*|# ?$(index)\s+.*)$"
-    replace_with => value("$(index) $($(v)[$(index)])"), 
-    classes => always("replace_attempted_$(cindex[$(index)])"); 
+<span class="kd">replace_patterns</span><span class="p">:</span> 
+  <span class="c"># If the line is there, maybe commented out, uncomment and replace with</span>
+  <span class="c"># the correct value</span>
+  <span class="s">&quot;^</span><span class="se">\s</span><span class="s">*(</span><span class="si">$(index)</span><span class="se">\s</span><span class="s">+(?!</span><span class="si">$($(v)[$(index)])</span><span class="s">).*|# ?</span><span class="si">$(index)</span><span class="se">\s</span><span class="s">+.*)$&quot;</span>
+    <span class="kr">replace_with</span> <span class="o">=&gt;</span> <span class="nf">value</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(index)</span><span class="s"> </span><span class="si">$($(v)[$(index)])</span><span class="s">&quot;</span><span class="p">),</span> 
+    <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">always</span><span class="p">(</span><span class="s">&quot;replace_attempted_</span><span class="si">$(cindex[$(index)])</span><span class="s">&quot;</span><span class="p">);</span> 
 
-insert_lines:
-  "$(index) $($(v)[$(index)])" 
-    ifvarclass => "replace_attempted_$(cindex[$(index)])";
+<span class="kd">insert_lines</span><span class="p">:</span>
+  <span class="s">&quot;</span><span class="si">$(index)</span><span class="s"> </span><span class="si">$($(v)[$(index)])</span><span class="s">&quot;</span> 
+    <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;replace_attempted_</span><span class="si">$(cindex[$(index)])</span><span class="s">&quot;</span><span class="p">;</span>
 
-}
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line set_variable_values2(file,v)
-#
-# Another implementation of set_variable_values.
-# The input and output should be exactly the same (except the file name), 
-# but in some Cfengine versions there are bugs, 
-# so this bundle can be used as a workaround.
-#
-{
-vars:
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">set_variable_values2</span><span class="p">(</span><span class="nv">file</span><span class="p">,</span><span class="nv">v</span><span class="p">)</span>
+<span class="c">#</span>
+<span class="c"># Another implementation of set_variable_values.</span>
+<span class="c"># The input and output should be exactly the same (except the file name), </span>
+<span class="c"># but in some Cfengine versions there are bugs, </span>
+<span class="c"># so this bundle can be used as a workaround.</span>
+<span class="c">#</span>
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
 
-  "index" slist => getindices("$(v)");
+  <span class="p">&quot;</span><span class="nv">index</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(v)</span><span class="s">&quot;</span><span class="p">);</span>
 
-  # Be careful if the index string contains funny chars
+  <span class="c"># Be careful if the index string contains funny chars</span>
 
-  "cindex[$(index)]" string => canonify("$(index)");
+  <span class="p">&quot;</span><span class="nv">cindex[$(index)]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="nf">canonify</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(index)</span><span class="s">&quot;</span><span class="p">);</span>
 
-  "fieldc_$(cindex[$(index)])" int => getfields("$(index).*","$(file)","=","FIELD_$(cindex[$(index)])");
+  <span class="p">&quot;</span><span class="nv">fieldc_$(cindex[$(index)])</span><span class="p">&quot;</span> <span class="kt">int</span> <span class="o">=&gt;</span> <span class="nf">getfields</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(index)</span><span class="s">.*&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(file)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;=&quot;</span><span class="p">,</span><span class="s">&quot;FIELD_</span><span class="si">$(cindex[$(index)])</span><span class="s">&quot;</span><span class="p">);</span>
 
-classes:
-  "$(cindex[$(index)])_in_file" expression => strcmp("$(index)=$($(v)[$(index)])", "$(FIELD_$(index)[1])=$(FIELD_$(index)[2])");
+<span class="kd">classes</span><span class="p">:</span>
+  <span class="s">&quot;</span><span class="si">$(cindex[$(index)])</span><span class="s">_in_file&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">strcmp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(index)</span><span class="s">=</span><span class="si">$($(v)[$(index)])</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(FIELD_$(index)[1])</span><span class="s">=</span><span class="si">$(FIELD_$(index)[2])</span><span class="s">&quot;</span><span class="p">);</span>
 
 
-delete_lines:  # delete any lhs when no match
-  "$(index)=.*",
-    ifvarclass => "!$(cindex[$(index)])_in_file";
+<span class="kd">delete_lines</span><span class="p">:</span>  <span class="c"># delete any lhs when no match</span>
+  <span class="s">&quot;</span><span class="si">$(index)</span><span class="s">=.*&quot;</span><span class="p">,</span>
+    <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;!</span><span class="si">$(cindex[$(index)])</span><span class="s">_in_file&quot;</span><span class="p">;</span>
 
 
-insert_lines:
+<span class="kd">insert_lines</span><span class="p">:</span>
 
-  "$(index)=$($(v)[$(index)])",
+  <span class="s">&quot;</span><span class="si">$(index)</span><span class="s">=</span><span class="si">$($(v)[$(index)])</span><span class="s">&quot;</span><span class="p">,</span>
 
-         comment => "Insert a variable definition",
-      ifvarclass => "!$(cindex[$(index)])_in_file";
+         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Insert a variable definition&quot;</span><span class="p">,</span>
+      <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;!</span><span class="si">$(cindex[$(index)])</span><span class="s">_in_file&quot;</span><span class="p">;</span>
 
-}
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line append_users_starting(v)
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">append_users_starting</span><span class="p">(</span><span class="nv">v</span><span class="p">)</span>
 
- # For adding to /etc/passwd or etc/shadow, needs
- # an array v[username] string => "line..."
+ <span class="c"># For adding to /etc/passwd or etc/shadow, needs</span>
+ <span class="c"># an array v[username] string =&gt; &quot;line...&quot;</span>
 
-{
-vars:
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
 
-  "index"        slist => getindices("$(v)");
+  <span class="p">&quot;</span><span class="nv">index</span><span class="p">&quot;</span>        <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(v)</span><span class="s">&quot;</span><span class="p">);</span>
 
-classes:
+<span class="kd">classes</span><span class="p">:</span>
 
-  "add_$(index)" not => userexists("$(index)");
+  <span class="s">&quot;add_</span><span class="si">$(index)</span><span class="s">&quot;</span> <span class="kr">not</span> <span class="o">=&gt;</span> <span class="nf">userexists</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(index)</span><span class="s">&quot;</span><span class="p">);</span>
 
-insert_lines:
+<span class="kd">insert_lines</span><span class="p">:</span>
 
-  "$($(v)[$(index)])",
+  <span class="s">&quot;</span><span class="si">$($(v)[$(index)])</span><span class="s">&quot;</span><span class="p">,</span>
 
-         comment => "Append users into a password file format",
-      ifvarclass => "add_$(index)";
-}
+         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Append users into a password file format&quot;</span><span class="p">,</span>
+      <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;add_</span><span class="si">$(index)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line append_groups_starting(v)
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">append_groups_starting</span><span class="p">(</span><span class="nv">v</span><span class="p">)</span>
 
- # For adding groups to /etc/group, needs
- # an array v[groupname] string => "line..."
+ <span class="c"># For adding groups to /etc/group, needs</span>
+ <span class="c"># an array v[groupname] string =&gt; &quot;line...&quot;</span>
 
-{
-vars:
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
 
-  "index"        slist => getindices("$(v)");
+  <span class="p">&quot;</span><span class="nv">index</span><span class="p">&quot;</span>        <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(v)</span><span class="s">&quot;</span><span class="p">);</span>
 
-classes:
+<span class="kd">classes</span><span class="p">:</span>
 
-  "add_$(index)" not => groupexists("$(index)");
+  <span class="s">&quot;add_</span><span class="si">$(index)</span><span class="s">&quot;</span> <span class="kr">not</span> <span class="o">=&gt;</span> <span class="nf">groupexists</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(index)</span><span class="s">&quot;</span><span class="p">);</span>
 
-insert_lines:
+<span class="kd">insert_lines</span><span class="p">:</span>
 
-  "$($(v)[$(index)])",
+  <span class="s">&quot;</span><span class="si">$($(v)[$(index)])</span><span class="s">&quot;</span><span class="p">,</span>
 
-         comment => "Append users into a group file format",
-      ifvarclass => "add_$(index)";
+         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Append users into a group file format&quot;</span><span class="p">,</span>
+      <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;add_</span><span class="si">$(index)</span><span class="s">&quot;</span><span class="p">;</span>
 
-}
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line set_colon_field(key,field,val)
-{
-field_edits:
- "$(key):.*"
-        comment => "Edit a colon-separated file, using the first field as a key",
-     edit_field => col(":","$(field)","$(val)","set");
-}
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">set_colon_field</span><span class="p">(</span><span class="nv">key</span><span class="p">,</span><span class="nv">field</span><span class="p">,</span><span class="nv">val</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kd">field_edits</span><span class="p">:</span>
+ <span class="s">&quot;</span><span class="si">$(key)</span><span class="s">:.*&quot;</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Edit a colon-separated file, using the first field as a key&quot;</span><span class="p">,</span>
+     <span class="kr">edit_field</span> <span class="o">=&gt;</span> <span class="nf">col</span><span class="p">(</span><span class="s">&quot;:&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(field)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(val)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;set&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line set_user_field(user,field,val)
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">set_user_field</span><span class="p">(</span><span class="nv">user</span><span class="p">,</span><span class="nv">field</span><span class="p">,</span><span class="nv">val</span><span class="p">)</span>
 
- # Set the value of field number "field" in
- # a :-field formatted file like /etc/passwd
+ <span class="c"># Set the value of field number &quot;field&quot; in</span>
+ <span class="c"># a :-field formatted file like /etc/passwd</span>
 
-{
-field_edits:
+<span class="p">{</span>
+<span class="kd">field_edits</span><span class="p">:</span>
 
- "$(user):.*"
+ <span class="s">&quot;</span><span class="si">$(user)</span><span class="s">:.*&quot;</span>
 
-        comment => "Edit a user attribute in the password file",
-     edit_field => col(":","$(field)","$(val)","set");
-}
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Edit a user attribute in the password file&quot;</span><span class="p">,</span>
+     <span class="kr">edit_field</span> <span class="o">=&gt;</span> <span class="nf">col</span><span class="p">(</span><span class="s">&quot;:&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(field)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(val)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;set&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line append_user_field(group,field,allusers)
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">append_user_field</span><span class="p">(</span><span class="nv">group</span><span class="p">,</span><span class="nv">field</span><span class="p">,</span><span class="nv">allusers</span><span class="p">)</span>
 
- # For adding users to to a file like /etc/group
- # at field position "field", comma separated subfields
+ <span class="c"># For adding users to to a file like /etc/group</span>
+ <span class="c"># at field position &quot;field&quot;, comma separated subfields</span>
 
-{
-vars:
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
 
-  "val" slist => { @(allusers) };
+  <span class="p">&quot;</span><span class="nv">val</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nv">@(allusers)</span> <span class="p">};</span>
 
-field_edits:
+<span class="kd">field_edits</span><span class="p">:</span>
 
- "$(group):.*"
+ <span class="s">&quot;</span><span class="si">$(group)</span><span class="s">:.*&quot;</span>
 
-       comment => "Append users into a password file format",
-    edit_field => col(":","$(field)","$(val)","alphanum");
-}
+       <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Append users into a password file format&quot;</span><span class="p">,</span>
+    <span class="kr">edit_field</span> <span class="o">=&gt;</span> <span class="nf">col</span><span class="p">(</span><span class="s">&quot;:&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(field)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(val)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;alphanum&quot;</span><span class="p">);</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle edit_line expand_template(templatefile)
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">expand_template</span><span class="p">(</span><span class="nv">templatefile</span><span class="p">)</span>
 
- # Read in the named text file and expand $(var)
- # inside the file
+ <span class="c"># Read in the named text file and expand $(var)</span>
+ <span class="c"># inside the file</span>
 
-{
-insert_lines:
+<span class="p">{</span>
+<span class="kd">insert_lines</span><span class="p">:</span>
 
-   "$(templatefile)"
+   <span class="s">&quot;</span><span class="si">$(templatefile)</span><span class="s">&quot;</span>
 
-        insert_type => "file",
-            comment => "Expand variables in the template file",
-     expand_scalars => "true";
-}
+        <span class="kr">insert_type</span> <span class="o">=&gt;</span> <span class="s">&quot;file&quot;</span><span class="p">,</span>
+            <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Expand variables in the template file&quot;</span><span class="p">,</span>
+     <span class="kr">expand_scalars</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-bundle edit_line replace_or_add(pattern,line)
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">replace_or_add</span><span class="p">(</span><span class="nv">pattern</span><span class="p">,</span><span class="nv">line</span><span class="p">)</span>
 
- # Replace a pattern in a file with a single line.
- # If the pattern is not found, add the line to the file.
- # The pattern must match the whole line (it is automatically
- # anchored to the start and end of the line) to avoid
- # ambiguity.
+ <span class="c"># Replace a pattern in a file with a single line.</span>
+ <span class="c"># If the pattern is not found, add the line to the file.</span>
+ <span class="c"># The pattern must match the whole line (it is automatically</span>
+ <span class="c"># anchored to the start and end of the line) to avoid</span>
+ <span class="c"># ambiguity.</span>
 
-{
-vars:
-  "cline" string => canonify("$(line)");
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
+  <span class="p">&quot;</span><span class="nv">cline</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="nf">canonify</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(line)</span><span class="s">&quot;</span><span class="p">);</span>
 
-replace_patterns:
-  "^(?!$(line))$(pattern)$"
-  replace_with => value("$(line)"),
-  classes => always("replace_done_$(cline)");
+<span class="kd">replace_patterns</span><span class="p">:</span>
+  <span class="s">&quot;^(?!</span><span class="si">$(line)</span><span class="s">)</span><span class="si">$(pattern)</span><span class="s">$&quot;</span>
+  <span class="kr">replace_with</span> <span class="o">=&gt;</span> <span class="nf">value</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(line)</span><span class="s">&quot;</span><span class="p">),</span>
+  <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">always</span><span class="p">(</span><span class="s">&quot;replace_done_</span><span class="si">$(cline)</span><span class="s">&quot;</span><span class="p">);</span>
 
-insert_lines:
-  "$(line)"
-    ifvarclass => "replace_done_$(cline)";
-}
+<span class="kd">insert_lines</span><span class="p">:</span>
+  <span class="s">&quot;</span><span class="si">$(line)</span><span class="s">&quot;</span>
+    <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;replace_done_</span><span class="si">$(cline)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-bundle agent cronjob(commands,user,hours,mins)
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">cronjob</span><span class="p">(</span><span class="nv">commands</span><span class="p">,</span><span class="nv">user</span><span class="p">,</span><span class="nv">hours</span><span class="p">,</span><span class="nv">mins</span><span class="p">)</span>
 
- # For adding lines to crontab for a user
- # methods:
- #  "cron" usebundle => cronjob("/bin/ls","mark","*","5,10");
+ <span class="c"># For adding lines to crontab for a user</span>
+ <span class="c"># methods:</span>
+ <span class="c">#  &quot;cron&quot; usebundle =&gt; cronjob(&quot;/bin/ls&quot;,&quot;mark&quot;,&quot;*&quot;,&quot;5,10&quot;);</span>
 
-{
-vars:
-  SuSE::
-   "crontab" string => "/var/spool/cron/tabs";
-  redhat|fedora::
-   "crontab" string => "/var/spool/cron";
- !(SuSE|redhat|fedora)::
-    "crontab" string => "/var/spool/cron/crontabs"; 
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
+  <span class="nc">SuSE</span><span class="p">::</span>
+   <span class="p">&quot;</span><span class="nv">crontab</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/var/spool/cron/tabs&quot;</span><span class="p">;</span>
+  <span class="nc">redhat|fedora</span><span class="p">::</span>
+   <span class="p">&quot;</span><span class="nv">crontab</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/var/spool/cron&quot;</span><span class="p">;</span>
+ <span class="nc">!(SuSE|redhat|fedora)</span><span class="p">::</span>
+    <span class="p">&quot;</span><span class="nv">crontab</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/var/spool/cron/crontabs&quot;</span><span class="p">;</span> 
 
-files:
+<span class="kd">files</span><span class="p">:</span>
 
-!windows::
-  "$(crontab)/$(user)" 
+<span class="nc">!windows</span><span class="p">::</span>
+  <span class="s">&quot;</span><span class="si">$(crontab)</span><span class="s">/</span><span class="si">$(user)</span><span class="s">&quot;</span> 
 
-    comment => "A user's regular batch jobs are added to this file",
-     create => "true",
-  edit_line => append_if_no_line("$(mins) $(hours) * * * $(commands)"),
-      perms => mo("644","$(user)"),
-    classes => if_repaired("changed_crontab");
+    <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;A user&#39;s regular batch jobs are added to this file&quot;</span><span class="p">,</span>
+     <span class="kr">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">,</span>
+  <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">append_if_no_line</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(mins)</span><span class="s"> </span><span class="si">$(hours)</span><span class="s"> * * * </span><span class="si">$(commands)</span><span class="s">&quot;</span><span class="p">),</span>
+      <span class="kr">perms</span> <span class="o">=&gt;</span> <span class="nf">mo</span><span class="p">(</span><span class="s">&quot;644&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(user)</span><span class="s">&quot;</span><span class="p">),</span>
+    <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_repaired</span><span class="p">(</span><span class="s">&quot;changed_crontab&quot;</span><span class="p">);</span>
 
-processes:
+<span class="kd">processes</span><span class="p">:</span>
 
-changed_crontab::
-   "cron"
-         comment => "Most crons need to be huped after file changes",
-         signals => { "hup" };
+<span class="nc">changed_crontab</span><span class="p">::</span>
+   <span class="s">&quot;cron&quot;</span>
+         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Most crons need to be huped after file changes&quot;</span><span class="p">,</span>
+         <span class="kr">signals</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;hup&quot;</span> <span class="p">};</span>
 
-}
+<span class="p">}</span>
 
 
 
-##
-## editing bodies
-##
+<span class="c">##</span>
+<span class="c">## editing bodies</span>
+<span class="c">##</span>
 
-body edit_field quoted_var(newval,method)
-{
-field_separator => "\"";
-select_field    => "2";
-value_separator  => " ";
-field_value     => "$(newval)";
-field_operation => "$(method)";
-extend_fields => "false";
-allow_blank_fields => "true";
-}
+<span class="k">body</span> <span class="k">edit_field</span> <span class="nf">quoted_var</span><span class="p">(</span><span class="nv">newval</span><span class="p">,</span><span class="nv">method</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">field_separator</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\&quot;</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">select_field</span>    <span class="o">=&gt;</span> <span class="s">&quot;2&quot;</span><span class="p">;</span>
+<span class="kr">value_separator</span>  <span class="o">=&gt;</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
+<span class="kr">field_value</span>     <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(newval)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">field_operation</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(method)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">extend_fields</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="kr">allow_blank_fields</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body edit_field col(split,col,newval,method)
-{
-field_separator    => "$(split)";
-select_field       => "$(col)";
-value_separator    => ",";
-field_value        => "$(newval)";
-field_operation    => "$(method)";
-extend_fields      => "true";
-allow_blank_fields => "true";
-}
+<span class="k">body</span> <span class="k">edit_field</span> <span class="nf">col</span><span class="p">(</span><span class="nv">split</span><span class="p">,</span><span class="nv">col</span><span class="p">,</span><span class="nv">newval</span><span class="p">,</span><span class="nv">method</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">field_separator</span>    <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(split)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">select_field</span>       <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(col)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">value_separator</span>    <span class="o">=&gt;</span> <span class="s">&quot;,&quot;</span><span class="p">;</span>
+<span class="kr">field_value</span>        <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(newval)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">field_operation</span>    <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(method)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">extend_fields</span>      <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">allow_blank_fields</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body edit_field line(split,col,newval,method)
-{
-field_separator    => "$(split)";
-select_field       => "$(col)";
-value_separator    => " ";
-field_value        => "$(newval)";
-field_operation    => "$(method)";
-extend_fields      => "true";
-allow_blank_fields => "true";
-}
+<span class="k">body</span> <span class="k">edit_field</span> <span class="nf">line</span><span class="p">(</span><span class="nv">split</span><span class="p">,</span><span class="nv">col</span><span class="p">,</span><span class="nv">newval</span><span class="p">,</span><span class="nv">method</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">field_separator</span>    <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(split)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">select_field</span>       <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(col)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">value_separator</span>    <span class="o">=&gt;</span> <span class="s">&quot; &quot;</span><span class="p">;</span>
+<span class="kr">field_value</span>        <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(newval)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">field_operation</span>    <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(method)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">extend_fields</span>      <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">allow_blank_fields</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body replace_with value(x)
-{
-replace_value => "$(x)";
-occurrences => "all";
-}
+<span class="k">body</span> <span class="k">replace_with</span> <span class="nf">value</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">replace_value</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">occurrences</span> <span class="o">=&gt;</span> <span class="s">&quot;all&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body select_region INI_section(x)
-{
-select_start => "\[$(x)\]\s*";
-select_end => "\[.*\]\s*";
-}
+<span class="k">body</span> <span class="k">select_region</span> <span class="nf">INI_section</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">select_start</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\[</span><span class="si">$(x)</span><span class="se">\]\s</span><span class="s">*&quot;</span><span class="p">;</span>
+<span class="kr">select_end</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\[</span><span class="s">.*</span><span class="se">\]\s</span><span class="s">*&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
-## edit_defaults
-##
+<span class="c">##</span>
+<span class="c">## edit_defaults</span>
+<span class="c">##</span>
 
-body edit_defaults std_defs
-{
-empty_file_before_editing => "false";
-edit_backup => "false";
-max_file_size => "300000";
-}
+<span class="k">body</span> <span class="k">edit_defaults</span> <span class="nf">std_defs</span>
+<span class="p">{</span>
+<span class="kr">empty_file_before_editing</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="kr">edit_backup</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="kr">max_file_size</span> <span class="o">=&gt;</span> <span class="s">&quot;300000&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body edit_defaults empty
-{
-empty_file_before_editing => "true";
-edit_backup => "false";
-max_file_size => "300000";
-}
+<span class="k">body</span> <span class="k">edit_defaults</span> <span class="nf">empty</span>
+<span class="p">{</span>
+<span class="kr">empty_file_before_editing</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">edit_backup</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="kr">max_file_size</span> <span class="o">=&gt;</span> <span class="s">&quot;300000&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body edit_defaults backup_timestamp
-{
-  empty_file_before_editing => "false";
-  edit_backup => "timestamp";
-  max_file_size => "300000";
-}
+<span class="k">body</span> <span class="k">edit_defaults</span> <span class="nf">backup_timestamp</span>
+<span class="p">{</span>
+  <span class="kr">empty_file_before_editing</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+  <span class="kr">edit_backup</span> <span class="o">=&gt;</span> <span class="s">&quot;timestamp&quot;</span><span class="p">;</span>
+  <span class="kr">max_file_size</span> <span class="o">=&gt;</span> <span class="s">&quot;300000&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body edit_defaults no_backup
-{
-edit_backup => "false";
-}
+<span class="k">body</span> <span class="k">edit_defaults</span> <span class="nf">no_backup</span>
+<span class="p">{</span>
+<span class="kr">edit_backup</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
-## location
-##
+<span class="c">##</span>
+<span class="c">## location</span>
+<span class="c">##</span>
 
-body location start
-{
-before_after => "before";
-}
+<span class="k">body</span> <span class="k">location</span> <span class="nf">start</span>
+<span class="p">{</span>
+<span class="kr">before_after</span> <span class="o">=&gt;</span> <span class="s">&quot;before&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body location after(str)
-{
-before_after => "after";
-select_line_matching => "$(str)";
-}
+<span class="k">body</span> <span class="k">location</span> <span class="nf">after</span><span class="p">(</span><span class="nv">str</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">before_after</span> <span class="o">=&gt;</span> <span class="s">&quot;after&quot;</span><span class="p">;</span>
+<span class="kr">select_line_matching</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(str)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
-## replace_with
-##
+<span class="c">##</span>
+<span class="c">## replace_with</span>
+<span class="c">##</span>
 
-##
+<span class="c">##</span>
 
-body replace_with comment(c)
-{
-replace_value => "$(c) $(match.1)";
-occurrences => "all";
-}
+<span class="k">body</span> <span class="k">replace_with</span> <span class="nf">comment</span><span class="p">(</span><span class="nv">c</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">replace_value</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(c)</span><span class="s"> </span><span class="si">$(match.1)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">occurrences</span> <span class="o">=&gt;</span> <span class="s">&quot;all&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body replace_with uncomment
-{
-replace_value => "$(match.1)";
-occurrences => "all";
-}
+<span class="k">body</span> <span class="k">replace_with</span> <span class="nf">uncomment</span>
+<span class="p">{</span>
+<span class="kr">replace_value</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(match.1)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">occurrences</span> <span class="o">=&gt;</span> <span class="s">&quot;all&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-####################################################
-## agent bodyparts
-####################################################
+<span class="c">####################################################</span>
+<span class="c">## agent bodyparts</span>
+<span class="c">####################################################</span>
 
-##
-## action
-##
+<span class="c">##</span>
+<span class="c">## action</span>
+<span class="c">##</span>
 
-body action if_elapsed(x)
-{
-ifelapsed => "$(x)";
-expireafter => "$(x)";
-}
+<span class="k">body</span> <span class="k">action</span> <span class="nf">if_elapsed</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">expireafter</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body action measure_performance(x)
-{
-measurement_class => "Detect changes in $(this.promiser)";
-ifelapsed => "$(x)";
-expireafter => "$(x)";
-}
+<span class="k">body</span> <span class="k">action</span> <span class="nf">measure_performance</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">measurement_class</span> <span class="o">=&gt;</span> <span class="s">&quot;Detect changes in </span><span class="si">$(this.promiser)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">expireafter</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body action warn_only
-{
-action_policy => "warn";
-ifelapsed => "60";
-}
+<span class="k">body</span> <span class="k">action</span> <span class="nf">warn_only</span>
+<span class="p">{</span>
+<span class="kr">action_policy</span> <span class="o">=&gt;</span> <span class="s">&quot;warn&quot;</span><span class="p">;</span>
+<span class="kr">ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;60&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body action bg(elapsed,expire)
-{
-ifelapsed   => "$(elapsed)";
-expireafter => "$(expire)";
-background  => "true";
-}
+<span class="k">body</span> <span class="k">action</span> <span class="nf">bg</span><span class="p">(</span><span class="nv">elapsed</span><span class="p">,</span><span class="nv">expire</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">ifelapsed</span>   <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(elapsed)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">expireafter</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(expire)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">background</span>  <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body action ifwin_bg
-{
-windows::
-background => "true";
-}
+<span class="k">body</span> <span class="k">action</span> <span class="nf">ifwin_bg</span>
+<span class="p">{</span>
+<span class="nc">windows</span><span class="p">::</span>
+<span class="kr">background</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body action immediate
-{
-ifelapsed => "0";
-}
+<span class="k">body</span> <span class="k">action</span> <span class="nf">immediate</span>
+<span class="p">{</span>
+<span class="kr">ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;0&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body action policy(p)
-{
-action_policy => "$(p)";
-}
+<span class="k">body</span> <span class="k">action</span> <span class="nf">policy</span><span class="p">(</span><span class="nv">p</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">action_policy</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(p)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-# Log a message to log=[/file|stdout]
+<span class="c"># Log a message to log=[/file|stdout]</span>
 
-body action log_repaired(log,message)
-{
-log_string => "$(sys.date), $(message)";
-log_repaired => "$(log)";
-}
+<span class="k">body</span> <span class="k">action</span> <span class="nf">log_repaired</span><span class="p">(</span><span class="nv">log</span><span class="p">,</span><span class="nv">message</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">log_string</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(sys.date)</span><span class="s">, </span><span class="si">$(message)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">log_repaired</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(log)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-###
+<span class="c">###</span>
 
-body action log_verbose
-{
-log_level => "verbose";
-}
+<span class="k">body</span> <span class="k">action</span> <span class="nf">log_verbose</span>
+<span class="p">{</span>
+<span class="kr">log_level</span> <span class="o">=&gt;</span> <span class="s">&quot;verbose&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
-## contain
-##
+<span class="c">##</span>
+<span class="c">## contain</span>
+<span class="c">##</span>
 
-body contain silent
-{
-no_output => "true";
-}
+<span class="k">body</span> <span class="k">contain</span> <span class="nf">silent</span>
+<span class="p">{</span>
+<span class="kr">no_output</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body contain in_dir(s)
-{
-chdir => "$(s)";
-}
+<span class="k">body</span> <span class="k">contain</span> <span class="nf">in_dir</span><span class="p">(</span><span class="nv">s</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">chdir</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(s)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body contain in_dir_shell(s)
-{
-chdir => "$(s)";
-useshell => "true";
-}
+<span class="k">body</span> <span class="k">contain</span> <span class="nf">in_dir_shell</span><span class="p">(</span><span class="nv">s</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">chdir</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(s)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">useshell</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body contain silent_in_dir(s)
-{
-chdir => "$(s)";
-no_output => "true";
-}
+<span class="k">body</span> <span class="k">contain</span> <span class="nf">silent_in_dir</span><span class="p">(</span><span class="nv">s</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">chdir</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(s)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">no_output</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body contain in_shell
-{
-useshell => "true";
-}
+<span class="k">body</span> <span class="k">contain</span> <span class="nf">in_shell</span>
+<span class="p">{</span>
+<span class="kr">useshell</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body contain in_shell_bg
-{
-useshell => "true";
-background => "true";
-}
+<span class="k">body</span> <span class="k">contain</span> <span class="nf">in_shell_bg</span>
+<span class="p">{</span>
+<span class="kr">useshell</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">background</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body contain in_shell_and_silent
-{
-useshell => "true";
-no_output => "true";
-}
+<span class="k">body</span> <span class="k">contain</span> <span class="nf">in_shell_and_silent</span>
+<span class="p">{</span>
+<span class="kr">useshell</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">no_output</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body contain setuid(x)
-{
-exec_owner => "$(x)";
-useshell => "false";
-}
+<span class="k">body</span> <span class="k">contain</span> <span class="nf">setuid</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">exec_owner</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">useshell</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body contain setuid_sh(x)
-{
-exec_owner => "$(x)";
-useshell => "true";
-}
+<span class="k">body</span> <span class="k">contain</span> <span class="nf">setuid_sh</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">exec_owner</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">useshell</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body contain setuidgid_sh(owner,group)
-{
-exec_owner => "$(owner)";
-exec_group => "$(group)";
-useshell => "true";
-}
+<span class="k">body</span> <span class="k">contain</span> <span class="nf">setuidgid_sh</span><span class="p">(</span><span class="nv">owner</span><span class="p">,</span><span class="nv">group</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">exec_owner</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(owner)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">exec_group</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(group)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">useshell</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body contain jail(owner,root,dir)
-{
-exec_owner => "$(owner)";
-useshell => "true";
-chdir => "$(dir)";
-chroot => "$(root)";
-}
+<span class="k">body</span> <span class="k">contain</span> <span class="nf">jail</span><span class="p">(</span><span class="nv">owner</span><span class="p">,</span><span class="nv">root</span><span class="p">,</span><span class="nv">dir</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">exec_owner</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(owner)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">useshell</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">chdir</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(dir)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">chroot</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(root)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
 
-##
-## classes
-##
+<span class="c">##</span>
+<span class="c">## classes</span>
+<span class="c">##</span>
 
 
-body classes if_repaired(x)
-{
-promise_repaired => { "$(x)" };
-}
+<span class="k">body</span> <span class="k">classes</span> <span class="nf">if_repaired</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">promise_repaired</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body classes if_else(yes,no)
+<span class="k">body</span> <span class="k">classes</span> <span class="nf">if_else</span><span class="p">(</span><span class="nv">yes</span><span class="p">,</span><span class="nv">no</span><span class="p">)</span>
 
-{
-promise_kept     => { "$(yes)" };
-promise_repaired => { "$(yes)" };
-repair_failed    => { "$(no)" };
-repair_denied    => { "$(no)" };
-repair_timeout   => { "$(no)" };
-}
+<span class="p">{</span>
+<span class="kr">promise_kept</span>     <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(yes)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">promise_repaired</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(yes)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">repair_failed</span>    <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(no)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">repair_denied</span>    <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(no)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">repair_timeout</span>   <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(no)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body classes cf2_if_else(yes,no)
+<span class="k">body</span> <span class="k">classes</span> <span class="nf">cf2_if_else</span><span class="p">(</span><span class="nv">yes</span><span class="p">,</span><span class="nv">no</span><span class="p">)</span>
 
-# meant to match cf2 semantics
+<span class="c"># meant to match cf2 semantics</span>
 
-{
-promise_repaired => { "$(yes)" };
-repair_failed    => { "$(no)" };
-repair_denied    => { "$(no)" };
-repair_timeout   => { "$(no)" };
-}
+<span class="p">{</span>
+<span class="kr">promise_repaired</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(yes)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">repair_failed</span>    <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(no)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">repair_denied</span>    <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(no)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">repair_timeout</span>   <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(no)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body classes if_notkept(x)
-{
-repair_failed   => { "$(x)" };
-repair_denied   => { "$(x)" };
-repair_timeout  => { "$(x)" };
-}
+<span class="k">body</span> <span class="k">classes</span> <span class="nf">if_notkept</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">repair_failed</span>   <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">repair_denied</span>   <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">repair_timeout</span>  <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body classes if_ok(x)
-{
-promise_repaired => { "$(x)" };
-promise_kept => { "$(x)" };
-}
+<span class="k">body</span> <span class="k">classes</span> <span class="nf">if_ok</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">promise_repaired</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">promise_kept</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body classes cmd_repair(code,cl)
-{
-repaired_returncodes => { "$(code)" };
-promise_repaired => { "$(cl)" };
-}
+<span class="k">body</span> <span class="k">classes</span> <span class="nf">cmd_repair</span><span class="p">(</span><span class="nv">code</span><span class="p">,</span><span class="nv">cl</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">repaired_returncodes</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(code)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">promise_repaired</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(cl)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-##
-## Persistent classes
-##
+<span class="c">##</span>
+<span class="c">## Persistent classes</span>
+<span class="c">##</span>
 
-body classes state_repaired(x)
-{
-promise_repaired => { "$(x)" };
-persist_time => "10";
-}
+<span class="k">body</span> <span class="k">classes</span> <span class="nf">state_repaired</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">promise_repaired</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">persist_time</span> <span class="o">=&gt;</span> <span class="s">&quot;10&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body classes enumerate(x)
+<span class="k">body</span> <span class="k">classes</span> <span class="nf">enumerate</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
 
-#
-# This is used by commercial editions to count 
-# instances of jobs in a cluster
-#
+<span class="c">#</span>
+<span class="c"># This is used by commercial editions to count </span>
+<span class="c"># instances of jobs in a cluster</span>
+<span class="c">#</span>
 
-{
-promise_repaired => { "mXC_$(x)" };
-promise_kept => { "mXC_$(x)" };
-persist_time => "15";
-}
+<span class="p">{</span>
+<span class="kr">promise_repaired</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;mXC_</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">promise_kept</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;mXC_</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">persist_time</span> <span class="o">=&gt;</span> <span class="s">&quot;15&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body classes always(x)
+<span class="k">body</span> <span class="k">classes</span> <span class="nf">always</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
 
-# Define a class no matter what the outcome of the promise is
+<span class="c"># Define a class no matter what the outcome of the promise is</span>
 
-{
-  promise_repaired => { "$(x)" };
-  promise_kept => { "$(x)" };
-  repair_failed => { "$(x)" };
-  repair_denied => { "$(x)" };
-  repair_timeout => { "$(x)" };
-}
+<span class="p">{</span>
+  <span class="kr">promise_repaired</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+  <span class="kr">promise_kept</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+  <span class="kr">repair_failed</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+  <span class="kr">repair_denied</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+  <span class="kr">repair_timeout</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-###################################################
-# agent bundles
-###################################################
+<span class="c">###################################################</span>
+<span class="c"># agent bundles</span>
+<span class="c">###################################################</span>
 
 
-##..................................................
-## files promises
-##..................................................
+<span class="c">##..................................................</span>
+<span class="c">## files promises</span>
+<span class="c">##..................................................</span>
 
-##
-## copy_from
-##
+<span class="c">##</span>
+<span class="c">## copy_from</span>
+<span class="c">##</span>
 
-body copy_from secure_cp(from,server)
-{
-source      => "$(from)";
-servers     => { "$(server)" };
-compare     => "digest";
-encrypt     => "true";
-verify      => "true";
-}
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">secure_cp</span><span class="p">(</span><span class="nv">from</span><span class="p">,</span><span class="nv">server</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">servers</span>     <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(server)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">compare</span>     <span class="o">=&gt;</span> <span class="s">&quot;digest&quot;</span><span class="p">;</span>
+<span class="kr">encrypt</span>     <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">verify</span>      <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body copy_from remote_cp(from,server)
-{
-servers     => { "$(server)" };
-source      => "$(from)";
-compare     => "mtime";
-}
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">remote_cp</span><span class="p">(</span><span class="nv">from</span><span class="p">,</span><span class="nv">server</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">servers</span>     <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(server)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">compare</span>     <span class="o">=&gt;</span> <span class="s">&quot;mtime&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body copy_from remote_dcp(from,server)
-{
-servers     => { "$(server)" };
-source      => "$(from)";
-compare     => "digest";
-}
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">remote_dcp</span><span class="p">(</span><span class="nv">from</span><span class="p">,</span><span class="nv">server</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">servers</span>     <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(server)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">compare</span>     <span class="o">=&gt;</span> <span class="s">&quot;digest&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body copy_from local_cp(from)
-{
-source      => "$(from)";
-}
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">local_cp</span><span class="p">(</span><span class="nv">from</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body copy_from local_dcp(from)
-{
-source      => "$(from)";
-compare     => "digest";
-}
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">local_dcp</span><span class="p">(</span><span class="nv">from</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">compare</span>     <span class="o">=&gt;</span> <span class="s">&quot;digest&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body copy_from perms_cp(from)
-{
-source      => "$(from)";
-preserve    => "true";
-}
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">perms_cp</span><span class="p">(</span><span class="nv">from</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">preserve</span>    <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-body copy_from backup_local_cp(from)
-# Local copy, keeping a backup of old versions
-{
-  source      => "$(from)";
-  copy_backup => "timestamp";
-}
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">backup_local_cp</span><span class="p">(</span><span class="nv">from</span><span class="p">)</span>
+<span class="c"># Local copy, keeping a backup of old versions</span>
+<span class="p">{</span>
+  <span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+  <span class="kr">copy_backup</span> <span class="o">=&gt;</span> <span class="s">&quot;timestamp&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-# Copy only if the file does not already exist, i.e. seed the placement
+<span class="c"># Copy only if the file does not already exist, i.e. seed the placement</span>
 
-body copy_from seed_cp(from)
-{
-source      => "$(from)";
-compare     => "exists";
-}
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">seed_cp</span><span class="p">(</span><span class="nv">from</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">compare</span>     <span class="o">=&gt;</span> <span class="s">&quot;exists&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body copy_from sync_cp(from,server)
-{
-servers     => { "$(server)" };
-source      => "$(from)";
-purge       => "true";
-preserve    => "true";
-type_check  => "false";
-}
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">sync_cp</span><span class="p">(</span><span class="nv">from</span><span class="p">,</span><span class="nv">server</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">servers</span>     <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(server)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">purge</span>       <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">preserve</span>    <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">type_check</span>  <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body copy_from no_backup_cp(from)
-{
-source      => "$(from)";
-copy_backup => "false";
-}
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">no_backup_cp</span><span class="p">(</span><span class="nv">from</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">copy_backup</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body copy_from no_backup_dcp(from)
-{
-source      => "$(from)";
-copy_backup => "false";
-compare     => "digest";
-}
-
-##
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">no_backup_dcp</span><span class="p">(</span><span class="nv">from</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">copy_backup</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="kr">compare</span>     <span class="o">=&gt;</span> <span class="s">&quot;digest&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
 
-body copy_from no_backup_rcp(from,server)
-{
-servers     => { "$(server)" };
-source      => "$(from)";
-compare     => "mtime";
-copy_backup => "false";
-}
+<span class="k">body</span> <span class="k">copy_from</span> <span class="nf">no_backup_rcp</span><span class="p">(</span><span class="nv">from</span><span class="p">,</span><span class="nv">server</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">servers</span>     <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(server)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">source</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">compare</span>     <span class="o">=&gt;</span> <span class="s">&quot;mtime&quot;</span><span class="p">;</span>
+<span class="kr">copy_backup</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
-## link_from
-##
-
-body link_from ln_s(x)
-{
-link_type => "symlink";
-source => "$(x)";
-when_no_source => "force";
-}
+<span class="c">##</span>
+<span class="c">## link_from</span>
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">link_from</span> <span class="nf">ln_s</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">link_type</span> <span class="o">=&gt;</span> <span class="s">&quot;symlink&quot;</span><span class="p">;</span>
+<span class="kr">source</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">when_no_source</span> <span class="o">=&gt;</span> <span class="s">&quot;force&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body link_from linkchildren(tofile)
-{
-source        => "$(tofile)";
-link_type     => "symlink";
-when_no_source  => "force";
-link_children => "true";
-when_linking_children => "if_no_such_file"; # "override_file";
-}
-
-##
-## perms
-##
+<span class="k">body</span> <span class="k">link_from</span> <span class="nf">linkchildren</span><span class="p">(</span><span class="nv">tofile</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">source</span>        <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(tofile)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">link_type</span>     <span class="o">=&gt;</span> <span class="s">&quot;symlink&quot;</span><span class="p">;</span>
+<span class="kr">when_no_source</span>  <span class="o">=&gt;</span> <span class="s">&quot;force&quot;</span><span class="p">;</span>
+<span class="kr">link_children</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">when_linking_children</span> <span class="o">=&gt;</span> <span class="s">&quot;if_no_such_file&quot;</span><span class="p">;</span> <span class="c"># &quot;override_file&quot;;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+<span class="c">## perms</span>
+<span class="c">##</span>
 
-body perms m(mode)
-{
-mode   => "$(mode)";
-}
+<span class="k">body</span> <span class="k">perms</span> <span class="nf">m</span><span class="p">(</span><span class="nv">mode</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">mode</span>   <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(mode)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body perms mo(mode,user)
-{
-owners => { "$(user)" };
-mode   => "$(mode)";
-}
+<span class="k">body</span> <span class="k">perms</span> <span class="nf">mo</span><span class="p">(</span><span class="nv">mode</span><span class="p">,</span><span class="nv">user</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">owners</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(user)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">mode</span>   <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(mode)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body perms mog(mode,user,group)
-{
-owners => { "$(user)" };
-groups => { "$(group)" };
-mode   => "$(mode)";
-}
+<span class="k">body</span> <span class="k">perms</span> <span class="nf">mog</span><span class="p">(</span><span class="nv">mode</span><span class="p">,</span><span class="nv">user</span><span class="p">,</span><span class="nv">group</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">owners</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(user)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">groups</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(group)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">mode</span>   <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(mode)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
-
-body perms og(u,g)
-{
-owners => { "$(u)" };
-groups => { "$(g)" };
-}
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">perms</span> <span class="nf">og</span><span class="p">(</span><span class="nv">u</span><span class="p">,</span><span class="nv">g</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">owners</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(u)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">groups</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(g)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body perms owner(user)
-{
-owners => { "$(user)" };
-}
+<span class="k">body</span> <span class="k">perms</span> <span class="nf">owner</span><span class="p">(</span><span class="nv">user</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">owners</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(user)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-##
-## ACLS (extended Unix perms)
-##
+<span class="c">##</span>
+<span class="c">## ACLS (extended Unix perms)</span>
+<span class="c">##</span>
 
-body acl access_generic(acl)
-# default/inherited ACLs are left unchanged,
-# applicable for both files and directories on all platforms
-{
-acl_method => "overwrite";
-aces => { "@(acl)" };
-
-windows::
-acl_type => "ntfs";
+<span class="k">body</span> <span class="k">acl</span> <span class="nf">access_generic</span><span class="p">(</span><span class="nv">acl</span><span class="p">)</span>
+<span class="c"># default/inherited ACLs are left unchanged,</span>
+<span class="c"># applicable for both files and directories on all platforms</span>
+<span class="p">{</span>
+<span class="kr">acl_method</span> <span class="o">=&gt;</span> <span class="s">&quot;overwrite&quot;</span><span class="p">;</span>
+<span class="kr">aces</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;@(acl)&quot;</span> <span class="p">};</span>
+
+<span class="nc">windows</span><span class="p">::</span>
+<span class="kr">acl_type</span> <span class="o">=&gt;</span> <span class="s">&quot;ntfs&quot;</span><span class="p">;</span>
 
-!windows::
-acl_type => "posix";
-}
+<span class="nc">!windows</span><span class="p">::</span>
+<span class="kr">acl_type</span> <span class="o">=&gt;</span> <span class="s">&quot;posix&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
-
-body acl ntfs(acl)
-{
-acl_type => "ntfs";
-acl_method => "overwrite";
-aces => { "@(acl)" };
-}
-
-##
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">acl</span> <span class="nf">ntfs</span><span class="p">(</span><span class="nv">acl</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">acl_type</span> <span class="o">=&gt;</span> <span class="s">&quot;ntfs&quot;</span><span class="p">;</span>
+<span class="kr">acl_method</span> <span class="o">=&gt;</span> <span class="s">&quot;overwrite&quot;</span><span class="p">;</span>
+<span class="kr">aces</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;@(acl)&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
 
-body acl strict
-# NOTE: May need to take ownership of file/dir
-# to be sure no-one else is allowed access
-{
-acl_method => "overwrite";
-
-windows::
-aces => { "user:Administrator:rwx" };
-!windows::
-aces => { "user:root:rwx" };
-}
+<span class="k">body</span> <span class="k">acl</span> <span class="nf">strict</span>
+<span class="c"># NOTE: May need to take ownership of file/dir</span>
+<span class="c"># to be sure no-one else is allowed access</span>
+<span class="p">{</span>
+<span class="kr">acl_method</span> <span class="o">=&gt;</span> <span class="s">&quot;overwrite&quot;</span><span class="p">;</span>
+
+<span class="nc">windows</span><span class="p">::</span>
+<span class="kr">aces</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;user:Administrator:rwx&quot;</span> <span class="p">};</span>
+<span class="nc">!windows</span><span class="p">::</span>
+<span class="kr">aces</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;user:root:rwx&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-##
-## depth_search
-##
+<span class="c">##</span>
+<span class="c">## depth_search</span>
+<span class="c">##</span>
 
-body depth_search recurse(d)
-
-{
-depth => "$(d)";
-xdev  => "true";
-}
-
-##
+<span class="k">body</span> <span class="k">depth_search</span> <span class="nf">recurse</span><span class="p">(</span><span class="nv">d</span><span class="p">)</span>
+
+<span class="p">{</span>
+<span class="kr">depth</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(d)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">xdev</span>  <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
 
-body depth_search recurse_ignore(d,list)
-{
-depth => "$(d)";
-exclude_dirs => { @(list) };
-}
-
-##
+<span class="k">body</span> <span class="k">depth_search</span> <span class="nf">recurse_ignore</span><span class="p">(</span><span class="nv">d</span><span class="p">,</span><span class="nv">list</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">depth</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(d)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">exclude_dirs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nv">@(list)</span> <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
 
-body depth_search include_base
-{
-include_basedir => "true";
-}
-
-##
-## delete
-##
-
-body delete tidy
+<span class="k">body</span> <span class="k">depth_search</span> <span class="nf">include_base</span>
+<span class="p">{</span>
+<span class="kr">include_basedir</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+<span class="c">## delete</span>
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">delete</span> <span class="nf">tidy</span>
 
-{
-dirlinks => "delete";
-rmdirs   => "true";
-}
+<span class="p">{</span>
+<span class="kr">dirlinks</span> <span class="o">=&gt;</span> <span class="s">&quot;delete&quot;</span><span class="p">;</span>
+<span class="kr">rmdirs</span>   <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
-## rename
-##
+<span class="c">##</span>
+<span class="c">## rename</span>
+<span class="c">##</span>
 
-body rename disable
-{
-disable => "true";
-}
+<span class="k">body</span> <span class="k">rename</span> <span class="nf">disable</span>
+<span class="p">{</span>
+<span class="kr">disable</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body rename rotate(level)
-{
-rotate => "$(level)";
-}
+<span class="k">body</span> <span class="k">rename</span> <span class="nf">rotate</span><span class="p">(</span><span class="nv">level</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">rotate</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(level)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body rename to(file)
-{
-newname => "$(file)";
-}
+<span class="k">body</span> <span class="k">rename</span> <span class="nf">to</span><span class="p">(</span><span class="nv">file</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">newname</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(file)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
-## file_select
-##
+<span class="c">##</span>
+<span class="c">## file_select</span>
+<span class="c">##</span>
 
-body file_select name_age(name,days)
-{
-leaf_name   => { "$(name)" };
-mtime       => irange(0,ago(0,0,"$(days)",0,0,0));  
-file_result => "mtime.leaf_name"; 
-}
-
-##
+<span class="k">body</span> <span class="k">file_select</span> <span class="nf">name_age</span><span class="p">(</span><span class="nv">name</span><span class="p">,</span><span class="nv">days</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">leaf_name</span>   <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="kr">mtime</span>       <span class="o">=&gt;</span> <span class="nf">irange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nf">ago</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(days)</span><span class="s">&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">));</span>  
+<span class="kr">file_result</span> <span class="o">=&gt;</span> <span class="s">&quot;mtime.leaf_name&quot;</span><span class="p">;</span> 
+<span class="p">}</span>
+
+<span class="c">##</span>
 
-body file_select days_old(days)
-{
-mtime       => irange(0,ago(0,0,"$(days)",0,0,0));
-file_result => "mtime";
-}
-
-##
-
-body file_select size_range(from,to)
-{
-search_size => irange("$(from)","$(to)");
-file_result => "size";
-}
-
-##
+<span class="k">body</span> <span class="k">file_select</span> <span class="nf">days_old</span><span class="p">(</span><span class="nv">days</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">mtime</span>       <span class="o">=&gt;</span> <span class="nf">irange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nf">ago</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(days)</span><span class="s">&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">));</span>
+<span class="kr">file_result</span> <span class="o">=&gt;</span> <span class="s">&quot;mtime&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">file_select</span> <span class="nf">size_range</span><span class="p">(</span><span class="nv">from</span><span class="p">,</span><span class="nv">to</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">search_size</span> <span class="o">=&gt;</span> <span class="nf">irange</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(from)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(to)</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="kr">file_result</span> <span class="o">=&gt;</span> <span class="s">&quot;size&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
 
-body file_select exclude(name)
-{
-leaf_name  => { "$(name)"};
-file_result => "!leaf_name";
-}
+<span class="k">body</span> <span class="k">file_select</span> <span class="nf">exclude</span><span class="p">(</span><span class="nv">name</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">leaf_name</span>  <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">&quot;</span><span class="p">};</span>
+<span class="kr">file_result</span> <span class="o">=&gt;</span> <span class="s">&quot;!leaf_name&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body file_select plain
-{
-file_types  => { "plain" };
-file_result => "file_types";
-}
+<span class="k">body</span> <span class="k">file_select</span> <span class="nf">plain</span>
+<span class="p">{</span>
+<span class="kr">file_types</span>  <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;plain&quot;</span> <span class="p">};</span>
+<span class="kr">file_result</span> <span class="o">=&gt;</span> <span class="s">&quot;file_types&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-body file_select dirs
-{
-file_types  => { "dir" };
-file_result => "file_types";
-}
+<span class="k">body</span> <span class="k">file_select</span> <span class="nf">dirs</span>
+<span class="p">{</span>
+<span class="kr">file_types</span>  <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;dir&quot;</span> <span class="p">};</span>
+<span class="kr">file_result</span> <span class="o">=&gt;</span> <span class="s">&quot;file_types&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
-
-body file_select by_name(names)
-{
-leaf_name  => { @(names)};
-file_result => "leaf_name";
-}
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">file_select</span> <span class="nf">by_name</span><span class="p">(</span><span class="nv">names</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">leaf_name</span>  <span class="o">=&gt;</span> <span class="p">{</span> <span class="nv">@(names)</span><span class="p">};</span>
+<span class="kr">file_result</span> <span class="o">=&gt;</span> <span class="s">&quot;leaf_name&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body file_select ex_list(names)
-{
-leaf_name  => { @(names)};
-file_result => "!leaf_name";
-}
-
-##
-## changes
-##
-
-body changes detect_all_change
-
-# This is fierce, and will cost disk cycles
-
-{
-hash           => "best";
-report_changes => "all";
-update_hashes  => "yes";
-}
-
-##
-
-body changes detect_content
-
-# This is a cheaper alternative
-
-{
-hash           => "md5";
-report_changes => "content";
-update_hashes  => "yes";
-}
-
-##
-
-body changes noupdate
-# Use on (small) files that should never change
-{
-hash           => "sha256";
-report_changes => "content";
-update_hashes  => "no";
-}
-
-##
-
-body changes diff
-# Generates diff report (Nova and above)
-{
-hash           => "sha256";
-report_changes => "content";
-report_diffs   => "true";
-update_hashes  => "yes";
-}
-
-##
-
-body changes diff_noupdate
-{
-hash           => "sha256";
-report_changes => "content";
-report_diffs   => "true";
-update_hashes  => "no";
-}
-
-##--------------------------------------------------------------
-## Packages promises
-##--------------------------------------------------------------
-
-body package_method zypper
+<span class="k">body</span> <span class="k">file_select</span> <span class="nf">ex_list</span><span class="p">(</span><span class="nv">names</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">leaf_name</span>  <span class="o">=&gt;</span> <span class="p">{</span> <span class="nv">@(names)</span><span class="p">};</span>
+<span class="kr">file_result</span> <span class="o">=&gt;</span> <span class="s">&quot;!leaf_name&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+<span class="c">## changes</span>
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">changes</span> <span class="nf">detect_all_change</span>
+
+<span class="c"># This is fierce, and will cost disk cycles</span>
+
+<span class="p">{</span>
+<span class="kr">hash</span>           <span class="o">=&gt;</span> <span class="s">&quot;best&quot;</span><span class="p">;</span>
+<span class="kr">report_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;all&quot;</span><span class="p">;</span>
+<span class="kr">update_hashes</span>  <span class="o">=&gt;</span> <span class="s">&quot;yes&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">changes</span> <span class="nf">detect_content</span>
+
+<span class="c"># This is a cheaper alternative</span>
+
+<span class="p">{</span>
+<span class="kr">hash</span>           <span class="o">=&gt;</span> <span class="s">&quot;md5&quot;</span><span class="p">;</span>
+<span class="kr">report_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;content&quot;</span><span class="p">;</span>
+<span class="kr">update_hashes</span>  <span class="o">=&gt;</span> <span class="s">&quot;yes&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">changes</span> <span class="nf">noupdate</span>
+<span class="c"># Use on (small) files that should never change</span>
+<span class="p">{</span>
+<span class="kr">hash</span>           <span class="o">=&gt;</span> <span class="s">&quot;sha256&quot;</span><span class="p">;</span>
+<span class="kr">report_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;content&quot;</span><span class="p">;</span>
+<span class="kr">update_hashes</span>  <span class="o">=&gt;</span> <span class="s">&quot;no&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">changes</span> <span class="nf">diff</span>
+<span class="c"># Generates diff report (Nova and above)</span>
+<span class="p">{</span>
+<span class="kr">hash</span>           <span class="o">=&gt;</span> <span class="s">&quot;sha256&quot;</span><span class="p">;</span>
+<span class="kr">report_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;content&quot;</span><span class="p">;</span>
+<span class="kr">report_diffs</span>   <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">update_hashes</span>  <span class="o">=&gt;</span> <span class="s">&quot;yes&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">changes</span> <span class="nf">diff_noupdate</span>
+<span class="p">{</span>
+<span class="kr">hash</span>           <span class="o">=&gt;</span> <span class="s">&quot;sha256&quot;</span><span class="p">;</span>
+<span class="kr">report_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;content&quot;</span><span class="p">;</span>
+<span class="kr">report_diffs</span>   <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">update_hashes</span>  <span class="o">=&gt;</span> <span class="s">&quot;no&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##--------------------------------------------------------------</span>
+<span class="c">## Packages promises</span>
+<span class="c">##--------------------------------------------------------------</span>
+
+<span class="k">body</span> <span class="k">package_method</span> <span class="nf">zypper</span>
 
-{
-package_changes => "bulk";
+<span class="p">{</span>
+<span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;bulk&quot;</span><span class="p">;</span>
 
-package_list_command => "/bin/rpm -qa --queryformat \"i | repos | %{name} | %{version}-%{release} | %{arch}\n\"";
+<span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -qa --queryformat </span><span class="se">\&quot;</span><span class="s">i | repos | %{name} | %{version}-%{release} | %{arch}</span><span class="se">\n\&quot;</span><span class="s">&quot;</span><span class="p">;</span>
 
-# set it to "0" to avoid caching of list during upgrade
-package_list_update_ifelapsed => "240";
+<span class="c"># set it to &quot;0&quot; to avoid caching of list during upgrade</span>
+<span class="kr">package_list_update_ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;240&quot;</span><span class="p">;</span>
 
-package_patch_list_command => "/usr/bin/zypper patches";
-package_installed_regex => "i.*";
-package_list_name_regex    => "[^|]+\|[^|]+\|\s+([^\s]+).*";
-package_list_version_regex => "[^|]+\|[^|]+\|[^|]+\|\s+([^\s]+).*";
-package_list_arch_regex    => "[^|]+\|[^|]+\|[^|]+\|[^|]+\|\s+([^\s]+).*";
+<span class="kr">package_patch_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper patches&quot;</span><span class="p">;</span>
+<span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;i.*&quot;</span><span class="p">;</span>
+<span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_list_arch_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
 
-package_patch_installed_regex => ".*Installed.*|.*Not Applicable.*";
-package_patch_name_regex    => "[^|]+\|\s+([^\s]+).*";
-package_patch_version_regex => "[^|]+\|[^|]+\|\s+([^\s]+).*";
+<span class="kr">package_patch_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*Installed.*|.*Not Applicable.*&quot;</span><span class="p">;</span>
+<span class="kr">package_patch_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_patch_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
 
-package_name_convention => "$(name)";
-package_add_command => "/usr/bin/zypper --non-interactive install";
-package_delete_command => "/usr/bin/zypper --non-interactive remove --force-resolution";
-package_update_command => "/usr/bin/zypper --non-interactive update";
+<span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper --non-interactive install&quot;</span><span class="p">;</span>
+<span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper --non-interactive remove --force-resolution&quot;</span><span class="p">;</span>
+<span class="kr">package_update_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper --non-interactive update&quot;</span><span class="p">;</span>
 
-package_patch_command => "/usr/bin/zypper --non-interactive patch$"; # $ means no args
-package_verify_command => "/usr/bin/zypper --non-interactive verify$";
-}
+<span class="kr">package_patch_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper --non-interactive patch$&quot;</span><span class="p">;</span> <span class="c"># $ means no args</span>
+<span class="kr">package_verify_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper --non-interactive verify$&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body package_method apt
-{
-package_changes => "bulk";
-package_list_command => "/usr/bin/dpkg -l"; 
-package_list_name_regex    => "ii\s+([^\s]+).*"; 
-package_list_version_regex => "ii\s+[^\s]+\s+([^\s]+).*";
-package_installed_regex => ".*"; # all reported are installed
-package_name_convention => "$(name)"; 
+<span class="k">body</span> <span class="k">package_method</span> <span class="nf">apt</span>
+<span class="p">{</span>
+<span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;bulk&quot;</span><span class="p">;</span>
+<span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/dpkg -l&quot;</span><span class="p">;</span> 
+<span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;ii</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span> 
+<span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;ii</span><span class="se">\s</span><span class="s">+[^</span><span class="se">\s</span><span class="s">]+</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*&quot;</span><span class="p">;</span> <span class="c"># all reported are installed</span>
+<span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">&quot;</span><span class="p">;</span> 
 
-# set it to "0" to avoid caching of list during upgrade
-package_list_update_ifelapsed => "240";
+<span class="c"># set it to &quot;0&quot; to avoid caching of list during upgrade</span>
+<span class="kr">package_list_update_ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;240&quot;</span><span class="p">;</span>
 
-have_aptitude:: 
-   package_add_command => "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes install";
-   package_list_update_command => "/usr/bin/aptitude update";
-   package_delete_command => "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes -q remove";
-   package_update_command =>  "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes install";
-   package_verify_command =>  "/usr/bin/aptitude show";
-   package_noverify_regex => "(State: not installed|E: Unable to locate package .*)";
+<span class="nc">have_aptitude</span><span class="p">::</span> 
+   <span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes install&quot;</span><span class="p">;</span>
+   <span class="kr">package_list_update_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/aptitude update&quot;</span><span class="p">;</span>
+   <span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes -q remove&quot;</span><span class="p">;</span>
+   <span class="kr">package_update_command</span> <span class="o">=&gt;</span>  <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes install&quot;</span><span class="p">;</span>
+   <span class="kr">package_verify_command</span> <span class="o">=&gt;</span>  <span class="s">&quot;/usr/bin/aptitude show&quot;</span><span class="p">;</span>
+   <span class="kr">package_noverify_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;(State: not installed|E: Unable to locate package .*)&quot;</span><span class="p">;</span>
 
-!have_aptitude::
-   package_add_command => "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes install";
-   package_list_update_command => "/usr/bin/apt-get update";
-   package_delete_command => "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes -q remove";
-   package_update_command =>  "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes install";
-   package_verify_command => "/usr/bin/dpkg -s";
-   package_noverify_returncode => "1";
-}
+<span class="nc">!have_aptitude</span><span class="p">::</span>
+   <span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes install&quot;</span><span class="p">;</span>
+   <span class="kr">package_list_update_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/apt-get update&quot;</span><span class="p">;</span>
+   <span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes -q remove&quot;</span><span class="p">;</span>
+   <span class="kr">package_update_command</span> <span class="o">=&gt;</span>  <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes install&quot;</span><span class="p">;</span>
+   <span class="kr">package_verify_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/dpkg -s&quot;</span><span class="p">;</span>
+   <span class="kr">package_noverify_returncode</span> <span class="o">=&gt;</span> <span class="s">&quot;1&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body package_method dpkg_version(repo)
-{
-package_changes => "individual";
-package_list_command => "/usr/bin/dpkg -l";
+<span class="k">body</span> <span class="k">package_method</span> <span class="nf">dpkg_version</span><span class="p">(</span><span class="nv">repo</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;individual&quot;</span><span class="p">;</span>
+<span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/dpkg -l&quot;</span><span class="p">;</span>
 
-# set it to "0" to avoid caching of list during upgrade
-package_list_update_ifelapsed => "240";
+<span class="c"># set it to &quot;0&quot; to avoid caching of list during upgrade</span>
+<span class="kr">package_list_update_ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;240&quot;</span><span class="p">;</span>
 
-package_list_name_regex    => "ii\s+([^\s]+).*";
-package_list_version_regex => "ii\s+[^\s]+\s+([^\s]+).*";
+<span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;ii</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;ii</span><span class="se">\s</span><span class="s">+[^</span><span class="se">\s</span><span class="s">]+</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
 
-package_installed_regex => ".*"; # all reported are installed
+<span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*&quot;</span><span class="p">;</span> <span class="c"># all reported are installed</span>
 
-package_file_repositories => { "$(repo)" };
+<span class="kr">package_file_repositories</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(repo)</span><span class="s">&quot;</span> <span class="p">};</span>
 
-debian.x86_64::
-   package_name_convention => "$(name)_$(version)_amd64.deb";
+<span class="nc">debian.x86_64</span><span class="p">::</span>
+   <span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">_</span><span class="si">$(version)</span><span class="s">_amd64.deb&quot;</span><span class="p">;</span>
 
-debian.i686::
-   package_name_convention => "$(name)_$(version)_i386.deb";
+<span class="nc">debian.i686</span><span class="p">::</span>
+   <span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">_</span><span class="si">$(version)</span><span class="s">_i386.deb&quot;</span><span class="p">;</span>
 
-debian::
-   package_add_command => "/usr/bin/dpkg --install";
-   package_delete_command => "/usr/bin/dpkg --purge";
-   package_update_command =>  "/usr/bin/dpkg --install";
-}
+<span class="nc">debian</span><span class="p">::</span>
+   <span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/dpkg --install&quot;</span><span class="p">;</span>
+   <span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/dpkg --purge&quot;</span><span class="p">;</span>
+   <span class="kr">package_update_command</span> <span class="o">=&gt;</span>  <span class="s">&quot;/usr/bin/dpkg --install&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body package_method rpm_version(repo)
-{
-package_changes => "individual";
+<span class="k">body</span> <span class="k">package_method</span> <span class="nf">rpm_version</span><span class="p">(</span><span class="nv">repo</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;individual&quot;</span><span class="p">;</span>
 
-package_list_command => "/bin/rpm -qa --queryformat \"i | repos | %{name} | %{version}-%{release} | %{arch}\n\"";
+<span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -qa --queryformat </span><span class="se">\&quot;</span><span class="s">i | repos | %{name} | %{version}-%{release} | %{arch}</span><span class="se">\n\&quot;</span><span class="s">&quot;</span><span class="p">;</span>
 
-# set it to "0" to avoid caching of list during upgrade
-package_list_update_ifelapsed => "240";
+<span class="c"># set it to &quot;0&quot; to avoid caching of list during upgrade</span>
+<span class="kr">package_list_update_ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;240&quot;</span><span class="p">;</span>
 
-package_list_name_regex    => "[^|]+\|[^|]+\|\s+([^\s|]+).*";
-package_list_version_regex => "[^|]+\|[^|]+\|[^|]+\|\s+([^\s|]+).*";
-package_list_arch_regex    => "[^|]+\|[^|]+\|[^|]+\|[^|]+\|\s+([^\s]+).*";
+<span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">|]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">|]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_list_arch_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
 
-package_installed_regex => "i.*";
+<span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;i.*&quot;</span><span class="p">;</span>
 
-package_file_repositories => { "$(repo)" };
+<span class="kr">package_file_repositories</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(repo)</span><span class="s">&quot;</span> <span class="p">};</span>
 
-package_name_convention => "$(name)-$(version).$(arch).rpm";
+<span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">-</span><span class="si">$(version)</span><span class="s">.</span><span class="si">$(arch)</span><span class="s">.rpm&quot;</span><span class="p">;</span>
 
-package_add_command => "/bin/rpm -ivh ";
-package_update_command => "/bin/rpm -Uvh ";
-package_delete_command => "/bin/rpm -e --nodeps";
-package_noverify_regex => ".*[^\s].*";
-}
+<span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -ivh &quot;</span><span class="p">;</span>
+<span class="kr">package_update_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -Uvh &quot;</span><span class="p">;</span>
+<span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -e --nodeps&quot;</span><span class="p">;</span>
+<span class="kr">package_noverify_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*[^</span><span class="se">\s</span><span class="s">].*&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body package_method msi_implicit(repo)
-# Use whole file name as promiser, e.g. "7-Zip-4.50-x86_64.msi",
-# the name, version and arch is then deduced from the promiser
-{
-package_changes => "individual";
-package_file_repositories => { "$(repo)" };
+<span class="k">body</span> <span class="k">package_method</span> <span class="nf">msi_implicit</span><span class="p">(</span><span class="nv">repo</span><span class="p">)</span>
+<span class="c"># Use whole file name as promiser, e.g. &quot;7-Zip-4.50-x86_64.msi&quot;,</span>
+<span class="c"># the name, version and arch is then deduced from the promiser</span>
+<span class="p">{</span>
+<span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;individual&quot;</span><span class="p">;</span>
+<span class="kr">package_file_repositories</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(repo)</span><span class="s">&quot;</span> <span class="p">};</span>
 
-package_installed_regex => ".*";
+<span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*&quot;</span><span class="p">;</span>
  
-package_name_convention => "$(name)-$(version)-$(arch).msi";
-package_delete_convention => "$(firstrepo)$(name)-$(version)-$(arch).msi";
+<span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">-</span><span class="si">$(version)</span><span class="s">-</span><span class="si">$(arch)</span><span class="s">.msi&quot;</span><span class="p">;</span>
+<span class="kr">package_delete_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(firstrepo)$(name)</span><span class="s">-</span><span class="si">$(version)</span><span class="s">-</span><span class="si">$(arch)</span><span class="s">.msi&quot;</span><span class="p">;</span>
 
-package_name_regex => "^(\S+)-(\d+\.?)+";
-package_version_regex => "^\S+-((\d+\.?)+)";
-package_arch_regex => "^\S+-[\d\.]+-(.*).msi";
+<span class="kr">package_name_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;^(</span><span class="se">\S</span><span class="s">+)-(</span><span class="se">\d</span><span class="s">+</span><span class="se">\.</span><span class="s">?)+&quot;</span><span class="p">;</span>
+<span class="kr">package_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;^</span><span class="se">\S</span><span class="s">+-((</span><span class="se">\d</span><span class="s">+</span><span class="se">\.</span><span class="s">?)+)&quot;</span><span class="p">;</span>
+<span class="kr">package_arch_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;^</span><span class="se">\S</span><span class="s">+-[</span><span class="se">\d\.</span><span class="s">]+-(.*).msi&quot;</span><span class="p">;</span>
 
-package_add_command => "\"$(sys.winsysdir)\msiexec.exe\" /qn /i";
-package_update_command => "\"$(sys.winsysdir)\msiexec.exe\" /qn /i";
-package_delete_command => "\"$(sys.winsysdir)\msiexec.exe\" /qn /x";
-}
+<span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\&quot;</span><span class="si">$(sys.winsysdir)</span><span class="se">\m</span><span class="s">siexec.exe</span><span class="se">\&quot;</span><span class="s"> /qn /i&quot;</span><span class="p">;</span>
+<span class="kr">package_update_command</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\&quot;</span><span class="si">$(sys.winsysdir)</span><span class="se">\m</span><span class="s">siexec.exe</span><span class="se">\&quot;</span><span class="s"> /qn /i&quot;</span><span class="p">;</span>
+<span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\&quot;</span><span class="si">$(sys.winsysdir)</span><span class="se">\m</span><span class="s">siexec.exe</span><span class="se">\&quot;</span><span class="s"> /qn /x&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body package_method msi_explicit(repo)
-# use software name as promiser, e.g. "7-Zip", and explicitly
-# specify any package_version and package_arch
-{
-package_changes => "individual";
-package_file_repositories => { "$(repo)" };
+<span class="k">body</span> <span class="k">package_method</span> <span class="nf">msi_explicit</span><span class="p">(</span><span class="nv">repo</span><span class="p">)</span>
+<span class="c"># use software name as promiser, e.g. &quot;7-Zip&quot;, and explicitly</span>
+<span class="c"># specify any package_version and package_arch</span>
+<span class="p">{</span>
+<span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;individual&quot;</span><span class="p">;</span>
+<span class="kr">package_file_repositories</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(repo)</span><span class="s">&quot;</span> <span class="p">};</span>
 
-package_installed_regex => ".*";
+<span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*&quot;</span><span class="p">;</span>
  
-package_name_convention => "$(name)-$(version)-$(arch).msi";
-package_delete_convention => "$(firstrepo)$(name)-$(version)-$(arch).msi";
+<span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">-</span><span class="si">$(version)</span><span class="s">-</span><span class="si">$(arch)</span><span class="s">.msi&quot;</span><span class="p">;</span>
+<span class="kr">package_delete_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(firstrepo)$(name)</span><span class="s">-</span><span class="si">$(version)</span><span class="s">-</span><span class="si">$(arch)</span><span class="s">.msi&quot;</span><span class="p">;</span>
 
-package_add_command => "\"$(sys.winsysdir)\msiexec.exe\" /qn /i";
-package_update_command => "\"$(sys.winsysdir)\msiexec.exe\" /qn /i";
-package_delete_command => "\"$(sys.winsysdir)\msiexec.exe\" /qn /x";
-}
+<span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\&quot;</span><span class="si">$(sys.winsysdir)</span><span class="se">\m</span><span class="s">siexec.exe</span><span class="se">\&quot;</span><span class="s"> /qn /i&quot;</span><span class="p">;</span>
+<span class="kr">package_update_command</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\&quot;</span><span class="si">$(sys.winsysdir)</span><span class="se">\m</span><span class="s">siexec.exe</span><span class="se">\&quot;</span><span class="s"> /qn /i&quot;</span><span class="p">;</span>
+<span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\&quot;</span><span class="si">$(sys.winsysdir)</span><span class="se">\m</span><span class="s">siexec.exe</span><span class="se">\&quot;</span><span class="s"> /qn /x&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body package_method yum
-{
-package_changes => "bulk";
-package_list_command => "/usr/bin/yum list installed";
-package_patch_list_command => "/usr/bin/yum check-update";
+<span class="k">body</span> <span class="k">package_method</span> <span class="nf">yum</span>
+<span class="p">{</span>
+<span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;bulk&quot;</span><span class="p">;</span>
+<span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/yum list installed&quot;</span><span class="p">;</span>
+<span class="kr">package_patch_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/yum check-update&quot;</span><span class="p">;</span>
 
-# Remember to escape special characters like |
+<span class="c"># Remember to escape special characters like |</span>
 
-package_list_name_regex    => "([^.]+).*";
-package_list_version_regex => "[^\s]\s+([^\s]+).*";
-package_list_arch_regex    => "[^.]+\.([^\s]+).*";
+<span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;([^.]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^</span><span class="se">\s</span><span class="s">]</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_list_arch_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^.]+</span><span class="se">\.</span><span class="s">([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
 
-package_installed_regex => ".*(installed|\s+@).*";
-package_name_convention => "$(name).$(arch)";
+<span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*(installed|</span><span class="se">\s</span><span class="s">+@).*&quot;</span><span class="p">;</span>
+<span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">.</span><span class="si">$(arch)</span><span class="s">&quot;</span><span class="p">;</span>
 
-# set it to "0" to avoid caching of list during upgrade
-package_list_update_ifelapsed => "240";
+<span class="c"># set it to &quot;0&quot; to avoid caching of list during upgrade</span>
+<span class="kr">package_list_update_ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;240&quot;</span><span class="p">;</span>
 
-package_patch_installed_regex => "^\s.*";
-package_patch_name_regex    => "([^.]+).*";
-package_patch_version_regex => "[^\s]\s+([^\s]+).*";
-package_patch_arch_regex    => "[^.]+\.([^\s]+).*";
+<span class="kr">package_patch_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;^</span><span class="se">\s</span><span class="s">.*&quot;</span><span class="p">;</span>
+<span class="kr">package_patch_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;([^.]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_patch_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^</span><span class="se">\s</span><span class="s">]</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_patch_arch_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^.]+</span><span class="se">\.</span><span class="s">([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
 
-package_add_command => "/usr/bin/yum -y install";
-package_update_command => "/usr/bin/yum -y update";
-package_delete_command => "/bin/rpm -e --nodeps";
-package_verify_command => "/bin/rpm -V";
-}
+<span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/yum -y install&quot;</span><span class="p">;</span>
+<span class="kr">package_update_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/yum -y update&quot;</span><span class="p">;</span>
+<span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -e --nodeps&quot;</span><span class="p">;</span>
+<span class="kr">package_verify_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -V&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body package_method yum_rpm
-# Contributed by Trond Hasle Amundsen
+<span class="k">body</span> <span class="k">package_method</span> <span class="nf">yum_rpm</span>
+<span class="c"># Contributed by Trond Hasle Amundsen</span>
 
-# More efficient package method for RedHat - uses rpm to list instead of yum
-# Notes:
-# - using $(name).$(arch) instead of $(name) for package_name_convention
-#   causes uninstallation to fail.
-# - using allmatches to remove for all architectures
-#
-{
-  package_changes => "bulk";
-  package_list_command => "/bin/rpm -qa --qf '%{name} %{version}-%{release} %{arch}\n'";
-  package_patch_list_command => "/usr/bin/yum check-update";
+<span class="c"># More efficient package method for RedHat - uses rpm to list instead of yum</span>
+<span class="c"># Notes:</span>
+<span class="c"># - using $(name).$(arch) instead of $(name) for package_name_convention</span>
+<span class="c">#   causes uninstallation to fail.</span>
+<span class="c"># - using allmatches to remove for all architectures</span>
+<span class="c">#</span>
+<span class="p">{</span>
+  <span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;bulk&quot;</span><span class="p">;</span>
+  <span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -qa --qf &#39;%{name} %{version}-%{release} %{arch}</span><span class="se">\n</span><span class="s">&#39;&quot;</span><span class="p">;</span>
+  <span class="kr">package_patch_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/yum check-update&quot;</span><span class="p">;</span>
 
-  package_list_name_regex    => "^(\S+?)\s\S+?\s\S+$";
-  package_list_version_regex => "^\S+?\s(\S+?)\s\S+$";
-  package_list_arch_regex    => "^\S+?\s\S+?\s(\S+)$";
+  <span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;^(</span><span class="se">\S</span><span class="s">+?)</span><span class="se">\s\S</span><span class="s">+?</span><span class="se">\s\S</span><span class="s">+$&quot;</span><span class="p">;</span>
+  <span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;^</span><span class="se">\S</span><span class="s">+?</span><span class="se">\s</span><span class="s">(</span><span class="se">\S</span><span class="s">+?)</span><span class="se">\s\S</span><span class="s">+$&quot;</span><span class="p">;</span>
+  <span class="kr">package_list_arch_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;^</span><span class="se">\S</span><span class="s">+?</span><span class="se">\s\S</span><span class="s">+?</span><span class="se">\s</span><span class="s">(</span><span class="se">\S</span><span class="s">+)$&quot;</span><span class="p">;</span>
 
-  package_installed_regex => ".*";
-  package_name_convention => "$(name)";
+  <span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*&quot;</span><span class="p">;</span>
+  <span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">&quot;</span><span class="p">;</span>
 
-  package_patch_installed_regex => "^\s.*";
-  package_patch_name_regex    => "([^.]+).*";
-  package_patch_version_regex => "[^\s]\s+([^\s]+).*";
-  package_patch_arch_regex    => "[^.]+\.([^\s]+).*";
+  <span class="kr">package_patch_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;^</span><span class="se">\s</span><span class="s">.*&quot;</span><span class="p">;</span>
+  <span class="kr">package_patch_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;([^.]+).*&quot;</span><span class="p">;</span>
+  <span class="kr">package_patch_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^</span><span class="se">\s</span><span class="s">]</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+  <span class="kr">package_patch_arch_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^.]+</span><span class="se">\.</span><span class="s">([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
 
-  package_add_command    => "/usr/bin/yum -y install";
-  package_update_command => "/usr/bin/yum -y update";
-  package_delete_command => "/bin/rpm -e --nodeps --allmatches";
-  package_verify_command => "/bin/rpm -V";
-}
+  <span class="kr">package_add_command</span>    <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/yum -y install&quot;</span><span class="p">;</span>
+  <span class="kr">package_update_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/yum -y update&quot;</span><span class="p">;</span>
+  <span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -e --nodeps --allmatches&quot;</span><span class="p">;</span>
+  <span class="kr">package_verify_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -V&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-# The solaris package system is poorly designed, with too many different
-# names to track. See the example in tests/units/unit_package_solaris.cf
-# to see how to use this
+<span class="c"># The solaris package system is poorly designed, with too many different</span>
+<span class="c"># names to track. See the example in tests/units/unit_package_solaris.cf</span>
+<span class="c"># to see how to use this</span>
 
-body package_method solaris (pkgname, spoolfile, adminfile)
-{
-package_changes => "individual";
-package_list_command => "/usr/bin/pkginfo -l";
-package_multiline_start    =>  "\s*PKGINST:\s+[^\s]+.*";
-package_list_name_regex    => "\s*PKGINST:\s+([^\s]+).*";
-package_list_version_regex => "\s*VERSION:\s+([^\s]+).*";
-package_list_arch_regex    => "\s*ARCH:\s+([^\s]+)";
-package_installed_regex => "\s*STATUS:\s*(completely|partially)\s+installed.*";
-package_name_convention => "$(name)";
-package_add_command => "/usr/sbin/pkgadd -n -a /tmp/$(adminfile) -d /tmp/$(spoolfile)";
-package_delete_command => "/usr/sbin/pkgrm -n -a /tmp/$(adminfile)";
-}
+<span class="k">body</span> <span class="k">package_method</span> <span class="nf">solaris</span> <span class="p">(</span><span class="nf">pkgname</span><span class="p">,</span> <span class="nf">spoolfile</span><span class="p">,</span> <span class="nf">adminfile</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;individual&quot;</span><span class="p">;</span>
+<span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/pkginfo -l&quot;</span><span class="p">;</span>
+<span class="kr">package_multiline_start</span>    <span class="o">=&gt;</span>  <span class="s">&quot;</span><span class="se">\s</span><span class="s">*PKGINST:</span><span class="se">\s</span><span class="s">+[^</span><span class="se">\s</span><span class="s">]+.*&quot;</span><span class="p">;</span>
+<span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\s</span><span class="s">*PKGINST:</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\s</span><span class="s">*VERSION:</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+<span class="kr">package_list_arch_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\s</span><span class="s">*ARCH:</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+)&quot;</span><span class="p">;</span>
+<span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="se">\s</span><span class="s">*STATUS:</span><span class="se">\s</span><span class="s">*(completely|partially)</span><span class="se">\s</span><span class="s">+installed.*&quot;</span><span class="p">;</span>
+<span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/sbin/pkgadd -n -a /tmp/</span><span class="si">$(adminfile)</span><span class="s"> -d /tmp/</span><span class="si">$(spoolfile)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/sbin/pkgrm -n -a /tmp/</span><span class="si">$(adminfile)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-#
-# The following bundle is part of a package setup for solaris, see unit examples
-#
+<span class="c">#</span>
+<span class="c"># The following bundle is part of a package setup for solaris, see unit examples</span>
+<span class="c">#</span>
 
-bundle edit_line create_solaris_admin_file
-{
-insert_lines:
+<span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">create_solaris_admin_file</span>
+<span class="p">{</span>
+<span class="kd">insert_lines</span><span class="p">:</span>
 		
-  "mail=
-instance=unique
-partial=nocheck
-runlevel=nocheck
-idepend=nocheck
-rdepend=nocheck
-space=nocheck
-setuid=nocheck
-conflict=nocheck
-action=nocheck
-networktimeout=60
-networkretries=3
-authentication=quit
-keystore=/var/sadm/security
-proxy=
-basedir=default";
-}
+  <span class="s">&quot;mail=</span>
+<span class="s">instance=unique</span>
+<span class="s">partial=nocheck</span>
+<span class="s">runlevel=nocheck</span>
+<span class="s">idepend=nocheck</span>
+<span class="s">rdepend=nocheck</span>
+<span class="s">space=nocheck</span>
+<span class="s">setuid=nocheck</span>
+<span class="s">conflict=nocheck</span>
+<span class="s">action=nocheck</span>
+<span class="s">networktimeout=60</span>
+<span class="s">networkretries=3</span>
+<span class="s">authentication=quit</span>
+<span class="s">keystore=/var/sadm/security</span>
+<span class="s">proxy=</span>
+<span class="s">basedir=default&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body package_method freebsd
-{
- package_changes => "individual";
+<span class="k">body</span> <span class="k">package_method</span> <span class="nf">freebsd</span>
+<span class="p">{</span>
+ <span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;individual&quot;</span><span class="p">;</span>
 
- # Could use rpm for this
- package_list_command => "/usr/sbin/pkg_info";
+ <span class="c"># Could use rpm for this</span>
+ <span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/sbin/pkg_info&quot;</span><span class="p">;</span>
 
- # Remember to escape special characters like |
+ <span class="c"># Remember to escape special characters like |</span>
 
- package_list_name_regex    => "([^\s]+)-.*";
- package_list_version_regex => "[^\s]+-([^\s]+).*";
+ <span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;([^</span><span class="se">\s</span><span class="s">]+)-.*&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^</span><span class="se">\s</span><span class="s">]+-([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
 
- package_name_regex    => "([^\s]+)-.*";
- package_version_regex => "[^\s]+-([^\s]+).*";
+ <span class="kr">package_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;([^</span><span class="se">\s</span><span class="s">]+)-.*&quot;</span><span class="p">;</span>
+ <span class="kr">package_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^</span><span class="se">\s</span><span class="s">]+-([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
 
- package_installed_regex => ".*";
+ <span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*&quot;</span><span class="p">;</span>
 
- package_name_convention => "$(name)-$(version)";
-
-
-package_add_command => "/usr/sbin/pkg_add -r";
-package_delete_command => "/usr/sbin/pkg_delete";
-}
-
-##
-
- # Single bundle for all the similar managers simplifies promises
-
-body package_method generic
-{
-SuSE::
- package_changes => "bulk";
- package_list_command => "/usr/bin/zypper packages";
- package_patch_list_command => "/usr/bin/zypper patches";
- package_installed_regex => "i.*";
- package_list_name_regex    => "[^|]+\|[^|]+\|\s+([^\s]+).*";
- package_list_version_regex => "[^|]+\|[^|]+\|[^|]+\|\s+([^\s]+).*";
- package_list_arch_regex    => "[^|]+\|[^|]+\|[^|]+\|[^|]+\|\s+([^\s]+).*";
- package_patch_installed_regex => ".*Installed.*|.*Not Applicable.*";
- package_patch_name_regex    => "[^|]+\|\s+([^\s]+).*";
- package_patch_version_regex => "[^|]+\|[^|]+\|\s+([^\s]+).*";
- package_name_convention => "$(name)";
- package_add_command => "/usr/bin/zypper --non-interactive install";
- package_delete_command => "/usr/bin/zypper --non-interactive remove --force-resolution";
- package_update_command => "/usr/bin/zypper --non-interactive update";
- package_patch_command => "/usr/bin/zypper --non-interactive patch$"; # $ means no args
- package_verify_command => "/usr/bin/zypper --non-interactive verify$";
-
-redhat::
- package_changes => "bulk";
- package_list_command => "/usr/bin/yum list installed";
- package_patch_list_command => "/usr/bin/yum check-update";
- package_list_name_regex    => "([^.]+).*";
- package_list_version_regex => "[^\s]\s+([^\s]+).*";
- package_list_arch_regex    => "[^.]+\.([^\s]+).*";
- package_installed_regex => ".*(installed|\s+@).*";
- package_name_convention => "$(name).$(arch)";
- package_list_update_ifelapsed => "240";
- package_patch_installed_regex => "^\s.*";
- package_patch_name_regex    => "([^.]+).*";
- package_patch_version_regex => "[^\s]\s+([^\s]+).*";
- package_patch_arch_regex    => "[^.]+\.([^\s]+).*";
- package_add_command => "/usr/bin/yum -y install";
- package_delete_command => "/bin/rpm -e --nodeps";
- package_verify_command => "/bin/rpm -V";
-
-debian::
- package_changes => "bulk";
- package_list_command => "/usr/bin/dpkg -l";
- package_list_name_regex    => "ii\s+([^\s]+).*";
- package_list_version_regex => "ii\s+[^\s]+\s+([^\s]+).*";
- package_installed_regex => ".*"; # all reported are installed
- package_name_convention => "$(name)";
- package_list_update_ifelapsed => "240";		# 4 hours
-
-debian.have_aptitude::
-   package_add_command => "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes install";
-   package_list_update_command => "/usr/bin/aptitude update";
-   package_delete_command => "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes remove";
-   package_update_command =>  "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes install";
-   package_verify_command =>  "/usr/bin/aptitude show";
-   package_noverify_regex => "(State: not installed|E: Unable to locate package .*)";
-
-debian.!have_aptitude::
-   package_add_command => "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes install";
-   package_list_update_command => "/usr/bin/apt-get update";
-   package_delete_command => "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes remove";
-   package_update_command =>  "/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes install";
-   package_verify_command => "/usr/bin/dpkg -s";
-   package_noverify_returncode => "1";
-
-freebsd::
- package_changes => "individual";
- package_list_command => "/usr/sbin/pkg_info";
- package_list_name_regex    => "([^\s]+)-.*";
- package_list_version_regex => "[^\s]+-([^\s]+).*";
- package_name_regex    => "([^\s]+)-.*";
- package_version_regex => "[^\s]+-([^\s]+).*";
- package_installed_regex => ".*";
- package_name_convention => "$(name)-$(version)";
- package_add_command => "/usr/sbin/pkg_add -r";
- package_delete_command => "/usr/sbin/pkg_delete";
-}
-
-##-------------------------------------------------------
-## storage promises
-##-------------------------------------------------------
-
-body volume min_free_space(free)
-{
-check_foreign  => "false";
-freespace      => "$(free)";
-sensible_size  => "10000";
-sensible_count => "2";
-}
-
-##
-
-body mount nfs(server,source)
-{
-mount_type => "nfs";
-mount_source => "$(source)";
-mount_server => "$(server)";
-edit_fstab => "true";
-}
+ <span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">-</span><span class="si">$(version)</span><span class="s">&quot;</span><span class="p">;</span>
 
 
-##
+<span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/sbin/pkg_add -r&quot;</span><span class="p">;</span>
+<span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/sbin/pkg_delete&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-body mount nfs_p(server,source,perm)
-{
-mount_type => "nfs";
-mount_source => "$(source)";
-mount_server => "$(server)";
-mount_options => {"$(perm)"};
-edit_fstab => "true";
-}
+<span class="c">##</span>
 
-##
+ <span class="c"># Single bundle for all the similar managers simplifies promises</span>
 
-body mount unmount
-{
-mount_type => "nfs";
-edit_fstab => "true";
-unmount => "true";
-}
+<span class="k">body</span> <span class="k">package_method</span> <span class="nf">generic</span>
+<span class="p">{</span>
+<span class="nc">SuSE</span><span class="p">::</span>
+ <span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;bulk&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper packages&quot;</span><span class="p">;</span>
+ <span class="kr">package_patch_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper patches&quot;</span><span class="p">;</span>
+ <span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;i.*&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_arch_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_patch_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*Installed.*|.*Not Applicable.*&quot;</span><span class="p">;</span>
+ <span class="kr">package_patch_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_patch_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^|]+</span><span class="se">\|</span><span class="s">[^|]+</span><span class="se">\|\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">&quot;</span><span class="p">;</span>
+ <span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper --non-interactive install&quot;</span><span class="p">;</span>
+ <span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper --non-interactive remove --force-resolution&quot;</span><span class="p">;</span>
+ <span class="kr">package_update_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper --non-interactive update&quot;</span><span class="p">;</span>
+ <span class="kr">package_patch_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper --non-interactive patch$&quot;</span><span class="p">;</span> <span class="c"># $ means no args</span>
+ <span class="kr">package_verify_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/zypper --non-interactive verify$&quot;</span><span class="p">;</span>
 
-##-------------------------------------------------------
-## process promises
-##-------------------------------------------------------
+<span class="nc">redhat</span><span class="p">::</span>
+ <span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;bulk&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/yum list installed&quot;</span><span class="p">;</span>
+ <span class="kr">package_patch_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/yum check-update&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;([^.]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^</span><span class="se">\s</span><span class="s">]</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_arch_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^.]+</span><span class="se">\.</span><span class="s">([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*(installed|</span><span class="se">\s</span><span class="s">+@).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">.</span><span class="si">$(arch)</span><span class="s">&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_update_ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;240&quot;</span><span class="p">;</span>
+ <span class="kr">package_patch_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;^</span><span class="se">\s</span><span class="s">.*&quot;</span><span class="p">;</span>
+ <span class="kr">package_patch_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;([^.]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_patch_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^</span><span class="se">\s</span><span class="s">]</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_patch_arch_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;[^.]+</span><span class="se">\.</span><span class="s">([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/yum -y install&quot;</span><span class="p">;</span>
+ <span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -e --nodeps&quot;</span><span class="p">;</span>
+ <span class="kr">package_verify_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/rpm -V&quot;</span><span class="p">;</span>
 
-body process_select exclude_procs(x)
-{
-command => "$(x)";
-process_result => "!command";
-}
+<span class="nc">debian</span><span class="p">::</span>
+ <span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;bulk&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/dpkg -l&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;ii</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;ii</span><span class="se">\s</span><span class="s">+[^</span><span class="se">\s</span><span class="s">]+</span><span class="se">\s</span><span class="s">+([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*&quot;</span><span class="p">;</span> <span class="c"># all reported are installed</span>
+ <span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_update_ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;240&quot;</span><span class="p">;</span>		<span class="c"># 4 hours</span>
 
-##
+<span class="nc">debian.have_aptitude</span><span class="p">::</span>
+   <span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes install&quot;</span><span class="p">;</span>
+   <span class="kr">package_list_update_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/aptitude update&quot;</span><span class="p">;</span>
+   <span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes remove&quot;</span><span class="p">;</span>
+   <span class="kr">package_update_command</span> <span class="o">=&gt;</span>  <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/aptitude -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --assume-yes install&quot;</span><span class="p">;</span>
+   <span class="kr">package_verify_command</span> <span class="o">=&gt;</span>  <span class="s">&quot;/usr/bin/aptitude show&quot;</span><span class="p">;</span>
+   <span class="kr">package_noverify_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;(State: not installed|E: Unable to locate package .*)&quot;</span><span class="p">;</span>
 
-body process_select days_older_than(d)
-{
-stime_range    => irange(ago(0,0,"$(d)",0,0,0),now);
-process_result => "stime";
-}
+<span class="nc">debian.!have_aptitude</span><span class="p">::</span>
+   <span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes install&quot;</span><span class="p">;</span>
+   <span class="kr">package_list_update_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/apt-get update&quot;</span><span class="p">;</span>
+   <span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes remove&quot;</span><span class="p">;</span>
+   <span class="kr">package_update_command</span> <span class="o">=&gt;</span>  <span class="s">&quot;/usr/bin/env DEBIAN_FRONTEND=noninteractive LC_ALL=C /usr/bin/apt-get -o Dpkg::Options::=--force-confold -o Dpkg::Options::=--force-confdef --yes install&quot;</span><span class="p">;</span>
+   <span class="kr">package_verify_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/bin/dpkg -s&quot;</span><span class="p">;</span>
+   <span class="kr">package_noverify_returncode</span> <span class="o">=&gt;</span> <span class="s">&quot;1&quot;</span><span class="p">;</span>
 
-##
+<span class="nc">freebsd</span><span class="p">::</span>
+ <span class="kr">package_changes</span> <span class="o">=&gt;</span> <span class="s">&quot;individual&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/sbin/pkg_info&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;([^</span><span class="se">\s</span><span class="s">]+)-.*&quot;</span><span class="p">;</span>
+ <span class="kr">package_list_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^</span><span class="se">\s</span><span class="s">]+-([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_name_regex</span>    <span class="o">=&gt;</span> <span class="s">&quot;([^</span><span class="se">\s</span><span class="s">]+)-.*&quot;</span><span class="p">;</span>
+ <span class="kr">package_version_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;[^</span><span class="se">\s</span><span class="s">]+-([^</span><span class="se">\s</span><span class="s">]+).*&quot;</span><span class="p">;</span>
+ <span class="kr">package_installed_regex</span> <span class="o">=&gt;</span> <span class="s">&quot;.*&quot;</span><span class="p">;</span>
+ <span class="kr">package_name_convention</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">-</span><span class="si">$(version)</span><span class="s">&quot;</span><span class="p">;</span>
+ <span class="kr">package_add_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/sbin/pkg_add -r&quot;</span><span class="p">;</span>
+ <span class="kr">package_delete_command</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/sbin/pkg_delete&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-body process_count any_count(cl)
+<span class="c">##-------------------------------------------------------</span>
+<span class="c">## storage promises</span>
+<span class="c">##-------------------------------------------------------</span>
 
-{
-match_range => "0,0";
-out_of_range_define => { "$(cl)" };
-}
+<span class="k">body</span> <span class="k">volume</span> <span class="nf">min_free_space</span><span class="p">(</span><span class="nv">free</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">check_foreign</span>  <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="kr">freespace</span>      <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(free)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">sensible_size</span>  <span class="o">=&gt;</span> <span class="s">&quot;10000&quot;</span><span class="p">;</span>
+<span class="kr">sensible_count</span> <span class="o">=&gt;</span> <span class="s">&quot;2&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
+<span class="c">##</span>
 
-body process_count check_range(name,lower,upper)
-{
-match_range => irange("$(lower)","$(upper)");
-out_of_range_define => { "$(name)_out_of_range" };
-}
+<span class="k">body</span> <span class="k">mount</span> <span class="nf">nfs</span><span class="p">(</span><span class="nv">server</span><span class="p">,</span><span class="nv">source</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">mount_type</span> <span class="o">=&gt;</span> <span class="s">&quot;nfs&quot;</span><span class="p">;</span>
+<span class="kr">mount_source</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(source)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">mount_server</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(server)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">edit_fstab</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-##
-## service promises
-##
 
-body service_method bootstart
-{
-  service_autostart_policy => "boot_time";
-  service_dependence_chain => "start_parent_services";
-windows::
-  service_type => "windows";
-}
+<span class="c">##</span>
 
-##
+<span class="k">body</span> <span class="k">mount</span> <span class="nf">nfs_p</span><span class="p">(</span><span class="nv">server</span><span class="p">,</span><span class="nv">source</span><span class="p">,</span><span class="nv">perm</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">mount_type</span> <span class="o">=&gt;</span> <span class="s">&quot;nfs&quot;</span><span class="p">;</span>
+<span class="kr">mount_source</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(source)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">mount_server</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(server)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">mount_options</span> <span class="o">=&gt;</span> <span class="p">{</span><span class="s">&quot;</span><span class="si">$(perm)</span><span class="s">&quot;</span><span class="p">};</span>
+<span class="kr">edit_fstab</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-body service_method force_deps
-{
-  service_dependence_chain => "all_related";
-windows::
-  service_type => "windows";
-}
+<span class="c">##</span>
 
-####################################################
-## monitor bodyparts
-####################################################
+<span class="k">body</span> <span class="k">mount</span> <span class="nf">unmount</span>
+<span class="p">{</span>
+<span class="kr">mount_type</span> <span class="o">=&gt;</span> <span class="s">&quot;nfs&quot;</span><span class="p">;</span>
+<span class="kr">edit_fstab</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="kr">unmount</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-body match_value scan_log(line)
-{
-select_line_matching => "$(line)";
-track_growing_file => "true";
-}
+<span class="c">##-------------------------------------------------------</span>
+<span class="c">## process promises</span>
+<span class="c">##-------------------------------------------------------</span>
 
-##
+<span class="k">body</span> <span class="k">process_select</span> <span class="nf">exclude_procs</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">command</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">process_result</span> <span class="o">=&gt;</span> <span class="s">&quot;!command&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-body match_value scan_changing_file(line)
-{
-select_line_matching => "$(line)";
-track_growing_file => "false";
-}
+<span class="c">##</span>
 
-##
+<span class="k">body</span> <span class="k">process_select</span> <span class="nf">days_older_than</span><span class="p">(</span><span class="nv">d</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">stime_range</span>    <span class="o">=&gt;</span> <span class="nf">irange</span><span class="p">(</span><span class="nf">ago</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(d)</span><span class="s">&quot;</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">),</span><span class="nf">now</span><span class="p">);</span>
+<span class="kr">process_result</span> <span class="o">=&gt;</span> <span class="s">&quot;stime&quot;</span><span class="p">;</span>
+<span class="p">}</span>
 
-body action sample_rate(x)
-{
-ifelapsed => "$(x)";
-expireafter => "10";
-}
+<span class="c">##</span>
 
-{% endhighlight %}
+<span class="k">body</span> <span class="k">process_count</span> <span class="nf">any_count</span><span class="p">(</span><span class="nv">cl</span><span class="p">)</span>
+
+<span class="p">{</span>
+<span class="kr">match_range</span> <span class="o">=&gt;</span> <span class="s">&quot;0,0&quot;</span><span class="p">;</span>
+<span class="kr">out_of_range_define</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(cl)</span><span class="s">&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">process_count</span> <span class="nf">check_range</span><span class="p">(</span><span class="nv">name</span><span class="p">,</span><span class="nv">lower</span><span class="p">,</span><span class="nv">upper</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">match_range</span> <span class="o">=&gt;</span> <span class="nf">irange</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(lower)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(upper)</span><span class="s">&quot;</span><span class="p">);</span>
+<span class="kr">out_of_range_define</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(name)</span><span class="s">_out_of_range&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+<span class="c">## service promises</span>
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">service_method</span> <span class="nf">bootstart</span>
+<span class="p">{</span>
+  <span class="kr">service_autostart_policy</span> <span class="o">=&gt;</span> <span class="s">&quot;boot_time&quot;</span><span class="p">;</span>
+  <span class="kr">service_dependence_chain</span> <span class="o">=&gt;</span> <span class="s">&quot;start_parent_services&quot;</span><span class="p">;</span>
+<span class="nc">windows</span><span class="p">::</span>
+  <span class="kr">service_type</span> <span class="o">=&gt;</span> <span class="s">&quot;windows&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">service_method</span> <span class="nf">force_deps</span>
+<span class="p">{</span>
+  <span class="kr">service_dependence_chain</span> <span class="o">=&gt;</span> <span class="s">&quot;all_related&quot;</span><span class="p">;</span>
+<span class="nc">windows</span><span class="p">::</span>
+  <span class="kr">service_type</span> <span class="o">=&gt;</span> <span class="s">&quot;windows&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">####################################################</span>
+<span class="c">## monitor bodyparts</span>
+<span class="c">####################################################</span>
+
+<span class="k">body</span> <span class="k">match_value</span> <span class="nf">scan_log</span><span class="p">(</span><span class="nv">line</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">select_line_matching</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(line)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">track_growing_file</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">match_value</span> <span class="nf">scan_changing_file</span><span class="p">(</span><span class="nv">line</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">select_line_matching</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(line)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">track_growing_file</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c">##</span>
+
+<span class="k">body</span> <span class="k">action</span> <span class="nf">sample_rate</span><span class="p">(</span><span class="nv">x</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kr">ifelapsed</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(x)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="kr">expireafter</span> <span class="o">=&gt;</span> <span class="s">&quot;10&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

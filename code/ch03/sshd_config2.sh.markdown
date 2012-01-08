@@ -6,12 +6,12 @@ posttitle: Code > Chapter 3 > sshd_config2.sh
 navsection: code
 ---
 
-[(download this file)](/src/ch03/sshd_config2.sh)
-{% highlight bash %}
-(grep -iq AllowRoot /etc/ssh/sshd_config ||
- echo "AllowRoot no" >> /etc/ssh/sshd_config) &&
- sed -i 's/^.*AllowRoot .*$/AllowRoot no/;' /etc/ssh/sshd_config
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch03/sshd_config2.sh)
 
-{% endhighlight %}
+<div class="highlight"><pre><span class="o">(</span>grep -iq AllowRoot /etc/ssh/sshd_config <span class="o">||</span>
+ <span class="nb">echo</span> <span class="s2">&quot;AllowRoot no&quot;</span> &gt;&gt; /etc/ssh/sshd_config<span class="o">)</span> <span class="o">&amp;&amp;</span>
+ sed -i <span class="s1">&#39;s/^.*AllowRoot .*$/AllowRoot no/;&#39;</span> /etc/ssh/sshd_config
+</pre></div>
+
 
 {% include codeindex.markdown %}

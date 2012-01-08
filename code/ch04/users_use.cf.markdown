@@ -6,32 +6,32 @@ posttitle: Code > Chapter 4 > users_use.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch04/users_use.cf)
-{% highlight cf3 %}
-bundle agent manage_users
-{
-vars:
-  ### Users to create
-  "users[root][fullname]"  string => "System administrator";
-  "users[root][uid]"       string => "0";
-  "users[root][gid]"       string => "0";
-  "users[root][home]"      string => "/root";
-  "users[root][shell]"     string => "/bin/bash";
-  "users[root][flags]"     string => "-o -m";
-  "users[root][password]"  string => "FkDMzhB1WnOp2";
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch04/users_use.cf)
 
-  "users[zamboni][fullname]"  string => "Diego Zamboni";
-  "users[zamboni][uid]"       string => "501";
-  "users[zamboni][gid]"       string => "users";
-  "users[zamboni][home]"      string => "/home/zamboni";
-  "users[zamboni][shell]"     string => "/bin/bash";
-  "users[zamboni][flags]"     string => "-m";
-  "users[zamboni][password]"  string => "dk52ia209rfuh";
+<div class="highlight"><pre><span class="k">bundle</span> <span class="k">agent</span> <span class="nf">manage_users</span>
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
+  <span class="c">### Users to create</span>
+  <span class="p">&quot;</span><span class="nv">users[root][fullname]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;System administrator&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[root][uid]</span><span class="p">&quot;</span>       <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;0&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[root][gid]</span><span class="p">&quot;</span>       <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;0&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[root][home]</span><span class="p">&quot;</span>      <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/root&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[root][shell]</span><span class="p">&quot;</span>     <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/bash&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[root][flags]</span><span class="p">&quot;</span>     <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;-o -m&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[root][password]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;FkDMzhB1WnOp2&quot;</span><span class="p">;</span>
 
-methods:
-  "users"   usebundle => create_users("manage_users.users");
-}
+  <span class="p">&quot;</span><span class="nv">users[zamboni][fullname]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;Diego Zamboni&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[zamboni][uid]</span><span class="p">&quot;</span>       <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;501&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[zamboni][gid]</span><span class="p">&quot;</span>       <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;users&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[zamboni][home]</span><span class="p">&quot;</span>      <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/home/zamboni&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[zamboni][shell]</span><span class="p">&quot;</span>     <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/bin/bash&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[zamboni][flags]</span><span class="p">&quot;</span>     <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;-m&quot;</span><span class="p">;</span>
+  <span class="p">&quot;</span><span class="nv">users[zamboni][password]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;dk52ia209rfuh&quot;</span><span class="p">;</span>
 
-{% endhighlight %}
+<span class="kd">methods</span><span class="p">:</span>
+  <span class="s">&quot;users&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">create_users</span><span class="p">(</span><span class="s">&quot;manage_users.users&quot;</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

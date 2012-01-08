@@ -6,12 +6,12 @@ posttitle: Code > Chapter 3 > vars_structure.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch03/vars_structure.cf)
-{% highlight cf3 %}
-vars:
-  "variable"
-    type => value;
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch03/vars_structure.cf)
 
-{% endhighlight %}
+<div class="highlight"><pre><span class="kd">vars</span><span class="p">:</span>
+  <span class="s">&quot;variable&quot;</span>
+    <span class="kr">type</span> <span class="o">=&gt;</span> <span class="nf">value</span><span class="p">;</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

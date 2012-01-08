@@ -6,43 +6,43 @@ posttitle: Code > Chapter 5 > sys_create_users.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch05/sys_create_users.cf)
-{% highlight cf3 %}
-bundle agent create_users(info)
-{
-vars:
-  "user"        slist => getindices("$(info)"); 
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch05/sys_create_users.cf)
 
-classes:
-  "add_$(user)" not => userexists("$(user)"); 
+<div class="highlight"><pre><span class="k">bundle</span> <span class="k">agent</span> <span class="nf">create_users</span><span class="p">(</span><span class="nv">info</span><span class="p">)</span>
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
+  <span class="p">&quot;</span><span class="nv">user</span><span class="p">&quot;</span>        <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(info)</span><span class="s">&quot;</span><span class="p">);</span> 
 
-commands: 
-  linux::
-    "/usr/sbin/useradd $($(info)[$(user)][flags]) -u $($(info)[$(user)][uid]) 
-     -g $($(info)[$(user)][gid]) -d $($(info)[$(user)][home]) 
-     -s $($(info)[$(user)][shell]) -c '$($(info)[$(user)][fullname])' $(user)"
-       ifvarclass => "add_$(user)";
-  windows::
-    "c:/Windows/system32/net user $(user) $($(info)[$(user)][password]) /add 
-     \"/fullname:$($(info)[$(user)][fullname])\" \"/homedir:$($(info)[$(user)][home])\""
-       ifvarclass => "add_$(user)";
-    ### On Windows we use a command to set the password inconditionally in case it has changed.
-    "c:/Windows/system32/net user $(user) $($(info)[$(user)][password])"; 
+<span class="kd">classes</span><span class="p">:</span>
+  <span class="s">&quot;add_</span><span class="si">$(user)</span><span class="s">&quot;</span> <span class="kr">not</span> <span class="o">=&gt;</span> <span class="nf">userexists</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(user)</span><span class="s">&quot;</span><span class="p">);</span> 
 
-files:
-  ### This is not conditioned to the add_* classes to always check and reset the passwords if needed.
-  linux::
-    "/etc/shadow" 
-      edit_line => set_user_field("$(user)", 2, "$($(info)[$(user)][password])");
+<span class="kd">commands</span><span class="p">:</span> 
+  <span class="nc">linux</span><span class="p">::</span>
+    <span class="s">&quot;/usr/sbin/useradd </span><span class="si">$($(info)[$(user)][flags])</span><span class="s"> -u </span><span class="si">$($(info)[$(user)][uid])</span><span class="s"> </span>
+<span class="s">     -g </span><span class="si">$($(info)[$(user)][gid])</span><span class="s"> -d </span><span class="si">$($(info)[$(user)][home])</span><span class="s"> </span>
+<span class="s">     -s </span><span class="si">$($(info)[$(user)][shell])</span><span class="s"> -c &#39;</span><span class="si">$($(info)[$(user)][fullname])</span><span class="s">&#39; </span><span class="si">$(user)</span><span class="s">&quot;</span>
+       <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;add_</span><span class="si">$(user)</span><span class="s">&quot;</span><span class="p">;</span>
+  <span class="nc">windows</span><span class="p">::</span>
+    <span class="s">&quot;c:/Windows/system32/net user </span><span class="si">$(user)</span><span class="s"> </span><span class="si">$($(info)[$(user)][password])</span><span class="s"> /add </span>
+<span class="s">     </span><span class="se">\&quot;</span><span class="s">/fullname:</span><span class="si">$($(info)[$(user)][fullname])</span><span class="se">\&quot;</span><span class="s"> </span><span class="se">\&quot;</span><span class="s">/homedir:</span><span class="si">$($(info)[$(user)][home])</span><span class="se">\&quot;</span><span class="s">&quot;</span>
+       <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;add_</span><span class="si">$(user)</span><span class="s">&quot;</span><span class="p">;</span>
+    <span class="c">### On Windows we use a command to set the password inconditionally in case it has changed.</span>
+    <span class="s">&quot;c:/Windows/system32/net user </span><span class="si">$(user)</span><span class="s"> </span><span class="si">$($(info)[$(user)][password])</span><span class="s">&quot;</span><span class="p">;</span> 
 
-reports: 
-  !linux.!windows::
-    "I only know how to create users under Linux and Windows.";
-  verbose::
-    "Created user $(user)"
-      ifvarclass => "add_$(user)";
-}
+<span class="kd">files</span><span class="p">:</span>
+  <span class="c">### This is not conditioned to the add_* classes to always check and reset the passwords if needed.</span>
+  <span class="nc">linux</span><span class="p">::</span>
+    <span class="s">&quot;/etc/shadow&quot;</span> 
+      <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_user_field</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(user)</span><span class="s">&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$($(info)[$(user)][password])</span><span class="s">&quot;</span><span class="p">);</span>
 
-{% endhighlight %}
+<span class="kd">reports</span><span class="p">:</span> 
+  <span class="nc">!linux.!windows</span><span class="p">::</span>
+    <span class="s">&quot;I only know how to create users under Linux and Windows.&quot;</span><span class="p">;</span>
+  <span class="nc">verbose</span><span class="p">::</span>
+    <span class="s">&quot;Created user </span><span class="si">$(user)</span><span class="s">&quot;</span>
+      <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;add_</span><span class="si">$(user)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

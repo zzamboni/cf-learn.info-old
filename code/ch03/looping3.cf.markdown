@@ -6,31 +6,31 @@ posttitle: Code > Chapter 3 > looping3.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch03/looping3.cf)
-{% highlight cf3 %}
-body common control
-{
-  bundlesequence => { "find_netif" };
-}
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch03/looping3.cf)
 
-bundle agent find_netif
-{
-vars:
-  "nics" slist => getindices("sys.ipv4"); 
-  # Regex we want to match on the IP address
-  "ipregex" string => "192\.168\.1\..*";
+<div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
+<span class="p">{</span>
+  <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;find_netif&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-classes:
-  "ismatch_$(nics)" expression => regcmp("$(ipregex)", "${sys.ipv4[$(nics)]}"); 
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">find_netif</span>
+<span class="p">{</span>
+<span class="kd">vars</span><span class="p">:</span>
+  <span class="p">&quot;</span><span class="nv">nics</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;sys.ipv4&quot;</span><span class="p">);</span> 
+  <span class="c"># Regex we want to match on the IP address</span>
+  <span class="p">&quot;</span><span class="nv">ipregex</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;192</span><span class="se">\.</span><span class="s">168</span><span class="se">\.</span><span class="s">1</span><span class="se">\.</span><span class="s">.*&quot;</span><span class="p">;</span>
 
-reports:
-  cfengine::
-    "NICs found: $(nics) ($(sys.ipv4[$(nics)]))"; 
+<span class="kd">classes</span><span class="p">:</span>
+  <span class="s">&quot;ismatch_</span><span class="si">$(nics)</span><span class="s">&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">regcmp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(ipregex)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">${sys.ipv4[$(nics)]}</span><span class="s">&quot;</span><span class="p">);</span> 
 
-    "Matched NIC: $(nics) ($(sys.ipv4[$(nics)]))"
-      ifvarclass => "ismatch_$(nics)";
-}
+<span class="kd">reports</span><span class="p">:</span>
+  <span class="nc">cfengine</span><span class="p">::</span>
+    <span class="s">&quot;NICs found: </span><span class="si">$(nics)</span><span class="s"> (</span><span class="si">$(sys.ipv4[$(nics)])</span><span class="s">)&quot;</span><span class="p">;</span> 
 
-{% endhighlight %}
+    <span class="s">&quot;Matched NIC: </span><span class="si">$(nics)</span><span class="s"> (</span><span class="si">$(sys.ipv4[$(nics)])</span><span class="s">)&quot;</span>
+      <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;ismatch_</span><span class="si">$(nics)</span><span class="s">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}

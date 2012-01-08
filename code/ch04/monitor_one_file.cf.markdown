@@ -6,24 +6,24 @@ posttitle: Code > Chapter 4 > monitor_one_file.cf
 navsection: code
 ---
 
-[(download this file)](/src/ch04/monitor_one_file.cf)
-{% highlight cf3 %}
-body common control
-{
-  bundlesequence => { "monitor_files" };
-  inputs => { "cfengine_stdlib.cf" };
-}
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch04/monitor_one_file.cf)
 
-bundle agent monitor_files
-{
-  vars:
-    "files" slist => { "/bin/ls", "/etc/passwd", "/etc/motd" };
+<div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
+<span class="p">{</span>
+  <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;monitor_files&quot;</span> <span class="p">};</span>
+  <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;cfengine_stdlib.cf&quot;</span> <span class="p">};</span>
+<span class="p">}</span>
 
-  files:
-    "$(files)"
-      changes => detect_all_change;
-}
+<span class="k">bundle</span> <span class="k">agent</span> <span class="nf">monitor_files</span>
+<span class="p">{</span>
+  <span class="kd">vars</span><span class="p">:</span>
+    <span class="p">&quot;</span><span class="nv">files</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;/bin/ls&quot;</span><span class="p">,</span> <span class="s">&quot;/etc/passwd&quot;</span><span class="p">,</span> <span class="s">&quot;/etc/motd&quot;</span> <span class="p">};</span>
 
-{% endhighlight %}
+  <span class="kd">files</span><span class="p">:</span>
+    <span class="s">&quot;</span><span class="si">$(files)</span><span class="s">&quot;</span>
+      <span class="kr">changes</span> <span class="o">=&gt;</span> <span class="nf">detect_all_change</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
 
 {% include codeindex.markdown %}
