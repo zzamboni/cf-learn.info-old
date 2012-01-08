@@ -7,7 +7,7 @@ bundle common g
 {
   vars:
       "class_file" string => "/var/cfengine/site/classes.txt";
-      "class_strs" slist => readstringlist("$(class_file)", "#.*?\n", "\s+", "inf", "inf");
+      "class_strs" slist => readstringlist("$(class_file)", "#.*?$", "\s+", "inf", "inf");
   classes:
       "$(class_strs)"  expression => "any";
 }

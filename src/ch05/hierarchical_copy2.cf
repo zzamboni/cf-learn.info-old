@@ -1,12 +1,13 @@
 body common control
 {
+   inputs => { "cfengine_stdlib.cf" };
    bundlesequence => { "copyfiles" };
 }
 
 # Use single copy for all files
 body agent control
 {
-   files_single_copy => { ".*" };
+   files_single_copy => { ".*" }; 
 }
 
 bundle agent copyfiles
@@ -14,29 +15,23 @@ bundle agent copyfiles
  vars:
    # Suffixes to try, in most-specific to most-general order. This must include the
    # empty suffix at the end, for the most general file.
-   "copysuffixes"    slist => { ".${sys.fqhost}", ".${sys.uqhost}", ".${sys.domain}",
-			        ".${sys.flavour}", ".${sys.ostype}", "" };
+   "suffixes"    slist => { ".$(sys.fqhost)", ".$(sys.uqhost)", ".$(sys.domain)", 
+			    ".$(sys.flavour)", ".$(sys.ostype)", "" };
    # List of files to copy
-   "filestocopy"     slist => { "/etc/hosts", "/etc/motd" };
-   "dirstocopy"      slist => { "${sys.workdir}/bin", "/usr/local/bin" };
+   "filestocopy"     slist => { "/etc/hosts", "/etc/motd" };   
+   "dirstocopy"      slist => { "$(sys.workdir)/bin", "/usr/local/bin" };
    # Source of the files
-   "repo"            string => "/mnt/fileserver/cfengine/files";
+   "repo"            string => "/mnt/fileserver/cfengine/files";   
    # Destination for the files
-   # Make it something other than empty to test copy operation, e.g.
-   # "dest" string => "/tmp/testdest";
-   "dest"            string => "";
+   # Make it empty to copy over the real system (i.e. "production mode")
+   # "dest" string => "";
+   "dest"            string => "/tmp/testdest";   
 
  files:
-   "$(dest)/$(filestocopy)"
-     copy_from => hierarchical_copy("$(filestocopy)");
+   "$(dest)$(filestocopy)"   
+     copy_from => local_dcp("$(repo)$(filestocopy)$(suffixes)");
 
-   "$(dest)/$(dirstocopy)"
-     copy_from => hierarchical_copy("$(dirstocopy)"),
+   "$(dest)$(dirstocopy)"    
+     copy_from => local_dcp("$(repo)$(dirstocopy)$(suffixes)"),
      depth_search => recurse("inf");
-}
-
-body copy_from hierarchical_copy(from)
-{
-   source => "${copyfiles.repo}/$(from)${copyfiles.copysuffixes}";
-   compare => "digest";
 }

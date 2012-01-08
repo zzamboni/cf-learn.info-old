@@ -33,7 +33,7 @@ files:
 
 commands:
   restart_sshd.!no_restarts::
-    "/etc/init.d/sshd restart"
+    "/etc/init.d/sshd reload"
       handle => "sshd_restart",
       comment => "Restart sshd if the configuration file was modified";
 }
