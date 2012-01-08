@@ -1,4 +1,0 @@
-files:
-  "/etc/ssh/sshd_config"
-    comment => "Ensure root login is disallowed",
-    edit_line => append_if_no_line("AllowRoot no");
