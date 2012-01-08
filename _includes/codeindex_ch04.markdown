@@ -2,7 +2,6 @@
 
   * [sysctl.conf](/code/ch04/sysctl.conf.html)
   * [configfiles1.cf](/code/ch04/configfiles1.cf.html)
-  * [cfengine_stdlib.cf](/code/ch04/cfengine_stdlib.cf.html)
   * [configfiles2.cf](/code/ch04/configfiles2.cf.html)
   * [edit_inittab_plain.cf](/code/ch04/edit_inittab_plain.cf.html)
   * [edit_inittab_plain2.cf](/code/ch04/edit_inittab_plain2.cf.html)

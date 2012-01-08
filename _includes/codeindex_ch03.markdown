@@ -15,7 +15,6 @@
   * [ifvarclass_examples.cf](/code/ch03/ifvarclass_examples.cf.html)
   * [common_example.cf](/code/ch03/common_example.cf.html)
   * [action_example.cf](/code/ch03/action_example.cf.html)
-  * [cfengine_stdlib.cf](/code/ch03/cfengine_stdlib.cf.html)
   * [update_inputs.cf](/code/ch03/update_inputs.cf.html)
   * [fileedit_example.cf](/code/ch03/fileedit_example.cf.html)
   * [looping1.cf](/code/ch03/looping1.cf.html)

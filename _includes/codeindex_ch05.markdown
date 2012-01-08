@@ -3,7 +3,6 @@
   * [selective_copy1.cf](/code/ch05/selective_copy1.cf.html)
   * [hierarchical_copy1.cf](/code/ch05/hierarchical_copy1.cf.html)
   * [hierarchical_copy2.cf](/code/ch05/hierarchical_copy2.cf.html)
-  * [cfengine_stdlib.cf](/code/ch05/cfengine_stdlib.cf.html)
   * [configfiles2.cf](/code/ch05/configfiles2.cf.html)
   * [users_use.cf](/code/ch05/users_use.cf.html)
   * [sys_create_users.cf](/code/ch05/sys_create_users.cf.html)
