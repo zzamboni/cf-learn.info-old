@@ -17,7 +17,7 @@ navsection: code
 <span class="nf">This</span> <span class="nf">file</span> <span class="nf">was</span> <span class="nf">generated</span> <span class="nf">from</span> <span class="err">$</span><span class="p">(</span><span class="nf">login_banner</span><span class="err">.</span><span class="nf">template_file</span><span class="p">)</span>
 </pre></div>
 
-
+<div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>
 ----
 
 {% include codeindex.markdown %}

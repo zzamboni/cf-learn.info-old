@@ -17,7 +17,7 @@ navsection: code
     <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_colon_field</span><span class="p">(</span><span class="s">&quot;id&quot;</span><span class="p">,</span><span class="s">&quot;2&quot;</span><span class="p">,</span><span class="s">&quot;3&quot;</span><span class="p">);</span> 
 </pre></div>
 
-
+<div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>
 ----
 
 {% include codeindex.markdown %}

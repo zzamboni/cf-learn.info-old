@@ -14,7 +14,7 @@ navsection: code
   <span class="p">&quot;</span><span class="nv">colors</span><span class="p">&quot;</span> <span class="kt">slist</span>  <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="s">&quot;green&quot;</span><span class="p">,</span> <span class="s">&quot;blue&quot;</span> <span class="p">};</span>
 </pre></div>
 
-
+<div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>
 ----
 
 {% include codeindex.markdown %}

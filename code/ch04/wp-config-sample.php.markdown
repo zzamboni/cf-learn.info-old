@@ -100,7 +100,7 @@ navsection: code
 <span class="k">require_once</span><span class="p">(</span><span class="nx">ABSPATH</span> <span class="o">.</span> <span class="s1">&#39;wp-settings.php&#39;</span><span class="p">);</span>
 </pre></div>
 
-
+<div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>
 ----
 
 {% include codeindex.markdown %}

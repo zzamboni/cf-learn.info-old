@@ -15,7 +15,7 @@ navsection: code
 <span class="na">net.ipv4.conf.all.log_martians</span> <span class="o">=</span> <span class="s">1</span>
 </pre></div>
 
-
+<div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>
 ----
 
 {% include codeindex.markdown %}

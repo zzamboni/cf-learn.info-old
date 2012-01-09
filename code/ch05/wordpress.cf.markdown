@@ -324,7 +324,7 @@ navsection: code
 <span class="c">#   DocumentRoot using Function readstringlist</span>
 </pre></div>
 
-
+<div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>
 ----
 
 {% include codeindex.markdown %}

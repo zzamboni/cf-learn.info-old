@@ -11,7 +11,7 @@ navsection: code
 <div class="highlight"><pre><span class="nb">echo</span> <span class="s2">&quot;AllowRoot no&quot;</span> &gt;&gt; /etc/ssh/sshd_config
 </pre></div>
 
-
+<div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>
 ----
 
 {% include codeindex.markdown %}

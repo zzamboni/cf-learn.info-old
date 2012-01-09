@@ -13,7 +13,7 @@ navsection: code
  sed -i <span class="s1">&#39;s/^.*AllowRoot .*$/AllowRoot no/;&#39;</span> /etc/ssh/sshd_config
 </pre></div>
 
-
+<div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>
 ----
 
 {% include codeindex.markdown %}
