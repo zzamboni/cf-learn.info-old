@@ -17,3 +17,4 @@
   * [host_classes1.cf](/code/ch05/host_classes1.cf.html)
   * [host_classes2.cf](/code/ch05/host_classes2.cf.html)
   * [host_classes3.cf](/code/ch05/host_classes3.cf.html)
+  * [order-control.cf](/code/ch05/order-control.cf.html)
