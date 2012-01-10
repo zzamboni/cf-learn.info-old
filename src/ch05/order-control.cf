@@ -1,0 +1,20 @@
+body common control {
+        bundlesequence => { "test" };
+                    }
+
+bundle agent test
+{
+  vars:
+      "var1" string => "value 1";
+    foo::
+      "var2" string => "value 2";
+  classes:
+      "foo" expression => isvariable("var1");
+      "bar" expression => isvariable("var2");
+
+  reports:
+    cfengine::
+      "var1=$(var1)"
+        ifvarclass => "bar";
+      "var2=$(var2)";
+}
