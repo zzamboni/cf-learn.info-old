@@ -1,0 +1,12 @@
+---
+layout: cf-learn
+title: Learning CFEngine 3
+pageurl: /ref/hosts
+posttitle: Reference disambiguation for 'hosts'
+navsection: none
+---
+
+The term 'hosts' could refer to several sections in the documentation. Please choose one:
+
+- [5\.5\.1 <code>hosts</code>](https://cfengine.com/manuals/cf3-reference.html#hosts-in-runagent)
+- [5\.9\.3 <code>exclude\_hosts</code>](https://cfengine.com/manuals/cf3-reference.html#exclude_hosts-in-hub)

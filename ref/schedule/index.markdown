@@ -1,0 +1,12 @@
+---
+layout: cf-learn
+title: Learning CFEngine 3
+pageurl: /ref/schedule
+posttitle: Reference disambiguation for 'schedule'
+navsection: none
+---
+
+The term 'schedule' could refer to several sections in the documentation. Please choose one:
+
+- [5\.6\.6 <code>schedule</code>](https://cfengine.com/manuals/cf3-reference.html#schedule-in-executor)
+- [5\.9\.4 <code>hub\_schedule</code>](https://cfengine.com/manuals/cf3-reference.html#hub_schedule-in-hub)

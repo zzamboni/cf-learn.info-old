@@ -1,0 +1,12 @@
+---
+layout: cf-learn
+title: Learning CFEngine 3
+pageurl: /ref/variable-sys.licenses
+posttitle: Reference disambiguation for 'variable-sys.licenses'
+navsection: none
+---
+
+The term 'variable-sys.licenses' could refer to several sections in the documentation. Please choose one:
+
+- [12\.5\.37 Variable sys\.licenses\_granted](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.licenses_granted)
+- [12\.5\.38 Variable sys\.licenses\_installtime](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.licenses_installtime)

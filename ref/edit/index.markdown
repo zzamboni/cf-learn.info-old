@@ -1,0 +1,15 @@
+---
+layout: cf-learn
+title: Learning CFEngine 3
+pageurl: /ref/edit
+posttitle: Reference disambiguation for 'edit'
+navsection: none
+---
+
+The term 'edit' could refer to several sections in the documentation. Please choose one:
+
+- [7\.4\.7 <code>edit\_line</code>](https://cfengine.com/manuals/cf3-reference.html#edit_line-in-files)
+- [7\.4\.8 <code>edit\_xml</code>](https://cfengine.com/manuals/cf3-reference.html#edit_xml-in-files)
+- [7\.4\.9 <code>edit\_defaults</code> \(body template\)](https://cfengine.com/manuals/cf3-reference.html#edit_defaults-in-files)
+- [7\.8\.1 <code>edit\_field</code> \(body template\)](https://cfengine.com/manuals/cf3-reference.html#edit_field-in-field_edits)
+- [12\.2 Variable context <code>edit</code>](https://cfengine.com/manuals/cf3-reference.html#Variable-context-edit)

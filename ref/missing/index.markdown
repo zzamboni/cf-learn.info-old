@@ -1,0 +1,12 @@
+---
+layout: cf-learn
+title: Learning CFEngine 3
+pageurl: /ref/missing
+posttitle: Reference disambiguation for 'missing'
+navsection: none
+---
+
+The term 'missing' could refer to several sections in the documentation. Please choose one:
+
+- [5\.1\.4 <code>ignore\_missing\_bundles</code>](https://cfengine.com/manuals/cf3-reference.html#ignore_missing_bundles-in-common)
+- [5\.1\.5 <code>ignore\_missing\_inputs</code>](https://cfengine.com/manuals/cf3-reference.html#ignore_missing_inputs-in-common)
