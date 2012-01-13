@@ -15,7 +15,6 @@ navsection: code
     <span class="kr">create</span>    <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">,</span>
     <span class="kr">edit_defaults</span> <span class="o">=&gt;</span> <span class="nf">backup_timestamp</span><span class="p">,</span>
     <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">comment_lines_matching</span><span class="p">(</span><span class="s">&quot;ca::ctrlaltdel:.*&quot;</span><span class="p">,</span> <span class="s">&quot;#&quot;</span><span class="p">);</span>
-<span class="p">}</span>
 </pre></div>
 
 <div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>
