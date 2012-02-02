@@ -1,12 +1,12 @@
 ---
 layout: cf-learn
 title: Learning CFEngine 3
-pageurl: /code/ch03/default-promises.cf.html
-posttitle: Code > Chapter 3 > default-promises.cf
+pageurl: /code/ch06/default-promises.cf.html
+posttitle: Code > Chapter 6 > default-promises.cf
 navsection: code
 ---
 
-[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch03/default-promises.cf)
+[(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch06/default-promises.cf)
 
 <div class="highlight"><pre><span class="c">###############################################################################</span>
 <span class="c">#</span>

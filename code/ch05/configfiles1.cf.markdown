@@ -22,7 +22,8 @@ navsection: code
   <span class="p">&quot;</span><span class="nv">sysctl[net.ipv4.conf.all.log_martians]</span><span class="p">&quot;</span>        <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;1&quot;</span><span class="p">;</span>
 
 <span class="kd">methods</span><span class="p">:</span> 
-  <span class="s">&quot;sysctl&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_sysctl</span><span class="p">;</span>
+  <span class="s">&quot;sysctl&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_sysctl</span><span class="p">,</span>
+            <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Configure </span><span class="si">$(files[sysctl])</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">edit_sysctl</span>
