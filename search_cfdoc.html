@@ -1,0 +1,29 @@
+---
+layout: cf-learn
+title: Learning CFEngine 3
+pageurl: author.html
+posttitle: CFEngine documentation search
+navsection: search
+---
+
+<div id="msg"><p>No search term was entered. Please enter a search
+    term in the box to the right.</p></div>
+<script type="text/javascript"> 
+  function parseQueryFromUrl () {
+    var queryParamName = "search";
+    var search = window.location.search.substr(1);
+    var parts = search.split('&');
+    for (var i = 0; i < parts.length; i++) {
+      var keyvaluepair = parts[i].split('=');
+      if (decodeURIComponent(keyvaluepair[0]) == queryParamName) {
+        return decodeURIComponent(keyvaluepair[1].replace(/\+/g, ' '));
+      }
+    }
+    return '';
+  }
+
+  var queryFromUrl = parseQueryFromUrl();
+  if (queryFromUrl) {
+    window.location.replace('http://cf-learn.info/ref/' + queryFromUrl);
+  }
+</script>

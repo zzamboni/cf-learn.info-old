@@ -1,0 +1,18 @@
+---
+layout: cf-learn
+title: Learning CFEngine 3
+pageurl: http://cf-learn.info/
+posttitle: CFEngine documentation not found
+postheader: Well, how about that
+navsection: 404
+---
+
+I could not find anything in the documentation index about the term
+you entered.
+
+My index is limited (in particular it only searches section headers
+in the reference manual), so it's possible it's missiing whatever you are
+searching for (or you mistyped it).
+
+You could try going to the <a href="http://cf-learn.info/ref/">Reference manual</a>
+and searching for it over there directly, or try entering your search term again.
