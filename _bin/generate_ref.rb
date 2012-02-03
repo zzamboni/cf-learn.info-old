@@ -91,7 +91,7 @@ The term '#{i}' could refer to several sections in the documentation. Please cho
 
 EOF
       index.each { |j|
-        text = sections[j].gsub(/([\*\`\[\]\\\_\(\)\{\}\#\+\-\.\!])/) { |m| "\\#{m}" }
+        text = sections[j].gsub(/([\*\`\[\]\\\{\}\#\+\!])/) { |m| "\\#{m}" }
         f.puts(%Q(- [#{text}](#{RefGuideUrl}\##{j})))
       }
     end
