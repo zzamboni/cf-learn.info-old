@@ -8,5 +8,5 @@ navsection: none
 
 The term 'execd' could refer to several sections in the documentation. Please choose one:
 
-- [1\.1\.2 cf\-execd](https://cfengine.com/manuals/cf3-reference.html#cf-execd)
-- [12\.5\.4 Variable sys\.cf\_execd](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.cf_execd)
+- [1.1.2 cf-execd](https://cfengine.com/manuals/cf3-reference.html#cf-execd)
+- [12.5.4 Variable sys.cf_execd](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.cf_execd)

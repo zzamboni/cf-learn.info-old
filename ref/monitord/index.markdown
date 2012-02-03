@@ -8,5 +8,5 @@ navsection: none
 
 The term 'monitord' could refer to several sections in the documentation. Please choose one:
 
-- [1\.1\.4 cf\-monitord](https://cfengine.com/manuals/cf3-reference.html#cf-monitord)
-- [12\.5\.8 Variable sys\.cf\_monitord](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.cf_monitord)
+- [1.1.4 cf-monitord](https://cfengine.com/manuals/cf3-reference.html#cf-monitord)
+- [12.5.8 Variable sys.cf_monitord](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.cf_monitord)

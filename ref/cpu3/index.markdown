@@ -8,6 +8,6 @@ navsection: none
 
 The term 'cpu3' could refer to several sections in the documentation. Please choose one:
 
-- [12\.4\.160 Variable mon\.value\_cpu3](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_cpu3)
-- [12\.4\.161 Variable mon\.av\_cpu3](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_cpu3)
-- [12\.4\.162 Variable mon\.dev\_cpu3](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_cpu3)
+- [12.4.160 Variable mon.value_cpu3](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_cpu3)
+- [12.4.161 Variable mon.av_cpu3](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_cpu3)
+- [12.4.162 Variable mon.dev_cpu3](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_cpu3)

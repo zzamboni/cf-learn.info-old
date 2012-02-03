@@ -8,5 +8,5 @@ navsection: none
 
 The term 'recovery-from-errors' could refer to several sections in the documentation. Please choose one:
 
-- [4\.6 Recovery from errors in the configuration](https://cfengine.com/manuals/cf3-reference.html#Recovery-from-errors-in-the-configuration)
-- [4\.7 Recovery from errors in the software](https://cfengine.com/manuals/cf3-reference.html#Recovery-from-errors-in-the-software)
+- [4.6 Recovery from errors in the configuration](https://cfengine.com/manuals/cf3-reference.html#Recovery-from-errors-in-the-configuration)
+- [4.7 Recovery from errors in the software](https://cfengine.com/manuals/cf3-reference.html#Recovery-from-errors-in-the-software)

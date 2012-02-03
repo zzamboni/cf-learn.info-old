@@ -8,5 +8,5 @@ navsection: none
 
 The term 'state' could refer to several sections in the documentation. Please choose one:
 
-- [7\.3\.4 <code>environment\_state</code>](https://cfengine.com/manuals/cf3-reference.html#environment_state-in-environments)
-- [13\.5 State information](https://cfengine.com/manuals/cf3-reference.html#State-information)
+- [7.3.4 <code>environment_state</code>](https://cfengine.com/manuals/cf3-reference.html#environment_state-in-environments)
+- [13.5 State information](https://cfengine.com/manuals/cf3-reference.html#State-information)

@@ -8,5 +8,5 @@ navsection: none
 
 The term 'exclude' could refer to several sections in the documentation. Please choose one:
 
-- [5\.9\.3 <code>exclude\_hosts</code>](https://cfengine.com/manuals/cf3-reference.html#exclude_hosts-in-hub)
-- [7\.2\.6 <code>registry\_exclude</code>](https://cfengine.com/manuals/cf3-reference.html#registry_exclude-in-databases)
+- [5.9.3 <code>exclude_hosts</code>](https://cfengine.com/manuals/cf3-reference.html#exclude_hosts-in-hub)
+- [7.2.6 <code>registry_exclude</code>](https://cfengine.com/manuals/cf3-reference.html#registry_exclude-in-databases)

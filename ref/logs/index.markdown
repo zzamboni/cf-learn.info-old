@@ -9,4 +9,4 @@ navsection: none
 The term 'logs' could refer to several sections in the documentation. Please choose one:
 
 - [13 Logs and records](https://cfengine.com/manuals/cf3-reference.html#Logs-and-records)
-- [13\.2 Text logs](https://cfengine.com/manuals/cf3-reference.html#Text-logs)
+- [13.2 Text logs](https://cfengine.com/manuals/cf3-reference.html#Text-logs)

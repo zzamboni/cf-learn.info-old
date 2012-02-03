@@ -8,5 +8,5 @@ navsection: none
 
 The term 'timeout' could refer to several sections in the documentation. Please choose one:
 
-- [5\.2\.42 <code>default\_timeout</code>](https://cfengine.com/manuals/cf3-reference.html#default_timeout-in-agent)
-- [5\.5\.10 <code>timeout</code>](https://cfengine.com/manuals/cf3-reference.html#timeout-in-runagent)
+- [5.2.42 <code>default_timeout</code>](https://cfengine.com/manuals/cf3-reference.html#default_timeout-in-agent)
+- [5.5.10 <code>timeout</code>](https://cfengine.com/manuals/cf3-reference.html#timeout-in-runagent)

@@ -8,8 +8,8 @@ navsection: none
 
 The term 'agent' could refer to several sections in the documentation. Please choose one:
 
-- [1\.1\.1 cf\-agent](https://cfengine.com/manuals/cf3-reference.html#cf-agent)
-- [2\.8\.1 Agent normal ordering](https://cfengine.com/manuals/cf3-reference.html#Agent-normal-ordering)
-- [5\.2 <code>agent</code> control promises](https://cfengine.com/manuals/cf3-reference.html#control-agent)
+- [1.1.1 cf-agent](https://cfengine.com/manuals/cf3-reference.html#cf-agent)
+- [2.8.1 Agent normal ordering](https://cfengine.com/manuals/cf3-reference.html#Agent-normal-ordering)
+- [5.2 <code>agent</code> control promises](https://cfengine.com/manuals/cf3-reference.html#control-agent)
 - [7 Bundles of <code>agent</code>](https://cfengine.com/manuals/cf3-reference.html#Bundles-for-agent)
-- [12\.5\.3 Variable sys\.cf\_agent](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.cf_agent)
+- [12.5.3 Variable sys.cf_agent](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.cf_agent)

@@ -8,5 +8,5 @@ navsection: none
 
 The term 'copy' could refer to several sections in the documentation. Please choose one:
 
-- [5\.2\.21 <code>files\_single\_copy</code>](https://cfengine.com/manuals/cf3-reference.html#files_single_copy-in-agent)
-- [7\.4\.3 <code>copy\_from</code> \(body template\)](https://cfengine.com/manuals/cf3-reference.html#copy_from-in-files)
+- [5.2.21 <code>files_single_copy</code>](https://cfengine.com/manuals/cf3-reference.html#files_single_copy-in-agent)
+- [7.4.3 <code>copy_from</code> (body template)](https://cfengine.com/manuals/cf3-reference.html#copy_from-in-files)

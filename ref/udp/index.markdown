@@ -8,9 +8,9 @@ navsection: none
 
 The term 'udp' could refer to several sections in the documentation. Please choose one:
 
-- [12\.4\.88 Variable mon\.value\_udp\_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_udp_in)
-- [12\.4\.89 Variable mon\.av\_udp\_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_udp_in)
-- [12\.4\.90 Variable mon\.dev\_udp\_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_udp_in)
-- [12\.4\.91 Variable mon\.value\_udp\_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_udp_out)
-- [12\.4\.92 Variable mon\.av\_udp\_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_udp_out)
-- [12\.4\.93 Variable mon\.dev\_udp\_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_udp_out)
+- [12.4.88 Variable mon.value_udp_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_udp_in)
+- [12.4.89 Variable mon.av_udp_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_udp_in)
+- [12.4.90 Variable mon.dev_udp_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_udp_in)
+- [12.4.91 Variable mon.value_udp_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_udp_out)
+- [12.4.92 Variable mon.av_udp_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_udp_out)
+- [12.4.93 Variable mon.dev_udp_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_udp_out)

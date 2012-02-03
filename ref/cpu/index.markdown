@@ -8,6 +8,6 @@ navsection: none
 
 The term 'cpu' could refer to several sections in the documentation. Please choose one:
 
-- [12\.4\.148 Variable mon\.value\_cpu](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_cpu)
-- [12\.4\.149 Variable mon\.av\_cpu](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_cpu)
-- [12\.4\.150 Variable mon\.dev\_cpu](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_cpu)
+- [12.4.148 Variable mon.value_cpu](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_cpu)
+- [12.4.149 Variable mon.av_cpu](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_cpu)
+- [12.4.150 Variable mon.dev_cpu](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_cpu)
