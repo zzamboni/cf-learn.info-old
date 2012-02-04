@@ -10,7 +10,7 @@ navsection: code
 
 <div class="highlight"><pre><span class="k">bundle</span> <span class="k">agent</span> <span class="nf">env_main</span>
 <span class="p">{</span>
-<span class="kd">reports</span><span class="p">:</span>
+  <span class="kd">reports</span><span class="p">:</span>
     <span class="nc">cfengine</span><span class="p">::</span>
       <span class="s">&quot;Environment: </span><span class="si">$(environments.active)</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">}</span>

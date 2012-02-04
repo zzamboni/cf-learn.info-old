@@ -16,7 +16,7 @@ navsection: code
 <span class="k">bundle</span> <span class="k">common</span> <span class="nf">g</span>
 <span class="p">{</span>
   <span class="kd">classes</span><span class="p">:</span>
-      <span class="s">&quot;no_restarts&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="s">&quot;!any&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">no_restarts</span><span class="p">&quot;</span> <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="s">&quot;!any&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">test</span>

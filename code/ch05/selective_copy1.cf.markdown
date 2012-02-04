@@ -24,26 +24,26 @@ navsection: code
 <span class="p">{</span>
   <span class="kd">files</span><span class="p">:</span> 
     <span class="nc">wonderwoman_justiceleague_com</span><span class="p">::</span>
-      <span class="s">&quot;/etc/hosts&quot;</span>
-        <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.wonderwoman.justiceleague.com&quot;</span><span class="p">);</span>
+      <span class="p">&quot;</span><span class="nv">/etc/hosts</span><span class="p">&quot;</span>
+      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.wonderwoman.justiceleague.com&quot;</span><span class="p">);</span>
     <span class="nc">lex</span><span class="p">::</span>
-      <span class="s">&quot;/etc/hosts&quot;</span>
-        <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.lex&quot;</span><span class="p">);</span>
+      <span class="p">&quot;</span><span class="nv">/etc/hosts</span><span class="p">&quot;</span>
+      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.lex&quot;</span><span class="p">);</span>
     <span class="nc">justiceleague_com</span><span class="p">::</span>
-      <span class="s">&quot;/etc/hosts&quot;</span>
-        <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.justiceleague.com&quot;</span><span class="p">);</span>
+      <span class="p">&quot;</span><span class="nv">/etc/hosts</span><span class="p">&quot;</span>
+      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.justiceleague.com&quot;</span><span class="p">);</span>
     <span class="nc">ssosv_com</span><span class="p">::</span>
-      <span class="s">&quot;/etc/hosts&quot;</span>
-        <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.ssosv.com&quot;</span><span class="p">);</span>
+      <span class="p">&quot;</span><span class="nv">/etc/hosts</span><span class="p">&quot;</span>
+      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.ssosv.com&quot;</span><span class="p">);</span>
     <span class="nc">suse_9</span><span class="p">::</span>
-      <span class="s">&quot;/etc/hosts&quot;</span>
-        <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.suse_9&quot;</span><span class="p">);</span>
+      <span class="p">&quot;</span><span class="nv">/etc/hosts</span><span class="p">&quot;</span>
+      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.suse_9&quot;</span><span class="p">);</span>
     <span class="nc">windows</span><span class="p">::</span>
-      <span class="s">&quot;/etc/hosts&quot;</span>
-        <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.windows&quot;</span><span class="p">);</span>
+      <span class="p">&quot;</span><span class="nv">/etc/hosts</span><span class="p">&quot;</span>
+      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts.windows&quot;</span><span class="p">);</span>
     <span class="nc">any</span><span class="p">::</span>
-      <span class="s">&quot;/etc/hosts&quot;</span>
-        <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts&quot;</span><span class="p">);</span>
+      <span class="p">&quot;</span><span class="nv">/etc/hosts</span><span class="p">&quot;</span>
+      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 

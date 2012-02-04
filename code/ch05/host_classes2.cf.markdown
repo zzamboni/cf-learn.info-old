@@ -11,14 +11,14 @@ navsection: code
 <div class="highlight"><pre><span class="k">bundle</span> <span class="k">agent</span> <span class="nf">config</span>
 <span class="p">{</span>
   <span class="kd">classes</span><span class="p">:</span>
-      <span class="s">&quot;websrv&quot;</span>    <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">classmatch</span><span class="p">(</span><span class="s">&quot;websrv.*&quot;</span><span class="p">);</span>
-      <span class="s">&quot;dnssrv&quot;</span>    <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">classmatch</span><span class="p">(</span><span class="s">&quot;dnssrv.*&quot;</span><span class="p">);</span>
+      <span class="p">&quot;</span><span class="nv">websrv</span><span class="p">&quot;</span>    <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">classmatch</span><span class="p">(</span><span class="s">&quot;websrv.*&quot;</span><span class="p">);</span>
+      <span class="p">&quot;</span><span class="nv">dnssrv</span><span class="p">&quot;</span>    <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">classmatch</span><span class="p">(</span><span class="s">&quot;dnssrv.*&quot;</span><span class="p">);</span>
       
   <span class="kd">methods</span><span class="p">:</span>
     <span class="nc">websrv</span><span class="p">::</span>
-      <span class="s">&quot;config_websrv&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">config_websrv</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">config_websrv</span><span class="p">&quot;</span>   <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">config_websrv</span><span class="p">;</span>
     <span class="nc">dnssrv</span><span class="p">::</span>
-      <span class="s">&quot;config_dnssrv&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">conig_dnssrv</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">config_dnssrv</span><span class="p">&quot;</span>   <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">conig_dnssrv</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 

@@ -11,7 +11,7 @@
   * [vars_string_examples.cf](/code/ch03/vars_string_examples.cf.html)
   * [vars_num_examples.cf](/code/ch03/vars_num_examples.cf.html)
   * [vars_list_examples.cf](/code/ch03/vars_list_examples.cf.html)
-  * [vars_array_examples.cf](/code/ch03/vars_array_examples.cf.html)
+  * [vars_array_examples2.cf](/code/ch03/vars_array_examples2.cf.html)
   * [ifvarclass_examples.cf](/code/ch03/ifvarclass_examples.cf.html)
   * [common_example.cf](/code/ch03/common_example.cf.html)
   * [action_example.cf](/code/ch03/action_example.cf.html)
@@ -21,3 +21,4 @@
   * [looping2.cf](/code/ch03/looping2.cf.html)
   * [looping3.cf](/code/ch03/looping3.cf.html)
   * [default-promises.cf](/code/ch03/default-promises.cf.html)
+  * [failsafe-update.cf](/code/ch03/failsafe-update.cf.html)

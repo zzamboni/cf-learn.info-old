@@ -10,17 +10,17 @@ navsection: code
 
 <div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
 <span class="p">{</span>
-  <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;test&quot;</span> <span class="p">};</span>
+      <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;test&quot;</span> <span class="p">};</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">test</span>
 <span class="p">{</span>
   <span class="kd">vars</span><span class="p">:</span>
-    <span class="p">&quot;</span><span class="nv">i1</span><span class="p">&quot;</span> <span class="kt">int</span> <span class="o">=&gt;</span> <span class="s">&quot;25&quot;</span><span class="p">;</span>
-    <span class="p">&quot;</span><span class="nv">i2</span><span class="p">&quot;</span> <span class="kt">int</span> <span class="o">=&gt;</span> <span class="s">&quot;10k&quot;</span><span class="p">;</span>
-    <span class="p">&quot;</span><span class="nv">i3</span><span class="p">&quot;</span> <span class="kt">int</span> <span class="o">=&gt;</span> <span class="s">&quot;10K&quot;</span><span class="p">;</span>
-    <span class="p">&quot;</span><span class="nv">r1</span><span class="p">&quot;</span> <span class="kt">real</span> <span class="o">=&gt;</span> <span class="s">&quot;1.2&quot;</span><span class="p">;</span>
-    <span class="p">&quot;</span><span class="nv">r2</span><span class="p">&quot;</span> <span class="kt">real</span> <span class="o">=&gt;</span> <span class="s">&quot;10e-5&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">i1</span><span class="p">&quot;</span> <span class="kt">int</span> <span class="o">=&gt;</span> <span class="s">&quot;25&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">i2</span><span class="p">&quot;</span> <span class="kt">int</span> <span class="o">=&gt;</span> <span class="s">&quot;10k&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">i3</span><span class="p">&quot;</span> <span class="kt">int</span> <span class="o">=&gt;</span> <span class="s">&quot;10K&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">r1</span><span class="p">&quot;</span> <span class="kt">real</span> <span class="o">=&gt;</span> <span class="s">&quot;1.2&quot;</span><span class="p">;</span>
+      <span class="p">&quot;</span><span class="nv">r2</span><span class="p">&quot;</span> <span class="kt">real</span> <span class="o">=&gt;</span> <span class="s">&quot;10e-5&quot;</span><span class="p">;</span>
 
   <span class="kd">reports</span><span class="p">:</span>
     <span class="nc">cfengine</span><span class="p">::</span>
