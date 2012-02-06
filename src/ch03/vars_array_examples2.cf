@@ -1,0 +1,23 @@
+body common control
+{
+      bundlesequence => { "test" };
+}
+
+bundle agent test
+{
+  vars:
+      "user[name]"              string => "zamboni";
+      "user[fullname][first]"   string => "Diego";
+      "user[fullname][last]"    string => "Zamboni";
+      "user[dirs]"              slist => { "/home/zamboni", "/tmp/zamboni", "/export/home/zamboni" };
+
+      "fields"     slist => getindices("user");
+      "userfields" slist => getindices("user[fullname]");
+
+  reports:
+    cfengine::
+      "user fields = $(fields)";
+      "account name = $(user[name])";
+      "$(userfields) name = $(user[fullname][$(userfields)])";
+      "user dir = $(user[dirs])";
+}

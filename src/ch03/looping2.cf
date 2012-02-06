@@ -1,14 +1,14 @@
 body common control
 {
-  bundlesequence => { "test" };
+      bundlesequence => { "test" };
 }
 
 bundle agent test
 {
-vars:
-  "colors" slist => { "red", "green", "blue" };
-  "tone"   slist => { "dark", "light" };
-reports:
-  cfengine_3::
-    "$(tone) $(colors)";
+  vars:
+      "colors" slist => { "red", "green", "blue" };
+      "tone"   slist => { "dark", "light" };
+  reports:
+    cfengine_3::
+      "$(tone) $(colors)";
 }

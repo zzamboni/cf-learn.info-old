@@ -1,22 +1,22 @@
 body common control
 {
-  bundlesequence => { "find_netif" };
+      bundlesequence => { "find_netif" };
 }
 
 bundle agent find_netif
 {
-vars:
-  "nics" slist => getindices("sys.ipv4"); 
-  # Regex we want to match on the IP address
-  "ipregex" string => "192\.168\.1\..*";
+  vars:
+      "nics" slist => getindices("sys.ipv4"); 
+      # Regex we want to match on the IP address
+      "ipregex" string => "192\.168\.1\..*";
 
-classes:
-  "ismatch_$(nics)" expression => regcmp("$(ipregex)", "${sys.ipv4[$(nics)]}"); 
+  classes:
+      "ismatch_$(nics)" expression => regcmp("$(ipregex)", "${sys.ipv4[$(nics)]}"); 
 
-reports:
-  cfengine::
-    "NICs found: $(nics) ($(sys.ipv4[$(nics)]))"; 
+  reports:
+    cfengine::
+      "NICs found: $(nics) ($(sys.ipv4[$(nics)]))"; 
 
-    "Matched NIC: $(nics) ($(sys.ipv4[$(nics)]))"
+      "Matched NIC: $(nics) ($(sys.ipv4[$(nics)]))"
       ifvarclass => "ismatch_$(nics)";
 }

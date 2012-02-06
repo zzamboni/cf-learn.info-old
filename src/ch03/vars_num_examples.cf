@@ -1,15 +1,16 @@
-body common control {
-  bundlesequence => { "test" };
+body common control
+{
+      bundlesequence => { "test" };
 }
 
 bundle agent test
 {
   vars:
-    "i1" int => "25";
-    "i2" int => "10k";
-    "i3" int => "10K";
-    "r1" real => "1.2";
-    "r2" real => "10e-5";
+      "i1" int => "25";
+      "i2" int => "10k";
+      "i3" int => "10K";
+      "r1" real => "1.2";
+      "r2" real => "10e-5";
 
   reports:
     cfengine::

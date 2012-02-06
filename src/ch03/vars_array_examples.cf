@@ -1,4 +1,5 @@
-body common control {
+body common control
+{
   bundlesequence => { "test" };
 }
 

@@ -1,19 +1,19 @@
 bundle agent disable_tso_flag
 {
-vars:
-  "ipregex" string => "192\.168\..*"; 
-  "nics"    slist  => getindices("sys.ipv4");
+  vars:
+      "ipregex" string => "192\.168\..*"; 
+      "nics"    slist  => getindices("sys.ipv4");
 
-classes:
-  "isgreen_$(nics)" expression => regcmp("$(ipregex)", "$(sys.ipv4[$(nics)])"); 
+  classes:
+      "isgreen_$(nics)" expression => regcmp("$(ipregex)", "$(sys.ipv4[$(nics)])"); 
 
-files: 
-  "$(configfiles.files[inittab])"
-    handle => "inittab_add_ethtool",
-    comment => "Ensure ethtool is run on startup to disable the TSO flag",
-    create    => "false",
-    edit_defaults => edit_backup,
-    edit_line => replace_or_add("tso:3:.*", 
-				"tso:3:once:/usr/sbin/ethtool -K $(nics) tso off"),
-    ifvarclass => "isgreen_$(nics)";
+  files: 
+      "$(configfiles.files[inittab])"
+      handle => "inittab_add_ethtool",
+      comment => "Ensure ethtool is run on startup to disable the TSO flag",
+      create => "false",
+      edit_defaults => edit_backup,
+      edit_line => replace_or_add("tso:3:.*", 
+				  "tso:3:once:/usr/sbin/ethtool -K $(nics) tso off"),
+      ifvarclass => "isgreen_$(nics)";
 }

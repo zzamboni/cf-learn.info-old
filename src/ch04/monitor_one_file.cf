@@ -1,15 +1,15 @@
 body common control
 {
-  bundlesequence => { "monitor_files" };
-  inputs => { "cfengine_stdlib.cf" };
+      bundlesequence => { "monitor_files" };
+      inputs => { "cfengine_stdlib.cf" };
 }
 
 bundle agent monitor_files
 {
   vars:
-    "files" slist => { "/bin/ls", "/etc/passwd", "/etc/motd" };
+      "files" slist => { "/bin/ls", "/etc/passwd", "/etc/motd" };
 
   files:
-    "$(files)"
+      "$(files)"
       changes => detect_all_change;
 }

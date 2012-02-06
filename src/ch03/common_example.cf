@@ -1,10 +1,10 @@
 bundle common g
 {
   vars:
-    "localdir"    string => "/usr/local";
-    "confdir"     string => "/etc";
+      "localdir"    string => "/usr/local";
+      "confdir"     string => "/etc";
   classes:
-    "testhost"    or => { "testhost1", "testhost2" };
+      "testhost"    or => { "testhost1", "testhost2" };
 }
 
 bundle common test

@@ -1,8 +1,8 @@
 bundle agent reboot
 {
-commands:
-  linux::
-    "/sbin/shutdown -r now";
-  windows::
-    "c:/Windows/system32/shutdown.exe /r /t 01";
+  commands:
+    linux::
+      "/sbin/shutdown -r now";
+    windows::
+      "c:/Windows/system32/shutdown.exe /r /t 01";
 }

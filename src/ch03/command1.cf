@@ -1,2 +1,2 @@
-commands:
-  "/bin/ls /";
+  commands:
+"/bin/ls /";

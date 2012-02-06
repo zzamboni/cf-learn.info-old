@@ -1,17 +1,17 @@
 bundle agent software
 {
-vars:
-  "version[openssl]" string => "0.9.8k-7ubuntu8";
-  "version[ssl-cert]" string => "1.0.23ubuntu2";
+  vars:
+      "version[openssl]"  string => "0.9.8k-7ubuntu8";
+      "version[ssl-cert]" string => "1.0.23ubuntu2";
 
-  "architectures" slist => { "x86_64" };
-  "allpkgs" slist => getindices("version");
+      "architectures" slist => { "x86_64" };
+      "allpkgs"       slist => getindices("version");
 
-packages:
-  "$(allpkgs)" 
-    package_policy => "add",
-    package_select => "==";
-    package_version => "$(version[$(allpkgs)]";
-    package_architectures => @(architectures);
-    package_method => apt;   # For Debian and Ubuntu
+  packages:
+      "$(allpkgs)" 
+      package_policy => "add",
+      package_select => "==",
+      package_version => "$(version[$(allpkgs)]",
+      package_architectures => @(architectures),
+      package_method => apt;   # For Debian and Ubuntu
 }

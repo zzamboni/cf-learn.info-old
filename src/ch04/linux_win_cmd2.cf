@@ -1,12 +1,12 @@
 bundle agent reboot
 {
-commands:
-  reboot_needed.linux::
-    "/sbin/shutdown -r now";
-  reboot_needed.windows::
-    "c:/Windows/system32/shutdown.exe /r /t 01";
-    
-reports:
-  reboot_needed.!linux.!windows::
-    "I know how to reboot only Linux and Windows machines.";
+  commands:
+    reboot_needed.linux::
+      "/sbin/shutdown -r now";
+    reboot_needed.windows::
+      "c:/Windows/system32/shutdown.exe /r /t 01";
+      
+  reports:
+    reboot_needed.!(linux|windows)::
+      "I know how to reboot only Linux and Windows machines.";
 }

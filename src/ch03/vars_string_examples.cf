@@ -1,15 +1,16 @@
-body common control {
-  bundlesequence => { "test" };
+body common control
+{
+      bundlesequence => { "test" };
 }
 
 bundle agent test
 {
   vars:
-    "s1" string => "one";
-    "s2" string => "this
+      "s1" string => "one";
+      "s2" string => "this
 is a
 multine string";
-    "s3" string => "with \"quotes\"";
+      "s3" string => "with \"quotes\"";
 
   reports:
     cfengine::

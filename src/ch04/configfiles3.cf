@@ -1,43 +1,43 @@
 bundle agent configfiles
 {
-vars:  
-  # Files to edit
-  "files[sysctlconf]" string => "/etc/sysctl.conf";
-  "files[sshdconfig]" string => "/etc/ssh/sshd_config";
-  "files[inittab]"    string => "/etc/inittab";
+  vars:  
+      # Files to edit
+      "files[sysctlconf]" string => "/etc/sysctl.conf";
+      "files[sshdconfig]" string => "/etc/ssh/sshd_config";
+      "files[inittab]"    string => "/etc/inittab";
 
-  # Sysctl variables to set
-  "sysctl[net.ipv4.tcp_syncookies]"               string => "1";
-  "sysctl[net.ipv4.conf.all.accept_source_route]" string => "0 ";
-  "sysctl[net.ipv4.conf.all.accept_redirects]"    string => "0";
-  "sysctl[net.ipv4.conf.all.rp_filter]"           string => "1";
-  "sysctl[net.ipv4.conf.all.log_martians]"        string => "1";
+      # Sysctl variables to set
+      "sysctl[net.ipv4.tcp_syncookies]"               string => "1";
+      "sysctl[net.ipv4.conf.all.accept_source_route]" string => "0 ";
+      "sysctl[net.ipv4.conf.all.accept_redirects]"    string => "0";
+      "sysctl[net.ipv4.conf.all.rp_filter]"           string => "1";
+      "sysctl[net.ipv4.conf.all.log_martians]"        string => "1";
 
-  # SSHD configuration to set
-  "sshd[Protocol]"                                string => "2";
-  "sshd[X11Forwarding]"                           string => "yes";
-  "sshd[UseDNS]"				  string => "no";
+      # SSHD configuration to set
+      "sshd[Protocol]"                                string => "2";
+      "sshd[X11Forwarding]"                           string => "yes";
+      "sshd[UseDNS]"                                  string => "no";
 
-methods:
-  "sysctl"  usebundle => edit_sysctl;
-  "sshd"    usebundle => edit_sshd;
-  "inittab" usebundle => edit_inittab;
+  methods:
+      "sysctl"  usebundle => edit_sysctl;
+      "sshd"    usebundle => edit_sshd;
+      "inittab" usebundle => edit_inittab;
 }
 
 bundle agent edit_inittab
 {
-files:
-  "$(configfiles.files[inittab])"
-    handle => "inittab_set_initdefault",
-    comment => "Ensure graphical mode is disabled (default runmode=3)",
-    create    => "false",
-    edit_defaults => backup_timestamp,
-    edit_line => set_colon_field("id","2","3");
+  files:
+      "$(configfiles.files[inittab])"
+      handle => "inittab_set_initdefault",
+      comment => "Ensure graphical mode is disabled (default runmode=3)",
+      create => "false",
+      edit_defaults => backup_timestamp,
+      edit_line => set_colon_field("id","2","3");
 
-  "$(configfiles.files[inittab])"
-    handle => "inittab_disable_ctrlaltdel",
-    comment => "Ensure handling of ctrl-alt-del is disabled",
-    create    => "false",
-    edit_defaults => backup_timestamp,
-    edit_line => comment_lines_matching("ca::ctrlaltdel:.*", "#");
+      "$(configfiles.files[inittab])"
+      handle => "inittab_disable_ctrlaltdel",
+      comment => "Ensure handling of ctrl-alt-del is disabled",
+      create => "false",
+      edit_defaults => backup_timestamp,
+      edit_line => comment_lines_matching("ca::ctrlaltdel:.*", "#");
 }

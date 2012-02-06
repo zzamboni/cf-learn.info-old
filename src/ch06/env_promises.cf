@@ -1,0 +1,6 @@
+bundle agent env_main
+{
+  reports:
+    cfengine::
+      "Environment: $(environments.active)";
+}
