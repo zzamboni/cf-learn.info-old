@@ -10,7 +10,7 @@ navsection: code
 
 <div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
 <span class="p">{</span>
-      <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;edit_motd&quot;</span> <span class="p">};</span>
+        <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;edit_motd&quot;</span> <span class="p">};</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">edit_motd</span> 
@@ -20,8 +20,8 @@ navsection: code
 
   <span class="kd">files</span><span class="p">:</span>   
       <span class="p">&quot;</span><span class="nv">$(motd)</span><span class="p">&quot;</span>
-      <span class="kt">edit_line</span> <span class="o">=&gt;</span> <span class="nf">addmessage</span><span class="p">,</span>
-      <span class="kr">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+        <span class="kt">edit_line</span> <span class="o">=&gt;</span> <span class="nf">addmessage</span><span class="p">,</span>
+        <span class="kr">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
 
   <span class="kd">reports</span><span class="p">:</span>   
     <span class="nc">cfengine</span><span class="p">::</span>

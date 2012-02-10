@@ -15,8 +15,8 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">inputs</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/var/cfengine/masterfiles/inputs&quot;</span><span class="p">;</span>
   <span class="kd">files</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">${sys.workdir}/inputs</span><span class="p">&quot;</span>
-      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">remote_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(server)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(inputs)</span><span class="s">&quot;</span><span class="p">),</span>
-      <span class="kr">depth_search</span> <span class="o">=&gt;</span> <span class="nf">recurse_ignore</span><span class="p">(</span><span class="s">&quot;inf&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="s">&quot;_.*&quot;</span> <span class="p">});</span>
+        <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">remote_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(server)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(inputs)</span><span class="s">&quot;</span><span class="p">),</span>
+        <span class="kr">depth_search</span> <span class="o">=&gt;</span> <span class="nf">recurse_ignore</span><span class="p">(</span><span class="s">&quot;inf&quot;</span><span class="p">,</span> <span class="p">{</span> <span class="s">&quot;_.*&quot;</span> <span class="p">});</span>
 <span class="p">}</span>
 </pre></div>
 
