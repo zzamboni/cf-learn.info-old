@@ -29,7 +29,7 @@ as a security consultant. I live in
 [Quer&eacute;taro](http://en.wikipedia.org/wiki/Quer%C3%A9taro,_Quer%C3%A9taro)
 with my awesome wife and our two beautiful daughters.
 
-You can visit my personal website and blog at [http://zzamboni.org/]().
+You can visit my personal website and blog at [http://zzamboni.org/](http://zzamboni.org/).
 
 If you want to send me a direct message, please use the [contact form](contact.html).
 
