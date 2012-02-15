@@ -8,5 +8,5 @@ navsection: none
 
 The term 'common' could refer to several sections in the documentation. Please choose one:
 
-- [5.1 <code>common</code> control promises](https://cfengine.com/manuals/cf3-reference.html#control-common)
-- [6 Bundles of <code>common</code>](https://cfengine.com/manuals/cf3-reference.html#Bundles-for-common)
+- [5.1 <code>common</code> control promises](https://cfengine.com/manuals/cf3-reference#control-common)
+- [6 Bundles of <code>common</code>](https://cfengine.com/manuals/cf3-reference#Bundles-for-common)

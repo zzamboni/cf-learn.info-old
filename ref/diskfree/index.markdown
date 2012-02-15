@@ -8,7 +8,7 @@ navsection: none
 
 The term 'diskfree' could refer to several sections in the documentation. Please choose one:
 
-- [11.14 Function diskfree](https://cfengine.com/manuals/cf3-reference.html#Function-diskfree)
-- [12.4.10 Variable mon.value_diskfree](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_diskfree)
-- [12.4.11 Variable mon.av_diskfree](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_diskfree)
-- [12.4.12 Variable mon.dev_diskfree](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_diskfree)
+- [11.14 Function diskfree](https://cfengine.com/manuals/cf3-reference#Function-diskfree)
+- [12.4.10 Variable mon.value_diskfree](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_diskfree)
+- [12.4.11 Variable mon.av_diskfree](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_diskfree)
+- [12.4.12 Variable mon.dev_diskfree](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_diskfree)

@@ -8,6 +8,6 @@ navsection: none
 
 The term 'delete' could refer to several sections in the documentation. Please choose one:
 
-- [7.4.5 <code>delete</code> (body template)](https://cfengine.com/manuals/cf3-reference.html#delete-in-files)
-- [7.6 <code>delete_lines</code> promises in &lsquo;<samp><span class="samp">edit_line</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-reference.html#delete_lines-in-edit_line-promises)
-- [7.6.1 <code>delete_select</code> (body template)](https://cfengine.com/manuals/cf3-reference.html#delete_select-in-delete_lines)
+- [7.4.5 <code>delete</code> (body template)](https://cfengine.com/manuals/cf3-reference#delete-in-files)
+- [7.6 <code>delete_lines</code> promises in &lsquo;<samp><span class="samp">edit_line</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-reference#delete_lines-in-edit_line-promises)
+- [7.6.1 <code>delete_select</code> (body template)](https://cfengine.com/manuals/cf3-reference#delete_select-in-delete_lines)

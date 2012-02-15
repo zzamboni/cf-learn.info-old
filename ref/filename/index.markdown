@@ -8,5 +8,5 @@ navsection: none
 
 The term 'filename' could refer to several sections in the documentation. Please choose one:
 
-- [12.2.1 Variable edit.filename](https://cfengine.com/manuals/cf3-reference.html#Variable-edit.filename)
-- [12.6.2 Variable this.promise_filename](https://cfengine.com/manuals/cf3-reference.html#Variable-this.promise_filename)
+- [12.2.1 Variable edit.filename](https://cfengine.com/manuals/cf3-reference#Variable-edit.filename)
+- [12.6.2 Variable this.promise_filename](https://cfengine.com/manuals/cf3-reference#Variable-this.promise_filename)

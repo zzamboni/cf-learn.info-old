@@ -8,5 +8,5 @@ navsection: none
 
 The term 'banner' could refer to several sections in the documentation. Please choose one:
 
-- [5.7.6 <code>html_banner</code>](https://cfengine.com/manuals/cf3-reference.html#html_banner-in-knowledge)
-- [5.8.6 <code>html_banner</code>](https://cfengine.com/manuals/cf3-reference.html#html_banner-in-reporter)
+- [5.7.6 <code>html_banner</code>](https://cfengine.com/manuals/cf3-reference#html_banner-in-knowledge)
+- [5.8.6 <code>html_banner</code>](https://cfengine.com/manuals/cf3-reference#html_banner-in-reporter)

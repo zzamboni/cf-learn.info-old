@@ -8,9 +8,9 @@ navsection: none
 
 The term 'nfsd' could refer to several sections in the documentation. Please choose one:
 
-- [12.4.46 Variable mon.value_nfsd_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_nfsd_in)
-- [12.4.47 Variable mon.av_nfsd_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_nfsd_in)
-- [12.4.48 Variable mon.dev_nfsd_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_nfsd_in)
-- [12.4.49 Variable mon.value_nfsd_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_nfsd_out)
-- [12.4.50 Variable mon.av_nfsd_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_nfsd_out)
-- [12.4.51 Variable mon.dev_nfsd_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_nfsd_out)
+- [12.4.46 Variable mon.value_nfsd_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_nfsd_in)
+- [12.4.47 Variable mon.av_nfsd_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_nfsd_in)
+- [12.4.48 Variable mon.dev_nfsd_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_nfsd_in)
+- [12.4.49 Variable mon.value_nfsd_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_nfsd_out)
+- [12.4.50 Variable mon.av_nfsd_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_nfsd_out)
+- [12.4.51 Variable mon.dev_nfsd_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_nfsd_out)

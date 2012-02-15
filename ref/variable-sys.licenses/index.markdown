@@ -8,5 +8,5 @@ navsection: none
 
 The term 'variable-sys.licenses' could refer to several sections in the documentation. Please choose one:
 
-- [12.5.37 Variable sys.licenses_granted](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.licenses_granted)
-- [12.5.38 Variable sys.licenses_installtime](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.licenses_installtime)
+- [12.5.37 Variable sys.licenses_granted](https://cfengine.com/manuals/cf3-reference#Variable-sys.licenses_granted)
+- [12.5.38 Variable sys.licenses_installtime](https://cfengine.com/manuals/cf3-reference#Variable-sys.licenses_installtime)

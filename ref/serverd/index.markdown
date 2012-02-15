@@ -8,5 +8,5 @@ navsection: none
 
 The term 'serverd' could refer to several sections in the documentation. Please choose one:
 
-- [1.1.7 cf-serverd](https://cfengine.com/manuals/cf3-reference.html#cf-serverd)
-- [12.5.12 Variable sys.cf_serverd](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.cf_serverd)
+- [1.1.7 cf-serverd](https://cfengine.com/manuals/cf3-reference#cf-serverd)
+- [12.5.12 Variable sys.cf_serverd](https://cfengine.com/manuals/cf3-reference#Variable-sys.cf_serverd)

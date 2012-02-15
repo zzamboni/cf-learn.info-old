@@ -8,9 +8,9 @@ navsection: none
 
 The term 'netbiosssn' could refer to several sections in the documentation. Please choose one:
 
-- [12.4.28 Variable mon.value_netbiosssn_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_netbiosssn_in)
-- [12.4.29 Variable mon.av_netbiosssn_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_netbiosssn_in)
-- [12.4.30 Variable mon.dev_netbiosssn_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_netbiosssn_in)
-- [12.4.31 Variable mon.value_netbiosssn_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_netbiosssn_out)
-- [12.4.32 Variable mon.av_netbiosssn_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_netbiosssn_out)
-- [12.4.33 Variable mon.dev_netbiosssn_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_netbiosssn_out)
+- [12.4.28 Variable mon.value_netbiosssn_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_netbiosssn_in)
+- [12.4.29 Variable mon.av_netbiosssn_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_netbiosssn_in)
+- [12.4.30 Variable mon.dev_netbiosssn_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_netbiosssn_in)
+- [12.4.31 Variable mon.value_netbiosssn_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_netbiosssn_out)
+- [12.4.32 Variable mon.av_netbiosssn_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_netbiosssn_out)
+- [12.4.33 Variable mon.dev_netbiosssn_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_netbiosssn_out)

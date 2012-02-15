@@ -8,9 +8,9 @@ navsection: none
 
 The term 'directory' could refer to several sections in the documentation. Please choose one:
 
-- [1.6 The work directory](https://cfengine.com/manuals/cf3-reference.html#Work-directory)
-- [5.5.9 <code>output_directory</code>](https://cfengine.com/manuals/cf3-reference.html#output_directory-in-runagent)
-- [5.7.1 <code>build_directory</code>](https://cfengine.com/manuals/cf3-reference.html#build_directory-in-knowledge)
-- [5.7.4 <code>graph_directory</code>](https://cfengine.com/manuals/cf3-reference.html#graph_directory-in-knowledge)
-- [5.7.9 <code>manual_source_directory</code>](https://cfengine.com/manuals/cf3-reference.html#manual_source_directory-in-knowledge)
-- [5.8.3 <code>build_directory</code>](https://cfengine.com/manuals/cf3-reference.html#build_directory-in-reporter)
+- [1.6 The work directory](https://cfengine.com/manuals/cf3-reference#Work-directory)
+- [5.5.9 <code>output_directory</code>](https://cfengine.com/manuals/cf3-reference#output_directory-in-runagent)
+- [5.7.1 <code>build_directory</code>](https://cfengine.com/manuals/cf3-reference#build_directory-in-knowledge)
+- [5.7.4 <code>graph_directory</code>](https://cfengine.com/manuals/cf3-reference#graph_directory-in-knowledge)
+- [5.7.9 <code>manual_source_directory</code>](https://cfengine.com/manuals/cf3-reference#manual_source_directory-in-knowledge)
+- [5.8.3 <code>build_directory</code>](https://cfengine.com/manuals/cf3-reference#build_directory-in-reporter)

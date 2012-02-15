@@ -8,9 +8,9 @@ navsection: none
 
 The term 'ftp' could refer to several sections in the documentation. Please choose one:
 
-- [12.4.64 Variable mon.value_ftp_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_ftp_in)
-- [12.4.65 Variable mon.av_ftp_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_ftp_in)
-- [12.4.66 Variable mon.dev_ftp_in](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_ftp_in)
-- [12.4.67 Variable mon.value_ftp_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.value_ftp_out)
-- [12.4.68 Variable mon.av_ftp_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.av_ftp_out)
-- [12.4.69 Variable mon.dev_ftp_out](https://cfengine.com/manuals/cf3-reference.html#Variable-mon.dev_ftp_out)
+- [12.4.64 Variable mon.value_ftp_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_ftp_in)
+- [12.4.65 Variable mon.av_ftp_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_ftp_in)
+- [12.4.66 Variable mon.dev_ftp_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_ftp_in)
+- [12.4.67 Variable mon.value_ftp_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_ftp_out)
+- [12.4.68 Variable mon.av_ftp_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_ftp_out)
+- [12.4.69 Variable mon.dev_ftp_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_ftp_out)

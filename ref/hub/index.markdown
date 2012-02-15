@@ -8,8 +8,8 @@ navsection: none
 
 The term 'hub' could refer to several sections in the documentation. Please choose one:
 
-- [1.1.10 cf-hub](https://cfengine.com/manuals/cf3-reference.html#cf-hub)
-- [5.9 <code>hub</code> control promises](https://cfengine.com/manuals/cf3-reference.html#control-hub)
-- [5.9.4 <code>hub_schedule</code>](https://cfengine.com/manuals/cf3-reference.html#hub_schedule-in-hub)
-- [12.5.5 Variable sys.cf_hub](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.cf_hub)
-- [12.5.44 Variable sys.policy_hub](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.policy_hub)
+- [1.1.10 cf-hub](https://cfengine.com/manuals/cf3-reference#cf-hub)
+- [5.9 <code>hub</code> control promises](https://cfengine.com/manuals/cf3-reference#control-hub)
+- [5.9.4 <code>hub_schedule</code>](https://cfengine.com/manuals/cf3-reference#hub_schedule-in-hub)
+- [12.5.5 Variable sys.cf_hub](https://cfengine.com/manuals/cf3-reference#Variable-sys.cf_hub)
+- [12.5.44 Variable sys.policy_hub](https://cfengine.com/manuals/cf3-reference#Variable-sys.policy_hub)

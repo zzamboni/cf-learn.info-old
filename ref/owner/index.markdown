@@ -8,5 +8,5 @@ navsection: none
 
 The term 'owner' could refer to several sections in the documentation. Please choose one:
 
-- [5.7.14 <code>sql_owner</code>](https://cfengine.com/manuals/cf3-reference.html#sql_owner-in-knowledge)
-- [12.5.36 Variable sys.license_owner](https://cfengine.com/manuals/cf3-reference.html#Variable-sys.license_owner)
+- [5.7.14 <code>sql_owner</code>](https://cfengine.com/manuals/cf3-reference#sql_owner-in-knowledge)
+- [12.5.36 Variable sys.license_owner](https://cfengine.com/manuals/cf3-reference#Variable-sys.license_owner)

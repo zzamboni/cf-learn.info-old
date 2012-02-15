@@ -8,7 +8,7 @@ navsection: none
 
 The term 'special' could refer to several sections in the documentation. Please choose one:
 
-- [2.7.3 Special list value <code>cf_null</code>](https://cfengine.com/manuals/cf3-reference.html#Special-list-value-cf_null)
-- [2.10.5 Special topics on Regular Expressions](https://cfengine.com/manuals/cf3-reference.html#Special-topics-on-Regular-Expressions)
-- [11 Special functions](https://cfengine.com/manuals/cf3-reference.html#Special-functions)
-- [12 Special Variables](https://cfengine.com/manuals/cf3-reference.html#Special-Variables)
+- [2.7.3 Special list value <code>cf_null</code>](https://cfengine.com/manuals/cf3-reference#Special-list-value-cf_null)
+- [2.10.5 Special topics on Regular Expressions](https://cfengine.com/manuals/cf3-reference#Special-topics-on-Regular-Expressions)
+- [11 Special functions](https://cfengine.com/manuals/cf3-reference#Special-functions)
+- [12 Special Variables](https://cfengine.com/manuals/cf3-reference#Special-Variables)
