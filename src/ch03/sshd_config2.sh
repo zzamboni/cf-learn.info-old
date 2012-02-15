@@ -1,3 +1,3 @@
-(grep -iq AllowRoot /etc/ssh/sshd_config ||
- echo "AllowRoot no" >> /etc/ssh/sshd_config) &&
- sed -i 's/^.*AllowRoot .*$/AllowRoot no/;' /etc/ssh/sshd_config
+(grep -iq 'PermitRootLogin' /etc/ssh/sshd_config ||
+ echo "PermitRootLogin no" >> /etc/ssh/sshd_config) &&
+ sed -i 's/^.*PermitRootLogin.*$/PermitRootLogin no/;' /etc/ssh/sshd_config

@@ -1,6 +1,6 @@
 body common control
 {
-      bundlesequence => { "test" };
+        bundlesequence => { "test" };
 }
 
 bundle agent test

@@ -1,6 +1,6 @@
 body common control
 {
-      bundlesequence => { "find_netif" };
+        bundlesequence => { "find_netif" };
 }
 
 bundle agent find_netif
@@ -18,5 +18,5 @@ bundle agent find_netif
       "NICs found: $(nics) ($(sys.ipv4[$(nics)]))"; 
 
       "Matched NIC: $(nics) ($(sys.ipv4[$(nics)]))"
-      ifvarclass => "ismatch_$(nics)";
+        ifvarclass => "ismatch_$(nics)";
 }

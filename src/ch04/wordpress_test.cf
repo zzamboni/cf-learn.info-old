@@ -1,7 +1,7 @@
 body common control
 {
-      bundlesequence => { wp_install("g.wp_config") };
-      inputs => { "cfengine_stdlib.cf", "wordpress.cf" };
+        bundlesequence => { wp_install("g.wp_config") };
+        inputs => { "cfengine_stdlib.cf", "wordpress.cf" };
 }
 
 bundle common g

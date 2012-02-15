@@ -3,24 +3,24 @@ bundle agent update
   vars:
 
       "inputs_dir"         string => translatepath("$(sys.workdir)/inputs"),   
-      comment => "Directory containing Cfengine policies",
-      handle => "update_vars_inputs_dir";
+        comment => "Directory containing Cfengine policies",
+        handle => "update_vars_inputs_dir";
 
       "master_location"    string => "/var/cfengine/masterfiles",   
-      comment => "The master cfengine policy directory on the policy host",
-      handle => "update_vars_master_location";
+        comment => "The master cfengine policy directory on the policy host",
+        handle => "update_vars_master_location";
 
       #
 
   files:
 
       "$(inputs_dir)"   
-      comment => "Copy policy updates from master source on policy server if a new validation was acquired",
-      handle => "update_files_inputs_dir",
-      copy_from => u_rcp("$(master_location)","$(sys.policy_hub)"),  
-      depth_search => u_recurse("inf"),   
-      file_select  => u_input_files,   
-      classes => u_if_repaired("update_report");   
+        comment => "Copy policy updates from master source on policy server if a new validation was acquired",
+        handle => "update_files_inputs_dir",
+        copy_from => u_rcp("$(master_location)","$(sys.policy_hub)"),  
+        depth_search => u_recurse("inf"),   
+        file_select  => u_input_files,   
+        classes => u_if_repaired("update_report");   
 
 }
 
@@ -30,43 +30,43 @@ bundle agent update
 
 body file_select u_input_files
 {
-      leaf_name => { ".*.cf",".*.dat",".*.txt" };
-      file_result => "leaf_name";
+        leaf_name => { ".*.cf",".*.dat",".*.txt" };
+        file_result => "leaf_name";
 }
 
 #########################################################
 
 body copy_from u_rcp(from,server)
 {
-      source      => "$(from)";
-      compare     => "digest";
-      trustkey    => "true";
+        source      => "$(from)";
+        compare     => "digest";
+        trustkey    => "true";
 
     !am_policy_hub::
 
-      servers => { "$(server)" };
+        servers => { "$(server)" };
 }
 
 #########################################################
 
 body action u_immediate
 {
-      ifelapsed => "0";
+        ifelapsed => "0";
 }
 
 #########################################################
 
 body depth_search u_recurse(d)
 {
-      depth => "$(d)";
-      exclude_dirs => { "\.svn" };
+        depth => "$(d)";
+        exclude_dirs => { "\.svn" };
 }
 
 #########################################################
 
 body classes u_if_repaired(x)
 {
-      promise_repaired => { "$(x)" };
+        promise_repaired => { "$(x)" };
 }
 
 #########################################################

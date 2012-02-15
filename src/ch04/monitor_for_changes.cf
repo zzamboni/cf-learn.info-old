@@ -1,7 +1,7 @@
 body common control
 {
-      bundlesequence => { "monitor_for_changes" };
-      inputs => { "cfengine_stdlib.cf" };
+        bundlesequence => { "monitor_for_changes" };
+        inputs => { "cfengine_stdlib.cf" };
 }
 
 bundle agent monitor_for_changes
@@ -11,6 +11,6 @@ bundle agent monitor_for_changes
 
   files:
       "$(files_dirs)"
-      changes => detect_all_change,
-      depth_search => recurse("inf");
+        changes => detect_all_change,
+        depth_search => recurse("inf");
 }

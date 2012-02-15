@@ -1,13 +1,13 @@
 body common control
 {
-      inputs => { "cfengine_stdlib.cf" };
-      bundlesequence => { "test" };
+        inputs => { "cfengine_stdlib.cf" };
+        bundlesequence => { "test" };
 }
 
 body agent control
 {
       # Single copy for all files
-      files_single_copy => { ".*" }; 
+        files_single_copy => { ".*" }; 
 }
 
 bundle agent test
@@ -15,23 +15,23 @@ bundle agent test
   files: 
     wonderwoman_justiceleague_com::
       "/etc/hosts"
-      copy_from => local_cp("$(repository)/etc/hosts.wonderwoman.justiceleague.com");
+        copy_from => local_cp("$(repository)/etc/hosts.wonderwoman.justiceleague.com");
     lex::
       "/etc/hosts"
-      copy_from => local_cp("$(repository)/etc/hosts.lex");
+        copy_from => local_cp("$(repository)/etc/hosts.lex");
     justiceleague_com::
       "/etc/hosts"
-      copy_from => local_cp("$(repository)/etc/hosts.justiceleague.com");
+        copy_from => local_cp("$(repository)/etc/hosts.justiceleague.com");
     ssosv_com::
       "/etc/hosts"
-      copy_from => local_cp("$(repository)/etc/hosts.ssosv.com");
+        copy_from => local_cp("$(repository)/etc/hosts.ssosv.com");
     suse_9::
       "/etc/hosts"
-      copy_from => local_cp("$(repository)/etc/hosts.suse_9");
+        copy_from => local_cp("$(repository)/etc/hosts.suse_9");
     windows::
       "/etc/hosts"
-      copy_from => local_cp("$(repository)/etc/hosts.windows");
+        copy_from => local_cp("$(repository)/etc/hosts.windows");
     any::
       "/etc/hosts"
-      copy_from => local_cp("$(repository)/etc/hosts");
+        copy_from => local_cp("$(repository)/etc/hosts");
 }

@@ -49,28 +49,28 @@ bundle agent wp_vars(params)
       "wp_dir"             string => "$($(params)[_wp_dir])";
       # Default configuration values. Internal parameters start with _
       "conf[_tarfile]"      string => "/root/wordpress-latest.tar.gz",   
-      policy => "overridable";   
+        policy => "overridable";   
       "conf[_downloadurl]"  string => "http://wordpress.org/latest.tar.gz",
-      policy => "overridable";
+        policy => "overridable";
       "conf[_wp_config]"    string => "$(wp_dir)/wp-config.php",
-      policy => "overridable";
+        policy => "overridable";
       "conf[_wp_cfgsample]" string => "$(wp_dir)/wp-config-sample.php",
-      policy => "overridable";
+        policy => "overridable";
     debian::   
       "conf[_sys_servicecmd]" string => "/usr/sbin/service",
-      policy => "overridable";
+        policy => "overridable";
       "conf[_sys_apachesrv]"  string => "apache2",
-      policy => "overridable";
+        policy => "overridable";
     redhat::
       "conf[_sys_servicecmd]" string => "/sbin/service",
-      policy => "overridable";
+        policy => "overridable";
       "conf[_sys_apachesrv]"  string => "httpd",
-      policy => "overridable";
+        policy => "overridable";
     any::   
       # Copy configuration parameters passed, into a local array
       "param_keys"          slist  => getindices("$(params)");   
       "conf[$(param_keys)]" string => "$($(params)[$(param_keys)])",
-      policy => "overridable";
+        policy => "overridable";
 }
 
 bundle agent wp_report_params(params)
@@ -101,14 +101,14 @@ bundle agent wp_packages_installed(params)
                                  };
   packages:  
       "$(desired_package)"
-      package_policy => "add",
-      package_method => generic,
-      classes => if_repaired("packages_added");
+        package_policy => "add",
+        package_method => generic,
+        classes => if_repaired("packages_added");
 
   commands:
     packages_added::  
       "$($(params)[_sys_servicecmd]) $($(params)[_sys_apachesrv]) graceful" 
-      comment => "Restarting httpd so it can pick up new modules.";
+        comment => "Restarting httpd so it can pick up new modules.";
 
 }
 
@@ -142,7 +142,7 @@ bundle agent wp_tarball_is_present(params)
   commands: 
     !wordpress_tarball_is_present::
       "/usr/bin/wget -q -O $($(params)[_tarfile]) $($(params)[_downloadurl])"
-      comment => "Downloading latest version of WordPress.";
+        comment => "Downloading latest version of WordPress.";
 
   reports: 
     wordpress_tarball_is_present::
@@ -164,11 +164,11 @@ bundle agent wp_tarball_is_unrolled(params)
   commands:
     !wordpress_final_dir_is_present&!wordpress_src_dir_is_present:: 
       "/bin/tar -xzf $($(params)[_tarfile])"
-      comment => "Unrolling wordpress tarball to $($(params)[_htmlroot])/wordpress.",
-      contain => in_dir_shell("$($(params)[_htmlroot])");
+        comment => "Unrolling wordpress tarball to $($(params)[_htmlroot])/wordpress.",
+        contain => in_dir_shell("$($(params)[_htmlroot])");
     wordpress_src_dir_is_present&!wordpress_final_dir_is_present::
       "/bin/mv $($(params)[_htmlroot])/wordpress $($(params)[_wp_dir])"
-      comment => "Rename unrolled directory into its final destination $($(params)[_wp_dir])";
+        comment => "Rename unrolled directory into its final destination $($(params)[_wp_dir])";
 }
 
 #############################################
@@ -191,12 +191,12 @@ bundle agent wp_config_exists(params)
 {
   classes:
       "wordpress_config_file_exists"  
-      expression => fileexists("$($(params)[_wp_config])");
+        expression => fileexists("$($(params)[_wp_config])");
 
   files:
     !wordpress_config_file_exists::  
       "$($(params)[_wp_config])"
-      copy_from => backup_local_cp("$($(params)[_wp_cfgsample])");
+        copy_from => backup_local_cp("$($(params)[_wp_cfgsample])");
 
   reports:
     wordpress_config_file_exists::
@@ -219,8 +219,8 @@ bundle agent wp_is_properly_configured(params)
 
   files:
       "$($(params)[_wp_config])" 
-      edit_line => replace_or_add("define\('$(wpparams)', *(?!'$($(params)[$(wpparams)]))'.*",
-				  "define('$(wpparams)', '$($(params)[$(wpparams)])');");
+        edit_line => replace_or_add("define\('$(wpparams)', *(?!'$($(params)[$(wpparams)]))'.*",
+                                    "define('$(wpparams)', '$($(params)[$(wpparams)])');");
 }
 
 #############################################
@@ -234,14 +234,14 @@ bundle agent wp_allow_http_inbound(params)
   files:
     redhat:: # tested on RHEL only, file location may vary based on Linux distro or OS
       "/etc/sysconfig/iptables"
-      edit_line => wp_insert_HTTP_allow_rule_before_the_accept_established_tcp_conns_rule,
-      comment => "insert HTTP allow rule into /etc/sysconfig/iptables",
-      classes => if_repaired("iptables_edited");
+        edit_line => wp_insert_HTTP_allow_rule_before_the_accept_established_tcp_conns_rule,
+        comment => "insert HTTP allow rule into /etc/sysconfig/iptables",
+        classes => if_repaired("iptables_edited");
 
   commands: 
     iptables_edited::
       "/sbin/service iptables restart"
-      comment => "Restarting iptables to load new config";
+        comment => "Restarting iptables to load new config";
 }
 
 bundle edit_line wp_insert_HTTP_allow_rule_before_the_accept_established_tcp_conns_rule(params)
@@ -251,14 +251,14 @@ bundle edit_line wp_insert_HTTP_allow_rule_before_the_accept_established_tcp_con
 
   insert_lines:
       "$(http_rule)"
-      location => wp_before_the_accept_established_tcp_conns_rule;
+        location => wp_before_the_accept_established_tcp_conns_rule;
 }
 
 body location wp_before_the_accept_established_tcp_conns_rule
 {
-      before_after => "before";
-      first_last => "first";
-      select_line_matching => "^-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT.*";
+        before_after => "before";
+        first_last => "first";
+        select_line_matching => "^-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT.*";
 }
 
 # Todo:

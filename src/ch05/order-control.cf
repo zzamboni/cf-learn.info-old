@@ -1,6 +1,6 @@
 body common control
 {
-      bundlesequence => { "test" };
+        bundlesequence => { "test" };
 }
 
 bundle agent test
@@ -16,6 +16,6 @@ bundle agent test
   reports:
     cfengine::
       "var1=$(var1)"
-      ifvarclass => "bar";
+        ifvarclass => "bar";
       "var2=$(var2)";
 }

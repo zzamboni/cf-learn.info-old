@@ -2,11 +2,11 @@ bundle agent software
 {
   vars:
       "pkgs" slist => {
-	                "subversion",
-	                "tcpdump"
+                        "subversion",
+                        "tcpdump"
                       };
   packages:
       "$(pkgs)" 
-      package_policy => "addupdate",
-      package_method => apt;   # For Debian and Ubuntu
+        package_policy => "addupdate",
+        package_method => apt;   # For Debian and Ubuntu
 }

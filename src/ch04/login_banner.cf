@@ -1,7 +1,7 @@
 body common control 
 {
-      bundlesequence => { "login_banner" };
-      inputs => { "cfengine_stdlib.cf" }; 
+        bundlesequence => { "login_banner" };
+        inputs => { "cfengine_stdlib.cf" }; 
 }
 
 bundle agent login_banner
@@ -12,10 +12,10 @@ bundle agent login_banner
       
   files:
       "$(motd_file)"   
-      handle => "set_login_banner",
-      comment => "Ensure the login banner is set to the authorized text",
-      create => "true",
-      perms => mog("744", "root", "wheel"),
-      edit_defaults => empty,
-      edit_line => expand_template("$(template_file)"); 
+        handle => "set_login_banner",
+        comment => "Ensure the login banner is set to the authorized text",
+        create => "true",
+        perms => mog("744", "root", "wheel"),
+        edit_defaults => empty,
+        edit_line => expand_template("$(template_file)"); 
 }

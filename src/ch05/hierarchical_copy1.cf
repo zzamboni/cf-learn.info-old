@@ -1,13 +1,13 @@
 body common control
 {
-      inputs => { "cfengine_stdlib.cf" };
-      bundlesequence => { "test" };
+        inputs => { "cfengine_stdlib.cf" };
+        bundlesequence => { "test" };
 }
 
 # Use single copy for all files
 body agent control
 {
-      files_single_copy => { ".*" };
+        files_single_copy => { ".*" };
 }
 
 bundle agent test
@@ -17,5 +17,5 @@ bundle agent test
                               ".$(sys.flavor)", ".$(sys.ostype)", "" };
   files:
       "/etc/hosts"
-      copy_from => local_dcp("$(repository)/etc/hosts$(suffixes)");
+        copy_from => local_dcp("$(repository)/etc/hosts$(suffixes)");
 }

@@ -28,16 +28,16 @@ bundle agent edit_inittab
 {
   files:
       "$(configfiles.files[inittab])"
-      handle => "inittab_set_initdefault",
-      comment => "Ensure graphical mode is disabled (default runmode=3)",
-      create => "false",
-      edit_defaults => backup_timestamp,
-      edit_line => set_colon_field("id","2","3");
+        handle => "inittab_set_initdefault",
+        comment => "Ensure graphical mode is disabled (default runmode=3)",
+        create => "false",
+        edit_defaults => backup_timestamp,
+        edit_line => set_colon_field("id","2","3");
 
       "$(configfiles.files[inittab])"
-      handle => "inittab_disable_ctrlaltdel",
-      comment => "Ensure handling of ctrl-alt-del is disabled",
-      create => "false",
-      edit_defaults => backup_timestamp,
-      edit_line => comment_lines_matching("ca::ctrlaltdel:.*", "#");
+        handle => "inittab_disable_ctrlaltdel",
+        comment => "Ensure handling of ctrl-alt-del is disabled",
+        create => "false",
+        edit_defaults => backup_timestamp,
+        edit_line => comment_lines_matching("ca::ctrlaltdel:.*", "#");
 }

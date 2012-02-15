@@ -9,11 +9,11 @@ bundle agent disable_tso_flag
 
   files: 
       "$(configfiles.files[inittab])"
-      handle => "inittab_add_ethtool",
-      comment => "Ensure ethtool is run on startup to disable the TSO flag",
-      create => "false",
-      edit_defaults => edit_backup,
-      edit_line => replace_or_add("tso:3:.*", 
-				  "tso:3:once:/usr/sbin/ethtool -K $(nics) tso off"),
-      ifvarclass => "isgreen_$(nics)";
+        handle => "inittab_add_ethtool",
+        comment => "Ensure ethtool is run on startup to disable the TSO flag",
+        create => "false",
+        edit_defaults => edit_backup,
+        edit_line => replace_or_add("tso:3:.*", 
+                                    "tso:3:once:/usr/sbin/ethtool -K $(nics) tso off"),
+        ifvarclass => "isgreen_$(nics)";
 }

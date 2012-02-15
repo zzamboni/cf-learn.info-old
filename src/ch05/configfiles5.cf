@@ -22,6 +22,6 @@ bundle agent backup_files(id)
 
   files:
       "$(allfiles).original"
-      comment => "Ensure we have a backup of previous versions of $(allfiles)",
-      copy_from => backup_local_cp("$(allfiles)");
+        comment => "Ensure we have a backup of previous versions of $(allfiles)",
+        copy_from => backup_local_cp("$(allfiles)");
 }

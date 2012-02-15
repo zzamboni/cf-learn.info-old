@@ -1,13 +1,13 @@
 body common control
 {
-      inputs => { "cfengine_stdlib.cf" };
-      bundlesequence => { "copyfiles" };
+        inputs => { "cfengine_stdlib.cf" };
+        bundlesequence => { "copyfiles" };
 }
 
 # Use single copy for all files
 body agent control
 {
-      files_single_copy => { ".*" }; 
+        files_single_copy => { ".*" }; 
 }
 
 bundle agent copyfiles
@@ -16,7 +16,7 @@ bundle agent copyfiles
       # Suffixes to try, in most-specific to most-general order. This must include the
       # empty suffix at the end, for the most general file.
       "suffixes"    slist => { ".$(sys.fqhost)", ".$(sys.uqhost)", ".$(sys.domain)", 
-			       ".$(sys.flavor)", ".$(sys.ostype)", "" };
+                               ".$(sys.flavor)", ".$(sys.ostype)", "" };
       # List of files to copy
       "filestocopy"     slist => { "/etc/hosts", "/etc/motd" };   
       "dirstocopy"      slist => { "$(sys.workdir)/bin", "/usr/local/bin" };
@@ -29,9 +29,9 @@ bundle agent copyfiles
 
   files:
       "$(dest)$(filestocopy)"   
-      copy_from => local_dcp("$(repo)$(filestocopy)$(suffixes)");
+        copy_from => local_dcp("$(repo)$(filestocopy)$(suffixes)");
 
       "$(dest)$(dirstocopy)"    
-      copy_from => local_dcp("$(repo)$(dirstocopy)$(suffixes)"),
-      depth_search => recurse("inf");
+        copy_from => local_dcp("$(repo)$(dirstocopy)$(suffixes)"),
+        depth_search => recurse("inf");
 }

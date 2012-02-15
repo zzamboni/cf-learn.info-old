@@ -9,9 +9,9 @@ bundle agent software
 
   packages:
       "$(allpkgs)" 
-      package_policy => "add",
-      package_select => "==",
-      package_version => "$(version[$(allpkgs)]",
-      package_architectures => @(architectures),
-      package_method => apt;   # For Debian and Ubuntu
+        package_policy => "add",
+        package_select => "==",
+        package_version => "$(version[$(allpkgs)]",
+        package_architectures => @(architectures),
+        package_method => apt;   # For Debian and Ubuntu
 }

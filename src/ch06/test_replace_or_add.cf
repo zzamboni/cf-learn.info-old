@@ -6,11 +6,11 @@
 
 body common control
 {
-      inputs => { "../../default.cf.sub",   
-		  "../../../../masterfiles/cfengine_stdlib.cf"   
-		};
-      bundlesequence  => { default("$(this.promise_filename)") };   
-      version => "1.0";
+        inputs => { "../../default.cf.sub",   
+                    "../../../../masterfiles/cfengine_stdlib.cf"   
+                  };
+        bundlesequence  => { default("$(this.promise_filename)") };   
+        version => "1.0";
 }
 
 #######################################################
@@ -33,9 +33,9 @@ new line 2";
 
   files:
       "$(G.testfile).$(states)"   
-      create => "true",
-      edit_line => init_insert("$(init.$(states))"),
-      edit_defaults => init_empty;
+        create => "true",
+        edit_line => init_insert("$(init.$(states))"),
+        edit_defaults => init_empty;
 }
 
 bundle edit_line init_insert(str)   
@@ -46,7 +46,7 @@ bundle edit_line init_insert(str)
 
 body edit_defaults init_empty
 {
-      empty_file_before_editing => "true";
+        empty_file_before_editing => "true";
 }
 
 #######################################################
@@ -61,11 +61,11 @@ bundle agent test
 
   files:
       "$(G.testfile).actual"   
-      create => "false",
-      edit_line => replace_or_add("$(test.tpat1)", "$(test.tstr1)");
+        create => "false",
+        edit_line => replace_or_add("$(test.tpat1)", "$(test.tstr1)");
       "$(G.testfile).actual"
-      create => "false",
-      edit_line => replace_or_add("$(test.tpat2)", "$(test.tstr2)");
+        create => "false",
+        edit_line => replace_or_add("$(test.tpat2)", "$(test.tstr2)");
 }
 
 #######################################################

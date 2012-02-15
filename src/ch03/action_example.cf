@@ -1,19 +1,19 @@
 body common control
 {
-      inputs => { "cfengine_stdlib.cf" };
-      bundlesequence => { "test" };
+        inputs => { "cfengine_stdlib.cf" };
+        bundlesequence => { "test" };
 }
 
 bundle agent test
 {
   files:
       "/etc/motd"
-      edit_lines => insert_lines("Unauthorized access will be prosecuted."),
-      action => warn_hourly;
+        edit_lines => insert_lines("Unauthorized access will be prosecuted."),
+        action => warn_hourly;
 }
 
 body action warn_hourly
 {
-      action_policy => "warn"; # Produce warning only, don't fix anything
-      ifelapsed => "60";
+        action_policy => "warn"; # Produce warning only, don't fix anything
+        ifelapsed => "60";
 }

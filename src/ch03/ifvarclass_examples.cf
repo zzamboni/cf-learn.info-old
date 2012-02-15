@@ -1,6 +1,6 @@
 body common control
 {
-      bundlesequence => { "test" };
+        bundlesequence => { "test" };
 }
 
 bundle agent test
@@ -10,7 +10,7 @@ bundle agent test
   reports:
     cfengine::
       "Class $(words) is defined"
-      ifvarclass => "$(words)";
+        ifvarclass => "$(words)";
       "Class $(words) is not defined"
-      ifvarclass => "!$(words)";
+        ifvarclass => "!$(words)";
 }

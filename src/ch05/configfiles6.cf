@@ -23,9 +23,9 @@ bundle agent backup_files(id)
 
   files:
       "$(backupst)/."
-      create => "true";
+        create => "true";
 
       "$(backupdst)/$(allfiles)"
-      comment => "Ensure we have a backup of previous versions of $(allfiles)",
-      copy_from => local_cp("$(allfiles)");
+        comment => "Ensure we have a backup of previous versions of $(allfiles)",
+        copy_from => local_cp("$(allfiles)");
 }

@@ -6,18 +6,18 @@
 
 body common control
 {
-      inputs => { 
-		  "cfengine_stdlib.cf", 
-		  "environment_$(environments.active)/env_promises.cf",   
-		};
+        inputs => { 
+                    "cfengine_stdlib.cf", 
+                    "environment_$(environments.active)/env_promises.cf",   
+                  };
 
-      bundlesequence => { 
-			  "environments",
-			  "main",
-			  "env_main",   
-			};
+        bundlesequence => { 
+                            "environments",
+                            "main",
+                            "env_main",   
+                          };
 
-      version => "Community Promises.cf 1.0.0";
+        version => "Community Promises.cf 1.0.0";
 }
 
 ###############################################################################
@@ -27,16 +27,16 @@ bundle agent main
   reports:
     am_policy_hub::
       "--> I'm a policy hub."
-      comment => "Display message on screen/email",
-      handle => "main_reports_i_am_hub";
+        comment => "Display message on screen/email",
+        handle => "main_reports_i_am_hub";
 
     !am_policy_hub::
       "--> $(sys.policy_hub) is my policy hub."
-      comment => "Display message on screen/email",
-      handle => "main_reports_is_my_hub";
+        comment => "Display message on screen/email",
+        handle => "main_reports_is_my_hub";
       "--> CFE is running on $(sys.fqhost)"
-      comment => "Display message on screen/email",
-      handle => "main_reports_cfe_running";
+        comment => "Display message on screen/email",
+        handle => "main_reports_cfe_running";
 }
 
 #
@@ -59,21 +59,21 @@ bundle common environments
       #
 
       "environment_development" or => {  
-					"hostname1_example_com",
-					"ipv4_10_1_2_3",
+                                        "hostname1_example_com",
+                                        "ipv4_10_1_2_3",
                                       };
 
 
       "environment_testing"     or => {
-					classmatch(".*_test_example_com"), 
-					"ipv4_10_1_2",
-					"suse_11",
+                                        classmatch(".*_test_example_com"), 
+                                        "ipv4_10_1_2",
+                                        "suse_11",
                                       };
 
 
       "environment_production"  or => {
-					classmatch(".*_example_com"),  
-					"ipv4_10_1",
+                                        classmatch(".*_example_com"),  
+                                        "ipv4_10_1",
                                       };
 
       #
@@ -118,8 +118,8 @@ bundle common def
       # Begin change # Your domain name, for use in access control
 
       "domain"  string => "example.com",  
-      comment => "Define a global domain for all hosts",
-      handle => "common_def_vars_domain";
+        comment => "Define a global domain for all hosts",
+        handle => "common_def_vars_domain";
 
       # List here the IP masks that we grant access to on the server
 
@@ -130,14 +130,14 @@ bundle common def
                        #  "217.77.34.18", 
                        #  "217.77.34.19",
                      },
-      comment => "Define an acl for the machines to be granted accesses",
-      handle => "common_def_vars_acl"; 
+        comment => "Define an acl for the machines to be granted accesses",
+        handle => "common_def_vars_acl"; 
 
       # End change #
 
       "dir_masterfiles" string => translatepath("$(sys.workdir)/masterfiles"),
-      comment => "Define masterfiles path",
-      handle => "common_def_vars_dir_masterfiles";
+        comment => "Define masterfiles path",
+        handle => "common_def_vars_dir_masterfiles";
 
 }
 
@@ -159,21 +159,21 @@ body agent control
       # This should normally be set to an interval like 1-5 mins
       # We set it to one initially to avoid confusion.
 
-      ifelapsed => "1";
+        ifelapsed => "1";
 
       # Do not send IP/name during server connection if address resolution is broken.
       # Comment it out if you do NOT have a problem with DNS
 
-      skipidentify => "true";
+        skipidentify => "true";
 
       # Environment variables based on Distro
 
     debian::
-      environment => { 
-                       "DEBIAN_FRONTEND=noninteractive",
-		       #                  "APT_LISTBUGS_FRONTEND=none",
-		       #                  "APT_LISTCHANGES_FRONTEND=none",
-                     };
+        environment => { 
+                         "DEBIAN_FRONTEND=noninteractive",
+                         #                  "APT_LISTBUGS_FRONTEND=none",
+                         #                  "APT_LISTCHANGES_FRONTEND=none",
+                       };
 
 }
 
@@ -187,15 +187,15 @@ body agent control
 
 body server control 
 {
-      denybadclocks         => "false";
-      allowconnects         => { "127.0.0.1" , "::1", @(def.acl) };
-      allowallconnects      => { "127.0.0.1" , "::1", @(def.acl) };
-      trustkeysfrom         => { "127.0.0.1" , "::1", @(def.acl) };
+        denybadclocks         => "false";
+        allowconnects         => { "127.0.0.1" , "::1", @(def.acl) };
+        allowallconnects      => { "127.0.0.1" , "::1", @(def.acl) };
+        trustkeysfrom         => { "127.0.0.1" , "::1", @(def.acl) };
 
-      skipverify            => { ".*$(def.domain)", "127.0.0.1" , "::1", @(def.acl) };
+        skipverify            => { ".*$(def.domain)", "127.0.0.1" , "::1", @(def.acl) };
 
-      allowusers            => { "root" };
-      maxconnections        => "100";
+        allowusers            => { "root" };
+        maxconnections        => "100";
 
       # Uncomment the line below to allow remote users to run 
       # cf-agent through cf-runagent
@@ -212,9 +212,9 @@ bundle server access_rules()
     any::
 
       "$(def.dir_masterfiles)"
-      handle => "server_access_rule_grant_access_policy",
-      comment => "Grant access to the policy updates",
-      admit => { ".*$(def.domain)", @(def.acl) };
+        handle => "server_access_rule_grant_access_policy",
+        comment => "Grant access to the policy updates",
+        admit => { ".*$(def.domain)", @(def.acl) };
 
       # Uncomment the promise below to allow cf-runagent to
       # access cf-agent on *NIX system
@@ -226,17 +226,17 @@ bundle server access_rules()
 
       # Uncomment the promise below to allow cf-runagent to
       # access cf-agent on Windows machines
-      #	
+      # 
       #  "c:\program files\cfengine\bin\cf-agent.exe"
       #
       #    handle => "server_access_rule_grant_access_cfagent_windows",
       #    comment => "Grant access to the agent (for cf-runagent)",
-      #    admit   => { ".*$(def.domain)", @(def.acl) };	
+      #    admit   => { ".*$(def.domain)", @(def.acl) };        
       
   roles:
 
       # Use roles to allow specific remote cf-runagent users to
-      # define certain soft-classes when running cf-agent on this host	
+      # define certain soft-classes when running cf-agent on this host  
       #  "emergency"  authorize => { "root" };
       
 }
@@ -252,10 +252,10 @@ body executor control
 {
     any::
 
-      splaytime  => "1";
-      mailto     => "cfengine@$(def.domain)";
-      mailfrom   => "cfengine@$(sys.host).$(def.domain)";
-      smtpserver => "localhost";
+        splaytime  => "1";
+        mailto     => "cfengine@$(def.domain)";
+        mailfrom   => "cfengine@$(sys.host).$(def.domain)";
+        smtpserver => "localhost";
 
       # Default:
       #
@@ -267,7 +267,7 @@ body executor control
       # cf-twin needs its own safe environment because of the update mechanism
 
     linux::
-      exec_command => "$(sys.cf_twin) -f failsafe.cf && $(sys.cf_agent)";
+        exec_command => "$(sys.cf_twin) -f failsafe.cf && $(sys.cf_agent)";
 
 }
 
@@ -282,13 +282,13 @@ body reporter control
 {
     any::
 
-      reports => { 
-		   "all" 
-		 };
+        reports => { 
+                     "all" 
+                   };
 
-      build_directory => "$(sys.workdir)/reports";
-      report_output   => "html";
-      style_sheet => "/cf_enterprise.css";
+        build_directory => "$(sys.workdir)/reports";
+        report_output   => "html";
+        style_sheet => "/cf_enterprise.css";
 
 }
 
@@ -305,7 +305,7 @@ body runagent control
 
     any::
 
-      hosts => { "127.0.0.1" };
+        hosts => { "127.0.0.1" };
 
       # , "myhost.example.com:5308", ...
 
@@ -322,8 +322,8 @@ body runagent control
 body monitor control
 {
     any::
-      forgetrate => "0.7";
-      histograms => "true";
+        forgetrate => "0.7";
+        histograms => "true";
       #  tcpdump => "false";
       #  tcpdumpcommand => "/usr/sbin/tcpdump -t -n -v";
 

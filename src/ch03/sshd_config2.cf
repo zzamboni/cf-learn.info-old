@@ -1,9 +1,9 @@
   vars:
 # SSHD configuration to set
-"sshd[Protocol]"       string => "2";
-"sshd[X11Forwarding]"  string => "yes";
-"sshd[UseDNS]"         string => "no";
-"sshd[AllowRoot]"      string => "no";
+"sshd[Protocol]"        string => "2";
+"sshd[X11Forwarding]"   string => "yes";
+"sshd[UseDNS]"          string => "no";
+"sshd[PermitRootLogin]" string => "no";
 
   files:
 "/etc/ssh/sshd_config"

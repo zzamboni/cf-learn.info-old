@@ -5,6 +5,6 @@ bundle agent update_inputs
       "inputs" string => "/var/cfengine/masterfiles/inputs";
   files:
       "${sys.workdir}/inputs"
-      copy_from => remote_cp("$(server)", "$(inputs)"),
-      depth_search => recurse_ignore("inf", { "_.*" });
+        copy_from => remote_cp("$(server)", "$(inputs)"),
+        depth_search => recurse_ignore("inf", { "_.*" });
 }

@@ -1,6 +1,6 @@
 body common control
 {
-      bundlesequence => { "edit_motd" };
+        bundlesequence => { "edit_motd" };
 }
 
 bundle agent edit_motd 
@@ -10,8 +10,8 @@ bundle agent edit_motd
 
   files:   
       "$(motd)"
-      edit_line => addmessage,
-      create => "true";
+        edit_line => addmessage,
+        create => "true";
 
   reports:   
     cfengine::

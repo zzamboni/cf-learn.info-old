@@ -26,15 +26,15 @@ bundle agent edit_sshd
 {
   files:
       "$(configfiles.files[sshdconfig])"
-      handle => "edit_sshd",
-      comment => "Set desired sshd_config parameters",
-      edit_line => set_config_values("configfiles.sshd"),
-      classes => if_repaired("restart_sshd");
+        handle => "edit_sshd",
+        comment => "Set desired sshd_config parameters",
+        edit_line => set_config_values("configfiles.sshd"),
+        classes => if_repaired("restart_sshd");
 
   commands:
     restart_sshd.!no_restarts::
       "/etc/init.d/sshd reload"
-      handle => "sshd_restart",
-      comment => "Restart sshd if the configuration file was modified";
+        handle => "sshd_restart",
+        comment => "Restart sshd if the configuration file was modified";
 }
 

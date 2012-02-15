@@ -1,7 +1,7 @@
 body common control
 {
-      bundlesequence => { "monitor_files" };
-      inputs => { "cfengine_stdlib.cf" };
+        bundlesequence => { "monitor_files" };
+        inputs => { "cfengine_stdlib.cf" };
 }
 
 bundle agent monitor_files
@@ -11,5 +11,5 @@ bundle agent monitor_files
 
   files:
       "$(files)"
-      changes => detect_all_change;
+        changes => detect_all_change;
 }
