@@ -59,28 +59,28 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">wp_dir</span><span class="p">&quot;</span>             <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$($(params)[_wp_dir])</span><span class="s">&quot;</span><span class="p">;</span>
       <span class="c"># Default configuration values. Internal parameters start with _</span>
       <span class="p">&quot;</span><span class="nv">conf[_tarfile]</span><span class="p">&quot;</span>      <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/root/wordpress-latest.tar.gz&quot;</span><span class="p">,</span>   
-      <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>   
+        <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>   
       <span class="p">&quot;</span><span class="nv">conf[_downloadurl]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;http://wordpress.org/latest.tar.gz&quot;</span><span class="p">,</span>
-      <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+        <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
       <span class="p">&quot;</span><span class="nv">conf[_wp_config]</span><span class="p">&quot;</span>    <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(wp_dir)</span><span class="s">/wp-config.php&quot;</span><span class="p">,</span>
-      <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+        <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
       <span class="p">&quot;</span><span class="nv">conf[_wp_cfgsample]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(wp_dir)</span><span class="s">/wp-config-sample.php&quot;</span><span class="p">,</span>
-      <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+        <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
     <span class="nc">debian</span><span class="p">::</span>   
       <span class="p">&quot;</span><span class="nv">conf[_sys_servicecmd]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/sbin/service&quot;</span><span class="p">,</span>
-      <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+        <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
       <span class="p">&quot;</span><span class="nv">conf[_sys_apachesrv]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;apache2&quot;</span><span class="p">,</span>
-      <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+        <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
     <span class="nc">redhat</span><span class="p">::</span>
       <span class="p">&quot;</span><span class="nv">conf[_sys_servicecmd]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/sbin/service&quot;</span><span class="p">,</span>
-      <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+        <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
       <span class="p">&quot;</span><span class="nv">conf[_sys_apachesrv]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;httpd&quot;</span><span class="p">,</span>
-      <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+        <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
     <span class="nc">any</span><span class="p">::</span>   
       <span class="c"># Copy configuration parameters passed, into a local array</span>
       <span class="p">&quot;</span><span class="nv">param_keys</span><span class="p">&quot;</span>          <span class="kt">slist</span>  <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(params)</span><span class="s">&quot;</span><span class="p">);</span>   
       <span class="p">&quot;</span><span class="nv">conf[$(param_keys)]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$($(params)[$(param_keys)])</span><span class="s">&quot;</span><span class="p">,</span>
-      <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
+        <span class="kr">policy</span> <span class="o">=&gt;</span> <span class="s">&quot;overridable&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wp_report_params</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
@@ -111,14 +111,14 @@ navsection: code
                                  <span class="p">};</span>
   <span class="kd">packages</span><span class="p">:</span>  
       <span class="p">&quot;</span><span class="nv">$(desired_package)</span><span class="p">&quot;</span>
-      <span class="kt">package_policy</span> <span class="o">=&gt;</span> <span class="s">&quot;add&quot;</span><span class="p">,</span>
-      <span class="kr">package_method</span> <span class="o">=&gt;</span> <span class="nf">generic</span><span class="p">,</span>
-      <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_repaired</span><span class="p">(</span><span class="s">&quot;packages_added&quot;</span><span class="p">);</span>
+        <span class="kt">package_policy</span> <span class="o">=&gt;</span> <span class="s">&quot;add&quot;</span><span class="p">,</span>
+        <span class="kr">package_method</span> <span class="o">=&gt;</span> <span class="nf">generic</span><span class="p">,</span>
+        <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_repaired</span><span class="p">(</span><span class="s">&quot;packages_added&quot;</span><span class="p">);</span>
 
   <span class="kd">commands</span><span class="p">:</span>
     <span class="nc">packages_added</span><span class="p">::</span>  
       <span class="p">&quot;</span><span class="nv">$($(params)[_sys_servicecmd]) $($(params)[_sys_apachesrv]) graceful</span><span class="p">&quot;</span> 
-      <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Restarting httpd so it can pick up new modules.&quot;</span><span class="p">;</span>
+        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Restarting httpd so it can pick up new modules.&quot;</span><span class="p">;</span>
 
 <span class="p">}</span>
 
@@ -152,7 +152,7 @@ navsection: code
   <span class="kd">commands</span><span class="p">:</span> 
     <span class="nc">!wordpress_tarball_is_present</span><span class="p">::</span>
       <span class="p">&quot;</span><span class="nv">/usr/bin/wget -q -O $($(params)[_tarfile]) $($(params)[_downloadurl])</span><span class="p">&quot;</span>
-      <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Downloading latest version of WordPress.&quot;</span><span class="p">;</span>
+        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Downloading latest version of WordPress.&quot;</span><span class="p">;</span>
 
   <span class="kd">reports</span><span class="p">:</span> 
     <span class="nc">wordpress_tarball_is_present</span><span class="p">::</span>
@@ -174,11 +174,11 @@ navsection: code
   <span class="kd">commands</span><span class="p">:</span>
     <span class="nc">!wordpress_final_dir_is_present&amp;!wordpress_src_dir_is_present</span><span class="p">::</span> 
       <span class="p">&quot;</span><span class="nv">/bin/tar -xzf $($(params)[_tarfile])</span><span class="p">&quot;</span>
-      <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Unrolling wordpress tarball to </span><span class="si">$($(params)[_htmlroot])</span><span class="s">/wordpress.&quot;</span><span class="p">,</span>
-      <span class="kr">contain</span> <span class="o">=&gt;</span> <span class="nf">in_dir_shell</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_htmlroot])</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Unrolling wordpress tarball to </span><span class="si">$($(params)[_htmlroot])</span><span class="s">/wordpress.&quot;</span><span class="p">,</span>
+        <span class="kr">contain</span> <span class="o">=&gt;</span> <span class="nf">in_dir_shell</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_htmlroot])</span><span class="s">&quot;</span><span class="p">);</span>
     <span class="nc">wordpress_src_dir_is_present&amp;!wordpress_final_dir_is_present</span><span class="p">::</span>
       <span class="p">&quot;</span><span class="nv">/bin/mv $($(params)[_htmlroot])/wordpress $($(params)[_wp_dir])</span><span class="p">&quot;</span>
-      <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Rename unrolled directory into its final destination </span><span class="si">$($(params)[_wp_dir])</span><span class="s">&quot;</span><span class="p">;</span>
+        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Rename unrolled directory into its final destination </span><span class="si">$($(params)[_wp_dir])</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c">#############################################</span>
@@ -201,12 +201,12 @@ navsection: code
 <span class="p">{</span>
   <span class="kd">classes</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">wordpress_config_file_exists</span><span class="p">&quot;</span>  
-      <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_wp_config])</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_wp_config])</span><span class="s">&quot;</span><span class="p">);</span>
 
   <span class="kd">files</span><span class="p">:</span>
     <span class="nc">!wordpress_config_file_exists</span><span class="p">::</span>  
       <span class="p">&quot;</span><span class="nv">$($(params)[_wp_config])</span><span class="p">&quot;</span>
-      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">backup_local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_wp_cfgsample])</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">backup_local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$($(params)[_wp_cfgsample])</span><span class="s">&quot;</span><span class="p">);</span>
 
   <span class="kd">reports</span><span class="p">:</span>
     <span class="nc">wordpress_config_file_exists</span><span class="p">::</span>
@@ -229,8 +229,8 @@ navsection: code
 
   <span class="kd">files</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">$($(params)[_wp_config])</span><span class="p">&quot;</span> 
-      <span class="kt">edit_line</span> <span class="o">=&gt;</span> <span class="nf">replace_or_add</span><span class="p">(</span><span class="s">&quot;define</span><span class="se">\(</span><span class="s">&#39;</span><span class="si">$(wpparams)</span><span class="s">&#39;, *(?!&#39;</span><span class="si">$($(params)[$(wpparams)])</span><span class="s">)&#39;.*&quot;</span><span class="p">,</span>
-				  <span class="s">&quot;define(&#39;</span><span class="si">$(wpparams)</span><span class="s">&#39;, &#39;</span><span class="si">$($(params)[$(wpparams)])</span><span class="s">&#39;);&quot;</span><span class="p">);</span>
+        <span class="kt">edit_line</span> <span class="o">=&gt;</span> <span class="nf">replace_or_add</span><span class="p">(</span><span class="s">&quot;define</span><span class="se">\(</span><span class="s">&#39;</span><span class="si">$(wpparams)</span><span class="s">&#39;, *(?!&#39;</span><span class="si">$($(params)[$(wpparams)])</span><span class="s">)&#39;.*&quot;</span><span class="p">,</span>
+                                    <span class="s">&quot;define(&#39;</span><span class="si">$(wpparams)</span><span class="s">&#39;, &#39;</span><span class="si">$($(params)[$(wpparams)])</span><span class="s">&#39;);&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="c">#############################################</span>
@@ -244,14 +244,14 @@ navsection: code
   <span class="kd">files</span><span class="p">:</span>
     <span class="nc">redhat</span><span class="p">::</span> <span class="c"># tested on RHEL only, file location may vary based on Linux distro or OS</span>
       <span class="p">&quot;</span><span class="nv">/etc/sysconfig/iptables</span><span class="p">&quot;</span>
-      <span class="kt">edit_line</span> <span class="o">=&gt;</span> <span class="nf">wp_insert_HTTP_allow_rule_before_the_accept_established_tcp_conns_rule</span><span class="p">,</span>
-      <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;insert HTTP allow rule into /etc/sysconfig/iptables&quot;</span><span class="p">,</span>
-      <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_repaired</span><span class="p">(</span><span class="s">&quot;iptables_edited&quot;</span><span class="p">);</span>
+        <span class="kt">edit_line</span> <span class="o">=&gt;</span> <span class="nf">wp_insert_HTTP_allow_rule_before_the_accept_established_tcp_conns_rule</span><span class="p">,</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;insert HTTP allow rule into /etc/sysconfig/iptables&quot;</span><span class="p">,</span>
+        <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_repaired</span><span class="p">(</span><span class="s">&quot;iptables_edited&quot;</span><span class="p">);</span>
 
   <span class="kd">commands</span><span class="p">:</span> 
     <span class="nc">iptables_edited</span><span class="p">::</span>
       <span class="p">&quot;</span><span class="nv">/sbin/service iptables restart</span><span class="p">&quot;</span>
-      <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Restarting iptables to load new config&quot;</span><span class="p">;</span>
+        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Restarting iptables to load new config&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">wp_insert_HTTP_allow_rule_before_the_accept_established_tcp_conns_rule</span><span class="p">(</span><span class="nv">params</span><span class="p">)</span>
@@ -261,14 +261,14 @@ navsection: code
 
   <span class="kd">insert_lines</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">$(http_rule)</span><span class="p">&quot;</span>
-      <span class="kt">location</span> <span class="o">=&gt;</span> <span class="nf">wp_before_the_accept_established_tcp_conns_rule</span><span class="p">;</span>
+        <span class="kt">location</span> <span class="o">=&gt;</span> <span class="nf">wp_before_the_accept_established_tcp_conns_rule</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">body</span> <span class="k">location</span> <span class="nf">wp_before_the_accept_established_tcp_conns_rule</span>
 <span class="p">{</span>
-      <span class="kr">before_after</span> <span class="o">=&gt;</span> <span class="s">&quot;before&quot;</span><span class="p">;</span>
-      <span class="kr">first_last</span> <span class="o">=&gt;</span> <span class="s">&quot;first&quot;</span><span class="p">;</span>
-      <span class="kr">select_line_matching</span> <span class="o">=&gt;</span> <span class="s">&quot;^-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT.*&quot;</span><span class="p">;</span>
+        <span class="kr">before_after</span> <span class="o">=&gt;</span> <span class="s">&quot;before&quot;</span><span class="p">;</span>
+        <span class="kr">first_last</span> <span class="o">=&gt;</span> <span class="s">&quot;first&quot;</span><span class="p">;</span>
+        <span class="kr">select_line_matching</span> <span class="o">=&gt;</span> <span class="s">&quot;^-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT.*&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c"># Todo:</span>

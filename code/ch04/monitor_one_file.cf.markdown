@@ -10,8 +10,8 @@ navsection: code
 
 <div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
 <span class="p">{</span>
-      <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;monitor_files&quot;</span> <span class="p">};</span>
-      <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;cfengine_stdlib.cf&quot;</span> <span class="p">};</span>
+        <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;monitor_files&quot;</span> <span class="p">};</span>
+        <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;cfengine_stdlib.cf&quot;</span> <span class="p">};</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">monitor_files</span>
@@ -21,7 +21,7 @@ navsection: code
 
   <span class="kd">files</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">$(files)</span><span class="p">&quot;</span>
-      <span class="kt">changes</span> <span class="o">=&gt;</span> <span class="nf">detect_all_change</span><span class="p">;</span>
+        <span class="kt">changes</span> <span class="o">=&gt;</span> <span class="nf">detect_all_change</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 

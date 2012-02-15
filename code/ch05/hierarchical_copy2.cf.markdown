@@ -10,14 +10,14 @@ navsection: code
 
 <div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
 <span class="p">{</span>
-      <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;cfengine_stdlib.cf&quot;</span> <span class="p">};</span>
-      <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;copyfiles&quot;</span> <span class="p">};</span>
+        <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;cfengine_stdlib.cf&quot;</span> <span class="p">};</span>
+        <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;copyfiles&quot;</span> <span class="p">};</span>
 <span class="p">}</span>
 
 <span class="c"># Use single copy for all files</span>
 <span class="k">body</span> <span class="k">agent</span> <span class="k">control</span>
 <span class="p">{</span>
-      <span class="kr">files_single_copy</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;.*&quot;</span> <span class="p">};</span> 
+        <span class="kr">files_single_copy</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;.*&quot;</span> <span class="p">};</span> 
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">copyfiles</span>
@@ -26,7 +26,7 @@ navsection: code
       <span class="c"># Suffixes to try, in most-specific to most-general order. This must include the</span>
       <span class="c"># empty suffix at the end, for the most general file.</span>
       <span class="p">&quot;</span><span class="nv">suffixes</span><span class="p">&quot;</span>    <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;.</span><span class="si">$(sys.fqhost)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;.</span><span class="si">$(sys.uqhost)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;.</span><span class="si">$(sys.domain)</span><span class="s">&quot;</span><span class="p">,</span> 
-			       <span class="s">&quot;.</span><span class="si">$(sys.flavor)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;.</span><span class="si">$(sys.ostype)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span> <span class="p">};</span>
+                               <span class="s">&quot;.</span><span class="si">$(sys.flavor)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;.</span><span class="si">$(sys.ostype)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span> <span class="p">};</span>
       <span class="c"># List of files to copy</span>
       <span class="p">&quot;</span><span class="nv">filestocopy</span><span class="p">&quot;</span>     <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;/etc/hosts&quot;</span><span class="p">,</span> <span class="s">&quot;/etc/motd&quot;</span> <span class="p">};</span>   
       <span class="p">&quot;</span><span class="nv">dirstocopy</span><span class="p">&quot;</span>      <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;</span><span class="si">$(sys.workdir)</span><span class="s">/bin&quot;</span><span class="p">,</span> <span class="s">&quot;/usr/local/bin&quot;</span> <span class="p">};</span>
@@ -39,11 +39,11 @@ navsection: code
 
   <span class="kd">files</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">$(dest)$(filestocopy)</span><span class="p">&quot;</span>   
-      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_dcp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repo)$(filestocopy)$(suffixes)</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_dcp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repo)$(filestocopy)$(suffixes)</span><span class="s">&quot;</span><span class="p">);</span>
 
       <span class="p">&quot;</span><span class="nv">$(dest)$(dirstocopy)</span><span class="p">&quot;</span>    
-      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_dcp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repo)$(dirstocopy)$(suffixes)</span><span class="s">&quot;</span><span class="p">),</span>
-      <span class="kr">depth_search</span> <span class="o">=&gt;</span> <span class="nf">recurse</span><span class="p">(</span><span class="s">&quot;inf&quot;</span><span class="p">);</span>
+        <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_dcp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repo)$(dirstocopy)$(suffixes)</span><span class="s">&quot;</span><span class="p">),</span>
+        <span class="kr">depth_search</span> <span class="o">=&gt;</span> <span class="nf">recurse</span><span class="p">(</span><span class="s">&quot;inf&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 

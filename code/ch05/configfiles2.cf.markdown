@@ -36,16 +36,16 @@ navsection: code
 <span class="p">{</span>
   <span class="kd">files</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">$(configfiles.files[sshdconfig])</span><span class="p">&quot;</span>
-      <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_sshd&quot;</span><span class="p">,</span>
-      <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Set desired sshd_config parameters&quot;</span><span class="p">,</span>
-      <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_config_values</span><span class="p">(</span><span class="s">&quot;configfiles.sshd&quot;</span><span class="p">),</span>
-      <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_repaired</span><span class="p">(</span><span class="s">&quot;restart_sshd&quot;</span><span class="p">);</span>
+        <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_sshd&quot;</span><span class="p">,</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Set desired sshd_config parameters&quot;</span><span class="p">,</span>
+        <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_config_values</span><span class="p">(</span><span class="s">&quot;configfiles.sshd&quot;</span><span class="p">),</span>
+        <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_repaired</span><span class="p">(</span><span class="s">&quot;restart_sshd&quot;</span><span class="p">);</span>
 
   <span class="kd">commands</span><span class="p">:</span>
     <span class="nc">restart_sshd.!no_restarts</span><span class="p">::</span>
       <span class="p">&quot;</span><span class="nv">/etc/init.d/sshd reload</span><span class="p">&quot;</span>
-      <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;sshd_restart&quot;</span><span class="p">,</span>
-      <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Restart sshd if the configuration file was modified&quot;</span><span class="p">;</span>
+        <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;sshd_restart&quot;</span><span class="p">,</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Restart sshd if the configuration file was modified&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 

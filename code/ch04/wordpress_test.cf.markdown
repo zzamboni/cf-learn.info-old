@@ -10,8 +10,8 @@ navsection: code
 
 <div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
 <span class="p">{</span>
-      <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nf">wp_install</span><span class="p">(</span><span class="s">&quot;g.wp_config&quot;</span><span class="p">)</span> <span class="p">};</span>
-      <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;cfengine_stdlib.cf&quot;</span><span class="p">,</span> <span class="s">&quot;wordpress.cf&quot;</span> <span class="p">};</span>
+        <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nf">wp_install</span><span class="p">(</span><span class="s">&quot;g.wp_config&quot;</span><span class="p">)</span> <span class="p">};</span>
+        <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;cfengine_stdlib.cf&quot;</span><span class="p">,</span> <span class="s">&quot;wordpress.cf&quot;</span> <span class="p">};</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">common</span> <span class="nf">g</span>

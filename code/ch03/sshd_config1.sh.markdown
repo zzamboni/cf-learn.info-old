@@ -8,7 +8,7 @@ navsection: code
 
 [(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch03/sshd_config1.sh)
 
-<div class="highlight"><pre><span class="nb">echo</span> <span class="s2">&quot;AllowRoot no&quot;</span> &gt;&gt; /etc/ssh/sshd_config
+<div class="highlight"><pre><span class="nb">echo</span> <span class="s2">&quot;PermitRootLogin no&quot;</span> &gt;&gt; /etc/ssh/sshd_config
 </pre></div>
 
 <div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>

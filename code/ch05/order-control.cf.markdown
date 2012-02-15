@@ -10,7 +10,7 @@ navsection: code
 
 <div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
 <span class="p">{</span>
-      <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;test&quot;</span> <span class="p">};</span>
+        <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;test&quot;</span> <span class="p">};</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">test</span>
@@ -26,7 +26,7 @@ navsection: code
   <span class="kd">reports</span><span class="p">:</span>
     <span class="nc">cfengine</span><span class="p">::</span>
       <span class="p">&quot;</span><span class="nv">var1=$(var1)</span><span class="p">&quot;</span>
-      <span class="kt">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;bar&quot;</span><span class="p">;</span>
+        <span class="kt">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;bar&quot;</span><span class="p">;</span>
       <span class="s">&quot;var2=</span><span class="si">$(var2)</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>

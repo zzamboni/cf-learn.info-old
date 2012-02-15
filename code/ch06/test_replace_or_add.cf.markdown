@@ -16,11 +16,11 @@ navsection: code
 
 <span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
 <span class="p">{</span>
-      <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;../../default.cf.sub&quot;</span><span class="p">,</span>   
-		  <span class="s">&quot;../../../../masterfiles/cfengine_stdlib.cf&quot;</span>   
-		<span class="p">};</span>
-      <span class="kr">bundlesequence</span>  <span class="o">=&gt;</span> <span class="p">{</span> <span class="nf">default</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(this.promise_filename)</span><span class="s">&quot;</span><span class="p">)</span> <span class="p">};</span>   
-      <span class="kr">version</span> <span class="o">=&gt;</span> <span class="s">&quot;1.0&quot;</span><span class="p">;</span>
+        <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;../../default.cf.sub&quot;</span><span class="p">,</span>   
+                    <span class="s">&quot;../../../../masterfiles/cfengine_stdlib.cf&quot;</span>   
+                  <span class="p">};</span>
+        <span class="kr">bundlesequence</span>  <span class="o">=&gt;</span> <span class="p">{</span> <span class="nf">default</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(this.promise_filename)</span><span class="s">&quot;</span><span class="p">)</span> <span class="p">};</span>   
+        <span class="kr">version</span> <span class="o">=&gt;</span> <span class="s">&quot;1.0&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c">#######################################################</span>
@@ -43,9 +43,9 @@ navsection: code
 
   <span class="kd">files</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">$(G.testfile).$(states)</span><span class="p">&quot;</span>   
-      <span class="kt">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">,</span>
-      <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">init_insert</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(init.$(states))</span><span class="s">&quot;</span><span class="p">),</span>
-      <span class="kr">edit_defaults</span> <span class="o">=&gt;</span> <span class="nf">init_empty</span><span class="p">;</span>
+        <span class="kt">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">,</span>
+        <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">init_insert</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(init.$(states))</span><span class="s">&quot;</span><span class="p">),</span>
+        <span class="kr">edit_defaults</span> <span class="o">=&gt;</span> <span class="nf">init_empty</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">edit_line</span> <span class="nf">init_insert</span><span class="p">(</span><span class="nv">str</span><span class="p">)</span>   
@@ -56,7 +56,7 @@ navsection: code
 
 <span class="k">body</span> <span class="k">edit_defaults</span> <span class="nf">init_empty</span>
 <span class="p">{</span>
-      <span class="kr">empty_file_before_editing</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
+        <span class="kr">empty_file_before_editing</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="c">#######################################################</span>
@@ -71,11 +71,11 @@ navsection: code
 
   <span class="kd">files</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">$(G.testfile).actual</span><span class="p">&quot;</span>   
-      <span class="kt">create</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">,</span>
-      <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">replace_or_add</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(test.tpat1)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(test.tstr1)</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="kt">create</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">,</span>
+        <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">replace_or_add</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(test.tpat1)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(test.tstr1)</span><span class="s">&quot;</span><span class="p">);</span>
       <span class="p">&quot;</span><span class="nv">$(G.testfile).actual</span><span class="p">&quot;</span>
-      <span class="kt">create</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">,</span>
-      <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">replace_or_add</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(test.tpat2)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(test.tstr2)</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="kt">create</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">,</span>
+        <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">replace_or_add</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(test.tpat2)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(test.tstr2)</span><span class="s">&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="c">#######################################################</span>

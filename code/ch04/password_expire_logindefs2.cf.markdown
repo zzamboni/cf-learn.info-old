@@ -10,8 +10,8 @@ navsection: code
 
 <div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
 <span class="p">{</span>
-      <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;password_expiration&quot;</span> <span class="p">};</span>
-      <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;cfengine_stdlib.cf&quot;</span> <span class="p">};</span>
+        <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;password_expiration&quot;</span> <span class="p">};</span>
+        <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;cfengine_stdlib.cf&quot;</span> <span class="p">};</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">password_expiration</span>
@@ -50,16 +50,16 @@ navsection: code
       
   <span class="kd">files</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">/etc/login.defs</span><span class="p">&quot;</span>   
-      <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_logindefs&quot;</span><span class="p">,</span>
-      <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Set desired login.defs parameters&quot;</span><span class="p">,</span>
-      <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_config_values</span><span class="p">(</span><span class="s">&quot;password_expiration.logindefs&quot;</span><span class="p">);</span>
+        <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_logindefs&quot;</span><span class="p">,</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Set desired login.defs parameters&quot;</span><span class="p">,</span>
+        <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_config_values</span><span class="p">(</span><span class="s">&quot;password_expiration.logindefs&quot;</span><span class="p">);</span>
       
       <span class="p">&quot;</span><span class="nv">/etc/shadow</span><span class="p">&quot;</span>   
-      <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_shadow_</span><span class="si">$(params)</span><span class="s">&quot;</span><span class="p">,</span>
-      <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Modify </span><span class="si">$(params)</span><span class="s"> for individual users.&quot;</span><span class="p">,</span>
-      <span class="kr">edit_defaults</span> <span class="o">=&gt;</span> <span class="nf">backup_timestamp</span><span class="p">,</span>
-      <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_user_field</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(users)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(fieldnum[$(params)])</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(logindefs[$(params)])</span><span class="s">&quot;</span><span class="p">),</span>
-      <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;!skip_</span><span class="si">$(cusers[$(users)])</span><span class="s">&quot;</span><span class="p">;</span>
+        <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_shadow_</span><span class="si">$(params)</span><span class="s">&quot;</span><span class="p">,</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Modify </span><span class="si">$(params)</span><span class="s"> for individual users.&quot;</span><span class="p">,</span>
+        <span class="kr">edit_defaults</span> <span class="o">=&gt;</span> <span class="nf">backup_timestamp</span><span class="p">,</span>
+        <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_user_field</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(users)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(fieldnum[$(params)])</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(logindefs[$(params)])</span><span class="s">&quot;</span><span class="p">),</span>
+        <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;!skip_</span><span class="si">$(cusers[$(users)])</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 

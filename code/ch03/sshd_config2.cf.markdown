@@ -10,10 +10,10 @@ navsection: code
 
 <div class="highlight"><pre>  <span class="kd">vars</span><span class="p">:</span>
 <span class="c"># SSHD configuration to set</span>
-<span class="p">&quot;</span><span class="nv">sshd[Protocol]</span><span class="p">&quot;</span>       <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;2&quot;</span><span class="p">;</span>
-<span class="p">&quot;</span><span class="nv">sshd[X11Forwarding]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;yes&quot;</span><span class="p">;</span>
-<span class="p">&quot;</span><span class="nv">sshd[UseDNS]</span><span class="p">&quot;</span>         <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;no&quot;</span><span class="p">;</span>
-<span class="p">&quot;</span><span class="nv">sshd[AllowRoot]</span><span class="p">&quot;</span>      <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;no&quot;</span><span class="p">;</span>
+<span class="p">&quot;</span><span class="nv">sshd[Protocol]</span><span class="p">&quot;</span>        <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;2&quot;</span><span class="p">;</span>
+<span class="p">&quot;</span><span class="nv">sshd[X11Forwarding]</span><span class="p">&quot;</span>   <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;yes&quot;</span><span class="p">;</span>
+<span class="p">&quot;</span><span class="nv">sshd[UseDNS]</span><span class="p">&quot;</span>          <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;no&quot;</span><span class="p">;</span>
+<span class="p">&quot;</span><span class="nv">sshd[PermitRootLogin]</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;no&quot;</span><span class="p">;</span>
 
   <span class="kd">files</span><span class="p">:</span>
 <span class="p">&quot;</span><span class="nv">/etc/ssh/sshd_config</span><span class="p">&quot;</span>

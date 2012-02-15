@@ -16,13 +16,13 @@ navsection: code
 
   <span class="kd">packages</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">$(allpkgs)</span><span class="p">&quot;</span> 
-      <span class="kt">package_policy</span> <span class="o">=&gt;</span> <span class="s">&quot;verify&quot;</span><span class="p">,</span>
-      <span class="kr">package_method</span> <span class="o">=&gt;</span> <span class="nf">rpm</span><span class="p">,</span>
-      <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_notkept</span><span class="p">(</span><span class="s">&quot;incorrect_</span><span class="si">$(allpkgs)</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="kt">package_policy</span> <span class="o">=&gt;</span> <span class="s">&quot;verify&quot;</span><span class="p">,</span>
+        <span class="kr">package_method</span> <span class="o">=&gt;</span> <span class="nf">rpm</span><span class="p">,</span>
+        <span class="kr">classes</span> <span class="o">=&gt;</span> <span class="nf">if_notkept</span><span class="p">(</span><span class="s">&quot;incorrect_</span><span class="si">$(allpkgs)</span><span class="s">&quot;</span><span class="p">);</span>
 
   <span class="kd">reports</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">Problem: package $(allpkgs) is not installed correctly.</span><span class="p">&quot;</span>
-      <span class="kt">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;incorrect_</span><span class="si">$(allpkgs)</span><span class="s">&quot;</span><span class="p">;</span>
+        <span class="kt">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;incorrect_</span><span class="si">$(allpkgs)</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 

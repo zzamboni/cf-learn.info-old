@@ -10,14 +10,14 @@ navsection: code
 
 <div class="highlight"><pre><span class="k">body</span> <span class="k">common</span> <span class="k">control</span>
 <span class="p">{</span>
-      <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;cfengine_stdlib.cf&quot;</span> <span class="p">};</span>
-      <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;test&quot;</span> <span class="p">};</span>
+        <span class="kr">inputs</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;cfengine_stdlib.cf&quot;</span> <span class="p">};</span>
+        <span class="kr">bundlesequence</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;test&quot;</span> <span class="p">};</span>
 <span class="p">}</span>
 
 <span class="c"># Use single copy for all files</span>
 <span class="k">body</span> <span class="k">agent</span> <span class="k">control</span>
 <span class="p">{</span>
-      <span class="kr">files_single_copy</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;.*&quot;</span> <span class="p">};</span>
+        <span class="kr">files_single_copy</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;.*&quot;</span> <span class="p">};</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">test</span>
@@ -27,7 +27,7 @@ navsection: code
                               <span class="s">&quot;.</span><span class="si">$(sys.flavor)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;.</span><span class="si">$(sys.ostype)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;&quot;</span> <span class="p">};</span>
   <span class="kd">files</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">/etc/hosts</span><span class="p">&quot;</span>
-      <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_dcp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts</span><span class="si">$(suffixes)</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_dcp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repository)</span><span class="s">/etc/hosts</span><span class="si">$(suffixes)</span><span class="s">&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 

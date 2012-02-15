@@ -8,9 +8,9 @@ navsection: code
 
 [(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch03/sshd_config2.sh)
 
-<div class="highlight"><pre><span class="o">(</span>grep -iq AllowRoot /etc/ssh/sshd_config <span class="o">||</span>
- <span class="nb">echo</span> <span class="s2">&quot;AllowRoot no&quot;</span> &gt;&gt; /etc/ssh/sshd_config<span class="o">)</span> <span class="o">&amp;&amp;</span>
- sed -i <span class="s1">&#39;s/^.*AllowRoot .*$/AllowRoot no/;&#39;</span> /etc/ssh/sshd_config
+<div class="highlight"><pre><span class="o">(</span>grep -iq <span class="s1">&#39;PermitRootLogin&#39;</span> /etc/ssh/sshd_config <span class="o">||</span>
+ <span class="nb">echo</span> <span class="s2">&quot;PermitRootLogin no&quot;</span> &gt;&gt; /etc/ssh/sshd_config<span class="o">)</span> <span class="o">&amp;&amp;</span>
+ sed -i <span class="s1">&#39;s/^.*PermitRootLogin.*$/PermitRootLogin no/;&#39;</span> /etc/ssh/sshd_config
 </pre></div>
 
 <div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>

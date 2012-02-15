@@ -32,8 +32,8 @@ navsection: code
 
   <span class="kd">files</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">$(allfiles).original</span><span class="p">&quot;</span>
-      <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Ensure we have a backup of previous versions of </span><span class="si">$(allfiles)</span><span class="s">&quot;</span><span class="p">,</span>
-      <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">backup_local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(allfiles)</span><span class="s">&quot;</span><span class="p">);</span>
+        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Ensure we have a backup of previous versions of </span><span class="si">$(allfiles)</span><span class="s">&quot;</span><span class="p">,</span>
+        <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">backup_local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(allfiles)</span><span class="s">&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 
