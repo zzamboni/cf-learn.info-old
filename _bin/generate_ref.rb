@@ -7,10 +7,10 @@ require 'open-uri'
 ######################################################################
 
 Debug = false
-RefGuideUrl = 'https://cfengine.com/manuals/cf3-reference.html'
+RefGuideUrl = 'https://cfengine.com/manuals/cf3-reference'
 OutDir = "./ref"
 # Words not to index
-Skipwords = %W(how the ago and are for non vs. what best bare that thus)
+Skipwords = %W(how the are for non vs. what best bare that thus)
 
 ######################################################################
 
@@ -20,11 +20,22 @@ def read_sections
   open(RefGuideUrl) do |url|
     url.each_line do |l|
       if l =~ /\<a name="(.*?)"/
+        if Debug
+          puts "line: #{l}"
+          puts "   found: '#{$1}'"
+        end
         a_names.push($1)
-      elsif l =~ /\<h\d.*?\>(.*)\</
+      elsif l =~ /\<h\d.*?\>(.*)$/
         title = $1
+        # Do this afterward because not all section titles have their closing tag
+        # on the same line, so we can't match on that.
+        title.gsub!(/\<\/h\d.*$/, "")
+        if Debug
+          puts "line: #{l}"
+          puts "   found title: '#{title}'"
+        end
         a_names.each { |n|
-          result[n] = $1
+          result[n] = title
         }
         a_names = []
       end
