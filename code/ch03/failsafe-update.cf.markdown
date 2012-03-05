@@ -12,11 +12,11 @@ navsection: code
 <span class="p">{</span>
   <span class="kd">vars</span><span class="p">:</span>
 
-      <span class="p">&quot;</span><span class="nv">inputs_dir</span><span class="p">&quot;</span>         <span class="kt">string</span> <span class="o">=&gt;</span> <span class="nf">translatepath</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(sys.workdir)</span><span class="s">/inputs&quot;</span><span class="p">),</span>   
+      <span class="p">&quot;</span><span class="nv">inputs_dir</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="nf">translatepath</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(sys.workdir)</span><span class="s">/inputs&quot;</span><span class="p">),</span>   
         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Directory containing Cfengine policies&quot;</span><span class="p">,</span>
         <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;update_vars_inputs_dir&quot;</span><span class="p">;</span>
 
-      <span class="p">&quot;</span><span class="nv">master_location</span><span class="p">&quot;</span>    <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/var/cfengine/masterfiles&quot;</span><span class="p">,</span>   
+      <span class="p">&quot;</span><span class="nv">master_location</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/var/cfengine/masterfiles&quot;</span><span class="p">,</span>   
         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;The master cfengine policy directory on the policy host&quot;</span><span class="p">,</span>
         <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;update_vars_master_location&quot;</span><span class="p">;</span>
 
@@ -24,8 +24,8 @@ navsection: code
 
   <span class="kd">files</span><span class="p">:</span>
 
-      <span class="p">&quot;</span><span class="nv">$(inputs_dir)</span><span class="p">&quot;</span>   
-        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Copy policy updates from master source on policy server if a new validation was acquired&quot;</span><span class="p">,</span>
+      <span class="s">&quot;</span><span class="si">$(inputs_dir)</span><span class="s">&quot;</span>   
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Copy policy updates from master source on policy server&quot;</span><span class="p">,</span>
         <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;update_files_inputs_dir&quot;</span><span class="p">,</span>
         <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">u_rcp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(master_location)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(sys.policy_hub)</span><span class="s">&quot;</span><span class="p">),</span>  
         <span class="kr">depth_search</span> <span class="o">=&gt;</span> <span class="nf">u_recurse</span><span class="p">(</span><span class="s">&quot;inf&quot;</span><span class="p">),</span>   

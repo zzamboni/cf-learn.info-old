@@ -20,13 +20,13 @@ navsection: code
     <span class="nc">foo</span><span class="p">::</span>
       <span class="p">&quot;</span><span class="nv">var2</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;value 2&quot;</span><span class="p">;</span>
   <span class="kd">classes</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">foo</span><span class="p">&quot;</span> <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">isvariable</span><span class="p">(</span><span class="s">&quot;var1&quot;</span><span class="p">);</span>
-      <span class="p">&quot;</span><span class="nv">bar</span><span class="p">&quot;</span> <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">isvariable</span><span class="p">(</span><span class="s">&quot;var2&quot;</span><span class="p">);</span>
+      <span class="s">&quot;foo&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">isvariable</span><span class="p">(</span><span class="s">&quot;var1&quot;</span><span class="p">);</span>
+      <span class="s">&quot;bar&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">isvariable</span><span class="p">(</span><span class="s">&quot;var2&quot;</span><span class="p">);</span>
 
   <span class="kd">reports</span><span class="p">:</span>
     <span class="nc">cfengine</span><span class="p">::</span>
-      <span class="p">&quot;</span><span class="nv">var1=$(var1)</span><span class="p">&quot;</span>
-        <span class="kt">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;bar&quot;</span><span class="p">;</span>
+      <span class="s">&quot;var1=</span><span class="si">$(var1)</span><span class="s">&quot;</span>
+        <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;bar&quot;</span><span class="p">;</span>
       <span class="s">&quot;var2=</span><span class="si">$(var2)</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>

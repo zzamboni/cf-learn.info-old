@@ -36,16 +36,16 @@ navsection: code
 <span class="p">{</span>
   <span class="kd">reports</span><span class="p">:</span>
     <span class="nc">am_policy_hub</span><span class="p">::</span>
-      <span class="p">&quot;</span><span class="nv">--&gt; I&#39;m a policy hub.</span><span class="p">&quot;</span>
-        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Display message on screen/email&quot;</span><span class="p">,</span>
+      <span class="s">&quot;--&gt; I&#39;m a policy hub.&quot;</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Display message on screen/email&quot;</span><span class="p">,</span>
         <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;main_reports_i_am_hub&quot;</span><span class="p">;</span>
 
     <span class="nc">!am_policy_hub</span><span class="p">::</span>
-      <span class="p">&quot;</span><span class="nv">--&gt; $(sys.policy_hub) is my policy hub.</span><span class="p">&quot;</span>
-        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Display message on screen/email&quot;</span><span class="p">,</span>
+      <span class="s">&quot;--&gt; </span><span class="si">$(sys.policy_hub)</span><span class="s"> is my policy hub.&quot;</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Display message on screen/email&quot;</span><span class="p">,</span>
         <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;main_reports_is_my_hub&quot;</span><span class="p">;</span>
-      <span class="p">&quot;</span><span class="nv">--&gt; CFE is running on $(sys.fqhost)</span><span class="p">&quot;</span>
-        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Display message on screen/email&quot;</span><span class="p">,</span>
+      <span class="s">&quot;--&gt; CFE is running on </span><span class="si">$(sys.fqhost)</span><span class="s">&quot;</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Display message on screen/email&quot;</span><span class="p">,</span>
         <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;main_reports_cfe_running&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
@@ -68,20 +68,20 @@ navsection: code
       <span class="c"># Hosts do not need to be classified into an environment, but must not be in multiple</span>
       <span class="c">#</span>
 
-      <span class="p">&quot;</span><span class="nv">environment_development</span><span class="p">&quot;</span> <span class="kt">or</span> <span class="o">=&gt;</span> <span class="p">{</span>  
+      <span class="s">&quot;environment_development&quot;</span> <span class="kr">or</span> <span class="o">=&gt;</span> <span class="p">{</span>  
                                         <span class="s">&quot;hostname1_example_com&quot;</span><span class="p">,</span>
                                         <span class="s">&quot;ipv4_10_1_2_3&quot;</span><span class="p">,</span>
                                       <span class="p">};</span>
 
 
-      <span class="p">&quot;</span><span class="nv">environment_testing</span><span class="p">&quot;</span>     <span class="kt">or</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="s">&quot;environment_testing&quot;</span>     <span class="kr">or</span> <span class="o">=&gt;</span> <span class="p">{</span>
                                         <span class="nf">classmatch</span><span class="p">(</span><span class="s">&quot;.*_test_example_com&quot;</span><span class="p">),</span> 
                                         <span class="s">&quot;ipv4_10_1_2&quot;</span><span class="p">,</span>
                                         <span class="s">&quot;suse_11&quot;</span><span class="p">,</span>
                                       <span class="p">};</span>
 
 
-      <span class="p">&quot;</span><span class="nv">environment_production</span><span class="p">&quot;</span>  <span class="kt">or</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="s">&quot;environment_production&quot;</span>  <span class="kr">or</span> <span class="o">=&gt;</span> <span class="p">{</span>
                                         <span class="nf">classmatch</span><span class="p">(</span><span class="s">&quot;.*_example_com&quot;</span><span class="p">),</span>  
                                         <span class="s">&quot;ipv4_10_1&quot;</span><span class="p">,</span>
                                       <span class="p">};</span>
@@ -93,8 +93,8 @@ navsection: code
       <span class="c">#</span>
       <span class="c"># This variable holds active environment.</span>
       <span class="c">#</span>
-      <span class="c"># * CDP reads files from inputs/environments_${active}/cdp_inputs.</span>
-      <span class="c"># * inputs/environments_${active}/promises.cf file is read during execution.</span>
+      <span class="c"># * CDP reads files from inputs/environments_$(active)/cdp_inputs.</span>
+      <span class="c"># * inputs/environments_$(active)/promises.cf file is read during execution.</span>
       <span class="c">#</span>
     <span class="nc">any</span><span class="p">::</span>   
 
@@ -221,8 +221,8 @@ navsection: code
 
     <span class="nc">any</span><span class="p">::</span>
 
-      <span class="p">&quot;</span><span class="nv">$(def.dir_masterfiles)</span><span class="p">&quot;</span>
-        <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;server_access_rule_grant_access_policy&quot;</span><span class="p">,</span>
+      <span class="s">&quot;</span><span class="si">$(def.dir_masterfiles)</span><span class="s">&quot;</span>
+        <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;server_access_rule_grant_access_policy&quot;</span><span class="p">,</span>
         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Grant access to the policy updates&quot;</span><span class="p">,</span>
         <span class="kr">admit</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;.*</span><span class="si">$(def.domain)</span><span class="s">&quot;</span><span class="p">,</span> <span class="nv">@(def.acl)</span> <span class="p">};</span>
 

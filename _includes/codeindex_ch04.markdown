@@ -13,6 +13,7 @@
   * [edit_inittab_tso.cf](/code/ch04/edit_inittab_tso.cf.html)
   * [users_use.cf](/code/ch04/users_use.cf.html)
   * [sys_create_users.cf](/code/ch04/sys_create_users.cf.html)
+  * [configfiles4.cf](/code/ch04/configfiles4.cf.html)
   * [pkg1.cf](/code/ch04/pkg1.cf.html)
   * [pkg2.cf](/code/ch04/pkg2.cf.html)
   * [pkg3.cf](/code/ch04/pkg3.cf.html)

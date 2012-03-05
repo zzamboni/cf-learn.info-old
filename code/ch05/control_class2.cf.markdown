@@ -17,9 +17,10 @@ navsection: code
 <span class="p">{</span>
   <span class="kd">vars</span><span class="p">:</span>
       <span class="p">&quot;</span><span class="nv">class_file</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/var/cfengine/site/classes.txt&quot;</span><span class="p">;</span>
-      <span class="p">&quot;</span><span class="nv">class_strs</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">readstringlist</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(class_file)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;#.*?$&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="se">\s</span><span class="s">+&quot;</span><span class="p">,</span> <span class="s">&quot;inf&quot;</span><span class="p">,</span> <span class="s">&quot;inf&quot;</span><span class="p">);</span>
+      <span class="p">&quot;</span><span class="nv">class_strs</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">readstringlist</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(class_file)</span><span class="s">&quot;</span><span class="p">,</span>
+                                           <span class="s">&quot;#.*$&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="se">\s</span><span class="s">+&quot;</span><span class="p">,</span> <span class="s">&quot;inf&quot;</span><span class="p">,</span> <span class="s">&quot;inf&quot;</span><span class="p">);</span>
   <span class="kd">classes</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">$(class_strs)</span><span class="p">&quot;</span>  <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="s">&quot;any&quot;</span><span class="p">;</span>
+      <span class="s">&quot;</span><span class="si">$(class_strs)</span><span class="s">&quot;</span>  <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="s">&quot;any&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">test</span>

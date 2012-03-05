@@ -21,8 +21,8 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">motd_file</span><span class="p">&quot;</span>     <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/tmp/motd&quot;</span><span class="p">;</span> 
       
   <span class="kd">files</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">$(motd_file)</span><span class="p">&quot;</span>   
-        <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;set_login_banner&quot;</span><span class="p">,</span>
+      <span class="s">&quot;</span><span class="si">$(motd_file)</span><span class="s">&quot;</span>   
+        <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;set_login_banner&quot;</span><span class="p">,</span>
         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Ensure the login banner is set to the authorized text&quot;</span><span class="p">,</span>
         <span class="kr">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">,</span>
         <span class="kr">perms</span> <span class="o">=&gt;</span> <span class="nf">mog</span><span class="p">(</span><span class="s">&quot;744&quot;</span><span class="p">,</span> <span class="s">&quot;root&quot;</span><span class="p">,</span> <span class="s">&quot;wheel&quot;</span><span class="p">),</span>

@@ -42,8 +42,8 @@ navsection: code
 <span class="s">new line 2&quot;</span><span class="p">;</span>
 
   <span class="kd">files</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">$(G.testfile).$(states)</span><span class="p">&quot;</span>   
-        <span class="kt">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">,</span>
+      <span class="s">&quot;</span><span class="si">$(G.testfile)</span><span class="s">.</span><span class="si">$(states)</span><span class="s">&quot;</span>   
+        <span class="kr">create</span> <span class="o">=&gt;</span> <span class="s">&quot;true&quot;</span><span class="p">,</span>
         <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">init_insert</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(init.$(states))</span><span class="s">&quot;</span><span class="p">),</span>
         <span class="kr">edit_defaults</span> <span class="o">=&gt;</span> <span class="nf">init_empty</span><span class="p">;</span>
 <span class="p">}</span>
@@ -70,11 +70,11 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">tstr2</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;new line 2&quot;</span><span class="p">;</span>
 
   <span class="kd">files</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">$(G.testfile).actual</span><span class="p">&quot;</span>   
-        <span class="kt">create</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">,</span>
+      <span class="s">&quot;</span><span class="si">$(G.testfile)</span><span class="s">.actual&quot;</span>   
+        <span class="kr">create</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">,</span>
         <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">replace_or_add</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(test.tpat1)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(test.tstr1)</span><span class="s">&quot;</span><span class="p">);</span>
-      <span class="p">&quot;</span><span class="nv">$(G.testfile).actual</span><span class="p">&quot;</span>
-        <span class="kt">create</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">,</span>
+      <span class="s">&quot;</span><span class="si">$(G.testfile)</span><span class="s">.actual&quot;</span>
+        <span class="kr">create</span> <span class="o">=&gt;</span> <span class="s">&quot;false&quot;</span><span class="p">,</span>
         <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">replace_or_add</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(test.tpat2)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(test.tstr2)</span><span class="s">&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
@@ -83,7 +83,7 @@ navsection: code
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">check</span>
 <span class="p">{</span>
   <span class="kd">methods</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">any</span><span class="p">&quot;</span> <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">default_check_diff</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(G.testfile)</span><span class="s">.actual&quot;</span><span class="p">,</span>
+      <span class="s">&quot;any&quot;</span> <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">default_check_diff</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(G.testfile)</span><span class="s">.actual&quot;</span><span class="p">,</span>
                                             <span class="s">&quot;</span><span class="si">$(G.testfile)</span><span class="s">.expected&quot;</span><span class="p">,</span>
                                             <span class="s">&quot;</span><span class="si">$(this.promise_filename)</span><span class="s">&quot;</span><span class="p">);</span>
 <span class="p">}</span>

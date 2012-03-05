@@ -20,8 +20,8 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">files_dirs</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;/bin&quot;</span><span class="p">,</span> <span class="s">&quot;/etc/passwd&quot;</span><span class="p">,</span> <span class="s">&quot;/etc/motd&quot;</span> <span class="p">};</span>
 
   <span class="kd">files</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">$(files_dirs)</span><span class="p">&quot;</span>
-        <span class="kt">changes</span> <span class="o">=&gt;</span> <span class="nf">detect_all_change</span><span class="p">,</span>
+      <span class="s">&quot;</span><span class="si">$(files_dirs)</span><span class="s">&quot;</span>
+        <span class="kr">changes</span> <span class="o">=&gt;</span> <span class="nf">detect_all_change</span><span class="p">,</span>
         <span class="kr">depth_search</span> <span class="o">=&gt;</span> <span class="nf">recurse</span><span class="p">(</span><span class="s">&quot;inf&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>

@@ -11,7 +11,7 @@ navsection: code
 <div class="highlight"><pre><span class="k">bundle</span> <span class="k">agent</span> <span class="nf">manage_users</span>
 <span class="p">{</span>
   <span class="kd">vars</span><span class="p">:</span>
-      <span class="c">### Users to create</span>
+      <span class="c"># Users to create</span>
       <span class="p">&quot;</span><span class="nv">users[root][fullname]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;System administrator&quot;</span><span class="p">;</span>
       <span class="p">&quot;</span><span class="nv">users[root][uid]</span><span class="p">&quot;</span>       <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;0&quot;</span><span class="p">;</span>
       <span class="p">&quot;</span><span class="nv">users[root][gid]</span><span class="p">&quot;</span>       <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;0&quot;</span><span class="p">;</span>
@@ -29,7 +29,7 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">users[zamboni][password]</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;dk52ia209rfuh&quot;</span><span class="p">;</span>
 
   <span class="kd">methods</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">users</span><span class="p">&quot;</span>   <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">create_users</span><span class="p">(</span><span class="s">&quot;manage_users.users&quot;</span><span class="p">);</span>
+      <span class="s">&quot;users&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">create_users</span><span class="p">(</span><span class="s">&quot;manage_users.users&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>
 

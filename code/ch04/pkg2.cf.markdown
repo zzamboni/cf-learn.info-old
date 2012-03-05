@@ -18,8 +18,8 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">allpkgs</span><span class="p">&quot;</span>       <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;version&quot;</span><span class="p">);</span>
 
   <span class="kd">packages</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">$(allpkgs)</span><span class="p">&quot;</span> 
-        <span class="kt">package_policy</span> <span class="o">=&gt;</span> <span class="s">&quot;add&quot;</span><span class="p">,</span>
+      <span class="s">&quot;</span><span class="si">$(allpkgs)</span><span class="s">&quot;</span> 
+        <span class="kr">package_policy</span> <span class="o">=&gt;</span> <span class="s">&quot;add&quot;</span><span class="p">,</span>
         <span class="kr">package_select</span> <span class="o">=&gt;</span> <span class="s">&quot;==&quot;</span><span class="p">,</span>
         <span class="kr">package_version</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(version[$(allpkgs)]&quot;,</span>
 <span class="si">        package_architectures =&gt; @</span><span class="err">(</span><span class="si">architectures)</span><span class="s">,</span>

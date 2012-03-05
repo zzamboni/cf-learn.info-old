@@ -14,7 +14,7 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">localdir</span><span class="p">&quot;</span>    <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/usr/local&quot;</span><span class="p">;</span>
       <span class="p">&quot;</span><span class="nv">confdir</span><span class="p">&quot;</span>     <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/etc&quot;</span><span class="p">;</span>
   <span class="kd">classes</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">testhost</span><span class="p">&quot;</span>    <span class="kt">or</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;testhost1&quot;</span><span class="p">,</span> <span class="s">&quot;testhost2&quot;</span> <span class="p">};</span>
+      <span class="s">&quot;testhost&quot;</span>    <span class="kr">or</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;testhost1&quot;</span><span class="p">,</span> <span class="s">&quot;testhost2&quot;</span> <span class="p">};</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">common</span> <span class="nf">test</span>

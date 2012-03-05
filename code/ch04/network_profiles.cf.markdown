@@ -11,14 +11,17 @@ navsection: code
 <div class="highlight"><pre><span class="k">bundle</span> <span class="k">agent</span> <span class="nf">network_profiles</span>
 <span class="p">{</span>
   <span class="kd">commands</span><span class="p">:</span>
-    <span class="nc">ipv4_192_168_23</span><span class="p">::</span>   <span class="c">### At home, 192.168.23.0/24, start my backup</span>
+    <span class="c"># At home, 192.168.23.0/24, start my backup</span>
+    <span class="nc">ipv4_192_168_23</span><span class="p">::</span>
       <span class="s">&quot;/usr/local/sbin/open_services.sh&quot;</span><span class="p">;</span>
       <span class="s">&quot;/usr/local/sbin/run_backup.sh&quot;</span><span class="p">;</span>
       <span class="s">&quot;/usr/local/sbin/configure_home_printer.sh&quot;</span><span class="p">;</span>
-    <span class="nc">ipv4_9_4</span><span class="p">::</span>         <span class="c">### At work, 9.4.0.0/16, configure the appropriate printers</span>
+    <span class="c"># At work, 9.4.0.0/16, configure the appropriate printers</span>
+    <span class="nc">ipv4_9_4</span><span class="p">::</span>
       <span class="s">&quot;/usr/local/sbin/open_services.sh&quot;</span><span class="p">;</span>
       <span class="s">&quot;/usr/local/sbin/configure_work_printers.sh&quot;</span><span class="p">;</span>
-    <span class="nc">!ipv4_192_168_1.!ipv4_9_4</span><span class="p">::</span>   <span class="c">### Anywhere else, close some services for additional protection</span>
+    <span class="c"># Anywhere else, close some services for additional protection</span>
+    <span class="nc">!(ipv4_192_168_23|ipv4_9_4)</span><span class="p">::</span>
       <span class="s">&quot;/usr/local/sbin/close_services.sh&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>

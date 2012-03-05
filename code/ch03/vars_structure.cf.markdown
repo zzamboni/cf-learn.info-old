@@ -8,9 +8,12 @@ navsection: code
 
 [(download this file)](https://raw.github.com/zzamboni/cf-learn.info/master/src/ch03/vars_structure.cf)
 
-<div class="highlight"><pre>  <span class="kd">vars</span><span class="p">:</span>
-<span class="p">&quot;</span><span class="nv">variable</span><span class="p">&quot;</span>
-<span class="kt">type</span> <span class="o">=&gt;</span> <span class="nf">value</span><span class="p">;</span>
+<div class="highlight"><pre><span class="k">bundle</span> <span class="k">agent</span> <span class="nf">wrapper</span>
+<span class="p">{</span>
+  <span class="kd">vars</span><span class="p">:</span>
+      <span class="s">&quot;variable&quot;</span>
+        <span class="kr">type</span> <span class="o">=&gt;</span> <span class="nf">value</span><span class="p">;</span>
+<span class="p">}</span>
 </pre></div>
 
 <div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>

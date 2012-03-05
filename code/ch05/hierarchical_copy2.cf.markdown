@@ -33,16 +33,16 @@ navsection: code
       <span class="c"># Source of the files</span>
       <span class="p">&quot;</span><span class="nv">repo</span><span class="p">&quot;</span>            <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/mnt/fileserver/cfengine/files&quot;</span><span class="p">;</span>   
       <span class="c"># Destination for the files</span>
-      <span class="c"># Make it empty to copy over the real system (i.e. &quot;production mode&quot;)</span>
+      <span class="c"># Set this to an empty string for a production environment</span>
       <span class="c"># &quot;dest&quot; string =&gt; &quot;&quot;;</span>
       <span class="p">&quot;</span><span class="nv">dest</span><span class="p">&quot;</span>            <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;/tmp/testdest&quot;</span><span class="p">;</span>   
 
   <span class="kd">files</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">$(dest)$(filestocopy)</span><span class="p">&quot;</span>   
-        <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_dcp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repo)$(filestocopy)$(suffixes)</span><span class="s">&quot;</span><span class="p">);</span>
+      <span class="s">&quot;</span><span class="si">$(dest)$(filestocopy)</span><span class="s">&quot;</span>   
+        <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_dcp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repo)$(filestocopy)$(suffixes)</span><span class="s">&quot;</span><span class="p">);</span>
 
-      <span class="p">&quot;</span><span class="nv">$(dest)$(dirstocopy)</span><span class="p">&quot;</span>    
-        <span class="kt">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_dcp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repo)$(dirstocopy)$(suffixes)</span><span class="s">&quot;</span><span class="p">),</span>
+      <span class="s">&quot;</span><span class="si">$(dest)$(dirstocopy)</span><span class="s">&quot;</span>    
+        <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">local_dcp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(repo)$(dirstocopy)$(suffixes)</span><span class="s">&quot;</span><span class="p">),</span>
         <span class="kr">depth_search</span> <span class="o">=&gt;</span> <span class="nf">recurse</span><span class="p">(</span><span class="s">&quot;inf&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>

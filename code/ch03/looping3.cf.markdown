@@ -21,14 +21,14 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">ipregex</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="s">&quot;192</span><span class="se">\.</span><span class="s">168</span><span class="se">\.</span><span class="s">1</span><span class="se">\.</span><span class="s">.*&quot;</span><span class="p">;</span>
 
   <span class="kd">classes</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">ismatch_$(nics)</span><span class="p">&quot;</span> <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">regcmp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(ipregex)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">${sys.ipv4[$(nics)]}</span><span class="s">&quot;</span><span class="p">);</span> 
+      <span class="s">&quot;ismatch_</span><span class="si">$(nics)</span><span class="s">&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">regcmp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(ipregex)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(sys.ipv4[$(nics)])</span><span class="s">&quot;</span><span class="p">);</span> 
 
   <span class="kd">reports</span><span class="p">:</span>
     <span class="nc">cfengine</span><span class="p">::</span>
       <span class="s">&quot;NICs found: </span><span class="si">$(nics)</span><span class="s"> (</span><span class="si">$(sys.ipv4[$(nics)])</span><span class="s">)&quot;</span><span class="p">;</span> 
 
-      <span class="p">&quot;</span><span class="nv">Matched NIC: $(nics) ($(sys.ipv4[$(nics)]))</span><span class="p">&quot;</span>
-        <span class="kt">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;ismatch_</span><span class="si">$(nics)</span><span class="s">&quot;</span><span class="p">;</span>
+      <span class="s">&quot;Matched NIC: </span><span class="si">$(nics)</span><span class="s"> (</span><span class="si">$(sys.ipv4[$(nics)])</span><span class="s">)&quot;</span>
+        <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;ismatch_</span><span class="si">$(nics)</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 

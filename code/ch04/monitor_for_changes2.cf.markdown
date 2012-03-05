@@ -21,12 +21,12 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">files</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;/etc/passwd&quot;</span><span class="p">,</span> <span class="s">&quot;/etc/motd&quot;</span> <span class="p">};</span>
 
   <span class="kd">files</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">$(dirs)</span><span class="p">&quot;</span>
-        <span class="kt">changes</span> <span class="o">=&gt;</span> <span class="nf">detect_all_change</span><span class="p">,</span>
+      <span class="s">&quot;</span><span class="si">$(dirs)</span><span class="s">&quot;</span>
+        <span class="kr">changes</span> <span class="o">=&gt;</span> <span class="nf">detect_all_change</span><span class="p">,</span>
         <span class="kr">depth_search</span> <span class="o">=&gt;</span> <span class="nf">recurse</span><span class="p">(</span><span class="s">&quot;inf&quot;</span><span class="p">);</span>
 
-      <span class="p">&quot;</span><span class="nv">$(files)</span><span class="p">&quot;</span>
-        <span class="kt">changes</span> <span class="o">=&gt;</span> <span class="nf">detect_all_change</span><span class="p">;</span>
+      <span class="s">&quot;</span><span class="si">$(files)</span><span class="s">&quot;</span>
+        <span class="kr">changes</span> <span class="o">=&gt;</span> <span class="nf">detect_all_change</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">neighborhood_watch</span>
@@ -38,8 +38,8 @@ navsection: code
   <span class="kd">files</span><span class="p">:</span>
 
       <span class="c"># Redundant cross monitoring</span>
-      <span class="p">&quot;</span><span class="nv">$(sys.workdir)/nw/$(neighbors)_checksum_digests.db</span><span class="p">&quot;</span>   
-        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Watch our peers remote hash tables!&quot;</span><span class="p">,</span>
+      <span class="s">&quot;</span><span class="si">$(sys.workdir)</span><span class="s">/nw/</span><span class="si">$(neighbors)</span><span class="s">_checksum_digests.db&quot;</span>   
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Watch our peers remote hash tables!&quot;</span><span class="p">,</span>
         <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">remote_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(sys.workdir)</span><span class="s">/checksum_digests.db&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(neighbors)</span><span class="s">&quot;</span><span class="p">),</span>   
         <span class="kr">action</span> <span class="o">=&gt;</span> <span class="nf">neighbor_report</span><span class="p">(</span><span class="s">&quot;File changes observed on </span><span class="si">$(neighbors)</span><span class="s">&quot;</span><span class="p">),</span>   
         <span class="kr">depends_on</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;grant_hash_tables&quot;</span> <span class="p">};</span>   
@@ -64,8 +64,8 @@ navsection: code
         <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;common_def_vars_acl&quot;</span><span class="p">;</span> 
 
   <span class="kd">access</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">/var/cfengine/checksum_digests.tcdb</span><span class="p">&quot;</span>
-        <span class="kt">handle</span>  <span class="o">=&gt;</span> <span class="s">&quot;grant_hash_tables&quot;</span><span class="p">,</span>
+      <span class="s">&quot;/var/cfengine/checksum_digests.tcdb&quot;</span>
+        <span class="kr">handle</span>  <span class="o">=&gt;</span> <span class="s">&quot;grant_hash_tables&quot;</span><span class="p">,</span>
         <span class="kr">admit</span>   <span class="o">=&gt;</span> <span class="p">{</span> <span class="nv">@(acl)</span> <span class="p">},</span>
         <span class="kr">maproot</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nv">@(acl)</span> <span class="p">};</span>
 <span class="p">}</span>

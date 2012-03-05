@@ -11,13 +11,13 @@ navsection: code
 <div class="highlight"><pre><span class="k">bundle</span> <span class="k">common</span> <span class="nf">G</span>
 <span class="p">{</span>
 <span class="kd">classes</span><span class="p">:</span>
-  <span class="p">&quot;</span><span class="nv">bin_sort</span><span class="p">&quot;</span> <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;/bin/sort&quot;</span><span class="p">);</span>
-  <span class="p">&quot;</span><span class="nv">usr_bin_sort</span><span class="p">&quot;</span> <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;/usr/bin/sort&quot;</span><span class="p">);</span>
+  <span class="s">&quot;bin_sort&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;/bin/sort&quot;</span><span class="p">);</span>
+  <span class="s">&quot;usr_bin_sort&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;/usr/bin/sort&quot;</span><span class="p">);</span>
 
-  <span class="p">&quot;</span><span class="nv">bin_touch</span><span class="p">&quot;</span> <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;/bin/touch&quot;</span><span class="p">);</span>
-  <span class="p">&quot;</span><span class="nv">usr_bin_touch</span><span class="p">&quot;</span> <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;/usr/bin/touch&quot;</span><span class="p">);</span>
+  <span class="s">&quot;bin_touch&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;/bin/touch&quot;</span><span class="p">);</span>
+  <span class="s">&quot;usr_bin_touch&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">fileexists</span><span class="p">(</span><span class="s">&quot;/usr/bin/touch&quot;</span><span class="p">);</span>
 
-  <span class="p">&quot;</span><span class="nv">temp_declared</span><span class="p">&quot;</span> <span class="kt">not</span> <span class="o">=&gt;</span> <span class="nf">strcmp</span><span class="p">(</span><span class="nf">getenv</span><span class="p">(</span><span class="s">&quot;TEMP&quot;</span><span class="p">,</span> <span class="s">&quot;65536&quot;</span><span class="p">),</span> <span class="s">&quot;&quot;</span><span class="p">);</span>
+  <span class="s">&quot;temp_declared&quot;</span> <span class="kr">not</span> <span class="o">=&gt;</span> <span class="nf">strcmp</span><span class="p">(</span><span class="nf">getenv</span><span class="p">(</span><span class="s">&quot;TEMP&quot;</span><span class="p">,</span> <span class="s">&quot;65536&quot;</span><span class="p">),</span> <span class="s">&quot;&quot;</span><span class="p">);</span>
 
 <span class="kd">vars</span><span class="p">:</span>
   <span class="p">&quot;</span><span class="nv">cwd</span><span class="p">&quot;</span> <span class="kt">string</span> <span class="o">=&gt;</span> <span class="nf">execresult</span><span class="p">(</span><span class="s">&quot;/bin/pwd&quot;</span><span class="p">,</span> <span class="s">&quot;noshell&quot;</span><span class="p">);</span>
@@ -46,7 +46,7 @@ navsection: code
 <span class="k">bundle</span> <span class="k">common</span> <span class="nf">paths_init</span><span class="p">(</span><span class="nv">filename</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="kd">classes</span><span class="p">:</span>
-  <span class="p">&quot;</span><span class="nv">filename_absolute</span><span class="p">&quot;</span> <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">regcmp</span><span class="p">(</span><span class="s">&quot;/.*&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(filename)</span><span class="s">&quot;</span><span class="p">);</span>
+  <span class="s">&quot;filename_absolute&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">regcmp</span><span class="p">(</span><span class="s">&quot;/.*&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(filename)</span><span class="s">&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">common</span> <span class="nf">paths</span><span class="p">(</span><span class="nv">filename</span><span class="p">)</span>
@@ -66,13 +66,13 @@ navsection: code
     <span class="p">&quot;</span><span class="nv">tests</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;init&quot;</span><span class="p">,</span> <span class="s">&quot;test&quot;</span><span class="p">,</span> <span class="s">&quot;check&quot;</span> <span class="p">};</span>
 
 <span class="kd">methods</span><span class="p">:</span>
-  <span class="p">&quot;</span><span class="nv">any</span><span class="p">&quot;</span>
-    <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">paths_init</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(filename)</span><span class="s">&quot;</span><span class="p">);</span>
-  <span class="p">&quot;</span><span class="nv">any</span><span class="p">&quot;</span>
-    <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">paths</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(filename)</span><span class="s">&quot;</span><span class="p">);</span>
+  <span class="s">&quot;any&quot;</span>
+    <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">paths_init</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(filename)</span><span class="s">&quot;</span><span class="p">);</span>
+  <span class="s">&quot;any&quot;</span>
+    <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">paths</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(filename)</span><span class="s">&quot;</span><span class="p">);</span>
 
   <span class="nc">AUTO</span><span class="p">::</span>
-    <span class="p">&quot;</span><span class="nv">any</span><span class="p">&quot;</span> <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(tests)</span><span class="s">&quot;</span><span class="p">;</span>
+    <span class="s">&quot;any&quot;</span> <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(tests)</span><span class="s">&quot;</span><span class="p">;</span>
 
 <span class="kd">reports</span><span class="p">:</span>
     <span class="nc">!AUTO</span><span class="p">::</span>
@@ -85,22 +85,22 @@ navsection: code
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">default_sort</span><span class="p">(</span><span class="nv">infile</span><span class="p">,</span> <span class="nv">outfile</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="kd">commands</span><span class="p">:</span>
-    <span class="p">&quot;</span><span class="nv">$(G.sort) $(infile) &gt; $(outfile)</span><span class="p">&quot;</span>
-    <span class="kt">contain</span> <span class="o">=&gt;</span> <span class="nf">default_shell_command</span><span class="p">;</span>
+    <span class="s">&quot;</span><span class="si">$(G.sort)</span><span class="s"> </span><span class="si">$(infile)</span><span class="s"> &gt; </span><span class="si">$(outfile)</span><span class="s">&quot;</span>
+    <span class="kr">contain</span> <span class="o">=&gt;</span> <span class="nf">default_shell_command</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">default_check_diff</span><span class="p">(</span><span class="nv">file1</span><span class="p">,</span> <span class="nv">file2</span><span class="p">,</span> <span class="nv">test</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="kd">methods</span><span class="p">:</span>
-        <span class="p">&quot;</span><span class="nv">any</span><span class="p">&quot;</span> <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">check_diff</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(file1)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(file2)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(test)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;no&quot;</span><span class="p">);</span>
+        <span class="s">&quot;any&quot;</span> <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">check_diff</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(file1)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(file2)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(test)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;no&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">sorted_check_diff</span><span class="p">(</span><span class="nv">file1</span><span class="p">,</span> <span class="nv">file2</span><span class="p">,</span> <span class="nv">test</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="kd">methods</span><span class="p">:</span>
-        <span class="p">&quot;</span><span class="nv">any</span><span class="p">&quot;</span> <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">default_sort</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(file1)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(file1)</span><span class="s">.sort&quot;</span><span class="p">);</span>
-        <span class="p">&quot;</span><span class="nv">any</span><span class="p">&quot;</span> <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">default_sort</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(file2)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(file2)</span><span class="s">.sort&quot;</span><span class="p">);</span>
-        <span class="p">&quot;</span><span class="nv">any</span><span class="p">&quot;</span> <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">check_diff</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(file1)</span><span class="s">.sort&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(file2)</span><span class="s">.sort&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(test)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;no&quot;</span><span class="p">);</span>
+        <span class="s">&quot;any&quot;</span> <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">default_sort</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(file1)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(file1)</span><span class="s">.sort&quot;</span><span class="p">);</span>
+        <span class="s">&quot;any&quot;</span> <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">default_sort</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(file2)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(file2)</span><span class="s">.sort&quot;</span><span class="p">);</span>
+        <span class="s">&quot;any&quot;</span> <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">check_diff</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(file1)</span><span class="s">.sort&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(file2)</span><span class="s">.sort&quot;</span><span class="p">,</span> <span class="s">&quot;</span><span class="si">$(test)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;no&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">check_diff</span><span class="p">(</span><span class="nv">file1</span><span class="p">,</span> <span class="nv">file2</span><span class="p">,</span> <span class="nv">test</span><span class="p">,</span> <span class="nv">expected_difference</span><span class="p">)</span>
@@ -114,11 +114,11 @@ navsection: code
         <span class="p">&quot;</span><span class="nv">diffu</span><span class="p">&quot;</span>  <span class="kt">string</span> <span class="o">=&gt;</span> <span class="nf">execresult</span><span class="p">(</span><span class="s">&quot;/usr/bin/diff -u </span><span class="si">$(file2)</span><span class="s"> </span><span class="si">$(file1)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;noshell&quot;</span><span class="p">);</span>
 
 <span class="kd">classes</span><span class="p">:</span>
-    <span class="p">&quot;</span><span class="nv">no_difference</span><span class="p">&quot;</span> <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">returnszero</span><span class="p">(</span>
+    <span class="s">&quot;no_difference&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">returnszero</span><span class="p">(</span>
         <span class="s">&quot;/usr/bin/diff -q </span><span class="si">$(file1)</span><span class="s"> </span><span class="si">$(file2)</span><span class="s">&quot;</span><span class="p">,</span>
         <span class="s">&quot;useshell&quot;</span><span class="p">);</span>
 
-        <span class="p">&quot;</span><span class="nv">expected_difference</span><span class="p">&quot;</span> <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">strcmp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(expected_difference)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;yes&quot;</span><span class="p">);</span>
+        <span class="s">&quot;expected_difference&quot;</span> <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">strcmp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(expected_difference)</span><span class="s">&quot;</span><span class="p">,</span> <span class="s">&quot;yes&quot;</span><span class="p">);</span>
 
 <span class="kd">reports</span><span class="p">:</span>
     <span class="nc">no_difference.!expected_difference</span><span class="p">::</span>
@@ -156,10 +156,10 @@ navsection: code
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">default_fini</span><span class="p">(</span><span class="nv">file</span><span class="p">)</span>
 <span class="p">{</span>
 <span class="kd">commands</span><span class="p">:</span>
-  <span class="p">&quot;</span><span class="nv">/bin/rm -rf $(file)*</span><span class="p">&quot;</span>
-    <span class="kt">contain</span> <span class="o">=&gt;</span> <span class="nf">useshell</span><span class="p">;</span>
-  <span class="p">&quot;</span><span class="nv">/bin/rm -rf $(sys.workdir)/state/cf_state.*</span><span class="p">&quot;</span>
-    <span class="kt">contain</span> <span class="o">=&gt;</span> <span class="nf">useshell</span><span class="p">;</span>
+  <span class="s">&quot;/bin/rm -rf </span><span class="si">$(file)</span><span class="s">*&quot;</span>
+    <span class="kr">contain</span> <span class="o">=&gt;</span> <span class="nf">useshell</span><span class="p">;</span>
+  <span class="s">&quot;/bin/rm -rf </span><span class="si">$(sys.workdir)</span><span class="s">/state/cf_state.*&quot;</span>
+    <span class="kr">contain</span> <span class="o">=&gt;</span> <span class="nf">useshell</span><span class="p">;</span>
 <span class="p">}</span>
 
 <span class="k">body</span> <span class="k">contain</span> <span class="nf">useshell</span>

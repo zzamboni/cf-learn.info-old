@@ -46,19 +46,22 @@ navsection: code
   <span class="kd">classes</span><span class="p">:</span>
       <span class="c"># Define classes for users that must not be modified,</span>
       <span class="c"># either by UID threshold or by username</span>
-      <span class="p">&quot;</span><span class="nv">skip_$(cusers[$(users)])</span><span class="p">&quot;</span>  <span class="kt">expression</span> <span class="o">=&gt;</span> <span class="nf">islessthan</span><span class="p">(</span><span class="nf">getuid</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(users)</span><span class="s">&quot;</span><span class="p">),</span> <span class="s">&quot;</span><span class="si">$(uidthreshold)</span><span class="s">&quot;</span><span class="p">);</span>   
+      <span class="s">&quot;skip_</span><span class="si">$(cusers[$(users)])</span><span class="s">&quot;</span>  <span class="kr">expression</span> <span class="o">=&gt;</span> <span class="nf">islessthan</span><span class="p">(</span><span class="nf">getuid</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(users)</span><span class="s">&quot;</span><span class="p">),</span>   
+                                                           <span class="s">&quot;</span><span class="si">$(uidthreshold)</span><span class="s">&quot;</span><span class="p">);</span>
       
   <span class="kd">files</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">/etc/login.defs</span><span class="p">&quot;</span>   
-        <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_logindefs&quot;</span><span class="p">,</span>
+      <span class="s">&quot;/etc/login.defs&quot;</span>   
+        <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_logindefs&quot;</span><span class="p">,</span>
         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Set desired login.defs parameters&quot;</span><span class="p">,</span>
         <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_config_values</span><span class="p">(</span><span class="s">&quot;password_expiration.logindefs&quot;</span><span class="p">);</span>
       
-      <span class="p">&quot;</span><span class="nv">/etc/shadow</span><span class="p">&quot;</span>   
-        <span class="kt">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_shadow_</span><span class="si">$(params)</span><span class="s">&quot;</span><span class="p">,</span>
+      <span class="s">&quot;/etc/shadow&quot;</span>   
+        <span class="kr">handle</span> <span class="o">=&gt;</span> <span class="s">&quot;edit_shadow_</span><span class="si">$(params)</span><span class="s">&quot;</span><span class="p">,</span>
         <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Modify </span><span class="si">$(params)</span><span class="s"> for individual users.&quot;</span><span class="p">,</span>
         <span class="kr">edit_defaults</span> <span class="o">=&gt;</span> <span class="nf">backup_timestamp</span><span class="p">,</span>
-        <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_user_field</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(users)</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(fieldnum[$(params)])</span><span class="s">&quot;</span><span class="p">,</span><span class="s">&quot;</span><span class="si">$(logindefs[$(params)])</span><span class="s">&quot;</span><span class="p">),</span>
+        <span class="kr">edit_line</span> <span class="o">=&gt;</span> <span class="nf">set_user_field</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(users)</span><span class="s">&quot;</span><span class="p">,</span>
+                                    <span class="s">&quot;</span><span class="si">$(fieldnum[$(params)])</span><span class="s">&quot;</span><span class="p">,</span>
+                                    <span class="s">&quot;</span><span class="si">$(logindefs[$(params)])</span><span class="s">&quot;</span><span class="p">),</span>
         <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;!skip_</span><span class="si">$(cusers[$(users)])</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>

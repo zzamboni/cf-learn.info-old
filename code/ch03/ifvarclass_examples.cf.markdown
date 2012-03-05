@@ -19,10 +19,10 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">words</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="s">&quot;apple&quot;</span><span class="p">,</span> <span class="s">&quot;darwin&quot;</span><span class="p">,</span> <span class="s">&quot;table&quot;</span><span class="p">,</span> <span class="s">&quot;linux&quot;</span> <span class="p">};</span>
   <span class="kd">reports</span><span class="p">:</span>
     <span class="nc">cfengine</span><span class="p">::</span>
-      <span class="p">&quot;</span><span class="nv">Class $(words) is defined</span><span class="p">&quot;</span>
-        <span class="kt">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(words)</span><span class="s">&quot;</span><span class="p">;</span>
-      <span class="p">&quot;</span><span class="nv">Class $(words) is not defined</span><span class="p">&quot;</span>
-        <span class="kt">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;!</span><span class="si">$(words)</span><span class="s">&quot;</span><span class="p">;</span>
+      <span class="s">&quot;Class </span><span class="si">$(words)</span><span class="s"> is defined&quot;</span>
+        <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(words)</span><span class="s">&quot;</span><span class="p">;</span>
+      <span class="s">&quot;Class </span><span class="si">$(words)</span><span class="s"> is not defined&quot;</span>
+        <span class="kr">ifvarclass</span> <span class="o">=&gt;</span> <span class="s">&quot;!</span><span class="si">$(words)</span><span class="s">&quot;</span><span class="p">;</span>
 <span class="p">}</span>
 </pre></div>
 

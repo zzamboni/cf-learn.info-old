@@ -18,11 +18,12 @@ navsection: code
       
 
   <span class="kd">methods</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">backup</span><span class="p">&quot;</span>  <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">backup_files</span><span class="p">(</span><span class="s">&quot;configfiles.files&quot;</span><span class="p">);</span>
-      <span class="p">&quot;</span><span class="nv">sysctl</span><span class="p">&quot;</span>  <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_sysctl</span><span class="p">;</span>
-      <span class="p">&quot;</span><span class="nv">sshd</span><span class="p">&quot;</span>    <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_sshd</span><span class="p">;</span>
-      <span class="p">&quot;</span><span class="nv">inittab</span><span class="p">&quot;</span> <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_inittab</span><span class="p">;</span>
-      <span class="p">&quot;</span><span class="nv">users</span><span class="p">&quot;</span>   <span class="kt">usebundle</span> <span class="o">=&gt;</span> <span class="nf">manage_users</span><span class="p">(</span><span class="s">&quot;configfiles.users&quot;</span><span class="p">);</span>
+      <span class="c"># Pass the name of the array, not the array itself.</span>
+      <span class="s">&quot;backup&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">backup_files</span><span class="p">(</span><span class="s">&quot;configfiles.files&quot;</span><span class="p">);</span>
+      <span class="s">&quot;sysctl&quot;</span>  <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_sysctl</span><span class="p">;</span>
+      <span class="s">&quot;sshd&quot;</span>    <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_sshd</span><span class="p">;</span>
+      <span class="s">&quot;inittab&quot;</span> <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">edit_inittab</span><span class="p">;</span>
+      <span class="s">&quot;users&quot;</span>   <span class="kr">usebundle</span> <span class="o">=&gt;</span> <span class="nf">manage_users</span><span class="p">(</span><span class="s">&quot;configfiles.users&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">backup_files</span><span class="p">(</span><span class="nv">id</span><span class="p">)</span>
@@ -31,8 +32,8 @@ navsection: code
       <span class="p">&quot;</span><span class="nv">allfiles</span><span class="p">&quot;</span> <span class="kt">slist</span> <span class="o">=&gt;</span> <span class="nf">getindices</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(id)</span><span class="s">&quot;</span><span class="p">);</span>
 
   <span class="kd">files</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">$(allfiles).original</span><span class="p">&quot;</span>
-        <span class="kt">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Ensure we have a backup of previous versions of </span><span class="si">$(allfiles)</span><span class="s">&quot;</span><span class="p">,</span>
+      <span class="s">&quot;</span><span class="si">$(allfiles)</span><span class="s">.original&quot;</span>
+        <span class="kr">comment</span> <span class="o">=&gt;</span> <span class="s">&quot;Ensure we have a backup of previous versions of </span><span class="si">$(allfiles)</span><span class="s">&quot;</span><span class="p">,</span>
         <span class="kr">copy_from</span> <span class="o">=&gt;</span> <span class="nf">backup_local_cp</span><span class="p">(</span><span class="s">&quot;</span><span class="si">$(allfiles)</span><span class="s">&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 </pre></div>

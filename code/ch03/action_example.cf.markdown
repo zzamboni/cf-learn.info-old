@@ -17,8 +17,8 @@ navsection: code
 <span class="k">bundle</span> <span class="k">agent</span> <span class="nf">test</span>
 <span class="p">{</span>
   <span class="kd">files</span><span class="p">:</span>
-      <span class="p">&quot;</span><span class="nv">/etc/motd</span><span class="p">&quot;</span>
-        <span class="kt">edit_lines</span> <span class="o">=&gt;</span> <span class="nf">insert_lines</span><span class="p">(</span><span class="s">&quot;Unauthorized access will be prosecuted.&quot;</span><span class="p">),</span>
+      <span class="s">&quot;/etc/motd&quot;</span>
+        <span class="kr">edit_lines</span> <span class="o">=&gt;</span> <span class="nf">insert_lines</span><span class="p">(</span><span class="s">&quot;Unauthorized access will be prosecuted.&quot;</span><span class="p">),</span>
         <span class="kr">action</span> <span class="o">=&gt;</span> <span class="nf">warn_hourly</span><span class="p">;</span>
 <span class="p">}</span>
 
