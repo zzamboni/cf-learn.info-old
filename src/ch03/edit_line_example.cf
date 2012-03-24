@@ -1,0 +1,7 @@
+bundle agent test_edit_line
+{
+  files:
+      # Set the 7th field (shell) of user "nobody" to "/bin/false"
+      "/etc/passwd"
+        edit_line => set_user_field("nobody", "7", "/bin/false");
+}

@@ -2,11 +2,11 @@ bundle agent update
 {
   vars:
 
-      "inputs_dir"         string => translatepath("$(sys.workdir)/inputs"),   
+      "inputs_dir" string => translatepath("$(sys.workdir)/inputs"),   
         comment => "Directory containing Cfengine policies",
         handle => "update_vars_inputs_dir";
 
-      "master_location"    string => "/var/cfengine/masterfiles",   
+      "master_location" string => "/var/cfengine/masterfiles",   
         comment => "The master cfengine policy directory on the policy host",
         handle => "update_vars_master_location";
 
@@ -15,7 +15,7 @@ bundle agent update
   files:
 
       "$(inputs_dir)"   
-        comment => "Copy policy updates from master source on policy server if a new validation was acquired",
+        comment => "Copy policy updates from master source on policy server",
         handle => "update_files_inputs_dir",
         copy_from => u_rcp("$(master_location)","$(sys.policy_hub)"),  
         depth_search => u_recurse("inf"),   

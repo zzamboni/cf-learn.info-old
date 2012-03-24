@@ -11,7 +11,7 @@ bundle agent find_netif
       "ipregex" string => "192\.168\.1\..*";
 
   classes:
-      "ismatch_$(nics)" expression => regcmp("$(ipregex)", "${sys.ipv4[$(nics)]}"); 
+      "ismatch_$(nics)" expression => regcmp("$(ipregex)", "$(sys.ipv4[$(nics)])"); 
 
   reports:
     cfengine::

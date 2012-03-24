@@ -1,7 +1,7 @@
 bundle agent manage_users
 {
   vars:
-      ### Users to create
+      # Users to create
       "users[root][fullname]"  string => "System administrator";
       "users[root][uid]"       string => "0";
       "users[root][gid]"       string => "0";

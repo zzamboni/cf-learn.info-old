@@ -154,8 +154,10 @@ bundle agent wp_tarball_is_present(params)
 bundle agent wp_tarball_is_unrolled(params)
 {
   classes: 
-      "wordpress_src_dir_is_present" expression => fileexists("$($(params)[_htmlroot])/wordpress");
-      "wordpress_final_dir_is_present" expression => fileexists("$($(params)[_wp_dir])");
+      "wordpress_src_dir_is_present"
+        expression => fileexists("$($(params)[_htmlroot])/wordpress");
+      "wordpress_final_dir_is_present"
+        expression => fileexists("$($(params)[_wp_dir])");
 
   reports:
     wordpress_final_dir_is_present::
@@ -168,7 +170,7 @@ bundle agent wp_tarball_is_unrolled(params)
         contain => in_dir_shell("$($(params)[_htmlroot])");
     wordpress_src_dir_is_present&!wordpress_final_dir_is_present::
       "/bin/mv $($(params)[_htmlroot])/wordpress $($(params)[_wp_dir])"
-        comment => "Rename unrolled directory into its final destination $($(params)[_wp_dir])";
+        comment => "Rename unrolled directory to destination $($(params)[_wp_dir])";
 }
 
 #############################################
@@ -219,8 +221,10 @@ bundle agent wp_is_properly_configured(params)
 
   files:
       "$($(params)[_wp_config])" 
-        edit_line => replace_or_add("define\('$(wpparams)', *(?!'$($(params)[$(wpparams)]))'.*",
-                                    "define('$(wpparams)', '$($(params)[$(wpparams)])');");
+        edit_line =>
+          replace_or_add(
+            "define\('$(wpparams)', *(?!'$($(params)[$(wpparams)]))'.*",
+            "define('$(wpparams)', '$($(params)[$(wpparams)])');");
 }
 
 #############################################

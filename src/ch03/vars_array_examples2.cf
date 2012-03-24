@@ -9,7 +9,9 @@ bundle agent test
       "user[name]"              string => "zamboni";
       "user[fullname][first]"   string => "Diego";
       "user[fullname][last]"    string => "Zamboni";
-      "user[dirs]"              slist => { "/home/zamboni", "/tmp/zamboni", "/export/home/zamboni" };
+      "user[dirs]"              slist => { "/home/zamboni",
+                                           "/tmp/zamboni",
+                                           "/export/home/zamboni" };
 
       "fields"     slist => getindices("user");
       "userfields" slist => getindices("user[fullname]");

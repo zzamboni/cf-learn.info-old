@@ -1,4 +1,7 @@
-files:
-  "/etc/ssh/sshd_config"
-    comment => "Ensure root login is disallowed",
-    edit_line => replace_or_add(".*PermitRootLogin.*", "PermitRootLogin no");
+bundle agent config_ssh
+{
+  files:
+      "/etc/ssh/sshd_config"
+        comment => "Ensure root login is disallowed",
+        edit_line => replace_or_add(".*PermitRootLogin.*", "PermitRootLogin no");
+}

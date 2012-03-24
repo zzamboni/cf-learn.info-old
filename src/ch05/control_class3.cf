@@ -11,7 +11,8 @@ bundle common g
     !testrun::
       "class_file" string => "/var/cfengine/site/classes.txt";
     any::
-      "class_strs" slist => readstringlist("$(class_file)", "#.*?\n", "\s+", "inf", "inf");
+      "class_strs" slist => readstringlist("$(class_file)",
+                                           "#.*?\n", "\s+", "inf", "inf");
   classes:
       "$(class_strs)"  expression => "any";
 }

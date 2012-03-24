@@ -11,7 +11,7 @@ bundle agent software
       "$(allpkgs)" 
         package_policy => "add",
         package_select => "==",
-        package_version => "$(version[$(allpkgs)]",
+        package_version => "$(version[$(allpkgs)])",
         package_architectures => @(architectures),
         package_method => apt;   # For Debian and Ubuntu
 }

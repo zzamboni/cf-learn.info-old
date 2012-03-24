@@ -102,7 +102,7 @@ bundle agent update
 
     am_policy_hub&(Min00_05||Min30_35)::
       "/usr/bin/git pull origin"
-        contain => in_dir("$(master_location)"),
+        contain => u_in_dir("$(master_location)"),
         comment => "Update $(master_location) from git repository",
         handle  => "update_masterfiles_from_git";
 
@@ -259,3 +259,7 @@ body classes u_if_repaired(x)
 
 #########################################################
 
+body contain u_in_dir(s)
+{
+        chdir => "$(s)";
+}

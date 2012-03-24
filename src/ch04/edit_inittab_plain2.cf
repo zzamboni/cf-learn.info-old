@@ -1,7 +1,10 @@
+bundle agent wrapper
+{
   files:
-"/etc/inittab"
-handle => "inittab_disable_ctrlaltdel",
-comment => "Ensure handling of ctrl-alt-del is disabled",
-create    => "false",
-edit_defaults => backup_timestamp,
-edit_line => comment_lines_matching("ca::ctrlaltdel:.*", "#");
+      "/etc/inittab"
+        handle => "inittab_disable_ctrlaltdel",
+        comment => "Ensure handling of ctrl-alt-del is disabled",
+        create    => "false",
+        edit_defaults => backup_timestamp,
+        edit_line => comment_lines_matching("ca::ctrlaltdel:.*", "#");
+}

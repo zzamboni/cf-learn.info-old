@@ -23,7 +23,7 @@ bundle agent copyfiles
       # Source of the files
       "repo"            string => "/mnt/fileserver/cfengine/files";   
       # Destination for the files
-      # Make it empty to copy over the real system (i.e. "production mode")
+      # Set this to an empty string for a production environment
       # "dest" string => "";
       "dest"            string => "/tmp/testdest";   
 

@@ -7,16 +7,17 @@ bundle agent configfiles
 {
   vars:  
       # Files to edit
-      "files[sysctl]" string => "/etc/sysctl.conf";
-      "files[sshd]" string => "/etc/ssh/sshd_config";
+      "files[sysctl]"     string => "/etc/sysctl.conf";
+      "files[sshd]"       string => "/etc/ssh/sshd_config";
       "files[inittab]"    string => "/etc/inittab";
       
 
       "file_id" slist => getindices("files");
+      "bundle_names" slist => maplist("edit_$(this)", "file_id");
 
   methods:
       "backup"  usebundle => backup_files("configfiles.files");
-      "$(file_id)"  usebundle => "edit_$(file_id)";
+      "$(bundle_names)"  usebundle => $(bundle_names)("configfiles.files");
       "users"   usebundle => manage_users("configfiles.users");
 }
 
@@ -27,25 +28,25 @@ bundle agent backup_files(param)
       "backup_files";
 }
 
-bundle agent edit_sysctl
+bundle agent edit_sysctl(p)
 {
   reports:
     cfengine::
-      "edit_sysctlconf: $(configfiles.files[sysctl])";
+      "edit_sysctlconf: $($(p)[sysctl])";
 }
 
-bundle agent edit_sshd
+bundle agent edit_sshd(p)
 {
   reports:
     cfengine::
-      "edit_sshdconfig: $(configfiles.files[sshd])";
+      "edit_sshdconfig: $($(p)[sshd])";
 }
 
-bundle agent edit_inittab
+bundle agent edit_inittab(p)
 {
   reports:
     cfengine::
-      "edit_inittab: $(configfiles.files[inittab])";
+      "edit_inittab: $($(p)[inittab])";
 }
 
 bundle agent manage_users(param)

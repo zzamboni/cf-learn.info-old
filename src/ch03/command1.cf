@@ -1,2 +1,5 @@
+bundle agent command
+{
   commands:
-"/bin/ls /";
+      "/bin/ls /";
+}

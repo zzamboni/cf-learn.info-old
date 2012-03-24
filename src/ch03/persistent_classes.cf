@@ -1,0 +1,19 @@
+body common control
+{
+        bundlesequence => { "test" };
+}
+
+bundle agent test
+{
+  classes:
+    !cache_is_active::
+      "line_exists"     expression => regline(".*foo.*", "/tmp/test_data.txt"),
+        persistence => "1";
+      "cache_is_active" expression => "any",
+        persistence => "1";
+  reports:
+    line_exists::
+      "Line exists in file";
+    !line_exists::
+      "Line does not exist in file";
+}

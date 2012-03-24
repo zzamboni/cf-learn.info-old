@@ -9,19 +9,21 @@ bundle agent create_users(info)
   commands: 
     linux::
       "/usr/sbin/useradd $($(info)[$(user)][flags]) -u $($(info)[$(user)][uid]) 
--g $($(info)[$(user)][gid]) -d $($(info)[$(user)][home]) 
--s $($(info)[$(user)][shell]) -c '$($(info)[$(user)][fullname])' $(user)"
+       -g $($(info)[$(user)][gid]) -d $($(info)[$(user)][home]) 
+       -s $($(info)[$(user)][shell]) -c '$($(info)[$(user)][fullname])' $(user)"
         ifvarclass => "add_$(user)";
     windows::
       "c:/Windows/system32/net user $(user) $($(info)[$(user)][password]) /add 
-\"/fullname:$($(info)[$(user)][fullname])\" \"/homedir:$($(info)[$(user)][home])\""
+       \"/fullname:$($(info)[$(user)][fullname])\" \"/homedir:$($(info)[$(user)][home])\""
         ifvarclass => "add_$(user)";
-      ### On Windows we use a command to set the password inconditionally in case it has changed.
+      # On Windows we use a command to set the password
+      # unconditionally in case it has changed.
       "c:/Windows/system32/net user $(user) $($(info)[$(user)][password])"; 
 
   files:
-      ### This is not conditioned to the add_* classes to always check and reset the passwords if needed.
     linux::
+      # This is not conditioned to the add_* classes
+      # to always check and reset the passwords if needed.
       "/etc/shadow" 
         edit_line => set_user_field("$(user)", 2, "$($(info)[$(user)][password])");
 

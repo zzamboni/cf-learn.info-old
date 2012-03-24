@@ -8,6 +8,7 @@ bundle agent configfiles
       
 
   methods:
+      # Pass the name of the array, not the array itself.
       "backup"  usebundle => backup_files("configfiles.files");
       "sysctl"  usebundle => edit_sysctl;
       "sshd"    usebundle => edit_sshd;

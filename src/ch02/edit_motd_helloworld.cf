@@ -10,8 +10,8 @@ bundle agent edit_motd
 
   files:   
       "$(motd)"
-        edit_line => addmessage,
-        create => "true";
+        create => "true",
+        edit_line => addmessage;
 
   reports:   
     cfengine::

@@ -1,8 +1,9 @@
-bundle agent manage_users
+bundle agent configfiles
 {
-  vars:
+  vars:  
+      
       # Users to create
-      "users[root][fullname]"  string => "System administrator";
+      "users[root][gecos]"     string => "System administrator";
       "users[root][uid]"       string => "0";
       "users[root][gid]"       string => "0";
       "users[root][home]"      string => "/root";
@@ -10,7 +11,7 @@ bundle agent manage_users
       "users[root][flags]"     string => "-o -m";
       "users[root][password]"  string => "FkDMzhB1WnOp2";
 
-      "users[zamboni][fullname]"  string => "Diego Zamboni";
+      "users[zamboni][gecos]"     string => "Diego Zamboni";
       "users[zamboni][uid]"       string => "501";
       "users[zamboni][gid]"       string => "users";
       "users[zamboni][home]"      string => "/home/zamboni";
@@ -19,5 +20,6 @@ bundle agent manage_users
       "users[zamboni][password]"  string => "dk52ia209rfuh";
 
   methods:
-      "users"   usebundle => create_users("manage_users.users");
+      
+      "users"   usebundle => create_users("configfiles.users");
 }

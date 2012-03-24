@@ -1,4 +1,7 @@
+bundle agent wrapper
+{
   vars:
-"name"   string => "Diego";
-"year"   int    => "2011";
-"colors" slist  => { "red", "green", "blue" };
+      "name"   string => "Diego";
+      "year"   int    => "2011";
+      "colors" slist  => { "red", "green", "blue" };
+}

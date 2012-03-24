@@ -83,8 +83,8 @@ bundle common environments
       #
       # This variable holds active environment.
       #
-      # * CDP reads files from inputs/environments_${active}/cdp_inputs.
-      # * inputs/environments_${active}/promises.cf file is read during execution.
+      # * CDP reads files from inputs/environments_$(active)/cdp_inputs.
+      # * inputs/environments_$(active)/promises.cf file is read during execution.
       #
     any::   
 
