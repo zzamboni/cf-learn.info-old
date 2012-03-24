@@ -7,7 +7,10 @@ postheader: Learning CFEngine 3
 navsection: home
 ---
 
-## About the book
+<p style="background-color: yellow; font-size: 120%;">
+<strong>The book has been released on March 23rd, 2012.</strong> You can use the
+discount code AUTHD to get 40% off the print version, and 50% off the
+e-book version.</p>
 
 CFEngine 3 is the most mature and widely used tool for comprehensive
 configuration management, and [Learning CFEngine
@@ -19,20 +22,24 @@ snippets and techniques. Its goal is to guide you from installation to
 advanced examples and concepts by using examples and techniques that
 can be put to work straight away.
 
-The book is currently in writing, and an [Early
-Release](http://shop.oreilly.com/product/0636920022022.do) version has
-been published by O'Reilly. It contains the first four chapters of the
-book, which cover all the basic concepts of CFEngine 3 and some more
-advanced usage. You can use the discount code AUTHD to get 40% off the
-print version, and 50% off the e-book version. The final version will
-be available in early 2012.
+In this website you will find a wealth of content related to the book
+and to CFEngine:
 
-Just like the book, this web site is an "Early Release". Much of the
-content is still in progress, but at least the
-[blog](http://blog.cf-learn.info/), the [forum](discussion.html) and
-the [errata](http://oreilly.com/catalog/errata.csp?isbn=0636920022022)
-are working already. I encourage you to participate and provide
-feedback, ideas and questions.
+* All the [code examples](/code.html) from the book, to download
+  individually or as a whole.
+* In the [blog](http://blog.cf-learn.info/) you can find the latest
+  news related to the book, and also many posts about CFEngine
+  techniques, information and tips.
+* Visit the [forum](/discussion.html) if you have any comments,
+  questions or feedback about the book. For CFEngine-related questions,
+  I encourage you to visit the
+  [CFEngine Help Forum](https://cfengine.com/forum/list.php?3) instead.
+* If you find any errors in the book, please post them on the book's
+  [errata](http://oreilly.com/catalog/errata.csp?isbn=0636920022022)
+  page.
+
+I encourage you to participate and provide feedback, ideas and
+questions.
 
 Thank you for visiting! I hope you find it useful. Please [let me
 know](http://cf-learn.info/contact.html) if you find anything broken

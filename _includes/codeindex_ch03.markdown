@@ -22,5 +22,3 @@
   * [looping1.cf](/code/ch03/looping1.cf.html)
   * [looping2.cf](/code/ch03/looping2.cf.html)
   * [looping3.cf](/code/ch03/looping3.cf.html)
-  * [default-promises.cf](/code/ch03/default-promises.cf.html)
-  * [failsafe-update.cf](/code/ch03/failsafe-update.cf.html)

@@ -19,11 +19,13 @@ larger file (for example, when things are explained step by step). In
 these cases, only the complete file is linked here, and only once per
 chapter.
 
-Note that the [CFEngine Standard
-Library](http://cfengine.com/starterkit) is not included here, despite
-several fragments of it being described in the book. Please download
-it from [its web page](http://cfengine.com/starterkit) to ensure you
-have the latest version.
+Note that the
+[CFEngine Standard Library](http://cfengine.com/starterkit) is not
+included here, despite several fragments of it being described in the
+book. Please download it from
+[its web page](http://cfengine.com/starterkit) to ensure you have the
+latest version. Also not listed are any files from the CFEngine source
+code distribution that are described in the book.
 
 Click each filename to view or download the individual
 files. Additionally, you can browse, check out or download all these
