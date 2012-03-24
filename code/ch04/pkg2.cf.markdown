@@ -21,10 +21,10 @@ navsection: code
       <span class="s">&quot;</span><span class="si">$(allpkgs)</span><span class="s">&quot;</span> 
         <span class="kr">package_policy</span> <span class="o">=&gt;</span> <span class="s">&quot;add&quot;</span><span class="p">,</span>
         <span class="kr">package_select</span> <span class="o">=&gt;</span> <span class="s">&quot;==&quot;</span><span class="p">,</span>
-        <span class="kr">package_version</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(version[$(allpkgs)]&quot;,</span>
-<span class="si">        package_architectures =&gt; @</span><span class="err">(</span><span class="si">architectures)</span><span class="s">,</span>
-<span class="s">        package_method =&gt; apt;   # For Debian and Ubuntu</span>
-<span class="s">}</span>
+        <span class="kr">package_version</span> <span class="o">=&gt;</span> <span class="s">&quot;</span><span class="si">$(version[$(allpkgs)])</span><span class="s">&quot;</span><span class="p">,</span>
+        <span class="kr">package_architectures</span> <span class="o">=&gt;</span> <span class="nv">@(architectures)</span><span class="p">,</span>
+        <span class="kr">package_method</span> <span class="o">=&gt;</span> <span class="nf">apt</span><span class="p">;</span>   <span class="c"># For Debian and Ubuntu</span>
+<span class="p">}</span>
 </pre></div>
 
 <div align="right"><font size="-2">Syntax highlighting courtesy of <a href="http://blog.zzamboni.org/cfengine3-lexer-for-pygments">Pygments</a></font></div>

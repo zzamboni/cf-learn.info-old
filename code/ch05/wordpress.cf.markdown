@@ -232,8 +232,9 @@ navsection: code
   <span class="kd">files</span><span class="p">:</span>
       <span class="s">&quot;</span><span class="si">$($(params)[_wp_config])</span><span class="s">&quot;</span> 
         <span class="kr">edit_line</span> <span class="o">=&gt;</span>
-          <span class="nf">replace_or_add</span><span class="p">(</span><span class="s">&quot;define</span><span class="se">\(</span><span class="s">&#39;</span><span class="si">$(wpparams)</span><span class="s">&#39;, *(?!&#39;</span><span class="si">$($(params)[$(wpparams)])</span><span class="s">)&#39;.*&quot;</span><span class="p">,</span>
-                         <span class="s">&quot;define(&#39;</span><span class="si">$(wpparams)</span><span class="s">&#39;, &#39;</span><span class="si">$($(params)[$(wpparams)])</span><span class="s">&#39;);&quot;</span><span class="p">);</span>
+          <span class="nf">replace_or_add</span><span class="p">(</span>
+            <span class="s">&quot;define</span><span class="se">\(</span><span class="s">&#39;</span><span class="si">$(wpparams)</span><span class="s">&#39;, *(?!&#39;</span><span class="si">$($(params)[$(wpparams)])</span><span class="s">)&#39;.*&quot;</span><span class="p">,</span>
+            <span class="s">&quot;define(&#39;</span><span class="si">$(wpparams)</span><span class="s">&#39;, &#39;</span><span class="si">$($(params)[$(wpparams)])</span><span class="s">&#39;);&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
 <span class="c">#############################################</span>
