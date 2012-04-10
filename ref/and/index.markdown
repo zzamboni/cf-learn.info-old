@@ -14,6 +14,6 @@ The term 'and' could refer to several sections in the documentation. Please choo
 - [2.7.2 List variable substitution and expansion](https://cfengine.com/manuals/cf3-reference#List-variable-substitution-and-expansion)
 - [2.9 Loops and lists in CFEngine 3](https://cfengine.com/manuals/cf3-reference#Loops-and-lists-in-CFEngine-3)
 - [2.10 Pattern matching and referencing](https://cfengine.com/manuals/cf3-reference#Pattern-matching-and-referencing)
-- [6.2.2 <code>and</code>](https://cfengine.com/manuals/cf3-reference#and-in-classes)
+- [6.2.1 <code>and</code>](https://cfengine.com/manuals/cf3-reference#and-in-classes)
 - [11.5 Function and](https://cfengine.com/manuals/cf3-reference#Function-and)
 - [13 Logs and records](https://cfengine.com/manuals/cf3-reference#Logs-and-records)

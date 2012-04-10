@@ -10,10 +10,10 @@ The term 'type' could refer to several sections in the documentation. Please cho
 
 - [5.7.12 <code>sql_type</code>](https://cfengine.com/manuals/cf3-reference#sql_type-in-knowledge)
 - [7.2.2 <code>database_type</code>](https://cfengine.com/manuals/cf3-reference#database_type-in-databases)
-- [7.3.5 <code>environment_type</code>](https://cfengine.com/manuals/cf3-reference#environment_type-in-environments)
+- [7.3.5 <code>environment_type</code>](https://cfengine.com/manuals/cf3-reference#environment_type-in-guest_environments)
 - [7.7.2 <code>insert_type</code>](https://cfengine.com/manuals/cf3-reference#insert_type-in-insert_lines)
 - [7.12.2 <code>promiser_type</code>](https://cfengine.com/manuals/cf3-reference#promiser_type-in-outputs)
-- [8.1.6 <code>resource_type</code>](https://cfengine.com/manuals/cf3-reference#resource_type-in-access)
+- [8.1.5 <code>resource_type</code>](https://cfengine.com/manuals/cf3-reference#resource_type-in-access)
 - [10.1.1 <code>stream_type</code>](https://cfengine.com/manuals/cf3-reference#stream_type-in-measurements)
 - [10.1.2 <code>data_type</code>](https://cfengine.com/manuals/cf3-reference#data_type-in-measurements)
 - [10.1.3 <code>history_type</code>](https://cfengine.com/manuals/cf3-reference#history_type-in-measurements)

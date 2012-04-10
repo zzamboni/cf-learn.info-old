@@ -10,4 +10,3 @@ The term 'key' could refer to several sections in the documentation. Please choo
 
 - [1.1.9 cf-key](https://cfengine.com/manuals/cf3-reference#cf-key)
 - [1.13.2 Key exchange](https://cfengine.com/manuals/cf3-reference#Key-exchange)
-- [12.5.6 Variable sys.cf_key](https://cfengine.com/manuals/cf3-reference#Variable-sys.cf_key)

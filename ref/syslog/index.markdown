@@ -8,8 +8,8 @@ navsection: none
 
 The term 'syslog' could refer to several sections in the documentation. Please choose one:
 
-- [5.1.14 <code>syslog_host</code>](https://cfengine.com/manuals/cf3-reference#syslog_host-in-common)
-- [5.1.15 <code>syslog_port</code>](https://cfengine.com/manuals/cf3-reference#syslog_port-in-common)
+- [5.1.13 <code>syslog_host</code>](https://cfengine.com/manuals/cf3-reference#syslog_host-in-common)
+- [5.1.14 <code>syslog_port</code>](https://cfengine.com/manuals/cf3-reference#syslog_port-in-common)
 - [5.2.39 <code>syslog</code>](https://cfengine.com/manuals/cf3-reference#syslog-in-agent)
 - [12.4.130 Variable mon.value_syslog](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_syslog)
 - [12.4.131 Variable mon.av_syslog](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_syslog)

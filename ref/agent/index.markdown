@@ -12,4 +12,3 @@ The term 'agent' could refer to several sections in the documentation. Please ch
 - [2.8.1 Agent normal ordering](https://cfengine.com/manuals/cf3-reference#Agent-normal-ordering)
 - [5.2 <code>agent</code> control promises](https://cfengine.com/manuals/cf3-reference#control-agent)
 - [7 Bundles of <code>agent</code>](https://cfengine.com/manuals/cf3-reference#Bundles-for-agent)
-- [12.5.3 Variable sys.cf_agent](https://cfengine.com/manuals/cf3-reference#Variable-sys.cf_agent)

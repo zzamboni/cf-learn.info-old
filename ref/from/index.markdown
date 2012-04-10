@@ -12,4 +12,4 @@ The term 'from' could refer to several sections in the documentation. Please cho
 - [4.6 Recovery from errors in the configuration](https://cfengine.com/manuals/cf3-reference#Recovery-from-errors-in-the-configuration)
 - [4.7 Recovery from errors in the software](https://cfengine.com/manuals/cf3-reference#Recovery-from-errors-in-the-software)
 - [7.4.3 <code>copy_from</code> (body template)](https://cfengine.com/manuals/cf3-reference#copy_from-in-files)
-- [7.4.11 <code>link_from</code> (body template)](https://cfengine.com/manuals/cf3-reference#link_from-in-files)
+- [7.4.12 <code>link_from</code> (body template)](https://cfengine.com/manuals/cf3-reference#link_from-in-files)

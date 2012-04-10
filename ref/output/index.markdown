@@ -8,7 +8,7 @@ navsection: none
 
 The term 'output' could refer to several sections in the documentation. Please choose one:
 
-- [5.1.9 <code>output_prefix</code>](https://cfengine.com/manuals/cf3-reference#output_prefix-in-common)
+- [5.1.8 <code>output_prefix</code>](https://cfengine.com/manuals/cf3-reference#output_prefix-in-common)
 - [5.5.8 <code>output_to_file</code>](https://cfengine.com/manuals/cf3-reference#output_to_file-in-runagent)
 - [5.5.9 <code>output_directory</code>](https://cfengine.com/manuals/cf3-reference#output_directory-in-runagent)
 - [5.7.5 <code>graph_output</code>](https://cfengine.com/manuals/cf3-reference#graph_output-in-knowledge)

@@ -10,4 +10,4 @@ The term 'not' could refer to several sections in the documentation. Please choo
 
 - [6.2.6 <code>not</code>](https://cfengine.com/manuals/cf3-reference#not-in-classes)
 - [7.6.2 <code>not_matching</code>](https://cfengine.com/manuals/cf3-reference#not_matching-in-delete_lines)
-- [11.55 Function not](https://cfengine.com/manuals/cf3-reference#Function-not)
+- [11.56 Function not](https://cfengine.com/manuals/cf3-reference#Function-not)

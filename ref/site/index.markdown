@@ -9,4 +9,4 @@ navsection: none
 The term 'site' could refer to several sections in the documentation. Please choose one:
 
 - [4.2 <samp><span class="file">site.cf</span></samp>](https://cfengine.com/manuals/cf3-reference#site.cf)
-- [5.1.13 <code>site_classes</code>](https://cfengine.com/manuals/cf3-reference#site_classes-in-common)
+- [5.1.12 <code>site_classes</code>](https://cfengine.com/manuals/cf3-reference#site_classes-in-common)

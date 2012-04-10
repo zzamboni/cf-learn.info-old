@@ -13,4 +13,4 @@ The term 'promises' could refer to several sections in the documentation. Please
 - [2.2 Best practice for writing promises](https://cfengine.com/manuals/cf3-reference#Best-practice-for-writing-promises)
 - [4.1 <samp><span class="file">promises.cf</span></samp>](https://cfengine.com/manuals/cf3-reference#promises.cf)
 - [5 Control promises](https://cfengine.com/manuals/cf3-reference#Control-Promises)
-- [12.5.9 Variable sys.cf_promises](https://cfengine.com/manuals/cf3-reference#Variable-sys.cf_promises)
+- [12.5.3 Variable sys.cf_promises](https://cfengine.com/manuals/cf3-reference#Variable-sys.cf_promises)
