@@ -1125,12 +1125,13 @@ header#page_header hgroup h1,article header h1,aside#sidebar section h1,.profile
         
           <nav id="navigation">
                 <ul>
-                    <li><a href="/" class="{% if page.navsection == 'home' %}current{% endif %}" rel="">Home</a></li>
+                    <li><a href="/" class="{% if page.navsection == 'home' %}current{% endif %}" rel="">The Book</a></li>
                     <li><a href="/author.html" class="{% if page.navsection == 'author' %}current{% endif %}" rel="">The Author</a></li>
                     <li><a href="http://blog.cf-learn.info/" class="{% if page.navsection == 'blog' %}current{% endif %}">Blog</a></li>
                     <li><a href="/discussion.html" class="{% if page.navsection == 'forum' %}current{% endif %}" rel="">Forum</a></li>
                     <li><a href="/code.html" class="{% if page.navsection == 'code' %}current{% endif %}" rel="">Code</a></li>
                     <li><a href="http://oreilly.com/catalog/errata.csp?isbn=0636920022022" class="{% if page.navsection == 'errata' %}current{% endif %}" rel="external">Errata</a></li>
+                    <li><a href="/reviews.html" class="{% if page.navsection == 'reviews' %}current{% endif %}" rel="">Reviews</a></li>
                 </ul>
            </nav>
         
@@ -1163,7 +1164,15 @@ header#page_header hgroup h1,article header h1,aside#sidebar section h1,.profile
                 <section id="profile">
                     <a href="http://shop.oreilly.com/product/0636920022022.do" class="profile-link">Get the book</a>
                   <div class="profile small">
-                      <p>You can purchase the book at the <a href="http://shop.oreilly.com/product/0636920022022.do">O'Reilly shop</a>. Use code AUTHD for a discount.</p>
+                      <p>You can purchase the book from any of these stores:</p>
+                      <ul>
+                        <li><a href="http://shop.oreilly.com/product/0636920022022.do" rel="external">oreilly.com</a><br/>(use code AUTHD for a discount)</li>
+                        <li><a href="http://www.amazon.com/Learning-CFEngine-3-Diego-Zamboni/dp/1449312209" rel="external">amazon.com</a></li>
+                        <li><a href="http://my.safaribooksonline.com/book/-/9781449334536" rel="external">safaribooksonline.com</a><li>
+                        <li><a href="http://itunes.apple.com/us/book/learning-cfengine-3/id512985130?mt=11" rel="external">itunes store</a><li>
+                        <li><a href="http://www.scribd.com/doc/86724081/Learning-CFEngine-3-Automated-system-administration-for-sites-of-any-size" rel="external">scribd.com</a>
+                        <li><a href="http://www.barnesandnoble.com/w/learning-cfengine-3-diego-martin-zamboni/1107145564" rel="external">b&n.com</a></li>
+                      </ul>
                   </div>
                   <div class="external"></div>
                 </section>
@@ -1171,10 +1180,8 @@ header#page_header hgroup h1,article header h1,aside#sidebar section h1,.profile
                 <section class="links">
                   <h1>Links</h1>
                   <ul>
-                    <li><a href="http://shop.oreilly.com/product/0636920022022.do" rel="external">Learning CFEngine 3 @oreilly.com</a></li>
-                    <li><a href="http://www.amazon.com/Learning-CFEngine-3-Diego-Zamboni/dp/1449312209" rel="external">Learning CFEngine 3 @amazon.com</a></li>
-                    <li><a href="http://www.barnesandnoble.com/w/learning-cfengine-3-diego-martin-zamboni/1107145564" rel="external">Learning CFEngine 3 @b&n.com</a></li>
                     <li><a href="http://zzamboni.org/" rel="external">My personal website</a></li>
+                    <li><a href="http://cfengine.com/" rel="external">CFEngine AS</a></li>
                   </ul>
                 </section>
                 
