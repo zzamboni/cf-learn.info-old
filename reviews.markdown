@@ -73,3 +73,7 @@ href="https://cfengine.com/forum/read.php?3,24235,24761#msg-24761">Marco
 Marongiu</a>, Oslo, Norway</cite></div>
 
 ------------------------
+
+> "Learning CFEngine 3" is an excellent piece of writing.
+
+<div align="right">&mdash;<cite><a href="https://twitter.com/#!/cjeffblaine/status/198426894822150145">Jeff Blaine</a>, Saint Petersburg, FL</cite></div>
