@@ -7,9 +7,9 @@ navsection: code
 ---
 
 <div style="float: right;">
-  <a href="https://github.com/zzamboni/cf-learn/zipball/master">
+  <a href="https://github.com/zzamboni/cf-learn.info/zipball/master">
     <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-  <a href="https://github.com/zzamboni/cf-learn/tarball/master">
+  <a href="https://github.com/zzamboni/cf-learn.info/tarball/master">
     <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
 </div>
 
