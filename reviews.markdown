@@ -11,15 +11,26 @@ CFEngine 3", with links to their original sources.
 
 ------------------------
 
+> The writing and editing done on this book is excellent. The author is very skilled at delivering complex information in a readable and approachable manner. 
+>
+> &hellip; 
+>
+> If you have struggled with CFEngine 3 in the past, or are strongly considering deploying it in any way, I highly recommend this book (as my rating shows).
+
+<div align="right">&mdash;<cite><a
+href="http://shop.oreilly.com/product/0636920022022.do#PowerReview">Jeff Blaine</a>, St. Petersburgh, FL</cite></div>
+
+------------------------
+
 Nick wrote a
 [full review of the book](http://www.cmdln.org/2012/03/29/review-learning-cfengine-3/),
 you should check it out.
 
 > I can't recommend this book enough. &hellip; If you meet all those
 > criteria and you don't like the book, I'll buy you a beer if we ever
-> meet.
+> meet. 
 >
-> &hellip;
+> &hellip; 
 >
 > It really is one of the best technical books I have read in a
 > while.
