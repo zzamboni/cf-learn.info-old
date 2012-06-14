@@ -8,6 +8,6 @@ navsection: none
 
 The term 'expressions' could refer to several sections in the documentation. Please choose one:
 
-- [2.10.3 Regular expressions in paths](https://cfengine.com/manuals/cf3-reference#Regular-expressions-in-paths)
-- [2.10.4 Anchored vs. unanchored regular expressions](https://cfengine.com/manuals/cf3-reference#Anchored-vs.-unanchored-regular-expressions)
-- [2.10.5 Special topics on Regular Expressions](https://cfengine.com/manuals/cf3-reference#Special-topics-on-Regular-Expressions)
+- [2.10.3 Regular expressions in paths](https://cfengine.com/manuals/cf3-Reference#Regular-expressions-in-paths)
+- [2.10.4 Anchored vs. unanchored regular expressions](https://cfengine.com/manuals/cf3-Reference#Anchored-vs.-unanchored-regular-expressions)
+- [2.10.5 Special topics on Regular Expressions](https://cfengine.com/manuals/cf3-Reference#Special-topics-on-Regular-Expressions)

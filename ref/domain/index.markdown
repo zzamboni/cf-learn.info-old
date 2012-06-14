@@ -8,5 +8,5 @@ navsection: none
 
 The term 'domain' could refer to several sections in the documentation. Please choose one:
 
-- [5.1.9 <code>domain</code>](https://cfengine.com/manuals/cf3-reference#domain-in-common)
-- [12.5.10 Variable sys.domain](https://cfengine.com/manuals/cf3-reference#Variable-sys.domain)
+- [5.1.9 <code>domain</code>](https://cfengine.com/manuals/cf3-Reference#domain-in-common)
+- [12.5.19 Variable sys.domain](https://cfengine.com/manuals/cf3-Reference#Variable-sys.domain)

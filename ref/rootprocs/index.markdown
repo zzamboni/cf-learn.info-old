@@ -8,6 +8,6 @@ navsection: none
 
 The term 'rootprocs' could refer to several sections in the documentation. Please choose one:
 
-- [12.4.4 Variable mon.value_rootprocs](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_rootprocs)
-- [12.4.5 Variable mon.av_rootprocs](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_rootprocs)
-- [12.4.6 Variable mon.dev_rootprocs](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_rootprocs)
+- [12.4.4 Variable mon.value_rootprocs](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_rootprocs)
+- [12.4.5 Variable mon.av_rootprocs](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_rootprocs)
+- [12.4.6 Variable mon.dev_rootprocs](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_rootprocs)

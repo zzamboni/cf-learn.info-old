@@ -8,6 +8,6 @@ navsection: none
 
 The term 'temp3' could refer to several sections in the documentation. Please choose one:
 
-- [12.4.145 Variable mon.value_temp3](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_temp3)
-- [12.4.146 Variable mon.av_temp3](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_temp3)
-- [12.4.147 Variable mon.dev_temp3](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_temp3)
+- [12.4.145 Variable mon.value_temp3](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_temp3)
+- [12.4.146 Variable mon.av_temp3](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_temp3)
+- [12.4.147 Variable mon.dev_temp3](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_temp3)

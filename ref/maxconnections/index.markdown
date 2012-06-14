@@ -8,5 +8,5 @@ navsection: none
 
 The term 'maxconnections' could refer to several sections in the documentation. Please choose one:
 
-- [5.2.28 <code>maxconnections</code>](https://cfengine.com/manuals/cf3-reference#maxconnections-in-agent)
-- [5.3.14 <code>maxconnections</code>](https://cfengine.com/manuals/cf3-reference#maxconnections-in-server)
+- [5.2.28 <code>maxconnections</code>](https://cfengine.com/manuals/cf3-Reference#maxconnections-in-agent)
+- [5.3.14 <code>maxconnections</code>](https://cfengine.com/manuals/cf3-Reference#maxconnections-in-server)

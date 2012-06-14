@@ -8,6 +8,6 @@ navsection: none
 
 The term 'knowledge' could refer to several sections in the documentation. Please choose one:
 
-- [2.8.4 Knowledge normal ordering](https://cfengine.com/manuals/cf3-reference#Knowledge-normal-ordering)
-- [5.7 <code>knowledge</code> control promises](https://cfengine.com/manuals/cf3-reference#control-knowledge)
-- [9 Bundles of <code>knowledge</code>](https://cfengine.com/manuals/cf3-reference#Bundles-for-knowledge)
+- [2.8.4 Knowledge normal ordering](https://cfengine.com/manuals/cf3-Reference#Knowledge-normal-ordering)
+- [5.7 <code>knowledge</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-knowledge)
+- [9 Bundles of <code>knowledge</code>](https://cfengine.com/manuals/cf3-Reference#Bundles-for-knowledge)

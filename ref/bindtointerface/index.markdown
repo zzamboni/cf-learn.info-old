@@ -8,5 +8,5 @@ navsection: none
 
 The term 'bindtointerface' could refer to several sections in the documentation. Please choose one:
 
-- [5.2.10 <code>bindtointerface</code>](https://cfengine.com/manuals/cf3-reference#bindtointerface-in-agent)
-- [5.3.5 <code>bindtointerface</code>](https://cfengine.com/manuals/cf3-reference#bindtointerface-in-server)
+- [5.2.10 <code>bindtointerface</code>](https://cfengine.com/manuals/cf3-Reference#bindtointerface-in-agent)
+- [5.3.5 <code>bindtointerface</code>](https://cfengine.com/manuals/cf3-Reference#bindtointerface-in-server)

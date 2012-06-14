@@ -8,5 +8,5 @@ navsection: none
 
 The term 'schedule' could refer to several sections in the documentation. Please choose one:
 
-- [5.6.6 <code>schedule</code>](https://cfengine.com/manuals/cf3-reference#schedule-in-executor)
-- [5.9.4 <code>hub_schedule</code>](https://cfengine.com/manuals/cf3-reference#hub_schedule-in-hub)
+- [5.6.6 <code>schedule</code>](https://cfengine.com/manuals/cf3-Reference#schedule-in-executor)
+- [5.9.4 <code>hub_schedule</code>](https://cfengine.com/manuals/cf3-Reference#hub_schedule-in-hub)

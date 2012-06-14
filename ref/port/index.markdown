@@ -8,7 +8,7 @@ navsection: none
 
 The term 'port' could refer to several sections in the documentation. Please choose one:
 
-- [5.1.14 <code>syslog_port</code>](https://cfengine.com/manuals/cf3-reference#syslog_port-in-common)
-- [5.3.15 <code>port</code>](https://cfengine.com/manuals/cf3-reference#port-in-server)
-- [5.5.2 <code>port</code>](https://cfengine.com/manuals/cf3-reference#port-in-runagent)
-- [5.9.5 <code>port</code>](https://cfengine.com/manuals/cf3-reference#port-in-hub)
+- [5.1.14 <code>syslog_port</code>](https://cfengine.com/manuals/cf3-Reference#syslog_port-in-common)
+- [5.3.15 <code>port</code>](https://cfengine.com/manuals/cf3-Reference#port-in-server)
+- [5.5.2 <code>port</code>](https://cfengine.com/manuals/cf3-Reference#port-in-runagent)
+- [5.9.5 <code>port</code>](https://cfengine.com/manuals/cf3-Reference#port-in-hub)

@@ -8,5 +8,5 @@ navsection: none
 
 The term 'service_policy' could refer to several sections in the documentation. Please choose one:
 
-- [7.15.1 <code>service_policy</code>](https://cfengine.com/manuals/cf3-reference#service_policy-in-services)
-- [12.6.5 Variable service_policy](https://cfengine.com/manuals/cf3-reference#Variable-service_policy)
+- [7.15.1 <code>service_policy</code>](https://cfengine.com/manuals/cf3-Reference#service_policy-in-services)
+- [12.6.5 Variable service_policy](https://cfengine.com/manuals/cf3-Reference#Variable-service_policy)

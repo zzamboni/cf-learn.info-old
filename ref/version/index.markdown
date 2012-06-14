@@ -8,8 +8,8 @@ navsection: none
 
 The term 'version' could refer to several sections in the documentation. Please choose one:
 
-- [5.1.6 <code>version</code>](https://cfengine.com/manuals/cf3-reference#version-in-common)
-- [7.13.5 <code>package_version</code>](https://cfengine.com/manuals/cf3-reference#package_version-in-packages)
-- [12.5.4 Variable sys.cf_version](https://cfengine.com/manuals/cf3-reference#Variable-sys.cf_version)
-- [12.5.32 Variable sys.nova_version](https://cfengine.com/manuals/cf3-reference#Variable-sys.nova_version)
-- [12.5.39 Variable sys.version](https://cfengine.com/manuals/cf3-reference#Variable-sys.version)
+- [5.1.6 <code>version</code>](https://cfengine.com/manuals/cf3-Reference#version-in-common)
+- [7.13.5 <code>package_version</code>](https://cfengine.com/manuals/cf3-Reference#package_version-in-packages)
+- [12.5.14 Variable sys.cf_version](https://cfengine.com/manuals/cf3-Reference#Variable-sys.cf_version)
+- [12.5.45 Variable sys.nova_version](https://cfengine.com/manuals/cf3-Reference#Variable-sys.nova_version)
+- [12.5.52 Variable sys.version](https://cfengine.com/manuals/cf3-Reference#Variable-sys.version)

@@ -8,13 +8,13 @@ navsection: none
 
 The term 'cfengine' could refer to several sections in the documentation. Please choose one:
 
-- [1.3 A renewed CFEngine](https://cfengine.com/manuals/cf3-reference#A-renewed-CFEngine)
-- [1.9 Upgrading from CFEngine 2](https://cfengine.com/manuals/cf3-reference#Upgrading-from-CFEngine-2)
-- [1.11 The \`bare necessities' of a CFEngine 3](https://cfengine.com/manuals/cf3-reference#The-bare-necessities-of-a-CFEngine-3)
-- [3 How to run CFEngine 3 examples](https://cfengine.com/manuals/cf3-reference#How-to-run-CFEngine-3-examples)
-- [12.4.40 Variable mon.value_cfengine_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_cfengine_in)
-- [12.4.41 Variable mon.av_cfengine_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_cfengine_in)
-- [12.4.42 Variable mon.dev_cfengine_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_cfengine_in)
-- [12.4.43 Variable mon.value_cfengine_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_cfengine_out)
-- [12.4.44 Variable mon.av_cfengine_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_cfengine_out)
-- [12.4.45 Variable mon.dev_cfengine_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_cfengine_out)
+- [1.3 A renewed CFEngine](https://cfengine.com/manuals/cf3-Reference#A-renewed-CFEngine)
+- [1.9 Upgrading from CFEngine 2](https://cfengine.com/manuals/cf3-Reference#Upgrading-from-CFEngine-2)
+- [1.11 The \`bare necessities' of a CFEngine 3](https://cfengine.com/manuals/cf3-Reference#The-bare-necessities-of-a-CFEngine-3)
+- [3 How to run CFEngine 3 examples](https://cfengine.com/manuals/cf3-Reference#How-to-run-CFEngine-3-examples)
+- [12.4.40 Variable mon.value_cfengine_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_cfengine_in)
+- [12.4.41 Variable mon.av_cfengine_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_cfengine_in)
+- [12.4.42 Variable mon.dev_cfengine_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_cfengine_in)
+- [12.4.43 Variable mon.value_cfengine_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_cfengine_out)
+- [12.4.44 Variable mon.av_cfengine_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_cfengine_out)
+- [12.4.45 Variable mon.dev_cfengine_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_cfengine_out)

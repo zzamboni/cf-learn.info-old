@@ -7,7 +7,7 @@ require 'open-uri'
 ######################################################################
 
 Debug = false
-RefGuideUrl = 'https://cfengine.com/manuals/cf3-reference'
+RefGuideUrl = 'https://cfengine.com/manuals/cf3-Reference'
 OutDir = "./ref"
 # Words not to index
 Skipwords = %W(how the are for non vs. what best bare that thus)

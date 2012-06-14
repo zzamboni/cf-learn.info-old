@@ -8,9 +8,9 @@ navsection: none
 
 The term 'netbiosdgm' could refer to several sections in the documentation. Please choose one:
 
-- [12.4.22 Variable mon.value_netbiosdgm_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_netbiosdgm_in)
-- [12.4.23 Variable mon.av_netbiosdgm_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_netbiosdgm_in)
-- [12.4.24 Variable mon.dev_netbiosdgm_in](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_netbiosdgm_in)
-- [12.4.25 Variable mon.value_netbiosdgm_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.value_netbiosdgm_out)
-- [12.4.26 Variable mon.av_netbiosdgm_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.av_netbiosdgm_out)
-- [12.4.27 Variable mon.dev_netbiosdgm_out](https://cfengine.com/manuals/cf3-reference#Variable-mon.dev_netbiosdgm_out)
+- [12.4.22 Variable mon.value_netbiosdgm_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_netbiosdgm_in)
+- [12.4.23 Variable mon.av_netbiosdgm_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_netbiosdgm_in)
+- [12.4.24 Variable mon.dev_netbiosdgm_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_netbiosdgm_in)
+- [12.4.25 Variable mon.value_netbiosdgm_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_netbiosdgm_out)
+- [12.4.26 Variable mon.av_netbiosdgm_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_netbiosdgm_out)
+- [12.4.27 Variable mon.dev_netbiosdgm_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_netbiosdgm_out)

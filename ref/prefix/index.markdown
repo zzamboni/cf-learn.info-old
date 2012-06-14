@@ -8,5 +8,5 @@ navsection: none
 
 The term 'prefix' could refer to several sections in the documentation. Please choose one:
 
-- [5.1.8 <code>output_prefix</code>](https://cfengine.com/manuals/cf3-reference#output_prefix-in-common)
-- [5.7.8 <code>id_prefix</code>](https://cfengine.com/manuals/cf3-reference#id_prefix-in-knowledge)
+- [5.1.8 <code>output_prefix</code>](https://cfengine.com/manuals/cf3-Reference#output_prefix-in-common)
+- [5.7.8 <code>id_prefix</code>](https://cfengine.com/manuals/cf3-Reference#id_prefix-in-knowledge)

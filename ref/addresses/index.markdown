@@ -8,5 +8,5 @@ navsection: none
 
 The term 'addresses' could refer to several sections in the documentation. Please choose one:
 
-- [12.5.17 Variable sys.hardware_addresses](https://cfengine.com/manuals/cf3-reference#Variable-sys.hardware_addresses)
-- [12.5.22 Variable sys.ip_addresses](https://cfengine.com/manuals/cf3-reference#Variable-sys.ip_addresses)
+- [12.5.26 Variable sys.hardware_addresses](https://cfengine.com/manuals/cf3-Reference#Variable-sys.hardware_addresses)
+- [12.5.32 Variable sys.ip_addresses](https://cfengine.com/manuals/cf3-Reference#Variable-sys.ip_addresses)
