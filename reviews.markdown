@@ -11,14 +11,41 @@ CFEngine 3", with links to their original sources.
 
 ------------------------
 
-> The writing and editing done on this book is excellent. The author is very skilled at delivering complex information in a readable and approachable manner. 
+> Wish "Learning CFEngine 3" by @zzamboni was available when I stumbled
+> upon ‪#cfengine‬ for the first time. It's simply great.
+
+<div align="right">&mdash;<cite><a
+href="https://twitter.com/vblaskov/status/217522686199463936">Vladimir
+Blaskov</a>, Varna, Bulgaria</cite></div>
+
+------------------------
+
+> I bought this book, and I saw the light! I've now read the book and
+> I'm writing clean CFEngine recipes with the feeling of doing a good
+> job, which won't block me in the future.
+>
+> This *is* the book about CFEngine 3.  Start with this one if you want
+> to commit to the real CFEngine philosophy, the productive and clean
+> one.
+
+<div align="right">&mdash;<cite><a
+href="http://www.amazon.com/review/R2AY7CMR3F0XKF/ref=cm_cr_dp_title?ie=UTF8&ASIN=1449312209&nodeID=283155&store=books">Laurent
+Raufaste</a>, New York, NY, U.S.A.</cite></div>
+
+------------------------
+
+> The writing and editing done on this book is excellent. The author
+>is very skilled at delivering complex information in a readable and
+>approachable manner.
 >
 > &hellip; 
 >
-> If you have struggled with CFEngine 3 in the past, or are strongly considering deploying it in any way, I highly recommend this book (as my rating shows).
+> If you have struggled with CFEngine 3 in the past, or are strongly
+>considering deploying it in any way, I highly recommend this book.
 
 <div align="right">&mdash;<cite><a
-href="http://shop.oreilly.com/product/0636920022022.do#PowerReview">Jeff Blaine</a>, St. Petersburgh, FL</cite></div>
+href="http://shop.oreilly.com/product/0636920022022.do#PowerReview">Jeff
+Blaine</a>, St. Petersburgh, FL, U.S.A.</cite></div>
 
 ------------------------
 
@@ -37,7 +64,7 @@ you should check it out.
 
 <div align="right">&mdash;<cite><a
 href="http://www.cmdln.org/2012/03/29/review-learning-cfengine-3/">Nick
-Anderson</a>, Lawrence, KS</cite></div>
+Anderson</a>, Lawrence, KS, U.S.A.</cite></div>
 
 ------------------------
 
@@ -50,7 +77,7 @@ Anderson</a>, Lawrence, KS</cite></div>
 
 <div align="right">&mdash;<cite><a
 href="http://shop.oreilly.com/product/0636920022022.do#PowerReview">Glen
-Barber</a>, Philadelphia, PA</cite></div>
+Barber</a>, Philadelphia, PA, U.S.A.</cite></div>
 
 -----------------------
 
@@ -63,7 +90,7 @@ Barber</a>, Philadelphia, PA</cite></div>
 
 <div align="right">&mdash;<cite><a
 href="http://shop.oreilly.com/product/0636920022022.do#PowerReview">Brian</a>,
-Dallas, TX</cite></div>
+Dallas, TX, U.S.A.</cite></div>
 
 ------------------------
 
