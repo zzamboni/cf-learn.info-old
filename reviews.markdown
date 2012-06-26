@@ -34,6 +34,23 @@ Raufaste</a>, New York, NY, U.S.A.</cite></div>
 
 ------------------------
 
+> \hellip; something happened, and things changed like when the night
+> turns into a new day.
+> 
+> When the early release of "Learning cfengine 3" was announced, I
+> think I was one of the first people who bought it. I started reading
+> it, and it was amazing: <strong>all the things that were confusingly
+> buzzing in my head started to line themselves orderly</strong>. In a
+> very little time, I was able to do much more than I had been able to
+> do in months. And I finally could appreciate the good qualities of
+> cfengine I liked from version 2: powerful, predictable, lightweight.
+
+<div align="right">&mdash;<cite><a
+href="http://my.opera.com/marcomarongiu/blog/2012/06/17/why-i-gave-up-puppet-and-chose-cfengine-3">Marco
+Marongiu</a>, Oslo, Norway</cite></div>
+
+------------------------
+
 > The writing and editing done on this book is excellent. The author
 >is very skilled at delivering complex information in a readable and
 >approachable manner.
