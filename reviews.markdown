@@ -34,7 +34,7 @@ Raufaste</a>, New York, NY, U.S.A.</cite></div>
 
 ------------------------
 
-> \hellip; something happened, and things changed like when the night
+> &hellip; something happened, and things changed like when the night
 > turns into a new day.
 > 
 > When the early release of "Learning cfengine 3" was announced, I
