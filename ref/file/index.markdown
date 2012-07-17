@@ -10,5 +10,6 @@ The term 'file' could refer to several sections in the documentation. Please cho
 
 - [4.5 What should a failsafe and update file contain?](https://cfengine.com/manuals/cf3-Reference#What-should-a-failsafe-or-update-file-contain)
 - [5.5.8 <code>output_to_file</code>](https://cfengine.com/manuals/cf3-Reference#output_to_file-in-runagent)
-- [6.3.5 <code>report_to_file</code>](https://cfengine.com/manuals/cf3-Reference#report_to_file-in-reports)
+- [5.10 <code>file</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-file)
+- [6.4.5 <code>report_to_file</code>](https://cfengine.com/manuals/cf3-Reference#report_to_file-in-reports)
 - [7.4.11 <code>file_select</code> (body template)](https://cfengine.com/manuals/cf3-Reference#file_select-in-files)

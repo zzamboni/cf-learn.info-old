@@ -8,6 +8,6 @@ navsection: none
 
 The term 'not' could refer to several sections in the documentation. Please choose one:
 
-- [6.2.6 <code>not</code>](https://cfengine.com/manuals/cf3-Reference#not-in-classes)
+- [6.1.6 <code>not</code>](https://cfengine.com/manuals/cf3-Reference#not-in-classes)
 - [7.6.2 <code>not_matching</code>](https://cfengine.com/manuals/cf3-Reference#not_matching-in-delete_lines)
 - [11.56 Function not](https://cfengine.com/manuals/cf3-Reference#Function-not)

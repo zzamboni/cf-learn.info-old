@@ -12,4 +12,4 @@ The term 'hub' could refer to several sections in the documentation. Please choo
 - [5.9 <code>hub</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-hub)
 - [5.9.4 <code>hub_schedule</code>](https://cfengine.com/manuals/cf3-Reference#hub_schedule-in-hub)
 - [12.5.5 Variable sys.cf_hub](https://cfengine.com/manuals/cf3-Reference#Variable-sys.cf_hub)
-- [12.5.48 Variable sys.policy_hub](https://cfengine.com/manuals/cf3-Reference#Variable-sys.policy_hub)
+- [12.5.50 Variable sys.policy_hub](https://cfengine.com/manuals/cf3-Reference#Variable-sys.policy_hub)

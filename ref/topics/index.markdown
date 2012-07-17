@@ -8,6 +8,6 @@ navsection: none
 
 The term 'topics' could refer to several sections in the documentation. Please choose one:
 
-- [2.10.5 Special topics on Regular Expressions](https://cfengine.com/manuals/cf3-Reference#Special-topics-on-Regular-Expressions)
+- [2.11.5 Special topics on Regular Expressions](https://cfengine.com/manuals/cf3-Reference#Special-topics-on-Regular-Expressions)
 - [9.3 <code>topics</code> promises in &lsquo;<samp><span class="samp">knowledge</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#topics-in-knowledge-promises)
 - [9.4.1 <code>about_topics</code>](https://cfengine.com/manuals/cf3-Reference#about_topics-in-occurrences)

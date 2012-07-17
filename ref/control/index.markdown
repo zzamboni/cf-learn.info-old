@@ -18,3 +18,4 @@ The term 'control' could refer to several sections in the documentation. Please 
 - [5.7 <code>knowledge</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-knowledge)
 - [5.8 <code>reporter</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-reporter)
 - [5.9 <code>hub</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-hub)
+- [5.10 <code>file</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-file)

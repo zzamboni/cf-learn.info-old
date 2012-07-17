@@ -8,7 +8,7 @@ navsection: none
 
 The term 'select' could refer to several sections in the documentation. Please choose one:
 
-- [6.2.7 <code>select_class</code>](https://cfengine.com/manuals/cf3-Reference#select_class-in-classes)
+- [6.1.7 <code>select_class</code>](https://cfengine.com/manuals/cf3-Reference#select_class-in-classes)
 - [7.4.11 <code>file_select</code> (body template)](https://cfengine.com/manuals/cf3-Reference#file_select-in-files)
 - [7.5.1 <code>select_region</code> (body template)](https://cfengine.com/manuals/cf3-Reference#select_region-in-*)
 - [7.6.1 <code>delete_select</code> (body template)](https://cfengine.com/manuals/cf3-Reference#delete_select-in-delete_lines)

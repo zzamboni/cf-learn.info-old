@@ -10,4 +10,4 @@ The term 'update' could refer to several sections in the documentation. Please c
 
 - [4.3 <samp><span class="file">update.cf</span></samp>](https://cfengine.com/manuals/cf3-Reference#update.cf)
 - [4.5 What should a failsafe and update file contain?](https://cfengine.com/manuals/cf3-Reference#What-should-a-failsafe-or-update-file-contain)
-- [12.5.39 Variable sys.last_policy_update](https://cfengine.com/manuals/cf3-Reference#Variable-sys.last_policy_update)
+- [12.5.41 Variable sys.last_policy_update](https://cfengine.com/manuals/cf3-Reference#Variable-sys.last_policy_update)

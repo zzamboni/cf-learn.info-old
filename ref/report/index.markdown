@@ -10,5 +10,5 @@ The term 'report' could refer to several sections in the documentation. Please c
 
 - [1.1.8 cf-report](https://cfengine.com/manuals/cf3-Reference#cf-report)
 - [5.8.11 <code>report_output</code>](https://cfengine.com/manuals/cf3-Reference#report_output-in-reporter)
-- [6.3.5 <code>report_to_file</code>](https://cfengine.com/manuals/cf3-Reference#report_to_file-in-reports)
+- [6.4.5 <code>report_to_file</code>](https://cfengine.com/manuals/cf3-Reference#report_to_file-in-reports)
 - [12.5.10 Variable sys.cf_report](https://cfengine.com/manuals/cf3-Reference#Variable-sys.cf_report)

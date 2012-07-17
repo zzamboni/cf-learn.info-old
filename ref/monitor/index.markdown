@@ -8,6 +8,6 @@ navsection: none
 
 The term 'monitor' could refer to several sections in the documentation. Please choose one:
 
-- [2.8.3 Monitor normal ordering](https://cfengine.com/manuals/cf3-Reference#Monitor-normal-ordering)
+- [2.9.3 Monitor normal ordering](https://cfengine.com/manuals/cf3-Reference#Monitor-normal-ordering)
 - [5.4 <code>monitor</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-monitor)
 - [10 Bundles of <code>monitor</code>](https://cfengine.com/manuals/cf3-Reference#Bundles-for-monitor)
