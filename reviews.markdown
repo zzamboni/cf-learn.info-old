@@ -7,7 +7,21 @@ navsection: reviews
 ---
 
 Here are some of the nice things people have said about "Learning
-CFEngine 3", with links to their original sources.
+CFEngine 3", with links to their original sources. In most cases I
+have only included select quotes, you should follow the link to see
+the full review or comment.
+
+------------------------
+
+> A brilliant book!
+> (best book since friedl's mastering reg ex ;-)
+>
+> Diego Zamboni delivers here on just 160 Pages, short and sharp, an
+> intense introduction to CFEngine and the underlying "promise theory".
+
+<div align="right">&mdash;<cite><a
+href="http://shop.oreilly.com/product/0636920022022.do#PowerReview">save
+the whales</a>, Berlin, Germany</cite></div>
 
 ------------------------
 
