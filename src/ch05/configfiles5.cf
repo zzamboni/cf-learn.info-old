@@ -5,7 +5,7 @@ bundle agent configfiles
       "files[sysctlconf]" string => "/etc/sysctl.conf";
       "files[sshdconfig]" string => "/etc/ssh/sshd_config";
       "files[inittab]"    string => "/etc/inittab";
-      
+      ...
 
   methods:
       # Pass the name of the array, not the array itself.
