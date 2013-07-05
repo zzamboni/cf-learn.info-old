@@ -28,7 +28,7 @@ and to CFEngine:
 * Visit the [forum](/discussion.html) if you have any comments,
   questions or feedback about the book. For CFEngine-related questions,
   I encourage you to visit the
-  [CFEngine Help Forum](https://cfengine.com/forum/list.php?3) instead.
+  [CFEngine Help mailing list](https://groups.google.com/forum/#!forum/help-cfengine) instead.
 * If you find any errors in the book, please post them on the book's
   [errata](http://oreilly.com/catalog/errata.csp?isbn=0636920022022)
   page.

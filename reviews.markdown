@@ -138,7 +138,7 @@ Toronto, Canada</cite></div>
 > deserved and never had.
 
 <div align="right">&mdash;<cite><a
-href="https://cfengine.com/forum/read.php?3,24235,24761#msg-24761">Marco
+href="http://permalink.gmane.org/gmane.comp.sysutils.cfengine.general/9278">Marco
 Marongiu</a>, Oslo, Norway</cite></div>
 
 ------------------------
