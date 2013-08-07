@@ -13,6 +13,7 @@ The term 'file' could refer to several sections in the documentation. Please cho
 - [output_to_file](http://cfengine.com/docs/3.5/reference-components-cfrunagent.html#output_to_file)
 - [file control](http://cfengine.com/docs/3.5/reference-components-file-control.html#file-control)
 - [File Changes](http://cfengine.com/docs/3.5/reference-enterprise-api-sql-schema.html#file-changes)
+- [Functions That Look at File Metadata](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-look-at-file-metadata)
 - [File editing in CFEngine 3](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line.html#file-editing-in-cfengine-3)
 - [File copying](http://cfengine.com/docs/3.5/reference-promise-types-files.html#file-copying)
 - [empty_file_before_editing](http://cfengine.com/docs/3.5/reference-promise-types-files.html#empty_file_before_editing)

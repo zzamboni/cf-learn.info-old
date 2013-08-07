@@ -17,6 +17,7 @@ The term 'classes' could refer to several sections in the documentation. Please 
 - [Hard and Soft Classes](http://cfengine.com/docs/3.5/reference-classes.html#hard-and-soft-classes)
 - [Listing Classes](http://cfengine.com/docs/3.5/reference-classes.html#listing-classes)
 - [site_classes](http://cfengine.com/docs/3.5/reference-components.html#site_classes)
+- [Functions That Read Classes](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-classes)
 - [classes_include](http://cfengine.com/docs/3.5/reference-promise-types-access.html#classes_include)
 - [classes_exclude](http://cfengine.com/docs/3.5/reference-promise-types-access.html#classes_exclude)
 - [classes](http://cfengine.com/docs/3.5/reference-promise-types.html#classes)

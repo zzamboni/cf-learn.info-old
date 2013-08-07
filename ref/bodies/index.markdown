@@ -11,4 +11,3 @@ The term 'bodies' could refer to several sections in the documentation. Please c
 
 - [Bodies](http://cfengine.com/docs/3.5/manuals-language-concepts-bodies.html#bodies)
 - [Implicit, Control Bodies](http://cfengine.com/docs/3.5/manuals-language-concepts-bodies.html#implicit,-control-bodies)
-- [Common Bodies](http://cfengine.com/docs/3.5/reference-standard-library.html#common-bodies)

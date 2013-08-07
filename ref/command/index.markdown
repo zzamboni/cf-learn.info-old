@@ -12,6 +12,7 @@ The term 'command' could refer to several sections in the documentation. Please 
 - [Command line interface:](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#command-line-interface)
 - [Command reference](http://cfengine.com/docs/3.5/reference-components-cfserver.html#command-reference)
 - [exec_command](http://cfengine.com/docs/3.5/reference-components-cfexecd.html#exec_command)
+- [Functions That Read Command Output](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-command-output)
 - [package_add_command](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#package_add_command)
 - [package_delete_command](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#package_delete_command)
 - [package_default_arch_command](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#package_default_arch_command)

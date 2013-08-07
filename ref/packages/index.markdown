@@ -10,5 +10,5 @@ The term 'packages' could refer to several sections in the documentation. Please
 [search the CFEngine documentation for 'packages'](http://cfengine.com/docs/3.5/search.html?q=packages).
 
 - [Install packages](http://cfengine.com/docs/3.5/examples-policy-install-package;.html#install-packages)
-- [Packages](http://cfengine.com/docs/3.5/reference-standard-library.html#packages)
+- [packages](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#packages)
 - [Example: filtering out the Packages::removed sketch](http://cfengine.com/docs/3.5/mission-portal-design-center-sketches-available.html#example-filtering-out-the-packages-removed-sketch)

@@ -14,3 +14,4 @@ The term 'new' could refer to several sections in the documentation. Please choo
 - [Adding a new sketch to the GUI](http://cfengine.com/docs/3.5/mission-portal-design-center-sketches-available.html#adding-a-new-sketch-to-the-gui)
 - [New Users](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-porting-guide.html#new-users)
 - [New in CFEngine](http://cfengine.com/docs/3.5/whats-new.html#new-in-cfengine)
+- [New built-in functions and capabilities](http://cfengine.com/docs/3.5/whats-new.html#new-built-in-functions-and-capabilities)

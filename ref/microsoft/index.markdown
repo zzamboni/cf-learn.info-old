@@ -15,3 +15,4 @@ The term 'microsoft' could refer to several sections in the documentation. Pleas
 - [mon.value_microsoft_ds_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_microsoft_ds_out)
 - [mon.av_microsoft_ds_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_microsoft_ds_out)
 - [mon.dev_microsoft_ds_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_microsoft_ds_out)
+- [Microsoft Windows specific improvements](http://cfengine.com/docs/3.5/whats-new.html#microsoft-windows-specific-improvements)

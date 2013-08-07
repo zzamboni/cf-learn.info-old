@@ -11,3 +11,4 @@ The term 'policies' could refer to several sections in the documentation. Please
 
 - [Running the Example policies](http://cfengine.com/docs/3.5/examples.html#running-the-example-policies)
 - [Testing Policies](http://cfengine.com/docs/3.5/manuals-writing-policy-testing-policies.html#testing-policies)
+- [Significantly improved parsing and evaluation of policies](http://cfengine.com/docs/3.5/whats-new.html#significantly-improved-parsing-and-evaluation-of-policies)

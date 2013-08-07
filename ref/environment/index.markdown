@@ -13,6 +13,7 @@ The term 'environment' could refer to several sections in the documentation. Ple
 - [environment](http://cfengine.com/docs/3.5/reference-components-cfagent.html#environment)
 - [define_environment](http://cfengine.com/docs/3.5/reference-design-center-api.html#define_environment)
 - [undefine_environment](http://cfengine.com/docs/3.5/reference-design-center-api.html#undefine_environment)
+- [Functions That Read the Environment](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-the-environment)
 - [environment_host](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_host)
 - [environment_interface](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_interface)
 - [environment_resources](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_resources)

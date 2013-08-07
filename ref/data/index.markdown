@@ -11,5 +11,8 @@ The term 'data' could refer to several sections in the documentation. Please cho
 
 - [Example: Removing Host Data](http://cfengine.com/docs/3.5/examples-enterprise-api-browsing-host-information.html#example-removing-host-data)
 - [Example: Retrieving Vital Sign Data](http://cfengine.com/docs/3.5/examples-enterprise-api-browsing-host-information.html#example-retrieving-vital-sign-data)
+- [Functions That Read Large Data](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-large-data)
+- [Functions That Read Disk Data](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-disk-data)
+- [Functions That Read LDAP Data](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-ldap-data)
 - [report_data_select](http://cfengine.com/docs/3.5/reference-promise-types-access.html#report_data_select)
 - [data_type](http://cfengine.com/docs/3.5/reference-promise-types-measurements.html#data_type)

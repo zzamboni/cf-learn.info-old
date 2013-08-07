@@ -9,5 +9,6 @@ navsection: none
 The term 'error' could refer to several sections in the documentation. Please choose one below, or
 [search the CFEngine documentation for 'error'](http://cfengine.com/docs/3.5/search.html?q=error).
 
+- [Comma in promiser/promisee declaration generates Syntax Error](http://cfengine.com/docs/3.5/getting-started-known-issues.html#comma-in-promiser-promisee-declaration-generates-syntax-error)
 - [Error in status query](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#error-in-status-query)
 - [Connection Error](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#connection-error)

@@ -11,6 +11,7 @@ The term 'variables' could refer to several sections in the documentation. Pleas
 
 - [Variables](http://cfengine.com/docs/3.5/reference-enterprise-api-sql-schema.html#variables)
 - [Scalar Variables](http://cfengine.com/docs/3.5/reference-promise-types-vars.html#scalar-variables)
+- [Functions That Look at Variables](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-look-at-variables)
 - [variables_include](http://cfengine.com/docs/3.5/reference-promise-types-access.html#variables_include)
 - [variables_exclude](http://cfengine.com/docs/3.5/reference-promise-types-access.html#variables_exclude)
 - [List variables](http://cfengine.com/docs/3.5/reference-promise-types-vars.html#list-variables)

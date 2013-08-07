@@ -13,4 +13,3 @@ The term 'common' could refer to several sections in the documentation. Please c
 - [Components and Common Control](http://cfengine.com/docs/3.5/reference-components.html#components-and-common-control)
 - [Common Control](http://cfengine.com/docs/3.5/reference-components.html#common-control)
 - [Common Attributes](http://cfengine.com/docs/3.5/reference-promise-types.html#common-attributes)
-- [Common Bodies](http://cfengine.com/docs/3.5/reference-standard-library.html#common-bodies)

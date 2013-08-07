@@ -24,4 +24,3 @@ The term 'promise' could refer to several sections in the documentation. Please 
 - [Promise Types and Attributes](http://cfengine.com/docs/3.5/reference-promise-types.html#promise-types-and-attributes)
 - [promise_repaired](http://cfengine.com/docs/3.5/reference-promise-types.html#promise_repaired)
 - [promise_kept](http://cfengine.com/docs/3.5/reference-promise-types.html#promise_kept)
-- [All Promise Types](http://cfengine.com/docs/3.5/reference.html#all-promise-types)

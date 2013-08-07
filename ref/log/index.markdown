@@ -11,7 +11,7 @@ The term 'log' could refer to several sections in the documentation. Please choo
 
 - [Example: Changing The Log Level](http://cfengine.com/docs/3.5/examples-enterprise-api-managing-settings.html#example-changing-the-log-level)
 - [Audit log](http://cfengine.com/docs/3.5/mission-portal-design-center-access-control.html#audit-log)
-- [Review change history from git commit log](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#review-change-history-from-git-commit-log)
+- [See the commit in the log](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#see-the-commit-in-the-log)
 - [log](http://cfengine.com/docs/3.5/reference-design-center-api.html#log)
 - [log_level](http://cfengine.com/docs/3.5/reference-promise-types.html#log_level)
 - [promise_notkept_log_include](http://cfengine.com/docs/3.5/reference-promise-types-access.html#promise_notkept_log_include)

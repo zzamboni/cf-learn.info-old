@@ -13,4 +13,5 @@ The term 'output' could refer to several sections in the documentation. Please c
 - [output_to_file](http://cfengine.com/docs/3.5/reference-components-cfrunagent.html#output_to_file)
 - [output_directory](http://cfengine.com/docs/3.5/reference-components-cfrunagent.html#output_directory)
 - [output_prefix](http://cfengine.com/docs/3.5/reference-components.html#output_prefix)
+- [Functions That Read Command Output](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-command-output)
 - [no_output](http://cfengine.com/docs/3.5/reference-promise-types-commands.html#no_output)

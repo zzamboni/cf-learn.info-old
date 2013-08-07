@@ -12,3 +12,4 @@ The term 'sql' could refer to several sections in the documentation. Please choo
 - [SQL Query Examples](http://cfengine.com/docs/3.5/examples-enterprise-reporting-sql-queries.html#sql-query-examples)
 - [SQL Queries](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-sql-queries.html#sql-queries)
 - [SQL Schema](http://cfengine.com/docs/3.5/reference-enterprise-api-sql-schema.html#sql-schema)
+- [Improved SQL reporting](http://cfengine.com/docs/3.5/whats-new.html#improved-sql-reporting)

@@ -11,6 +11,7 @@ The term 'class' could refer to several sections in the documentation. Please ch
 
 - [Class Scopes: A More Complex Example](http://cfengine.com/docs/3.5/manuals-language-concepts-classes.html#class-scopes-a-more-complex-example)
 - [Context class expressions](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#context-class-expressions)
+- [Functions That Return Class](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-return-class)
 - [select_class](http://cfengine.com/docs/3.5/reference-promise-types-classes.html#select_class)
 - [restart_class](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#restart_class)
 - [measurement_class](http://cfengine.com/docs/3.5/reference-promise-types.html#measurement_class)

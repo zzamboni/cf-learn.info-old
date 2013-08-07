@@ -16,3 +16,4 @@ The term 'portal' could refer to several sections in the documentation. Please c
 - [Show all commits done through Mission Portal](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#show-all-commits-done-through-mission-portal)
 - [Show commits by a Mission Portal user](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#show-commits-by-a-mission-portal-user)
 - [Sketches Available in the Mission Portal](http://cfengine.com/docs/3.5/mission-portal-design-center-sketches-available.html#sketches-available-in-the-mission-portal)
+- [Streamlined Mission Portal](http://cfengine.com/docs/3.5/whats-new.html#streamlined-mission-portal)

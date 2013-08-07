@@ -12,3 +12,4 @@ The term 'reporting' could refer to several sections in the documentation. Pleas
 - [Built-in Reports vs. Reporting Engine](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-porting-guide.html#built-in-reports-vs-reporting-engine)
 - [Reporting Architecture](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-architecture.html#reporting-architecture)
 - [Enterprise Reporting](http://cfengine.com/docs/3.5/manuals-enterprise-reporting.html#enterprise-reporting)
+- [Improved SQL reporting](http://cfengine.com/docs/3.5/whats-new.html#improved-sql-reporting)

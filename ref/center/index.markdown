@@ -16,7 +16,6 @@ The term 'center' could refer to several sections in the documentation. Please c
 - [Activate a sketch with the Design Center API](http://cfengine.com/docs/3.5/manuals-design-center-advanced.html#activate-a-sketch-with-the-design-center-api)
 - [Generate and execute the runfile with the Design Center API](http://cfengine.com/docs/3.5/manuals-design-center-advanced.html#generate-and-execute-the-runfile-with-the-design-center-api)
 - [/var/cfengine/design-center](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#var-cfengine-design-center)
-- [Testing Design Center GUI](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#testing-design-center-gui)
 - [Design Center](http://cfengine.com/docs/3.5/reference-design-center.html#design-center)
 - [A Walkthrough of the CFEngine Design Center](http://cfengine.com/docs/3.5/manuals-design-center.html#a-walkthrough-of-the-cfengine-design-center)
 - [Checkout the Design Center repository](http://cfengine.com/docs/3.5/manuals-design-center.html#checkout-the-design-center-repository)

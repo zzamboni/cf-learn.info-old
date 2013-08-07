@@ -10,6 +10,6 @@ The term 'commands' could refer to several sections in the documentation. Please
 [search the CFEngine documentation for 'commands'](http://cfengine.com/docs/3.5/search.html?q=commands).
 
 - [API Commands](http://cfengine.com/docs/3.5/reference-design-center-api.html#api-commands)
-- [Commands](http://cfengine.com/docs/3.5/reference-standard-library.html#commands)
+- [commands](http://cfengine.com/docs/3.5/reference-promise-types-commands.html#commands)
 - [package_commands_useshell](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#package_commands_useshell)
 - [Commands and Processes](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#commands-and-processes)

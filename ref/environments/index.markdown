@@ -11,4 +11,3 @@ The term 'environments' could refer to several sections in the documentation. Pl
 
 - [environments](http://cfengine.com/docs/3.5/reference-design-center-api.html#environments)
 - [guest_environments](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#guest_environments)
-- [Guest Environments](http://cfengine.com/docs/3.5/reference-standard-library.html#guest-environments)

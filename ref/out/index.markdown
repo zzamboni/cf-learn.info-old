@@ -9,7 +9,7 @@ navsection: none
 The term 'out' could refer to several sections in the documentation. Please choose one below, or
 [search the CFEngine documentation for 'out'](http://cfengine.com/docs/3.5/search.html?q=out).
 
-- [Checking out masterfiles from your central repository \#\#](http://cfengine.com/docs/3.5/getting-started-tutorials-distributing-files-from-a-central-location.html#checking-out-masterfiles-from-your-central-repository-##)
+- [cf-execd sends out emails on every execution](http://cfengine.com/docs/3.5/getting-started-known-issues.html#cf-execd-sends-out-emails-on-every-execution)
 - [Example: filtering out the Packages::removed sketch](http://cfengine.com/docs/3.5/mission-portal-design-center-sketches-available.html#example-filtering-out-the-packages-removed-sketch)
 - [out_of_range_define](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#out_of_range_define)
 - [mon.value_netbiosns_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_netbiosns_out)
@@ -93,3 +93,4 @@ The term 'out' could refer to several sections in the documentation. Please choo
 - [mon.value_ipp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_ipp_out)
 - [mon.av_ipp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_ipp_out)
 - [mon.dev_ipp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_ipp_out)
+- [Improved out-of-the-box installation](http://cfengine.com/docs/3.5/whats-new.html#improved-out-of-the-box-installation)

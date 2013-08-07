@@ -17,3 +17,4 @@ The term 'report' could refer to several sections in the documentation. Please c
 - [report_diffs](http://cfengine.com/docs/3.5/reference-promise-types-files.html#report_diffs)
 - [report_to_file](http://cfengine.com/docs/3.5/reference-promise-types-reports.html#report_to_file)
 - [report_level](http://cfengine.com/docs/3.5/reference-promise-types.html#report_level)
+- [Report collection at arbitrary scale](http://cfengine.com/docs/3.5/whats-new.html#report-collection-at-arbitrary-scale)

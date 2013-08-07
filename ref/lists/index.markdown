@@ -12,3 +12,4 @@ The term 'lists' could refer to several sections in the documentation. Please ch
 - [Iterating Across Multiple Lists](http://cfengine.com/docs/3.5/manuals-language-concepts-loops.html#iterating-across-multiple-lists)
 - [Lists](http://cfengine.com/docs/3.5/manuals-language-concepts-variables.html#lists)
 - [Mapping Global and Local Lists](http://cfengine.com/docs/3.5/manuals-language-concepts-variables.html#mapping-global-and-local-lists)
+- [Functions That Read (i,r,s)Lists](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-i,r,s-lists)

@@ -12,3 +12,4 @@ The term 'installation' could refer to several sections in the documentation. Pl
 - [Installation](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#installation)
 - [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
 - [In case of Failure: Restoring the previous installation from backup](http://cfengine.com/docs/3.5/getting-started-upgrade.html#in-case-of-failure-restoring-the-previous-installation-from-backup)
+- [Improved out-of-the-box installation](http://cfengine.com/docs/3.5/whats-new.html#improved-out-of-the-box-installation)

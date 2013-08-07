@@ -10,5 +10,5 @@ The term 'processes' could refer to several sections in the documentation. Pleas
 [search the CFEngine documentation for 'processes'](http://cfengine.com/docs/3.5/search.html?q=processes).
 
 - [refresh_processes](http://cfengine.com/docs/3.5/reference-components-cfagent.html#refresh_processes)
-- [Processes](http://cfengine.com/docs/3.5/reference-standard-library.html#processes)
+- [processes](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#processes)
 - [Commands and Processes](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#commands-and-processes)

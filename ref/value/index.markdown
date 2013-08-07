@@ -10,6 +10,7 @@ The term 'value' could refer to several sections in the documentation. Please ch
 [search the CFEngine documentation for 'value'](http://cfengine.com/docs/3.5/search.html?q=value).
 
 - [track_value](http://cfengine.com/docs/3.5/reference-components-cfagent.html#track_value)
+- [Functions listed by return value](http://cfengine.com/docs/3.5/reference-functions.html#functions-listed-by-return-value)
 - [field_value](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-field_edits.html#field_value)
 - [value_separator](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-field_edits.html#value_separator)
 - [replace_value](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-replace_patterns.html#replace_value)

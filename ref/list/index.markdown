@@ -13,7 +13,7 @@ The term 'list' could refer to several sections in the documentation. Please cho
 - [List Substitution and Expansion](http://cfengine.com/docs/3.5/manuals-language-concepts-variables.html#list-substitution-and-expansion)
 - [list](http://cfengine.com/docs/3.5/reference-design-center-api.html#list)
 - [read\[int|real|string\]list](http://cfengine.com/docs/3.5/reference-functions-readintrealstringlist.html#read-int|real|string-list)
-- [List of all functions](http://cfengine.com/docs/3.5/reference-functions.html#list-of-all-functions)
+- [Functions That Return (i,r,s)List](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-return-i,r,s-list)
 - [delete_if_startwith_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-delete_lines.html#delete_if_startwith_from_list)
 - [delete_if_not_startwith_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-delete_lines.html#delete_if_not_startwith_from_list)
 - [delete_if_match_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-delete_lines.html#delete_if_match_from_list)

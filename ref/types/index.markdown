@@ -12,5 +12,3 @@ The term 'types' could refer to several sections in the documentation. Please ch
 - [Promise types](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#promise-types)
 - [file_types](http://cfengine.com/docs/3.5/reference-promise-types-files.html#file_types)
 - [Promise Types and Attributes](http://cfengine.com/docs/3.5/reference-promise-types.html#promise-types-and-attributes)
-- [All Promise Types](http://cfengine.com/docs/3.5/reference.html#all-promise-types)
-- [All Body Types](http://cfengine.com/docs/3.5/reference.html#all-body-types)
