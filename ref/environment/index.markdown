@@ -6,11 +6,15 @@ posttitle: Reference disambiguation for 'environment'
 navsection: none
 ---
 
-The term 'environment' could refer to several sections in the documentation. Please choose one:
+The term 'environment' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'environment'](http://cfengine.com/docs/3.5/search.html?q=environment).
 
-- [5.2.18 <code>environment</code>](https://cfengine.com/manuals/cf3-Reference#environment-in-agent)
-- [7.3.1 <code>environment_host</code>](https://cfengine.com/manuals/cf3-Reference#environment_host-in-guest_environments)
-- [7.3.2 <code>environment_interface</code> (body template)](https://cfengine.com/manuals/cf3-Reference#environment_interface-in-guest_environments)
-- [7.3.3 <code>environment_resources</code> (body template)](https://cfengine.com/manuals/cf3-Reference#environment_resources-in-guest_environments)
-- [7.3.4 <code>environment_state</code>](https://cfengine.com/manuals/cf3-Reference#environment_state-in-guest_environments)
-- [7.3.5 <code>environment_type</code>](https://cfengine.com/manuals/cf3-Reference#environment_type-in-guest_environments)
+- [Always verify the upgrade in a test environment prior to upgrading production environments\!](http://cfengine.com/docs/3.5/getting-started-upgrade.html#always-verify-the-upgrade-in-a-test-environment-prior-to-upgrading-production-environments!)
+- [environment](http://cfengine.com/docs/3.5/reference-components-cfagent.html#environment)
+- [define_environment](http://cfengine.com/docs/3.5/reference-design-center-api.html#define_environment)
+- [undefine_environment](http://cfengine.com/docs/3.5/reference-design-center-api.html#undefine_environment)
+- [environment_host](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_host)
+- [environment_interface](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_interface)
+- [environment_resources](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_resources)
+- [environment_state](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_state)
+- [environment_type](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_type)

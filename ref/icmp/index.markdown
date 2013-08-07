@@ -6,11 +6,12 @@ posttitle: Reference disambiguation for 'icmp'
 navsection: none
 ---
 
-The term 'icmp' could refer to several sections in the documentation. Please choose one:
+The term 'icmp' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'icmp'](http://cfengine.com/docs/3.5/search.html?q=icmp).
 
-- [12.4.82 Variable mon.value_icmp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_icmp_in)
-- [12.4.83 Variable mon.av_icmp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_icmp_in)
-- [12.4.84 Variable mon.dev_icmp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_icmp_in)
-- [12.4.85 Variable mon.value_icmp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_icmp_out)
-- [12.4.86 Variable mon.av_icmp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_icmp_out)
-- [12.4.87 Variable mon.dev_icmp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_icmp_out)
+- [mon.value_icmp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_icmp_in)
+- [mon.av_icmp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_icmp_in)
+- [mon.dev_icmp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_icmp_in)
+- [mon.value_icmp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_icmp_out)
+- [mon.av_icmp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_icmp_out)
+- [mon.dev_icmp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_icmp_out)

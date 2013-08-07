@@ -6,7 +6,11 @@ posttitle: Reference disambiguation for 'common'
 navsection: none
 ---
 
-The term 'common' could refer to several sections in the documentation. Please choose one:
+The term 'common' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'common'](http://cfengine.com/docs/3.5/search.html?q=common).
 
-- [5.1 <code>common</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-common)
-- [6 Bundles of <code>common</code>](https://cfengine.com/manuals/cf3-Reference#Bundles-for-common)
+- [Common use cases](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#common-use-cases)
+- [Components and Common Control](http://cfengine.com/docs/3.5/reference-components.html#components-and-common-control)
+- [Common Control](http://cfengine.com/docs/3.5/reference-components.html#common-control)
+- [Common Attributes](http://cfengine.com/docs/3.5/reference-promise-types.html#common-attributes)
+- [Common Bodies](http://cfengine.com/docs/3.5/reference-standard-library.html#common-bodies)

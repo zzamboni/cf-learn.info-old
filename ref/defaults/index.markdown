@@ -6,7 +6,8 @@ posttitle: Reference disambiguation for 'defaults'
 navsection: none
 ---
 
-The term 'defaults' could refer to several sections in the documentation. Please choose one:
+The term 'defaults' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'defaults'](http://cfengine.com/docs/3.5/search.html?q=defaults).
 
-- [6.2 <code>defaults</code> promises in &lsquo;<samp><span class="samp">\*</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#defaults-in-common-promises)
-- [7.4.7 <code>edit_defaults</code> (body template)](https://cfengine.com/manuals/cf3-Reference#edit_defaults-in-files)
+- [defaults](http://cfengine.com/docs/3.5/reference-promise-types-defaults.html#defaults)
+- [edit_defaults](http://cfengine.com/docs/3.5/reference-promise-types-files.html#edit_defaults)

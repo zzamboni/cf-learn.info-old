@@ -6,8 +6,10 @@ posttitle: Reference disambiguation for 'lines'
 navsection: none
 ---
 
-The term 'lines' could refer to several sections in the documentation. Please choose one:
+The term 'lines' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'lines'](http://cfengine.com/docs/3.5/search.html?q=lines).
 
-- [2.11.2 Commenting lines](https://cfengine.com/manuals/cf3-Reference#Commenting-lines)
-- [7.6 <code>delete_lines</code> promises in &lsquo;<samp><span class="samp">edit_line</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#delete_lines-in-edit_line-promises)
-- [7.7 <code>insert_lines</code> promises in &lsquo;<samp><span class="samp">edit_line</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#insert_lines-in-edit_line-promises)
+- [Commenting lines](http://cfengine.com/docs/3.5/manuals-language-concepts-pattern-matching-and-referencing.html#commenting-lines)
+- [delete_lines](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-delete_lines.html#delete_lines)
+- [insert_lines](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-insert_lines.html#insert_lines)
+- [number_of_lines](http://cfengine.com/docs/3.5/reference-promise-types-reports.html#number_of_lines)

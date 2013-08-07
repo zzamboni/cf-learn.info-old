@@ -6,9 +6,8 @@ posttitle: Reference disambiguation for 'port'
 navsection: none
 ---
 
-The term 'port' could refer to several sections in the documentation. Please choose one:
+The term 'port' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'port'](http://cfengine.com/docs/3.5/search.html?q=port).
 
-- [5.1.14 <code>syslog_port</code>](https://cfengine.com/manuals/cf3-Reference#syslog_port-in-common)
-- [5.3.15 <code>port</code>](https://cfengine.com/manuals/cf3-Reference#port-in-server)
-- [5.5.2 <code>port</code>](https://cfengine.com/manuals/cf3-Reference#port-in-runagent)
-- [5.9.5 <code>port</code>](https://cfengine.com/manuals/cf3-Reference#port-in-hub)
+- [port](http://cfengine.com/docs/3.5/reference-components-cfserver.html#port)
+- [syslog_port](http://cfengine.com/docs/3.5/reference-components.html#syslog_port)

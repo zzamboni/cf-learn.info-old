@@ -6,11 +6,12 @@ posttitle: Reference disambiguation for 'netbiosns'
 navsection: none
 ---
 
-The term 'netbiosns' could refer to several sections in the documentation. Please choose one:
+The term 'netbiosns' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'netbiosns'](http://cfengine.com/docs/3.5/search.html?q=netbiosns).
 
-- [12.4.16 Variable mon.value_netbiosns_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_netbiosns_in)
-- [12.4.17 Variable mon.av_netbiosns_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_netbiosns_in)
-- [12.4.18 Variable mon.dev_netbiosns_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_netbiosns_in)
-- [12.4.19 Variable mon.value_netbiosns_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_netbiosns_out)
-- [12.4.20 Variable mon.av_netbiosns_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_netbiosns_out)
-- [12.4.21 Variable mon.dev_netbiosns_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_netbiosns_out)
+- [mon.value_netbiosns_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_netbiosns_in)
+- [mon.av_netbiosns_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_netbiosns_in)
+- [mon.dev_netbiosns_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_netbiosns_in)
+- [mon.value_netbiosns_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_netbiosns_out)
+- [mon.av_netbiosns_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_netbiosns_out)
+- [mon.dev_netbiosns_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_netbiosns_out)

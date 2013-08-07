@@ -6,8 +6,9 @@ posttitle: Reference disambiguation for 'rootprocs'
 navsection: none
 ---
 
-The term 'rootprocs' could refer to several sections in the documentation. Please choose one:
+The term 'rootprocs' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'rootprocs'](http://cfengine.com/docs/3.5/search.html?q=rootprocs).
 
-- [12.4.4 Variable mon.value_rootprocs](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_rootprocs)
-- [12.4.5 Variable mon.av_rootprocs](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_rootprocs)
-- [12.4.6 Variable mon.dev_rootprocs](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_rootprocs)
+- [mon.value_rootprocs](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_rootprocs)
+- [mon.av_rootprocs](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_rootprocs)
+- [mon.dev_rootprocs](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_rootprocs)

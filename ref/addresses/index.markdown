@@ -6,7 +6,10 @@ posttitle: Reference disambiguation for 'addresses'
 navsection: none
 ---
 
-The term 'addresses' could refer to several sections in the documentation. Please choose one:
+The term 'addresses' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'addresses'](http://cfengine.com/docs/3.5/search.html?q=addresses).
 
-- [12.5.28 Variable sys.hardware_addresses](https://cfengine.com/manuals/cf3-Reference#Variable-sys.hardware_addresses)
-- [12.5.34 Variable sys.ip_addresses](https://cfengine.com/manuals/cf3-Reference#Variable-sys.ip_addresses)
+- [Invalid input IP addresses list](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#invalid-input-ip-addresses-list)
+- [env_addresses](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#env_addresses)
+- [sys.hardware_addresses](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-hardware_addresses)
+- [sys.ip_addresses](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-ip_addresses)

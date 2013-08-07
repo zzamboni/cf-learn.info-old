@@ -6,9 +6,8 @@ posttitle: Reference disambiguation for 'reports'
 navsection: none
 ---
 
-The term 'reports' could refer to several sections in the documentation. Please choose one:
+The term 'reports' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'reports'](http://cfengine.com/docs/3.5/search.html?q=reports).
 
-- [5.8.10 <code>reports</code>](https://cfengine.com/manuals/cf3-Reference#reports-in-reporter)
-- [6.4 <code>reports</code> promises in &lsquo;<samp><span class="samp">\*</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#reports-in-common-promises)
-- [13.3 Reports in outputs](https://cfengine.com/manuals/cf3-Reference#Reports-in-outputs)
-- [13.4 Additional reports in commcerical CFEngine versions](https://cfengine.com/manuals/cf3-Reference#Additional-reports-in-commercical-CFEngine-versions)
+- [Built-in Reports vs. Reporting Engine](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-porting-guide.html#built-in-reports-vs-reporting-engine)
+- [reports](http://cfengine.com/docs/3.5/reference-promise-types-reports.html#reports)

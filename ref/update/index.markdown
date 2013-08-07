@@ -6,8 +6,16 @@ posttitle: Reference disambiguation for 'update'
 navsection: none
 ---
 
-The term 'update' could refer to several sections in the documentation. Please choose one:
+The term 'update' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'update'](http://cfengine.com/docs/3.5/search.html?q=update).
 
-- [4.3 <samp><span class="file">update.cf</span></samp>](https://cfengine.com/manuals/cf3-Reference#update.cf)
-- [4.5 What should a failsafe and update file contain?](https://cfengine.com/manuals/cf3-Reference#What-should-a-failsafe-or-update-file-contain)
-- [12.5.41 Variable sys.last_policy_update](https://cfengine.com/manuals/cf3-Reference#Variable-sys.last_policy_update)
+- [If you've never modified failsafe.cf or update.cf...](http://cfengine.com/docs/3.5/getting-started-upgrade.html#if-you-ve-never-modified-failsafe-cf-or-update-cf)
+- [If you have modified failsafe.cf or update.cf?...](http://cfengine.com/docs/3.5/getting-started-upgrade.html#if-you-have-modified-failsafe-cf-or-update-cf?)
+- [Update masterfiles from git automatically](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#update-masterfiles-from-git-automatically)
+- [update.cf](http://cfengine.com/docs/3.5/manuals-writing-policy-configuration-file-structure.html#update-cf)
+- [Example git update hook](http://cfengine.com/docs/3.5/manuals-writing-policy-version-control.html#example-git-update-hook)
+- [update_hashes](http://cfengine.com/docs/3.5/reference-promise-types-files.html#update_hashes)
+- [force_update](http://cfengine.com/docs/3.5/reference-promise-types-files.html#force_update)
+- [package_list_update_command](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#package_list_update_command)
+- [package_list_update_ifelapsed](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#package_list_update_ifelapsed)
+- [package_update_command](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#package_update_command)

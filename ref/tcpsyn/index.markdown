@@ -6,11 +6,12 @@ posttitle: Reference disambiguation for 'tcpsyn'
 navsection: none
 ---
 
-The term 'tcpsyn' could refer to several sections in the documentation. Please choose one:
+The term 'tcpsyn' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'tcpsyn'](http://cfengine.com/docs/3.5/search.html?q=tcpsyn).
 
-- [12.4.100 Variable mon.value_tcpsyn_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_tcpsyn_in)
-- [12.4.101 Variable mon.av_tcpsyn_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_tcpsyn_in)
-- [12.4.102 Variable mon.dev_tcpsyn_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_tcpsyn_in)
-- [12.4.103 Variable mon.value_tcpsyn_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_tcpsyn_out)
-- [12.4.104 Variable mon.av_tcpsyn_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_tcpsyn_out)
-- [12.4.105 Variable mon.dev_tcpsyn_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_tcpsyn_out)
+- [mon.value_tcpsyn_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_tcpsyn_in)
+- [mon.av_tcpsyn_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_tcpsyn_in)
+- [mon.dev_tcpsyn_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_tcpsyn_in)
+- [mon.value_tcpsyn_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_tcpsyn_out)
+- [mon.av_tcpsyn_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_tcpsyn_out)
+- [mon.dev_tcpsyn_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_tcpsyn_out)

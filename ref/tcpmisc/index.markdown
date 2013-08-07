@@ -6,11 +6,12 @@ posttitle: Reference disambiguation for 'tcpmisc'
 navsection: none
 ---
 
-The term 'tcpmisc' could refer to several sections in the documentation. Please choose one:
+The term 'tcpmisc' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'tcpmisc'](http://cfengine.com/docs/3.5/search.html?q=tcpmisc).
 
-- [12.4.118 Variable mon.value_tcpmisc_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_tcpmisc_in)
-- [12.4.119 Variable mon.av_tcpmisc_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_tcpmisc_in)
-- [12.4.120 Variable mon.dev_tcpmisc_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_tcpmisc_in)
-- [12.4.121 Variable mon.value_tcpmisc_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_tcpmisc_out)
-- [12.4.122 Variable mon.av_tcpmisc_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_tcpmisc_out)
-- [12.4.123 Variable mon.dev_tcpmisc_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_tcpmisc_out)
+- [mon.value_tcpmisc_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_tcpmisc_in)
+- [mon.av_tcpmisc_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_tcpmisc_in)
+- [mon.dev_tcpmisc_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_tcpmisc_in)
+- [mon.value_tcpmisc_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_tcpmisc_out)
+- [mon.av_tcpmisc_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_tcpmisc_out)
+- [mon.dev_tcpmisc_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_tcpmisc_out)

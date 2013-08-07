@@ -6,8 +6,9 @@ posttitle: Reference disambiguation for 'loadavg'
 navsection: none
 ---
 
-The term 'loadavg' could refer to several sections in the documentation. Please choose one:
+The term 'loadavg' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'loadavg'](http://cfengine.com/docs/3.5/search.html?q=loadavg).
 
-- [12.4.13 Variable mon.value_loadavg](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_loadavg)
-- [12.4.14 Variable mon.av_loadavg](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_loadavg)
-- [12.4.15 Variable mon.dev_loadavg](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_loadavg)
+- [mon.value_loadavg](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_loadavg)
+- [mon.av_loadavg](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_loadavg)
+- [mon.dev_loadavg](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_loadavg)

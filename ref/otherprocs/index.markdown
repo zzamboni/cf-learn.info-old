@@ -6,8 +6,9 @@ posttitle: Reference disambiguation for 'otherprocs'
 navsection: none
 ---
 
-The term 'otherprocs' could refer to several sections in the documentation. Please choose one:
+The term 'otherprocs' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'otherprocs'](http://cfengine.com/docs/3.5/search.html?q=otherprocs).
 
-- [12.4.7 Variable mon.value_otherprocs](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_otherprocs)
-- [12.4.8 Variable mon.av_otherprocs](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_otherprocs)
-- [12.4.9 Variable mon.dev_otherprocs](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_otherprocs)
+- [mon.value_otherprocs](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_otherprocs)
+- [mon.av_otherprocs](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_otherprocs)
+- [mon.dev_otherprocs](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_otherprocs)

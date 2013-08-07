@@ -6,7 +6,9 @@ posttitle: Reference disambiguation for 'domain'
 navsection: none
 ---
 
-The term 'domain' could refer to several sections in the documentation. Please choose one:
+The term 'domain' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'domain'](http://cfengine.com/docs/3.5/search.html?q=domain).
 
-- [5.1.9 <code>domain</code>](https://cfengine.com/manuals/cf3-Reference#domain-in-common)
-- [12.5.21 Variable sys.domain](https://cfengine.com/manuals/cf3-Reference#Variable-sys.domain)
+- [domain](http://cfengine.com/docs/3.5/reference-components.html#domain)
+- [Domain knowledge](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#domain-knowledge)
+- [sys.domain](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-domain)

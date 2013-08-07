@@ -6,7 +6,8 @@ posttitle: Reference disambiguation for 'ignore'
 navsection: none
 ---
 
-The term 'ignore' could refer to several sections in the documentation. Please choose one:
+The term 'ignore' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'ignore'](http://cfengine.com/docs/3.5/search.html?q=ignore).
 
-- [5.1.3 <code>ignore_missing_bundles</code>](https://cfengine.com/manuals/cf3-Reference#ignore_missing_bundles-in-common)
-- [5.1.4 <code>ignore_missing_inputs</code>](https://cfengine.com/manuals/cf3-Reference#ignore_missing_inputs-in-common)
+- [ignore_missing_bundles](http://cfengine.com/docs/3.5/reference-components.html#ignore_missing_bundles)
+- [ignore_missing_inputs](http://cfengine.com/docs/3.5/reference-components.html#ignore_missing_inputs)

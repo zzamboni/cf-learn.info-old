@@ -6,9 +6,12 @@ posttitle: Reference disambiguation for 'class'
 navsection: none
 ---
 
-The term 'class' could refer to several sections in the documentation. Please choose one:
+The term 'class' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'class'](http://cfengine.com/docs/3.5/search.html?q=class).
 
-- [1.7.2 Class combination operators and precedence](https://cfengine.com/manuals/cf3-Reference#Class-combination-operators-and-precedence)
-- [6.1.7 <code>select_class</code>](https://cfengine.com/manuals/cf3-Reference#select_class-in-classes)
-- [7.14.4 <code>restart_class</code>](https://cfengine.com/manuals/cf3-Reference#restart_class-in-processes)
-- [12.5.15 Variable sys.class](https://cfengine.com/manuals/cf3-Reference#Variable-sys.class)
+- [Class Scopes: A More Complex Example](http://cfengine.com/docs/3.5/manuals-language-concepts-classes.html#class-scopes-a-more-complex-example)
+- [Context class expressions](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#context-class-expressions)
+- [select_class](http://cfengine.com/docs/3.5/reference-promise-types-classes.html#select_class)
+- [restart_class](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#restart_class)
+- [measurement_class](http://cfengine.com/docs/3.5/reference-promise-types.html#measurement_class)
+- [sys.class](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-class)

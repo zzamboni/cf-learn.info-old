@@ -6,11 +6,9 @@ posttitle: Reference disambiguation for 'bundles'
 navsection: none
 ---
 
-The term 'bundles' could refer to several sections in the documentation. Please choose one:
+The term 'bundles' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'bundles'](http://cfengine.com/docs/3.5/search.html?q=bundles).
 
-- [5.1.3 <code>ignore_missing_bundles</code>](https://cfengine.com/manuals/cf3-Reference#ignore_missing_bundles-in-common)
-- [6 Bundles of <code>common</code>](https://cfengine.com/manuals/cf3-Reference#Bundles-for-common)
-- [7 Bundles of <code>agent</code>](https://cfengine.com/manuals/cf3-Reference#Bundles-for-agent)
-- [8 Bundles of <code>server</code>](https://cfengine.com/manuals/cf3-Reference#Bundles-for-server)
-- [9 Bundles of <code>knowledge</code>](https://cfengine.com/manuals/cf3-Reference#Bundles-for-knowledge)
-- [10 Bundles of <code>monitor</code>](https://cfengine.com/manuals/cf3-Reference#Bundles-for-monitor)
+- [Bundles](http://cfengine.com/docs/3.5/manuals-language-concepts-bundles.html#bundles)
+- [Bundles for knowledge](http://cfengine.com/docs/3.5/reference-components-bundles-for-knowledge.html#bundles-for-knowledge)
+- [ignore_missing_bundles](http://cfengine.com/docs/3.5/reference-components.html#ignore_missing_bundles)

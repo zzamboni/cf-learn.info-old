@@ -6,16 +6,13 @@ posttitle: Reference disambiguation for 'control'
 navsection: none
 ---
 
-The term 'control' could refer to several sections in the documentation. Please choose one:
+The term 'control' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'control'](http://cfengine.com/docs/3.5/search.html?q=control).
 
-- [5 Control promises](https://cfengine.com/manuals/cf3-Reference#Control-Promises)
-- [5.1 <code>common</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-common)
-- [5.2 <code>agent</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-agent)
-- [5.3 <code>server</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-server)
-- [5.4 <code>monitor</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-monitor)
-- [5.5 <code>runagent</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-runagent)
-- [5.6 <code>executor</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-executor)
-- [5.7 <code>knowledge</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-knowledge)
-- [5.8 <code>reporter</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-reporter)
-- [5.9 <code>hub</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-hub)
-- [5.10 <code>file</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-file)
+- [Access control and security](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#access-control-and-security)
+- [Implicit, Control Bodies](http://cfengine.com/docs/3.5/manuals-language-concepts-bodies.html#implicit,-control-bodies)
+- [Version Control](http://cfengine.com/docs/3.5/manuals-writing-policy-version-control.html#version-control)
+- [Control Promises](http://cfengine.com/docs/3.5/reference-components-cfserver.html#control-promises)
+- [file control](http://cfengine.com/docs/3.5/reference-components-file-control.html#file-control)
+- [Components and Common Control](http://cfengine.com/docs/3.5/reference-components.html#components-and-common-control)
+- [Common Control](http://cfengine.com/docs/3.5/reference-components.html#common-control)

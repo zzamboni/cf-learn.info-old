@@ -42,9 +42,7 @@ Blaskov</a>, Varna, Bulgaria</cite></div>
 > to commit to the real CFEngine philosophy, the productive and clean
 > one.
 
-<div align="right">&mdash;<cite><a
-href="http://www.amazon.com/review/R2AY7CMR3F0XKF/ref=cm_cr_dp_title?ie=UTF8&ASIN=1449312209&nodeID=283155&store=books">Laurent
-Raufaste</a>, New York, NY, U.S.A.</cite></div>
+<div align="right">&mdash;<cite><a href="http://www.amazon.com/review/R2AY7CMR3F0XKF">Laurent Raufaste</a>, New York, NY, U.S.A.</cite></div>
 
 ------------------------
 

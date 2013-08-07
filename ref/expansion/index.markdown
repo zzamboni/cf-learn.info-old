@@ -6,8 +6,8 @@ posttitle: Reference disambiguation for 'expansion'
 navsection: none
 ---
 
-The term 'expansion' could refer to several sections in the documentation. Please choose one:
+The term 'expansion' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'expansion'](http://cfengine.com/docs/3.5/search.html?q=expansion).
 
-- [2.7 Variable expansion in CFEngine 3](https://cfengine.com/manuals/cf3-Reference#Variable-expansion-in-CFEngine-3)
-- [2.7.1 Scalar variable expansion](https://cfengine.com/manuals/cf3-Reference#Scalar-variable-expansion)
-- [2.7.2 List variable substitution and expansion](https://cfengine.com/manuals/cf3-Reference#List-variable-substitution-and-expansion)
+- [Scalar Referencing and Expansion](http://cfengine.com/docs/3.5/manuals-language-concepts-variables.html#scalar-referencing-and-expansion)
+- [List Substitution and Expansion](http://cfengine.com/docs/3.5/manuals-language-concepts-variables.html#list-substitution-and-expansion)

@@ -6,11 +6,12 @@ posttitle: Reference disambiguation for 'ftp'
 navsection: none
 ---
 
-The term 'ftp' could refer to several sections in the documentation. Please choose one:
+The term 'ftp' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'ftp'](http://cfengine.com/docs/3.5/search.html?q=ftp).
 
-- [12.4.64 Variable mon.value_ftp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_ftp_in)
-- [12.4.65 Variable mon.av_ftp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_ftp_in)
-- [12.4.66 Variable mon.dev_ftp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_ftp_in)
-- [12.4.67 Variable mon.value_ftp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_ftp_out)
-- [12.4.68 Variable mon.av_ftp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_ftp_out)
-- [12.4.69 Variable mon.dev_ftp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_ftp_out)
+- [mon.value_ftp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_ftp_in)
+- [mon.av_ftp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_ftp_in)
+- [mon.dev_ftp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_ftp_in)
+- [mon.value_ftp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_ftp_out)
+- [mon.av_ftp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_ftp_out)
+- [mon.dev_ftp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_ftp_out)

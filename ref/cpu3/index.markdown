@@ -6,8 +6,9 @@ posttitle: Reference disambiguation for 'cpu3'
 navsection: none
 ---
 
-The term 'cpu3' could refer to several sections in the documentation. Please choose one:
+The term 'cpu3' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'cpu3'](http://cfengine.com/docs/3.5/search.html?q=cpu3).
 
-- [12.4.160 Variable mon.value_cpu3](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_cpu3)
-- [12.4.161 Variable mon.av_cpu3](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_cpu3)
-- [12.4.162 Variable mon.dev_cpu3](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_cpu3)
+- [mon.value_cpu3](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_cpu3)
+- [mon.av_cpu3](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_cpu3)
+- [mon.dev_cpu3](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_cpu3)

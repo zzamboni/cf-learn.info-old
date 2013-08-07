@@ -6,8 +6,9 @@ posttitle: Reference disambiguation for 'root'
 navsection: none
 ---
 
-The term 'root' could refer to several sections in the documentation. Please choose one:
+The term 'root' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'root'](http://cfengine.com/docs/3.5/search.html?q=root).
 
-- [1.13.4 Other users than root](https://cfengine.com/manuals/cf3-Reference#Other-users-than-root)
-- [5.7.2 <code>document_root</code>](https://cfengine.com/manuals/cf3-Reference#document_root-in-knowledge)
-- [12.5.20 Variable sys.doc_root](https://cfengine.com/manuals/cf3-Reference#Variable-sys.doc_root)
+- [Other users than root](http://cfengine.com/docs/3.5/manuals-architecture-networking.html#other-users-than-root)
+- [check_root](http://cfengine.com/docs/3.5/reference-promise-types-files.html#check_root)
+- [sys.doc_root](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-doc_root)

@@ -6,10 +6,17 @@ posttitle: Reference disambiguation for 'classes'
 navsection: none
 ---
 
-The term 'classes' could refer to several sections in the documentation. Please choose one:
+The term 'classes' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'classes'](http://cfengine.com/docs/3.5/search.html?q=classes).
 
-- [1.7.1 CFEngine hard classes](https://cfengine.com/manuals/cf3-Reference#Hard-classes)
-- [1.7.3 Global and local classes](https://cfengine.com/manuals/cf3-Reference#Global-and-local-classes)
-- [5.1.12 <code>site_classes</code>](https://cfengine.com/manuals/cf3-Reference#site_classes-in-common)
-- [6.1 <code>classes</code> promises in &lsquo;<samp><span class="samp">\*</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#classes-in-common-promises)
-- [6.6.2 <code>classes</code> (body template)](https://cfengine.com/manuals/cf3-Reference#classes-in-*)
+- [Classes and Decisions](http://cfengine.com/docs/3.5/manuals-language-concepts-classes.html#classes-and-decisions)
+- [Hard Classes](http://cfengine.com/docs/3.5/reference-classes.html#hard-classes)
+- [Soft Classes](http://cfengine.com/docs/3.5/reference-classes.html#soft-classes)
+- [Making Decisions based on classes](http://cfengine.com/docs/3.5/manuals-language-concepts-classes.html#making-decisions-based-on-classes)
+- [Global and Local classes](http://cfengine.com/docs/3.5/manuals-language-concepts-classes.html#global-and-local-classes)
+- [Hard and Soft Classes](http://cfengine.com/docs/3.5/reference-classes.html#hard-and-soft-classes)
+- [Listing Classes](http://cfengine.com/docs/3.5/reference-classes.html#listing-classes)
+- [site_classes](http://cfengine.com/docs/3.5/reference-components.html#site_classes)
+- [classes_include](http://cfengine.com/docs/3.5/reference-promise-types-access.html#classes_include)
+- [classes_exclude](http://cfengine.com/docs/3.5/reference-promise-types-access.html#classes_exclude)
+- [classes](http://cfengine.com/docs/3.5/reference-promise-types.html#classes)

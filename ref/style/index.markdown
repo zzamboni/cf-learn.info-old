@@ -6,7 +6,8 @@ posttitle: Reference disambiguation for 'style'
 navsection: none
 ---
 
-The term 'style' could refer to several sections in the documentation. Please choose one:
+The term 'style' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'style'](http://cfengine.com/docs/3.5/search.html?q=style).
 
-- [5.7.18 <code>style_sheet</code>](https://cfengine.com/manuals/cf3-Reference#style_sheet-in-knowledge)
-- [5.8.12 <code>style_sheet</code>](https://cfengine.com/manuals/cf3-Reference#style_sheet-in-reporter)
+- [Policy Style Guide](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#policy-style-guide)
+- [Style Summary](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#style-summary)

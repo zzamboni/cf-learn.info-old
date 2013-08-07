@@ -6,11 +6,12 @@ posttitle: Reference disambiguation for 'smtp'
 navsection: none
 ---
 
-The term 'smtp' could refer to several sections in the documentation. Please choose one:
+The term 'smtp' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'smtp'](http://cfengine.com/docs/3.5/search.html?q=smtp).
 
-- [12.4.52 Variable mon.value_smtp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_smtp_in)
-- [12.4.53 Variable mon.av_smtp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_smtp_in)
-- [12.4.54 Variable mon.dev_smtp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_smtp_in)
-- [12.4.55 Variable mon.value_smtp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_smtp_out)
-- [12.4.56 Variable mon.av_smtp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_smtp_out)
-- [12.4.57 Variable mon.dev_smtp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_smtp_out)
+- [mon.value_smtp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_smtp_in)
+- [mon.av_smtp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_smtp_in)
+- [mon.dev_smtp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_smtp_in)
+- [mon.value_smtp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_smtp_out)
+- [mon.av_smtp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_smtp_out)
+- [mon.dev_smtp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_smtp_out)

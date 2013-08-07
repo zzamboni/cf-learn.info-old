@@ -6,7 +6,8 @@ posttitle: Reference disambiguation for 'handle'
 navsection: none
 ---
 
-The term 'handle' could refer to several sections in the documentation. Please choose one:
+The term 'handle' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'handle'](http://cfengine.com/docs/3.5/search.html?q=handle).
 
-- [6.6.5 <code>handle</code>](https://cfengine.com/manuals/cf3-Reference#handle-in-*)
-- [12.6.1 Variable this.handle](https://cfengine.com/manuals/cf3-Reference#Variable-this.handle)
+- [handle](http://cfengine.com/docs/3.5/reference-promise-types.html#handle)
+- [this.handle](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-handle)

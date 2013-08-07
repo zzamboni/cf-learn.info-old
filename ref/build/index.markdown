@@ -6,7 +6,8 @@ posttitle: Reference disambiguation for 'build'
 navsection: none
 ---
 
-The term 'build' could refer to several sections in the documentation. Please choose one:
+The term 'build' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'build'](http://cfengine.com/docs/3.5/search.html?q=build).
 
-- [5.7.1 <code>build_directory</code>](https://cfengine.com/manuals/cf3-Reference#build_directory-in-knowledge)
-- [5.8.3 <code>build_directory</code>](https://cfengine.com/manuals/cf3-Reference#build_directory-in-reporter)
+- [Build](http://cfengine.com/docs/3.5/manuals-design.html#build)
+- [build_xpath](http://cfengine.com/docs/3.5/reference-promise-types-edit_xml.html#build_xpath)

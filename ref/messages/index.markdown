@@ -6,8 +6,9 @@ posttitle: Reference disambiguation for 'messages'
 navsection: none
 ---
 
-The term 'messages' could refer to several sections in the documentation. Please choose one:
+The term 'messages' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'messages'](http://cfengine.com/docs/3.5/search.html?q=messages).
 
-- [12.4.133 Variable mon.value_messages](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_messages)
-- [12.4.134 Variable mon.av_messages](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_messages)
-- [12.4.135 Variable mon.dev_messages](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_messages)
+- [mon.value_messages](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_messages)
+- [mon.av_messages](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_messages)
+- [mon.dev_messages](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_messages)

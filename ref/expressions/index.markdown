@@ -6,8 +6,12 @@ posttitle: Reference disambiguation for 'expressions'
 navsection: none
 ---
 
-The term 'expressions' could refer to several sections in the documentation. Please choose one:
+The term 'expressions' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'expressions'](http://cfengine.com/docs/3.5/search.html?q=expressions).
 
-- [2.11.3 Regular expressions in paths](https://cfengine.com/manuals/cf3-Reference#Regular-expressions-in-paths)
-- [2.11.4 Anchored vs. unanchored regular expressions](https://cfengine.com/manuals/cf3-Reference#Anchored-vs.-unanchored-regular-expressions)
-- [2.11.5 Special topics on Regular Expressions](https://cfengine.com/manuals/cf3-Reference#Special-topics-on-Regular-Expressions)
+- [Regular expressions in paths](http://cfengine.com/docs/3.5/manuals-language-concepts-pattern-matching-and-referencing.html#regular-expressions-in-paths)
+- [Anchored vs. unanchored regular expressions](http://cfengine.com/docs/3.5/manuals-language-concepts-pattern-matching-and-referencing.html#anchored-vs-unanchored-regular-expressions)
+- [Special topics on Regular Expressions](http://cfengine.com/docs/3.5/manuals-language-concepts-pattern-matching-and-referencing.html#special-topics-on-regular-expressions)
+- [Context class expressions](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#context-class-expressions)
+- [Filenames and regular expressions](http://cfengine.com/docs/3.5/reference-promise-types-files.html#filenames-and-regular-expressions)
+- [Promises involving regular expressions](http://cfengine.com/docs/3.5/reference-promise-types-files.html#promises-involving-regular-expressions)

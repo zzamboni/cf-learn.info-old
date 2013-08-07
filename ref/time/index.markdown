@@ -6,8 +6,11 @@ posttitle: Reference disambiguation for 'time'
 navsection: none
 ---
 
-The term 'time' could refer to several sections in the documentation. Please choose one:
+The term 'time' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'time'](http://cfengine.com/docs/3.5/search.html?q=time).
 
-- [1.13.3 Time windows (races)](https://cfengine.com/manuals/cf3-Reference#Time-windows)
-- [5.2.13 <code>checksum_alert_time</code>](https://cfengine.com/manuals/cf3-Reference#checksum_alert_time-in-agent)
-- [5.8.13 <code>time_stamps</code>](https://cfengine.com/manuals/cf3-Reference#time_stamps-in-reporter)
+- [Set up time management through NTP](http://cfengine.com/docs/3.5/examples-policy-setup-time-management-through-ntp.html#set-up-time-management-through-ntp)
+- [Time windows (races)](http://cfengine.com/docs/3.5/manuals-architecture-networking.html#time-windows-races)
+- [End-to-end waiting time](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#end-to-end-waiting-time)
+- [checksum_alert_time](http://cfengine.com/docs/3.5/reference-components-cfagent.html#checksum_alert_time)
+- [persist_time](http://cfengine.com/docs/3.5/reference-promise-types.html#persist_time)

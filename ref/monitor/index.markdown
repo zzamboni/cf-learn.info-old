@@ -6,8 +6,8 @@ posttitle: Reference disambiguation for 'monitor'
 navsection: none
 ---
 
-The term 'monitor' could refer to several sections in the documentation. Please choose one:
+The term 'monitor' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'monitor'](http://cfengine.com/docs/3.5/search.html?q=monitor).
 
-- [2.9.3 Monitor normal ordering](https://cfengine.com/manuals/cf3-Reference#Monitor-normal-ordering)
-- [5.4 <code>monitor</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-monitor)
-- [10 Bundles of <code>monitor</code>](https://cfengine.com/manuals/cf3-Reference#Bundles-for-monitor)
+- [Monitor normal ordering](http://cfengine.com/docs/3.5/manuals-language-concepts-normal-ordering.html#monitor-normal-ordering)
+- [Monitor](http://cfengine.com/docs/3.5/reference-standard-library.html#monitor)

@@ -6,11 +6,12 @@ posttitle: Reference disambiguation for 'database'
 navsection: none
 ---
 
-The term 'database' could refer to several sections in the documentation. Please choose one:
+The term 'database' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'database'](http://cfengine.com/docs/3.5/search.html?q=database).
 
-- [5.7.13 <code>sql_database</code>](https://cfengine.com/manuals/cf3-Reference#sql_database-in-knowledge)
-- [7.2.1 <code>database_server</code> (body template)](https://cfengine.com/manuals/cf3-Reference#database_server-in-databases)
-- [7.2.2 <code>database_type</code>](https://cfengine.com/manuals/cf3-Reference#database_type-in-databases)
-- [7.2.3 <code>database_operation</code>](https://cfengine.com/manuals/cf3-Reference#database_operation-in-databases)
-- [7.2.4 <code>database_columns</code>](https://cfengine.com/manuals/cf3-Reference#database_columns-in-databases)
-- [7.2.5 <code>database_rows</code>](https://cfengine.com/manuals/cf3-Reference#database_rows-in-databases)
+- [Database Diagnostics](http://cfengine.com/docs/3.5/reference-enterprise-api-sql-schema.html#database-diagnostics)
+- [database_server](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#database_server)
+- [database_type](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#database_type)
+- [database_operation](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#database_operation)
+- [database_columns](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#database_columns)
+- [database_rows](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#database_rows)

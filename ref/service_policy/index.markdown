@@ -6,7 +6,8 @@ posttitle: Reference disambiguation for 'service_policy'
 navsection: none
 ---
 
-The term 'service_policy' could refer to several sections in the documentation. Please choose one:
+The term 'service_policy' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'service_policy'](http://cfengine.com/docs/3.5/search.html?q=service_policy).
 
-- [7.15.1 <code>service_policy</code>](https://cfengine.com/manuals/cf3-Reference#service_policy-in-services)
-- [12.6.5 Variable service_policy](https://cfengine.com/manuals/cf3-Reference#Variable-service_policy)
+- [service_policy](http://cfengine.com/docs/3.5/reference-promise-types-services.html#service_policy)
+- [this.service_policy](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-service_policy)

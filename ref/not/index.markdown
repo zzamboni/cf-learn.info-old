@@ -6,8 +6,15 @@ posttitle: Reference disambiguation for 'not'
 navsection: none
 ---
 
-The term 'not' could refer to several sections in the documentation. Please choose one:
+The term 'not' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'not'](http://cfengine.com/docs/3.5/search.html?q=not).
 
-- [6.1.6 <code>not</code>](https://cfengine.com/manuals/cf3-Reference#not-in-classes)
-- [7.6.2 <code>not_matching</code>](https://cfengine.com/manuals/cf3-Reference#not_matching-in-delete_lines)
-- [11.56 Function not](https://cfengine.com/manuals/cf3-Reference#Function-not)
+- [Ensure a process is not running](http://cfengine.com/docs/3.5/examples-policy-ensure-process-not-running.html#ensure-a-process-is-not-running)
+- [not](http://cfengine.com/docs/3.5/reference-promise-types-classes.html#not)
+- [delete_if_not_startwith_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-delete_lines.html#delete_if_not_startwith_from_list)
+- [delete_if_not_match_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-delete_lines.html#delete_if_not_match_from_list)
+- [delete_if_not_contains_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-delete_lines.html#delete_if_not_contains_from_list)
+- [not_matching](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-delete_lines.html#not_matching)
+- [insert_if_not_startwith_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-insert_lines.html#insert_if_not_startwith_from_list)
+- [insert_if_not_match_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-insert_lines.html#insert_if_not_match_from_list)
+- [insert_if_not_contains_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-insert_lines.html#insert_if_not_contains_from_list)

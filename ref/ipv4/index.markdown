@@ -6,7 +6,9 @@ posttitle: Reference disambiguation for 'ipv4'
 navsection: none
 ---
 
-The term 'ipv4' could refer to several sections in the documentation. Please choose one:
+The term 'ipv4' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'ipv4'](http://cfengine.com/docs/3.5/search.html?q=ipv4).
 
-- [5.5.3 <code>force_ipv4</code>](https://cfengine.com/manuals/cf3-Reference#force_ipv4-in-runagent)
-- [12.5.35 Variable sys.ipv4](https://cfengine.com/manuals/cf3-Reference#Variable-sys.ipv4)
+- [force_ipv4](http://cfengine.com/docs/3.5/reference-promise-types-files.html#force_ipv4)
+- [sys.ipv4](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-ipv4)
+- [sys.ipv4\[interface_name\]](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-ipv4-interface_name)

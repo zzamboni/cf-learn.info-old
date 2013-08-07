@@ -6,7 +6,8 @@ posttitle: Reference disambiguation for 'filename'
 navsection: none
 ---
 
-The term 'filename' could refer to several sections in the documentation. Please choose one:
+The term 'filename' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'filename'](http://cfengine.com/docs/3.5/search.html?q=filename).
 
-- [12.2.1 Variable edit.filename](https://cfengine.com/manuals/cf3-Reference#Variable-edit.filename)
-- [12.6.2 Variable this.promise_filename](https://cfengine.com/manuals/cf3-Reference#Variable-this.promise_filename)
+- [edit.filename](http://cfengine.com/docs/3.5/reference-special-Variables-context-edit.html#edit-filename)
+- [this.promise_filename](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-promise_filename)

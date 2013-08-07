@@ -6,10 +6,10 @@ posttitle: Reference disambiguation for 'agent'
 navsection: none
 ---
 
-The term 'agent' could refer to several sections in the documentation. Please choose one:
+The term 'agent' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'agent'](http://cfengine.com/docs/3.5/search.html?q=agent).
 
-- [1.1.1 cf-agent](https://cfengine.com/manuals/cf3-Reference#cf-agent)
-- [2.9.1 Agent normal ordering](https://cfengine.com/manuals/cf3-Reference#Agent-normal-ordering)
-- [5.2 <code>agent</code> control promises](https://cfengine.com/manuals/cf3-Reference#control-agent)
-- [7 Bundles of <code>agent</code>](https://cfengine.com/manuals/cf3-Reference#Bundles-for-agent)
-- [12.5.3 Variable sys.cf_agent](https://cfengine.com/manuals/cf3-Reference#Variable-sys.cf_agent)
+- [Agent package upgrade through the hub from v2.2.3](http://cfengine.com/docs/3.5/getting-started-upgrade.html#agent-package-upgrade-through-the-hub-from-v2-2-3)
+- [Agent normal ordering](http://cfengine.com/docs/3.5/manuals-language-concepts-normal-ordering.html#agent-normal-ordering)
+- [cf-agent](http://cfengine.com/docs/3.5/reference-components-cfagent.html#cf-agent)
+- [agent_expireafter](http://cfengine.com/docs/3.5/reference-components-cfexecd.html#agent_expireafter)

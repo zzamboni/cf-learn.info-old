@@ -6,11 +6,12 @@ posttitle: Reference disambiguation for 'wwws'
 navsection: none
 ---
 
-The term 'wwws' could refer to several sections in the documentation. Please choose one:
+The term 'wwws' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'wwws'](http://cfengine.com/docs/3.5/search.html?q=wwws).
 
-- [12.4.76 Variable mon.value_wwws_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_wwws_in)
-- [12.4.77 Variable mon.av_wwws_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_wwws_in)
-- [12.4.78 Variable mon.dev_wwws_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_wwws_in)
-- [12.4.79 Variable mon.value_wwws_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_wwws_out)
-- [12.4.80 Variable mon.av_wwws_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_wwws_out)
-- [12.4.81 Variable mon.dev_wwws_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_wwws_out)
+- [mon.value_wwws_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_wwws_in)
+- [mon.av_wwws_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_wwws_in)
+- [mon.dev_wwws_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_wwws_in)
+- [mon.value_wwws_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_wwws_out)
+- [mon.av_wwws_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_wwws_out)
+- [mon.dev_wwws_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_wwws_out)

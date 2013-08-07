@@ -6,15 +6,31 @@ posttitle: Reference disambiguation for 'cfengine'
 navsection: none
 ---
 
-The term 'cfengine' could refer to several sections in the documentation. Please choose one:
+The term 'cfengine' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'cfengine'](http://cfengine.com/docs/3.5/search.html?q=cfengine).
 
-- [1.3 A renewed CFEngine](https://cfengine.com/manuals/cf3-Reference#A-renewed-CFEngine)
-- [1.9 Upgrading from CFEngine 2](https://cfengine.com/manuals/cf3-Reference#Upgrading-from-CFEngine-2)
-- [1.11 The \`bare necessities' of a CFEngine 3](https://cfengine.com/manuals/cf3-Reference#The-bare-necessities-of-a-CFEngine-3)
-- [3 How to run CFEngine 3 examples](https://cfengine.com/manuals/cf3-Reference#How-to-run-CFEngine-3-examples)
-- [12.4.40 Variable mon.value_cfengine_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_cfengine_in)
-- [12.4.41 Variable mon.av_cfengine_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_cfengine_in)
-- [12.4.42 Variable mon.dev_cfengine_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_cfengine_in)
-- [12.4.43 Variable mon.value_cfengine_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_cfengine_out)
-- [12.4.44 Variable mon.av_cfengine_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_cfengine_out)
-- [12.4.45 Variable mon.dev_cfengine_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_cfengine_out)
+- [CFEngine Examples](http://cfengine.com/docs/3.5/examples.html#cfengine-examples)
+- [Installing CFEngine](http://cfengine.com/docs/3.5/getting-started-installation.html#installing-cfengine)
+- [CFEngine Enterprise Server](http://cfengine.com/docs/3.5/getting-started-supported-platforms.html#cfengine-enterprise-server)
+- [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
+- [The CFEngine Components](http://cfengine.com/docs/3.5/manuals-components.html#the-cfengine-components)
+- [Sketch Flow in CFEngine Enterprise](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#sketch-flow-in-cfengine-enterprise)
+- [/var/cfengine/masterfiles](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#var-cfengine-masterfiles)
+- [/var/cfengine/design-center](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#var-cfengine-design-center)
+- [/opt/cfengine/userworkdir/$(user)/masterfiles](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#opt-cfengine-userworkdir-user-masterfiles)
+- [The hosts and /var/cfengine/inputs](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#the-hosts-and-var-cfengine-inputs)
+- [A Walkthrough of the CFEngine Design Center](http://cfengine.com/docs/3.5/manuals-design-center.html#a-walkthrough-of-the-cfengine-design-center)
+- [Automation with CFEngine](http://cfengine.com/docs/3.5/manuals-design.html#automation-with-cfengine)
+- [CFEngine Manuals](http://cfengine.com/docs/3.5/manuals.html#cfengine-manuals)
+- [CFEngine Enterprise Compatibility](http://cfengine.com/docs/3.5/reference-design-center-sketch-structure.html#cfengine-enterprise-compatibility)
+- [File editing in CFEngine 3](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line.html#file-editing-in-cfengine-3)
+- [mon.value_cfengine_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_cfengine_in)
+- [mon.av_cfengine_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_cfengine_in)
+- [mon.dev_cfengine_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_cfengine_in)
+- [mon.value_cfengine_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_cfengine_out)
+- [mon.av_cfengine_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_cfengine_out)
+- [mon.dev_cfengine_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_cfengine_out)
+- [CFEngine Reference](http://cfengine.com/docs/3.5/reference.html#cfengine-reference)
+- [CFEngine 3.6](http://cfengine.com/docs/3.5/index.html#cfengine-3-6)
+- [History of CFEngine](http://cfengine.com/docs/3.5/index.html#history-of-cfengine)
+- [New in CFEngine](http://cfengine.com/docs/3.5/whats-new.html#new-in-cfengine)

@@ -6,7 +6,8 @@ posttitle: Reference disambiguation for 'databases'
 navsection: none
 ---
 
-The term 'databases' could refer to several sections in the documentation. Please choose one:
+The term 'databases' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'databases'](http://cfengine.com/docs/3.5/search.html?q=databases).
 
-- [7.2 <code>databases</code> promises in &lsquo;<samp><span class="samp">agent</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#databases-in-agent-promises)
-- [13.1 Embedded Databases](https://cfengine.com/manuals/cf3-Reference#Embedded-Databases)
+- [Embedded Databases](http://cfengine.com/docs/3.5/manuals-components.html#embedded-databases)
+- [Databases](http://cfengine.com/docs/3.5/reference-standard-library.html#databases)

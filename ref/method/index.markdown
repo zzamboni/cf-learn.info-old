@@ -6,7 +6,10 @@ posttitle: Reference disambiguation for 'method'
 navsection: none
 ---
 
-The term 'method' could refer to several sections in the documentation. Please choose one:
+The term 'method' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'method'](http://cfengine.com/docs/3.5/search.html?q=method).
 
-- [7.13.2 <code>package_method</code> (body template)](https://cfengine.com/manuals/cf3-Reference#package_method-in-packages)
-- [7.15.3 <code>service_method</code> (body template)](https://cfengine.com/manuals/cf3-Reference#service_method-in-services)
+- [acl_method](http://cfengine.com/docs/3.5/reference-promise-types-files.html#acl_method)
+- [Default package method](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#default-package-method)
+- [package_method](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#package_method)
+- [service_method](http://cfengine.com/docs/3.5/reference-promise-types-services.html#service_method)

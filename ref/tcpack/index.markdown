@@ -6,11 +6,12 @@ posttitle: Reference disambiguation for 'tcpack'
 navsection: none
 ---
 
-The term 'tcpack' could refer to several sections in the documentation. Please choose one:
+The term 'tcpack' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'tcpack'](http://cfengine.com/docs/3.5/search.html?q=tcpack).
 
-- [12.4.106 Variable mon.value_tcpack_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_tcpack_in)
-- [12.4.107 Variable mon.av_tcpack_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_tcpack_in)
-- [12.4.108 Variable mon.dev_tcpack_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_tcpack_in)
-- [12.4.109 Variable mon.value_tcpack_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_tcpack_out)
-- [12.4.110 Variable mon.av_tcpack_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_tcpack_out)
-- [12.4.111 Variable mon.dev_tcpack_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_tcpack_out)
+- [mon.value_tcpack_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_tcpack_in)
+- [mon.av_tcpack_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_tcpack_in)
+- [mon.dev_tcpack_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_tcpack_in)
+- [mon.value_tcpack_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_tcpack_out)
+- [mon.av_tcpack_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_tcpack_out)
+- [mon.dev_tcpack_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_tcpack_out)

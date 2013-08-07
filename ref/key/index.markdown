@@ -6,8 +6,8 @@ posttitle: Reference disambiguation for 'key'
 navsection: none
 ---
 
-The term 'key' could refer to several sections in the documentation. Please choose one:
+The term 'key' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'key'](http://cfengine.com/docs/3.5/search.html?q=key).
 
-- [1.1.9 cf-key](https://cfengine.com/manuals/cf3-Reference#cf-key)
-- [1.13.2 Key exchange](https://cfengine.com/manuals/cf3-Reference#Key-exchange)
-- [12.5.6 Variable sys.cf_key](https://cfengine.com/manuals/cf3-Reference#Variable-sys.cf_key)
+- [Key exchange](http://cfengine.com/docs/3.5/manuals-architecture-networking.html#key-exchange)
+- [cf-key](http://cfengine.com/docs/3.5/reference-components-cfkey.html#cf-key)

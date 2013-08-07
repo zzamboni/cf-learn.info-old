@@ -6,7 +6,16 @@ posttitle: Reference disambiguation for 'this'
 navsection: none
 ---
 
-The term 'this' could refer to several sections in the documentation. Please choose one:
+The term 'this' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'this'](http://cfengine.com/docs/3.5/search.html?q=this).
 
-- [12.6 Variable context <code>this</code>](https://cfengine.com/manuals/cf3-Reference#Variable-context-this)
-- [12.6.6 Variable this.this](https://cfengine.com/manuals/cf3-Reference#Variable-this.this)
+- [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
+- [this](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this)
+- [this.bundle](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-bundle)
+- [this.handle](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-handle)
+- [this.namespace](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-namespace)
+- [this.promise_filename](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-promise_filename)
+- [this.promise_linenumber](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-promise_linenumber)
+- [this.promiser](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-promiser)
+- [this.service_policy](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-service_policy)
+- [this.this](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-this)

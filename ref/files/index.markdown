@@ -6,8 +6,14 @@ posttitle: Reference disambiguation for 'files'
 navsection: none
 ---
 
-The term 'files' could refer to several sections in the documentation. Please choose one:
+The term 'files' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'files'](http://cfengine.com/docs/3.5/search.html?q=files).
 
-- [5.2.21 <code>files_single_copy</code>](https://cfengine.com/manuals/cf3-Reference#files_single_copy-in-agent)
-- [5.2.22 <code>files_auto_define</code>](https://cfengine.com/manuals/cf3-Reference#files_auto_define-in-agent)
-- [7.4 <code>files</code> promises in &lsquo;<samp><span class="samp">agent</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#files-in-agent-promises)
+- [Copy single files](http://cfengine.com/docs/3.5/examples-policy-copy-single-files.html#copy-single-files)
+- [Create files and directories](http://cfengine.com/docs/3.5/examples-policy-create-files-and-directories.html#create-files-and-directories)
+- [Distributing files from a central location](http://cfengine.com/docs/3.5/getting-started-tutorials-distributing-files-from-a-central-location.html#distributing-files-from-a-central-location)
+- [Prepare policy files when upgrading from 2.2.x](http://cfengine.com/docs/3.5/getting-started-upgrade.html#prepare-policy-files-when-upgrading-from-2-2-x)
+- [Policy files](http://cfengine.com/docs/3.5/manuals-components.html#policy-files)
+- [files_single_copy](http://cfengine.com/docs/3.5/reference-components-cfagent.html#files_single_copy)
+- [files_auto_define](http://cfengine.com/docs/3.5/reference-components-cfagent.html#files_auto_define)
+- [Files](http://cfengine.com/docs/3.5/reference-standard-library.html#files)

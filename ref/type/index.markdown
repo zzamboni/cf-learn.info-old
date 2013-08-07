@@ -6,14 +6,20 @@ posttitle: Reference disambiguation for 'type'
 navsection: none
 ---
 
-The term 'type' could refer to several sections in the documentation. Please choose one:
+The term 'type' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'type'](http://cfengine.com/docs/3.5/search.html?q=type).
 
-- [5.7.12 <code>sql_type</code>](https://cfengine.com/manuals/cf3-Reference#sql_type-in-knowledge)
-- [7.2.2 <code>database_type</code>](https://cfengine.com/manuals/cf3-Reference#database_type-in-databases)
-- [7.3.5 <code>environment_type</code>](https://cfengine.com/manuals/cf3-Reference#environment_type-in-guest_environments)
-- [7.7.2 <code>insert_type</code>](https://cfengine.com/manuals/cf3-Reference#insert_type-in-insert_lines)
-- [7.12.2 <code>promiser_type</code>](https://cfengine.com/manuals/cf3-Reference#promiser_type-in-outputs)
-- [8.1.5 <code>resource_type</code>](https://cfengine.com/manuals/cf3-Reference#resource_type-in-access)
-- [10.1.1 <code>stream_type</code>](https://cfengine.com/manuals/cf3-Reference#stream_type-in-measurements)
-- [10.1.2 <code>data_type</code>](https://cfengine.com/manuals/cf3-Reference#data_type-in-measurements)
-- [10.1.3 <code>history_type</code>](https://cfengine.com/manuals/cf3-Reference#history_type-in-measurements)
+- [Content-Type](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-porting-guide.html#content-type)
+- [resource_type](http://cfengine.com/docs/3.5/reference-promise-types-access.html#resource_type)
+- [db_server_type](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#db_server_type)
+- [database_type](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#database_type)
+- [insert_type](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-insert_lines.html#insert_type)
+- [acl_type](http://cfengine.com/docs/3.5/reference-promise-types-files.html#acl_type)
+- [link_type](http://cfengine.com/docs/3.5/reference-promise-types-files.html#link_type)
+- [type_check](http://cfengine.com/docs/3.5/reference-promise-types-files.html#type_check)
+- [environment_type](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_type)
+- [stream_type](http://cfengine.com/docs/3.5/reference-promise-types-measurements.html#stream_type)
+- [data_type](http://cfengine.com/docs/3.5/reference-promise-types-measurements.html#data_type)
+- [history_type](http://cfengine.com/docs/3.5/reference-promise-types-measurements.html#history_type)
+- [service_type](http://cfengine.com/docs/3.5/reference-promise-types-services.html#service_type)
+- [mount_type](http://cfengine.com/docs/3.5/reference-promise-types-storage.html#mount_type)

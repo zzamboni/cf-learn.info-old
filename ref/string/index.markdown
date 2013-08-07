@@ -6,8 +6,8 @@ posttitle: Reference disambiguation for 'string'
 navsection: none
 ---
 
-The term 'string' could refer to several sections in the documentation. Please choose one:
+The term 'string' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'string'](http://cfengine.com/docs/3.5/search.html?q=string).
 
-- [6.2.2 <code>string</code>](https://cfengine.com/manuals/cf3-Reference#string-in-defaults)
-- [6.3.1 <code>string</code>](https://cfengine.com/manuals/cf3-Reference#string-in-meta)
-- [6.5.1 <code>string</code>](https://cfengine.com/manuals/cf3-Reference#string-in-vars)
+- [string](http://cfengine.com/docs/3.5/reference-promise-types-vars.html#string)
+- [log_string](http://cfengine.com/docs/3.5/reference-promise-types.html#log_string)

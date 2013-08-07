@@ -6,7 +6,9 @@ posttitle: Reference disambiguation for 'matching'
 navsection: none
 ---
 
-The term 'matching' could refer to several sections in the documentation. Please choose one:
+The term 'matching' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'matching'](http://cfengine.com/docs/3.5/search.html?q=matching).
 
-- [2.11 Pattern matching and referencing](https://cfengine.com/manuals/cf3-Reference#Pattern-matching-and-referencing)
-- [7.6.2 <code>not_matching</code>](https://cfengine.com/manuals/cf3-Reference#not_matching-in-delete_lines)
+- [Pattern Matching and Referencing](http://cfengine.com/docs/3.5/manuals-language-concepts-pattern-matching-and-referencing.html#pattern-matching-and-referencing)
+- [not_matching](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-delete_lines.html#not_matching)
+- [select_line_matching](http://cfengine.com/docs/3.5/reference-promise-types-measurements.html#select_line_matching)

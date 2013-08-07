@@ -6,7 +6,9 @@ posttitle: Reference disambiguation for 'processes'
 navsection: none
 ---
 
-The term 'processes' could refer to several sections in the documentation. Please choose one:
+The term 'processes' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'processes'](http://cfengine.com/docs/3.5/search.html?q=processes).
 
-- [5.2.32 <code>refresh_processes</code>](https://cfengine.com/manuals/cf3-Reference#refresh_processes-in-agent)
-- [7.14 <code>processes</code> promises in &lsquo;<samp><span class="samp">agent</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#processes-in-agent-promises)
+- [refresh_processes](http://cfengine.com/docs/3.5/reference-components-cfagent.html#refresh_processes)
+- [Processes](http://cfengine.com/docs/3.5/reference-standard-library.html#processes)
+- [Commands and Processes](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#commands-and-processes)

@@ -6,7 +6,11 @@ posttitle: Reference disambiguation for 'patterns'
 navsection: none
 ---
 
-The term 'patterns' could refer to several sections in the documentation. Please choose one:
+The term 'patterns' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'patterns'](http://cfengine.com/docs/3.5/search.html?q=patterns).
 
-- [5.1.2 <code>goal_patterns</code>](https://cfengine.com/manuals/cf3-Reference#goal_patterns-in-common)
-- [7.9 <code>replace_patterns</code> promises in &lsquo;<samp><span class="samp">edit_line</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#replace_patterns-in-edit_line-promises)
+- [goal_patterns](http://cfengine.com/docs/3.5/reference-components.html#goal_patterns)
+- [replace_patterns](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-replace_patterns.html#replace_patterns)
+- [copylink_patterns](http://cfengine.com/docs/3.5/reference-promise-types-files.html#copylink_patterns)
+- [linkcopy_patterns](http://cfengine.com/docs/3.5/reference-promise-types-files.html#linkcopy_patterns)
+- [copy_patterns](http://cfengine.com/docs/3.5/reference-promise-types-files.html#copy_patterns)

@@ -6,7 +6,9 @@ posttitle: Reference disambiguation for 'access'
 navsection: none
 ---
 
-The term 'access' could refer to several sections in the documentation. Please choose one:
+The term 'access' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'access'](http://cfengine.com/docs/3.5/search.html?q=access).
 
-- [1.13 Remote access troubleshooting](https://cfengine.com/manuals/cf3-Reference#Remote-access-troubleshooting)
-- [8.1 <code>access</code> promises in &lsquo;<samp><span class="samp">server</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#access-in-server-promises)
+- [Controlling Access to the Design Center UI](http://cfengine.com/docs/3.5/mission-portal-design-center-access-control.html#controlling-access-to-the-design-center-ui)
+- [Access control and security](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#access-control-and-security)
+- [access](http://cfengine.com/docs/3.5/reference-promise-types-access.html#access)

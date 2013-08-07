@@ -6,11 +6,12 @@ posttitle: Reference disambiguation for 'syslog'
 navsection: none
 ---
 
-The term 'syslog' could refer to several sections in the documentation. Please choose one:
+The term 'syslog' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'syslog'](http://cfengine.com/docs/3.5/search.html?q=syslog).
 
-- [5.1.13 <code>syslog_host</code>](https://cfengine.com/manuals/cf3-Reference#syslog_host-in-common)
-- [5.1.14 <code>syslog_port</code>](https://cfengine.com/manuals/cf3-Reference#syslog_port-in-common)
-- [5.2.39 <code>syslog</code>](https://cfengine.com/manuals/cf3-Reference#syslog-in-agent)
-- [12.4.130 Variable mon.value_syslog](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_syslog)
-- [12.4.131 Variable mon.av_syslog](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_syslog)
-- [12.4.132 Variable mon.dev_syslog](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_syslog)
+- [syslog](http://cfengine.com/docs/3.5/reference-components-cfagent.html#syslog)
+- [syslog_host](http://cfengine.com/docs/3.5/reference-components.html#syslog_host)
+- [syslog_port](http://cfengine.com/docs/3.5/reference-components.html#syslog_port)
+- [mon.value_syslog](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_syslog)
+- [mon.av_syslog](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_syslog)
+- [mon.dev_syslog](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_syslog)

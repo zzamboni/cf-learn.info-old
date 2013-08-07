@@ -6,11 +6,8 @@ posttitle: Reference disambiguation for 'context'
 navsection: none
 ---
 
-The term 'context' could refer to several sections in the documentation. Please choose one:
+The term 'context' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'context'](http://cfengine.com/docs/3.5/search.html?q=context).
 
-- [12.1 Variable context <code>const</code>](https://cfengine.com/manuals/cf3-Reference#Variable-context-const)
-- [12.2 Variable context <code>edit</code>](https://cfengine.com/manuals/cf3-Reference#Variable-context-edit)
-- [12.3 Variable context <code>match</code>](https://cfengine.com/manuals/cf3-Reference#Variable-context-match)
-- [12.4 Variable context <code>mon</code>](https://cfengine.com/manuals/cf3-Reference#Variable-context-mon)
-- [12.5 Variable context <code>sys</code>](https://cfengine.com/manuals/cf3-Reference#Variable-context-sys)
-- [12.6 Variable context <code>this</code>](https://cfengine.com/manuals/cf3-Reference#Variable-context-this)
+- [Example: Listing Hosts With A Given Context](http://cfengine.com/docs/3.5/examples-enterprise-api-browsing-host-information.html#example-listing-hosts-with-a-given-context)
+- [Context class expressions](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#context-class-expressions)

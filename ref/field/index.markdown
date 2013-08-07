@@ -6,7 +6,12 @@ posttitle: Reference disambiguation for 'field'
 navsection: none
 ---
 
-The term 'field' could refer to several sections in the documentation. Please choose one:
+The term 'field' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'field'](http://cfengine.com/docs/3.5/search.html?q=field).
 
-- [7.8 <code>field_edits</code> promises in &lsquo;<samp><span class="samp">edit_line</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#field_edits-in-edit_line-promises)
-- [7.8.1 <code>edit_field</code> (body template)](https://cfengine.com/manuals/cf3-Reference#edit_field-in-field_edits)
+- [field_edits](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-field_edits.html#field_edits)
+- [edit_field](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-field_edits.html#edit_field)
+- [field_operation](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-field_edits.html#field_operation)
+- [field_separator](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-field_edits.html#field_separator)
+- [field_value](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-field_edits.html#field_value)
+- [select_field](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-field_edits.html#select_field)

@@ -6,7 +6,8 @@ posttitle: Reference disambiguation for 'site'
 navsection: none
 ---
 
-The term 'site' could refer to several sections in the documentation. Please choose one:
+The term 'site' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'site'](http://cfengine.com/docs/3.5/search.html?q=site).
 
-- [4.2 <samp><span class="file">site.cf</span></samp>](https://cfengine.com/manuals/cf3-Reference#site.cf)
-- [5.1.12 <code>site_classes</code>](https://cfengine.com/manuals/cf3-Reference#site_classes-in-common)
+- [Multi-Site Queries](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#multi-site-queries)
+- [site_classes](http://cfengine.com/docs/3.5/reference-components.html#site_classes)

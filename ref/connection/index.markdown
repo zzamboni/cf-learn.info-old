@@ -6,7 +6,9 @@ posttitle: Reference disambiguation for 'connection'
 navsection: none
 ---
 
-The term 'connection' could refer to several sections in the documentation. Please choose one:
+The term 'connection' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'connection'](http://cfengine.com/docs/3.5/search.html?q=connection).
 
-- [1.13.1 Server connection](https://cfengine.com/manuals/cf3-Reference#Server-connection)
-- [5.7.17 <code>sql_connection_db</code>](https://cfengine.com/manuals/cf3-Reference#sql_connection_db-in-knowledge)
+- [Server Connection](http://cfengine.com/docs/3.5/manuals-architecture-networking.html#server-connection)
+- [Connection Error](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#connection-error)
+- [db_server_connection_db](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#db_server_connection_db)

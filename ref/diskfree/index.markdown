@@ -6,9 +6,10 @@ posttitle: Reference disambiguation for 'diskfree'
 navsection: none
 ---
 
-The term 'diskfree' could refer to several sections in the documentation. Please choose one:
+The term 'diskfree' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'diskfree'](http://cfengine.com/docs/3.5/search.html?q=diskfree).
 
-- [11.14 Function diskfree](https://cfengine.com/manuals/cf3-Reference#Function-diskfree)
-- [12.4.10 Variable mon.value_diskfree](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_diskfree)
-- [12.4.11 Variable mon.av_diskfree](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_diskfree)
-- [12.4.12 Variable mon.dev_diskfree](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_diskfree)
+- [diskfree](http://cfengine.com/docs/3.5/reference-functions-diskfree.html#diskfree)
+- [mon.value_diskfree](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_diskfree)
+- [mon.av_diskfree](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_diskfree)
+- [mon.dev_diskfree](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_diskfree)

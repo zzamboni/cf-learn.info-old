@@ -6,7 +6,11 @@ posttitle: Reference disambiguation for 'interface'
 navsection: none
 ---
 
-The term 'interface' could refer to several sections in the documentation. Please choose one:
+The term 'interface' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'interface'](http://cfengine.com/docs/3.5/search.html?q=interface).
 
-- [7.3.2 <code>environment_interface</code> (body template)](https://cfengine.com/manuals/cf3-Reference#environment_interface-in-guest_environments)
-- [12.5.32 Variable sys.interface](https://cfengine.com/manuals/cf3-Reference#Variable-sys.interface)
+- [Interface](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#interface)
+- [Command line interface:](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#command-line-interface)
+- [API CLI Interface and config.json](http://cfengine.com/docs/3.5/reference-design-center-api.html#api-cli-interface-and-config-json)
+- [environment_interface](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_interface)
+- [sys.interface](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-interface)

@@ -6,11 +6,18 @@ posttitle: Reference disambiguation for 'www'
 navsection: none
 ---
 
-The term 'www' could refer to several sections in the documentation. Please choose one:
+The term 'www' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'www'](http://cfengine.com/docs/3.5/search.html?q=www).
 
-- [12.4.58 Variable mon.value_www_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_www_in)
-- [12.4.59 Variable mon.av_www_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_www_in)
-- [12.4.60 Variable mon.dev_www_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_www_in)
-- [12.4.61 Variable mon.value_www_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_www_out)
-- [12.4.62 Variable mon.av_www_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_www_out)
-- [12.4.63 Variable mon.dev_www_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_www_out)
+- [mon.value_www_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_www_in)
+- [mon.av_www_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_www_in)
+- [mon.dev_www_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_www_in)
+- [mon.value_www_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_www_out)
+- [mon.av_www_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_www_out)
+- [mon.dev_www_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_www_out)
+- [mon.value_www_alt_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_www_alt_in)
+- [mon.av_www_alt_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_www_alt_in)
+- [mon.dev_www_alt_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_www_alt_in)
+- [mon.value_www_alt_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_www_alt_out)
+- [mon.av_www_alt_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_www_alt_out)
+- [mon.dev_www_alt_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_www_alt_out)

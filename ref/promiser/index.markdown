@@ -6,7 +6,8 @@ posttitle: Reference disambiguation for 'promiser'
 navsection: none
 ---
 
-The term 'promiser' could refer to several sections in the documentation. Please choose one:
+The term 'promiser' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'promiser'](http://cfengine.com/docs/3.5/search.html?q=promiser).
 
-- [7.12.2 <code>promiser_type</code>](https://cfengine.com/manuals/cf3-Reference#promiser_type-in-outputs)
-- [12.6.4 Variable this.promiser](https://cfengine.com/manuals/cf3-Reference#Variable-this.promiser)
+- [The Promiser](http://cfengine.com/docs/3.5/manuals-language-concepts-promises.html#the-promiser)
+- [this.promiser](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-promiser)

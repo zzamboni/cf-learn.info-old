@@ -6,11 +6,16 @@ posttitle: Reference disambiguation for 'promises'
 navsection: none
 ---
 
-The term 'promises' could refer to several sections in the documentation. Please choose one:
+The term 'promises' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'promises'](http://cfengine.com/docs/3.5/search.html?q=promises).
 
-- [1.1.5 cf-promises](https://cfengine.com/manuals/cf3-Reference#cf-promises)
-- [2.1 Rules are promises](https://cfengine.com/manuals/cf3-Reference#Rules-are-promises)
-- [2.2 Best practice for writing promises](https://cfengine.com/manuals/cf3-Reference#Best-practice-for-writing-promises)
-- [4.1 <samp><span class="file">promises.cf</span></samp>](https://cfengine.com/manuals/cf3-Reference#promises.cf)
-- [5 Control promises](https://cfengine.com/manuals/cf3-Reference#Control-Promises)
-- [12.5.9 Variable sys.cf_promises](https://cfengine.com/manuals/cf3-Reference#Variable-sys.cf_promises)
+- [Managing Expectations with Promises](http://cfengine.com/docs/3.5/manuals-design.html#managing-expectations-with-promises)
+- [Promises and Knowledge](http://cfengine.com/docs/3.5/manuals-knowledge-management.html#promises-and-knowledge)
+- [Annotating promises](http://cfengine.com/docs/3.5/manuals-knowledge-management.html#annotating-promises)
+- [Promises](http://cfengine.com/docs/3.5/manuals-language-concepts-promises.html#promises)
+- [Implicit Promises](http://cfengine.com/docs/3.5/manuals-language-concepts-promises.html#implicit-promises)
+- [promises.cf](http://cfengine.com/docs/3.5/manuals-writing-policy-configuration-file-structure.html#promises-cf)
+- [Control Promises](http://cfengine.com/docs/3.5/reference-components-cfserver.html#control-promises)
+- [cf-promises](http://cfengine.com/docs/3.5/reference-components-cfpromises.html#cf-promises)
+- [Promises involving regular expressions](http://cfengine.com/docs/3.5/reference-promise-types-files.html#promises-involving-regular-expressions)
+- [sys.cf_promises](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-cf_promises)

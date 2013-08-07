@@ -6,8 +6,9 @@ posttitle: Reference disambiguation for 'cpu'
 navsection: none
 ---
 
-The term 'cpu' could refer to several sections in the documentation. Please choose one:
+The term 'cpu' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'cpu'](http://cfengine.com/docs/3.5/search.html?q=cpu).
 
-- [12.4.148 Variable mon.value_cpu](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_cpu)
-- [12.4.149 Variable mon.av_cpu](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_cpu)
-- [12.4.150 Variable mon.dev_cpu](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_cpu)
+- [mon.value_cpu](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_cpu)
+- [mon.av_cpu](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_cpu)
+- [mon.dev_cpu](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_cpu)

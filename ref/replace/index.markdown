@@ -6,7 +6,9 @@ posttitle: Reference disambiguation for 'replace'
 navsection: none
 ---
 
-The term 'replace' could refer to several sections in the documentation. Please choose one:
+The term 'replace' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'replace'](http://cfengine.com/docs/3.5/search.html?q=replace).
 
-- [7.9 <code>replace_patterns</code> promises in &lsquo;<samp><span class="samp">edit_line</span></samp>&rsquo;](https://cfengine.com/manuals/cf3-Reference#replace_patterns-in-edit_line-promises)
-- [7.9.1 <code>replace_with</code> (body template)](https://cfengine.com/manuals/cf3-Reference#replace_with-in-replace_patterns)
+- [replace_patterns](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-replace_patterns.html#replace_patterns)
+- [replace_with](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-replace_patterns.html#replace_with)
+- [replace_value](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-replace_patterns.html#replace_value)

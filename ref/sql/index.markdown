@@ -6,11 +6,9 @@ posttitle: Reference disambiguation for 'sql'
 navsection: none
 ---
 
-The term 'sql' could refer to several sections in the documentation. Please choose one:
+The term 'sql' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'sql'](http://cfengine.com/docs/3.5/search.html?q=sql).
 
-- [5.7.12 <code>sql_type</code>](https://cfengine.com/manuals/cf3-Reference#sql_type-in-knowledge)
-- [5.7.13 <code>sql_database</code>](https://cfengine.com/manuals/cf3-Reference#sql_database-in-knowledge)
-- [5.7.14 <code>sql_owner</code>](https://cfengine.com/manuals/cf3-Reference#sql_owner-in-knowledge)
-- [5.7.15 <code>sql_passwd</code>](https://cfengine.com/manuals/cf3-Reference#sql_passwd-in-knowledge)
-- [5.7.16 <code>sql_server</code>](https://cfengine.com/manuals/cf3-Reference#sql_server-in-knowledge)
-- [5.7.17 <code>sql_connection_db</code>](https://cfengine.com/manuals/cf3-Reference#sql_connection_db-in-knowledge)
+- [SQL Query Examples](http://cfengine.com/docs/3.5/examples-enterprise-reporting-sql-queries.html#sql-query-examples)
+- [SQL Queries](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-sql-queries.html#sql-queries)
+- [SQL Schema](http://cfengine.com/docs/3.5/reference-enterprise-api-sql-schema.html#sql-schema)

@@ -6,8 +6,10 @@ posttitle: Reference disambiguation for 'children'
 navsection: none
 ---
 
-The term 'children' could refer to several sections in the documentation. Please choose one:
+The term 'children' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'children'](http://cfengine.com/docs/3.5/search.html?q=children).
 
-- [5.2.27 <code>max_children</code>](https://cfengine.com/manuals/cf3-Reference#max_children-in-agent)
-- [5.5.6 <code>background_children</code>](https://cfengine.com/manuals/cf3-Reference#background_children-in-runagent)
-- [5.5.7 <code>max_children</code>](https://cfengine.com/manuals/cf3-Reference#max_children-in-runagent)
+- [max_children](http://cfengine.com/docs/3.5/reference-components-cfrunagent.html#max_children)
+- [background_children](http://cfengine.com/docs/3.5/reference-components-cfrunagent.html#background_children)
+- [link_children](http://cfengine.com/docs/3.5/reference-promise-types-files.html#link_children)
+- [when_linking_children](http://cfengine.com/docs/3.5/reference-promise-types-files.html#when_linking_children)

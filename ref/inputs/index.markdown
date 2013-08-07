@@ -6,7 +6,9 @@ posttitle: Reference disambiguation for 'inputs'
 navsection: none
 ---
 
-The term 'inputs' could refer to several sections in the documentation. Please choose one:
+The term 'inputs' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'inputs'](http://cfengine.com/docs/3.5/search.html?q=inputs).
 
-- [5.1.4 <code>ignore_missing_inputs</code>](https://cfengine.com/manuals/cf3-Reference#ignore_missing_inputs-in-common)
-- [5.1.5 <code>inputs</code>](https://cfengine.com/manuals/cf3-Reference#inputs-in-common)
+- [The hosts and /var/cfengine/inputs](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#the-hosts-and-var-cfengine-inputs)
+- [ignore_missing_inputs](http://cfengine.com/docs/3.5/reference-components.html#ignore_missing_inputs)
+- [inputs](http://cfengine.com/docs/3.5/reference-components.html#inputs)

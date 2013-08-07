@@ -6,11 +6,12 @@ posttitle: Reference disambiguation for 'udp'
 navsection: none
 ---
 
-The term 'udp' could refer to several sections in the documentation. Please choose one:
+The term 'udp' could refer to several sections in the documentation. Please choose one below, or
+[search the CFEngine documentation for 'udp'](http://cfengine.com/docs/3.5/search.html?q=udp).
 
-- [12.4.88 Variable mon.value_udp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_udp_in)
-- [12.4.89 Variable mon.av_udp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_udp_in)
-- [12.4.90 Variable mon.dev_udp_in](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_udp_in)
-- [12.4.91 Variable mon.value_udp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.value_udp_out)
-- [12.4.92 Variable mon.av_udp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.av_udp_out)
-- [12.4.93 Variable mon.dev_udp_out](https://cfengine.com/manuals/cf3-Reference#Variable-mon.dev_udp_out)
+- [mon.value_udp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_udp_in)
+- [mon.av_udp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_udp_in)
+- [mon.dev_udp_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_udp_in)
+- [mon.value_udp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_udp_out)
+- [mon.av_udp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_udp_out)
+- [mon.dev_udp_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_udp_out)
