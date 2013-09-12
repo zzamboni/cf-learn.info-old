@@ -11,7 +11,7 @@ The term 'upgrade' could refer to several sections in the documentation. Please 
 
 - [Enterprise upgrade using master_software_updates does not work for redhat derivitives](http://cfengine.com/docs/3.5/getting-started-known-issues.html#enterprise-upgrade-using-master_software_updates-does-not-work-for-redhat-derivitives)
 - [Upgrade Instructions](http://cfengine.com/docs/3.5/getting-started-upgrade.html#upgrade-instructions)
-- [<center data-behavior="exclude-from-toc">This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#<center-data-behavior=-exclude-from-toc->this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
-- [<center data-behavior="exclude-from-toc">Always verify the upgrade in a test environment prior to upgrading production environments\!](http://cfengine.com/docs/3.5/getting-started-upgrade.html#<center-data-behavior=-exclude-from-toc->always-verify-the-upgrade-in-a-test-environment-prior-to-upgrading-production-environments!)
+- [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
+- [Always verify the upgrade in a test environment prior to upgrading production environments\!](http://cfengine.com/docs/3.5/getting-started-upgrade.html#always-verify-the-upgrade-in-a-test-environment-prior-to-upgrading-production-environments!)
 - [Upgrade procedure for the hosts](http://cfengine.com/docs/3.5/getting-started-upgrade.html#upgrade-procedure-for-the-hosts)
 - [Agent package upgrade through the hub from v2.2.3](http://cfengine.com/docs/3.5/getting-started-upgrade.html#agent-package-upgrade-through-the-hub-from-v2-2-3)

@@ -10,9 +10,9 @@ The term 'getting-started-upgrade' could refer to several sections in the docume
 [search the CFEngine documentation for 'getting-started-upgrade'](http://cfengine.com/docs/3.5/search.html?q=getting-started-upgrade).
 
 - [Upgrade Instructions](http://cfengine.com/docs/3.5/getting-started-upgrade.html#upgrade-instructions)
-- [<center data-behavior="exclude-from-toc">This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#<center-data-behavior=-exclude-from-toc->this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
-- [<center data-behavior="exclude-from-toc">2.2.x or 3.0.x](http://cfengine.com/docs/3.5/getting-started-upgrade.html#<center-data-behavior=-exclude-from-toc->2-2-x-or-3-0-x)
-- [<center data-behavior="exclude-from-toc">Always verify the upgrade in a test environment prior to upgrading production environments\!](http://cfengine.com/docs/3.5/getting-started-upgrade.html#<center-data-behavior=-exclude-from-toc->always-verify-the-upgrade-in-a-test-environment-prior-to-upgrading-production-environments!)
+- [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
+- [2.2.x or 3.0.x](http://cfengine.com/docs/3.5/getting-started-upgrade.html#2-2-x-or-3-0-x)
+- [Always verify the upgrade in a test environment prior to upgrading production environments\!](http://cfengine.com/docs/3.5/getting-started-upgrade.html#always-verify-the-upgrade-in-a-test-environment-prior-to-upgrading-production-environments!)
 - [Prerequisites](http://cfengine.com/docs/3.5/getting-started-upgrade.html#prerequisites)
 - [Before you start: Make a Backup](http://cfengine.com/docs/3.5/getting-started-upgrade.html#before-you-start-make-a-backup)
 - [In case of Failure: Restoring the previous installation from backup](http://cfengine.com/docs/3.5/getting-started-upgrade.html#in-case-of-failure-restoring-the-previous-installation-from-backup)

@@ -13,7 +13,7 @@ The term 'cfengine' could refer to several sections in the documentation. Please
 - [CFEngine Examples](http://cfengine.com/docs/3.5/examples.html#cfengine-examples)
 - [Installing CFEngine](http://cfengine.com/docs/3.5/getting-started-installation.html#installing-cfengine)
 - [CFEngine Enterprise Server](http://cfengine.com/docs/3.5/getting-started-supported-platforms.html#cfengine-enterprise-server)
-- [<center data-behavior="exclude-from-toc">This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#<center-data-behavior=-exclude-from-toc->this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
+- [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
 - [The CFEngine Components](http://cfengine.com/docs/3.5/manuals-components.html#the-cfengine-components)
 - [Sketch Flow in CFEngine Enterprise](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#sketch-flow-in-cfengine-enterprise)
 - [/var/cfengine/masterfiles](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#var-cfengine-masterfiles)

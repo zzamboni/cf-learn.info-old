@@ -9,6 +9,7 @@ navsection: none
 The term 'this' could refer to several sections in the documentation. Please choose one below, or
 [search the CFEngine documentation for 'this'](http://cfengine.com/docs/3.5/search.html?q=this).
 
+- [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
 - [this](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this)
 - [this.bundle](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-bundle)
 - [this.handle](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-handle)

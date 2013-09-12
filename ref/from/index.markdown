@@ -10,9 +10,6 @@ The term 'from' could refer to several sections in the documentation. Please cho
 [search the CFEngine documentation for 'from'](http://cfengine.com/docs/3.5/search.html?q=from).
 
 - [Updating from a central policy server](http://cfengine.com/docs/3.5/examples-policy-updating-from-a-central-policy-server.html#updating-from-a-central-policy-server)
-- [<center data-behavior="exclude-from-toc">This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#<center-data-behavior=-exclude-from-toc->this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
-- [<center data-behavior="exclude-from-toc">2.2.x or 3.0.x](http://cfengine.com/docs/3.5/getting-started-upgrade.html#<center-data-behavior=-exclude-from-toc->2-2-x-or-3-0-x)
-- [<center data-behavior="exclude-from-toc">Always verify the upgrade in a test environment prior to upgrading production environments\!](http://cfengine.com/docs/3.5/getting-started-upgrade.html#<center-data-behavior=-exclude-from-toc->always-verify-the-upgrade-in-a-test-environment-prior-to-upgrading-production-environments!)
 - [In case of Failure: Restoring the previous installation from backup](http://cfengine.com/docs/3.5/getting-started-upgrade.html#in-case-of-failure-restoring-the-previous-installation-from-backup)
 - [Prepare policy files when upgrading from 2.2.x](http://cfengine.com/docs/3.5/getting-started-upgrade.html#prepare-policy-files-when-upgrading-from-2-2-x)
 - [Agent package upgrade through the hub from v2.2.3](http://cfengine.com/docs/3.5/getting-started-upgrade.html#agent-package-upgrade-through-the-hub-from-v2-2-3)

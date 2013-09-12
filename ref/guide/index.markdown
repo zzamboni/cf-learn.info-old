@@ -9,6 +9,6 @@ navsection: none
 The term 'guide' could refer to several sections in the documentation. Please choose one below, or
 [search the CFEngine documentation for 'guide'](http://cfengine.com/docs/3.5/search.html?q=guide).
 
-- [<center data-behavior="exclude-from-toc">This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#<center-data-behavior=-exclude-from-toc->this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
+- [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
 - [API Porting Guide](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-porting-guide.html#api-porting-guide)
 - [Policy Style Guide](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#policy-style-guide)

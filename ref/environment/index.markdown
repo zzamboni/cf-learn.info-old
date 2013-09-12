@@ -9,7 +9,7 @@ navsection: none
 The term 'environment' could refer to several sections in the documentation. Please choose one below, or
 [search the CFEngine documentation for 'environment'](http://cfengine.com/docs/3.5/search.html?q=environment).
 
-- [<center data-behavior="exclude-from-toc">Always verify the upgrade in a test environment prior to upgrading production environments\!](http://cfengine.com/docs/3.5/getting-started-upgrade.html#<center-data-behavior=-exclude-from-toc->always-verify-the-upgrade-in-a-test-environment-prior-to-upgrading-production-environments!)
+- [Always verify the upgrade in a test environment prior to upgrading production environments\!](http://cfengine.com/docs/3.5/getting-started-upgrade.html#always-verify-the-upgrade-in-a-test-environment-prior-to-upgrading-production-environments!)
 - [environment](http://cfengine.com/docs/3.5/reference-components-cfagent.html#environment)
 - [define_environment](http://cfengine.com/docs/3.5/reference-design-center-api.html#define_environment)
 - [undefine_environment](http://cfengine.com/docs/3.5/reference-design-center-api.html#undefine_environment)

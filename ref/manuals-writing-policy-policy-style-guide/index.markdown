@@ -16,5 +16,5 @@ The term 'manuals-writing-policy-policy-style-guide' could refer to several sect
 - [Curly brace alignment](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#curly-brace-alignment)
 - [Context class expressions](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#context-class-expressions)
 - [Policy Comments](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#policy-comments)
-- [Hashrockets (=>)](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#hashrockets-=>)
+- [Hashrockets (=\>)](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#hashrockets-=>)
 - [Automatic reindentation](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#automatic-reindentation)
