@@ -11,7 +11,7 @@ The term 'service' could refer to several sections in the documentation. Please 
 
 - [Ensure a service is enabled and running](http://cfengine.com/docs/3.5/examples-policy-ensure-service-is-enabled-and-running.html#ensure-a-service-is-enabled-and-running)
 - [Git repository service](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#git-repository-service)
-- [Setting up the git service](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#setting-up-the-git-service)
+- [Set up the git service](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#set-up-the-git-service)
 - [service_policy](http://cfengine.com/docs/3.5/reference-promise-types-services.html#service_policy)
 - [service_dependencies](http://cfengine.com/docs/3.5/reference-promise-types-services.html#service_dependencies)
 - [service_method](http://cfengine.com/docs/3.5/reference-promise-types-services.html#service_method)

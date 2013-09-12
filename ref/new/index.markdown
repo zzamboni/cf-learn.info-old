@@ -11,6 +11,7 @@ The term 'new' could refer to several sections in the documentation. Please choo
 
 - [Example: Creating a New User](http://cfengine.com/docs/3.5/examples-enterprise-api-managing-users-and-roles.html#example-creating-a-new-user)
 - [Example: Creating a New Role](http://cfengine.com/docs/3.5/examples-enterprise-api-managing-users-and-roles.html#example-creating-a-new-role)
+- [Migrate to new database structure](http://cfengine.com/docs/3.5/getting-started-upgrade.html#migrate-to-new-database-structure)
 - [Adding a new sketch to the GUI](http://cfengine.com/docs/3.5/mission-portal-design-center-sketches-available.html#adding-a-new-sketch-to-the-gui)
 - [New Users](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-porting-guide.html#new-users)
 - [New in CFEngine](http://cfengine.com/docs/3.5/whats-new.html#new-in-cfengine)

@@ -9,6 +9,7 @@ navsection: none
 The term 'database' could refer to several sections in the documentation. Please choose one below, or
 [search the CFEngine documentation for 'database'](http://cfengine.com/docs/3.5/search.html?q=database).
 
+- [Migrate to new database structure](http://cfengine.com/docs/3.5/getting-started-upgrade.html#migrate-to-new-database-structure)
 - [Database Diagnostics](http://cfengine.com/docs/3.5/reference-enterprise-api-sql-schema.html#database-diagnostics)
 - [database_server](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#database_server)
 - [database_type](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#database_type)

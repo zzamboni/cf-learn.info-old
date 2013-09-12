@@ -11,7 +11,7 @@ The term 'mission' could refer to several sections in the documentation. Please 
 
 - [Mission Portal GUI](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#mission-portal-gui)
 - [Integrating Mission Portal with git](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#integrating-mission-portal-with-git)
-- [Connecting the Mission Portal to the git repository](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#connecting-the-mission-portal-to-the-git-repository)
+- [Connect Mission Portal to the git repository](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#connect-mission-portal-to-the-git-repository)
 - [Filtering commits by Mission Portal and users](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#filtering-commits-by-mission-portal-and-users)
 - [Show all commits done through Mission Portal](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#show-all-commits-done-through-mission-portal)
 - [Show commits by a Mission Portal user](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#show-commits-by-a-mission-portal-user)

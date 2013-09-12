@@ -9,6 +9,9 @@ navsection: none
 The term 'link' could refer to several sections in the documentation. Please choose one below, or
 [search the CFEngine documentation for 'link'](http://cfengine.com/docs/3.5/search.html?q=link).
 
+- [Link within documentation and to known pages](http://cfengine.com/docs/3.5/markdown-cheatsheet.html#link-within-documentation-and-to-known-pages)
+- [Link to CFEngine keyword](http://cfengine.com/docs/3.5/markdown-cheatsheet.html#link-to-cfengine-keyword)
+- [Link to External URL](http://cfengine.com/docs/3.5/markdown-cheatsheet.html#link-to-external-url)
 - [link_type](http://cfengine.com/docs/3.5/reference-promise-types-files.html#link_type)
 - [link_from](http://cfengine.com/docs/3.5/reference-promise-types-files.html#link_from)
 - [link_children](http://cfengine.com/docs/3.5/reference-promise-types-files.html#link_children)

@@ -26,7 +26,7 @@ The term 'sys' could refer to several sections in the documentation. Please choo
 - [sys.enterprise_version](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-enterprise_version)
 - [sys.expires](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-expires)
 - [sys.exports](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-exports)
-- [s sys.flavor, sys.flavour](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#s-sys-flavor,-sys-flavour)
+- [sys.flavor, sys.flavour](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-flavor,-sys-flavour)
 - [sys.fqhost](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-fqhost)
 - [sys.fstab](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-fstab)
 - [sys.hardware_addresses](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-hardware_addresses)

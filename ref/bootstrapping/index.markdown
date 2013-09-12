@@ -9,5 +9,5 @@ navsection: none
 The term 'bootstrapping' could refer to several sections in the documentation. Please choose one below, or
 [search the CFEngine documentation for 'bootstrapping'](http://cfengine.com/docs/3.5/search.html?q=bootstrapping).
 
-- [Automatic bootstrapping](http://cfengine.com/docs/3.5/getting-started-installation.html#automatic-bootstrapping)
 - [Bootstrapping](http://cfengine.com/docs/3.5/manuals-architecture-networking.html#bootstrapping)
+- [Automatic Bootstrapping](http://cfengine.com/docs/3.5/reference-components-cfagent.html#automatic-bootstrapping)

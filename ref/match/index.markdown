@@ -16,5 +16,5 @@ The term 'match' could refer to several sections in the documentation. Please ch
 - [insert_if_not_match_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-insert_lines.html#insert_if_not_match_from_list)
 - [match_value](http://cfengine.com/docs/3.5/reference-promise-types-measurements.html#match_value)
 - [match_range](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#match_range)
-- [match](http://cfengine.com/docs/3.5/reference-special-Variables-context-match.html#match)
-- [match.0](http://cfengine.com/docs/3.5/reference-special-Variables-context-match.html#match-0)
+- [match](http://cfengine.com/docs/3.5/reference-special-variables-context-match.html#match)
+- [match.0](http://cfengine.com/docs/3.5/reference-special-variables-context-match.html#match-0)

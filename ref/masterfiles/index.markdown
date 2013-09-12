@@ -11,3 +11,4 @@ The term 'masterfiles' could refer to several sections in the documentation. Ple
 
 - [/var/cfengine/masterfiles](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#var-cfengine-masterfiles)
 - [/opt/cfengine/userworkdir/$(user)/masterfiles](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#opt-cfengine-userworkdir-user-masterfiles)
+- [Update masterfiles from git](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#update-masterfiles-from-git)

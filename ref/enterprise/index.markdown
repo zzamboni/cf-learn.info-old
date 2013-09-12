@@ -9,7 +9,8 @@ navsection: none
 The term 'enterprise' could refer to several sections in the documentation. Please choose one below, or
 [search the CFEngine documentation for 'enterprise'](http://cfengine.com/docs/3.5/search.html?q=enterprise).
 
-- [Enterprise Edition](http://cfengine.com/docs/3.5/getting-started-installation.html#enterprise-edition)
+- [Installing Enterprise](http://cfengine.com/docs/3.5/getting-started-installation-installing-enterprise.html#installing-enterprise)
+- [Enterprise upgrade using master_software_updates does not work for redhat derivitives](http://cfengine.com/docs/3.5/getting-started-known-issues.html#enterprise-upgrade-using-master_software_updates-does-not-work-for-redhat-derivitives)
 - [CFEngine Enterprise Server](http://cfengine.com/docs/3.5/getting-started-supported-platforms.html#cfengine-enterprise-server)
 - [Sketch Flow in CFEngine Enterprise](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#sketch-flow-in-cfengine-enterprise)
 - [Enterprise API](http://cfengine.com/docs/3.5/manuals-enterprise-api.html#enterprise-api)

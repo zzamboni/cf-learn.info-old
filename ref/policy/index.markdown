@@ -11,11 +11,10 @@ The term 'policy' could refer to several sections in the documentation. Please c
 
 - [Updating from a central policy server](http://cfengine.com/docs/3.5/examples-policy-updating-from-a-central-policy-server.html#updating-from-a-central-policy-server)
 - [Integrating the Example into your Main Policy](http://cfengine.com/docs/3.5/examples.html#integrating-the-example-into-your-main-policy)
-- [Policy Server Requirements](http://cfengine.com/docs/3.5/getting-started-installation.html#policy-server-requirements)
+- [Policy Server Requirements](http://cfengine.com/docs/3.5/getting-started-installation-installing-enterprise.html#policy-server-requirements)
 - [Prepare policy files when upgrading from 2.2.x](http://cfengine.com/docs/3.5/getting-started-upgrade.html#prepare-policy-files-when-upgrading-from-2-2-x)
 - [Policy Workflow](http://cfengine.com/docs/3.5/manuals-architecture-policy-workflow.html#policy-workflow)
 - [Policy files](http://cfengine.com/docs/3.5/manuals-components.html#policy-files)
-- [Pulling from git to the policy server](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#pulling-from-git-to-the-policy-server)
 - [Analyzing and indexing the policy](http://cfengine.com/docs/3.5/manuals-knowledge-management.html#analyzing-and-indexing-the-policy)
 - [Policy Style Guide](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#policy-style-guide)
 - [Policy Comments](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#policy-comments)

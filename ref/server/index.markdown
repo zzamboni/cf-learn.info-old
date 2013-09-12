@@ -10,10 +10,9 @@ The term 'server' could refer to several sections in the documentation. Please c
 [search the CFEngine documentation for 'server'](http://cfengine.com/docs/3.5/search.html?q=server).
 
 - [Updating from a central policy server](http://cfengine.com/docs/3.5/examples-policy-updating-from-a-central-policy-server.html#updating-from-a-central-policy-server)
-- [Policy Server Requirements](http://cfengine.com/docs/3.5/getting-started-installation.html#policy-server-requirements)
+- [Policy Server Requirements](http://cfengine.com/docs/3.5/getting-started-installation-installing-enterprise.html#policy-server-requirements)
 - [CFEngine Enterprise Server](http://cfengine.com/docs/3.5/getting-started-supported-platforms.html#cfengine-enterprise-server)
 - [Server Connection](http://cfengine.com/docs/3.5/manuals-architecture-networking.html#server-connection)
-- [Pulling from git to the policy server](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#pulling-from-git-to-the-policy-server)
 - [Server normal ordering](http://cfengine.com/docs/3.5/manuals-language-concepts-normal-ordering.html#server-normal-ordering)
 - [database_server](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#database_server)
 - [db_server_owner](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#db_server_owner)

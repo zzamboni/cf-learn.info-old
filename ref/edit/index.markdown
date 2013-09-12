@@ -16,5 +16,5 @@ The term 'edit' could refer to several sections in the documentation. Please cho
 - [edit_template](http://cfengine.com/docs/3.5/reference-promise-types-files.html#edit_template)
 - [edit_xml](http://cfengine.com/docs/3.5/reference-promise-types-files.html#edit_xml)
 - [edit_fstab](http://cfengine.com/docs/3.5/reference-promise-types-storage.html#edit_fstab)
-- [edit](http://cfengine.com/docs/3.5/reference-special-Variables-context-edit.html#edit)
-- [edit.filename](http://cfengine.com/docs/3.5/reference-special-Variables-context-edit.html#edit-filename)
+- [edit](http://cfengine.com/docs/3.5/reference-special-variables-context-edit.html#edit)
+- [edit.filename](http://cfengine.com/docs/3.5/reference-special-variables-context-edit.html#edit-filename)

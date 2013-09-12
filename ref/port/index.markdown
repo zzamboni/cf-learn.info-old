@@ -9,5 +9,6 @@ navsection: none
 The term 'port' could refer to several sections in the documentation. Please choose one below, or
 [search the CFEngine documentation for 'port'](http://cfengine.com/docs/3.5/search.html?q=port).
 
+- [Port 80](http://cfengine.com/docs/3.5/getting-started-installation-installing-enterprise.html#port-80)
 - [port](http://cfengine.com/docs/3.5/reference-components-cfserver.html#port)
 - [syslog_port](http://cfengine.com/docs/3.5/reference-components.html#syslog_port)

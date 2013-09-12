@@ -10,6 +10,7 @@ The term 'not' could refer to several sections in the documentation. Please choo
 [search the CFEngine documentation for 'not'](http://cfengine.com/docs/3.5/search.html?q=not).
 
 - [Ensure a process is not running](http://cfengine.com/docs/3.5/examples-policy-ensure-process-not-running.html#ensure-a-process-is-not-running)
+- [Enterprise upgrade using master_software_updates does not work for redhat derivitives](http://cfengine.com/docs/3.5/getting-started-known-issues.html#enterprise-upgrade-using-master_software_updates-does-not-work-for-redhat-derivitives)
 - [not](http://cfengine.com/docs/3.5/reference-promise-types-classes.html#not)
 - [delete_if_not_startwith_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-delete_lines.html#delete_if_not_startwith_from_list)
 - [delete_if_not_match_from_list](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-delete_lines.html#delete_if_not_match_from_list)
