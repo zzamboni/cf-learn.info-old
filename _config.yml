@@ -1,2 +1,3 @@
 pygments: true
 safe: true
+markdown: kramdown
