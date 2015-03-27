@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'command-line' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'command-line'](http://cfengine.com/docs/latest/search.html?q=command-line).
+[search the CFEngine documentation for 'command-line'](http://docs.cfengine.com/latest/search.html?q=command-line).
 
-- [Command-Line Reports](http://cfengine.com/docs/latest/guide-reporting-command-line-reports.html#command-line-reports)
-- [Command-line reporting is available to Enterprise and Community users.](http://cfengine.com/docs/latest/guide-reporting-command-line-reports.html#command-line-reporting-is-available-to-enterprise-and-community-users)
-- [Command-Line Reporting](http://cfengine.com/docs/latest/guide-reporting.html#command-line-reporting)
+- [Command-Line Reports](http://docs.cfengine.com/latest/guide-reporting-command-line-reports.html#command-line-reports)
+- [Command-line reporting is available to Enterprise and Community users.](http://docs.cfengine.com/latest/guide-reporting-command-line-reports.html#command-line-reporting-is-available-to-enterprise-and-community-users)
+- [Command-Line Reporting](http://docs.cfengine.com/latest/guide-reporting.html#command-line-reporting)

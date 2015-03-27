@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'service_policy' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'service_policy'](http://cfengine.com/docs/latest/search.html?q=service_policy).
+[search the CFEngine documentation for 'service_policy'](http://docs.cfengine.com/latest/search.html?q=service_policy).
 
-- [service_policy](http://cfengine.com/docs/latest/reference-promise-types-services.html#service_policy)
-- [this.service_policy](http://cfengine.com/docs/latest/reference-special-variables-this.html#this-service_policy)
+- [service_policy](http://docs.cfengine.com/latest/reference-promise-types-services.html#service_policy)
+- [this.service_policy](http://docs.cfengine.com/latest/reference-special-variables-this.html#this-service_policy)

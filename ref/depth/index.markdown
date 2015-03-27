@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'depth' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'depth'](http://cfengine.com/docs/latest/search.html?q=depth).
+[search the CFEngine documentation for 'depth'](http://docs.cfengine.com/latest/search.html?q=depth).
 
-- [Depth searches (aka 'recursion') during searches](http://cfengine.com/docs/latest/reference-promise-types-files.html#depth-searches-aka-recursion-during-searches)
-- [depth_search](http://cfengine.com/docs/latest/reference-promise-types-files.html#depth_search)
-- [depth](http://cfengine.com/docs/latest/reference-promise-types-files.html#depth)
+- [Depth searches (aka 'recursion') during searches](http://docs.cfengine.com/latest/reference-promise-types-files.html#depth-searches-aka-recursion-during-searches)
+- [depth_search](http://docs.cfengine.com/latest/reference-promise-types-files.html#depth_search)
+- [depth](http://docs.cfengine.com/latest/reference-promise-types-files.html#depth)

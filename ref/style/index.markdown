@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'style' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'style'](http://cfengine.com/docs/latest/search.html?q=style).
+[search the CFEngine documentation for 'style'](http://docs.cfengine.com/latest/search.html?q=style).
 
-- [Policy Style Guide](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-style.html#policy-style-guide)
-- [Style Summary](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-style.html#style-summary)
+- [Policy Style Guide](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-policy-style.html#policy-style-guide)
+- [Style Summary](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-policy-style.html#style-summary)

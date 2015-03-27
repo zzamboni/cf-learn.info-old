@@ -7,9 +7,9 @@ navsection: none
 ---
 
 The term 'children' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'children'](http://cfengine.com/docs/latest/search.html?q=children).
+[search the CFEngine documentation for 'children'](http://docs.cfengine.com/latest/search.html?q=children).
 
-- [max_children](http://cfengine.com/docs/latest/reference-components-cf-runagent.html#max_children)
-- [background_children](http://cfengine.com/docs/latest/reference-components-cf-runagent.html#background_children)
-- [link_children](http://cfengine.com/docs/latest/reference-promise-types-files.html#link_children)
-- [when_linking_children](http://cfengine.com/docs/latest/reference-promise-types-files.html#when_linking_children)
+- [max_children](http://docs.cfengine.com/latest/reference-components-cf-runagent.html#max_children)
+- [background_children](http://docs.cfengine.com/latest/reference-components-cf-runagent.html#background_children)
+- [link_children](http://docs.cfengine.com/latest/reference-promise-types-files.html#link_children)
+- [when_linking_children](http://docs.cfengine.com/latest/reference-promise-types-files.html#when_linking_children)

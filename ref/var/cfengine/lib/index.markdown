@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term '/var/cfengine/lib' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for '/var/cfengine/lib'](http://cfengine.com/docs/latest/search.html?q=/var/cfengine/lib).
+[search the CFEngine documentation for '/var/cfengine/lib'](http://docs.cfengine.com/latest/search.html?q=/var/cfengine/lib).
 
-- [/var/cfengine/lib \#\#\#](http://cfengine.com/docs/latest/guide-introduction-directory-structure.html#var-cfengine-lib-###)
-- [/var/cfengine/lib-twin \#\#\#](http://cfengine.com/docs/latest/guide-introduction-directory-structure.html#var-cfengine-lib-twin-###)
+- [/var/cfengine/lib \#\#\#](http://docs.cfengine.com/latest/guide-introduction-directory-structure.html#var-cfengine-lib-###)
+- [/var/cfengine/lib-twin \#\#\#](http://docs.cfengine.com/latest/guide-introduction-directory-structure.html#var-cfengine-lib-twin-###)

@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'component' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'component'](http://cfengine.com/docs/latest/search.html?q=component).
+[search the CFEngine documentation for 'component'](http://docs.cfengine.com/latest/search.html?q=component).
 
-- [CFEngine Component Applications and Daemons \#\#](http://cfengine.com/docs/latest/guide-introduction.html#cfengine-component-applications-and-daemons-##)
-- [Other Component Applications \#\#\#](http://cfengine.com/docs/latest/guide-introduction.html#other-component-applications-###)
+- [CFEngine Component Applications and Daemons \#\#](http://docs.cfengine.com/latest/guide-introduction.html#cfengine-component-applications-and-daemons-##)
+- [Other Component Applications \#\#\#](http://docs.cfengine.com/latest/guide-introduction.html#other-component-applications-###)

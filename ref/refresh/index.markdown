@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'refresh' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'refresh'](http://cfengine.com/docs/latest/search.html?q=refresh).
+[search the CFEngine documentation for 'refresh'](http://docs.cfengine.com/latest/search.html?q=refresh).
 
-- [disable_inventory_package_refresh](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#disable_inventory_package_refresh)
-- [refresh_processes](http://cfengine.com/docs/latest/reference-components-cf-agent.html#refresh_processes)
+- [disable_inventory_package_refresh](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-policy-framework.html#disable_inventory_package_refresh)
+- [refresh_processes](http://docs.cfengine.com/latest/reference-components-cf-agent.html#refresh_processes)

@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'dirs' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'dirs'](http://cfengine.com/docs/latest/search.html?q=dirs).
+[search the CFEngine documentation for 'dirs'](http://docs.cfengine.com/latest/search.html?q=dirs).
 
-- [exclude_dirs](http://cfengine.com/docs/latest/reference-promise-types-files.html#exclude_dirs)
-- [include_dirs](http://cfengine.com/docs/latest/reference-promise-types-files.html#include_dirs)
+- [exclude_dirs](http://docs.cfengine.com/latest/reference-promise-types-files.html#exclude_dirs)
+- [include_dirs](http://docs.cfengine.com/latest/reference-promise-types-files.html#include_dirs)

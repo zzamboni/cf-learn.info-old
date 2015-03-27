@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'some' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'some'](http://cfengine.com/docs/latest/search.html?q=some).
+[search the CFEngine documentation for 'some'](http://docs.cfengine.com/latest/search.html?q=some).
 
-- [I have updated some non policy files and changes are not distributed to clients \#\#\#](http://cfengine.com/docs/latest/guide-faq.html#i-have-updated-some-non-policy-files-and-changes-are-not-distributed-to-clients-###)
-- [some](http://cfengine.com/docs/latest/reference-functions-some.html#some)
+- [I have updated some non policy files and changes are not distributed to clients \#\#\#](http://docs.cfengine.com/latest/guide-faq.html#i-have-updated-some-non-policy-files-and-changes-are-not-distributed-to-clients-###)
+- [some](http://docs.cfengine.com/latest/reference-functions-some.html#some)

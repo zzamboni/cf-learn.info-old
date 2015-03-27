@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'containers' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'containers'](http://cfengine.com/docs/latest/search.html?q=containers).
+[search the CFEngine documentation for 'containers'](http://docs.cfengine.com/latest/search.html?q=containers).
 
-- [Data containers](http://cfengine.com/docs/latest/examples-tutorials-json-yaml-support-in-cfengine.html#data-containers)
-- [Data Containers for Structured Data \#\#\#](http://cfengine.com/docs/latest/guide-latest-release-whatsnew.html#data-containers-for-structured-data-###)
+- [Data containers](http://docs.cfengine.com/latest/examples-tutorials-json-yaml-support-in-cfengine.html#data-containers)
+- [Data Containers for Structured Data \#\#\#](http://docs.cfengine.com/latest/guide-latest-release-whatsnew.html#data-containers-for-structured-data-###)

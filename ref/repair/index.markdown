@@ -7,9 +7,9 @@ navsection: none
 ---
 
 The term 'repair' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'repair'](http://cfengine.com/docs/latest/search.html?q=repair).
+[search the CFEngine documentation for 'repair'](http://docs.cfengine.com/latest/search.html?q=repair).
 
-- [Promise repair logic](http://cfengine.com/docs/latest/reference-promise-types-packages.html#promise-repair-logic)
-- [repair_failed](http://cfengine.com/docs/latest/reference-promise-types.html#repair_failed)
-- [repair_denied](http://cfengine.com/docs/latest/reference-promise-types.html#repair_denied)
-- [repair_timeout](http://cfengine.com/docs/latest/reference-promise-types.html#repair_timeout)
+- [Promise repair logic](http://docs.cfengine.com/latest/reference-promise-types-packages.html#promise-repair-logic)
+- [repair_failed](http://docs.cfengine.com/latest/reference-promise-types.html#repair_failed)
+- [repair_denied](http://docs.cfengine.com/latest/reference-promise-types.html#repair_denied)
+- [repair_timeout](http://docs.cfengine.com/latest/reference-promise-types.html#repair_timeout)

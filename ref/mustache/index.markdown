@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'mustache' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'mustache'](http://cfengine.com/docs/latest/search.html?q=mustache).
+[search the CFEngine documentation for 'mustache'](http://docs.cfengine.com/latest/search.html?q=mustache).
 
-- [Mustache Templating \#\#\#](http://cfengine.com/docs/latest/guide-faq.html#mustache-templating-###)
-- [Can I render a Mustache template into a string? \#\#\#\#](http://cfengine.com/docs/latest/guide-faq.html#can-i-render-a-mustache-template-into-a-string?-####)
+- [Mustache Templating \#\#\#](http://docs.cfengine.com/latest/guide-faq.html#mustache-templating-###)
+- [Can I render a Mustache template into a string? \#\#\#\#](http://docs.cfengine.com/latest/guide-faq.html#can-i-render-a-mustache-template-into-a-string?-####)

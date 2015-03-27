@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'precedence' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'precedence'](http://cfengine.com/docs/latest/search.html?q=precedence).
+[search the CFEngine documentation for 'precedence'](http://docs.cfengine.com/latest/search.html?q=precedence).
 
-- [Precedence \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#precedence-####)
-- [Operators and Precedence](http://cfengine.com/docs/latest/guide-language-concepts-classes.html#operators-and-precedence)
+- [Precedence \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#precedence-####)
+- [Operators and Precedence](http://docs.cfengine.com/latest/guide-language-concepts-classes.html#operators-and-precedence)

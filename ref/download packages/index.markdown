@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'download packages' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'download packages'](http://cfengine.com/docs/latest/search.html?q=download+packages).
+[search the CFEngine documentation for 'download packages'](http://docs.cfengine.com/latest/search.html?q=download+packages).
 
-- [1. Download Packages](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-community.html#1-download-packages)
-- [Download Packages](http://cfengine.com/docs/latest/guide-installation-and-configuration-pre-installation-checklist.html#download-packages)
+- [1. Download Packages](http://docs.cfengine.com/latest/guide-installation-and-configuration-general-installation-installation-community.html#1-download-packages)
+- [Download Packages](http://docs.cfengine.com/latest/guide-installation-and-configuration-pre-installation-checklist.html#download-packages)

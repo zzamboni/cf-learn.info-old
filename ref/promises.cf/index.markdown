@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'promises.cf' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'promises.cf'](http://cfengine.com/docs/latest/search.html?q=promises.cf).
+[search the CFEngine documentation for 'promises.cf'](http://docs.cfengine.com/latest/search.html?q=promises.cf).
 
-- [promises.cf](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#promises-cf)
-- [promises.cf configuration \#\#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#promises-cf-configuration-####)
+- [promises.cf](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-policy-framework.html#promises-cf)
+- [promises.cf configuration \#\#\#\#](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-policy-framework.html#promises-cf-configuration-####)

@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'int|real|string' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'int|real|string'](http://cfengine.com/docs/latest/search.html?q=int|real|string).
+[search the CFEngine documentation for 'int|real|string'](http://docs.cfengine.com/latest/search.html?q=int|real|string).
 
-- ["parse\[int|real|string\]array"](http://cfengine.com/docs/latest/reference-functions-parseintrealstringarray.html#parse-int|real|string-array)
-- ["read\[int|real|string\]array"](http://cfengine.com/docs/latest/reference-functions-readintrealstringarray.html#read-int|real|string-array)
-- [read\[int|real|string\]list](http://cfengine.com/docs/latest/reference-functions-readintrealstringlist.html#read-int|real|string-list)
+- ["parse\[int|real|string\]array"](http://docs.cfengine.com/latest/reference-functions-parseintrealstringarray.html#parse-int|real|string-array)
+- ["read\[int|real|string\]array"](http://docs.cfengine.com/latest/reference-functions-readintrealstringarray.html#read-int|real|string-array)
+- [read\[int|real|string\]list](http://docs.cfengine.com/latest/reference-functions-readintrealstringlist.html#read-int|real|string-list)

@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'networks' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'networks'](http://cfengine.com/docs/latest/search.html?q=networks).
+[search the CFEngine documentation for 'networks'](http://docs.cfengine.com/latest/search.html?q=networks).
 
-- [bgp_ipv4_networks](http://cfengine.com/docs/latest/reference-components-routing_services_control.html#bgp_ipv4_networks)
-- [bgp_ipv6_networks](http://cfengine.com/docs/latest/reference-components-routing_services_control.html#bgp_ipv6_networks)
+- [bgp_ipv4_networks](http://docs.cfengine.com/latest/reference-components-routing_services_control.html#bgp_ipv4_networks)
+- [bgp_ipv6_networks](http://docs.cfengine.com/latest/reference-components-routing_services_control.html#bgp_ipv6_networks)

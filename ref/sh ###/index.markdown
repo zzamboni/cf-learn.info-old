@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'sh ###' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'sh ###'](http://cfengine.com/docs/latest/search.html?q=sh+###).
+[search the CFEngine documentation for 'sh ###'](http://docs.cfengine.com/latest/search.html?q=sh+###).
 
-- [\`common.sh\` \#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-best-practices.html#common-sh-###)
-- [\`masterfiles-stage.sh\` \#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-best-practices.html#masterfiles-stage-sh-###)
-- [\`pre-fetch.sh\` and \`post-update.sh\` \#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-best-practices.html#pre-fetch-sh-and-post-update-sh-###)
+- [\`common.sh\` \#\#\#](http://docs.cfengine.com/latest/enterprise-cfengine-guide-best-practices.html#common-sh-###)
+- [\`masterfiles-stage.sh\` \#\#\#](http://docs.cfengine.com/latest/enterprise-cfengine-guide-best-practices.html#masterfiles-stage-sh-###)
+- [\`pre-fetch.sh\` and \`post-update.sh\` \#\#\#](http://docs.cfengine.com/latest/enterprise-cfengine-guide-best-practices.html#pre-fetch-sh-and-post-update-sh-###)

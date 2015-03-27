@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'backup' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'backup'](http://cfengine.com/docs/latest/search.html?q=backup).
+[search the CFEngine documentation for 'backup'](http://docs.cfengine.com/latest/search.html?q=backup).
 
-- [copy_backup](http://cfengine.com/docs/latest/reference-promise-types-files.html#copy_backup)
-- [edit_backup](http://cfengine.com/docs/latest/reference-promise-types-files.html#edit_backup)
+- [copy_backup](http://docs.cfengine.com/latest/reference-promise-types-files.html#copy_backup)
+- [edit_backup](http://docs.cfengine.com/latest/reference-promise-types-files.html#edit_backup)

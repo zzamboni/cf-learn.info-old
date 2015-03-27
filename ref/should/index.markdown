@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'should' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'should'](http://cfengine.com/docs/latest/search.html?q=should).
+[search the CFEngine documentation for 'should'](http://docs.cfengine.com/latest/search.html?q=should).
 
-- [What steps should I take after installing CFEngine Enterprise \#\#\#\#](http://cfengine.com/docs/latest/guide-faq.html#what-steps-should-i-take-after-installing-cfengine-enterprise-####)
-- [Should Monitoring and Configuration be Separate?](http://cfengine.com/docs/latest/guide-reporting-monitoring-reporting.html#should-monitoring-and-configuration-be-separate?)
+- [What steps should I take after installing CFEngine Enterprise \#\#\#\#](http://docs.cfengine.com/latest/guide-faq.html#what-steps-should-i-take-after-installing-cfengine-enterprise-####)
+- [Should Monitoring and Configuration be Separate?](http://docs.cfengine.com/latest/guide-reporting-monitoring-reporting.html#should-monitoring-and-configuration-be-separate?)

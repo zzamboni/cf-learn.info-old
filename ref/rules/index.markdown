@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'rules' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'rules'](http://cfengine.com/docs/latest/search.html?q=rules).
+[search the CFEngine documentation for 'rules'](http://docs.cfengine.com/latest/search.html?q=rules).
 
-- [Rules for evaluation of common bundles](http://cfengine.com/docs/latest/guide-language-concepts-bundles.html#rules-for-evaluation-of-common-bundles)
-- [Exceptions to namespacing rules](http://cfengine.com/docs/latest/guide-language-concepts-namespaces.html#exceptions-to-namespacing-rules)
+- [Rules for evaluation of common bundles](http://docs.cfengine.com/latest/guide-language-concepts-bundles.html#rules-for-evaluation-of-common-bundles)
+- [Exceptions to namespacing rules](http://docs.cfengine.com/latest/guide-language-concepts-namespaces.html#exceptions-to-namespacing-rules)

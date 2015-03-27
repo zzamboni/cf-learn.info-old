@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'links' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'links'](http://cfengine.com/docs/latest/search.html?q=links).
+[search the CFEngine documentation for 'links'](http://docs.cfengine.com/latest/search.html?q=links).
 
-- [Links](http://cfengine.com/docs/latest/markdown-cheatsheet.html#links)
-- [Links to Examples \#\#](http://cfengine.com/docs/latest/examples.html#links-to-examples-##)
-- [traverse_links](http://cfengine.com/docs/latest/reference-promise-types-files.html#traverse_links)
+- [Links](http://docs.cfengine.com/latest/markdown-cheatsheet.html#links)
+- [Links to Examples \#\#](http://docs.cfengine.com/latest/examples.html#links-to-examples-##)
+- [traverse_links](http://docs.cfengine.com/latest/reference-promise-types-files.html#traverse_links)

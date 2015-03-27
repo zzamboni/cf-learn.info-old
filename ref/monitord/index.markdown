@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'monitord' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'monitord'](http://cfengine.com/docs/latest/search.html?q=monitord).
+[search the CFEngine documentation for 'monitord'](http://docs.cfengine.com/latest/search.html?q=monitord).
 
-- [cf-monitord \#\#\#\#](http://cfengine.com/docs/latest/guide-introduction.html#cf-monitord-####)
-- [cf-monitord](http://cfengine.com/docs/latest/reference-components-cf-monitord.html#cf-monitord)
+- [cf-monitord \#\#\#\#](http://docs.cfengine.com/latest/guide-introduction.html#cf-monitord-####)
+- [cf-monitord](http://docs.cfengine.com/latest/reference-components-cf-monitord.html#cf-monitord)

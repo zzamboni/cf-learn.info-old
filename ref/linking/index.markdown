@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'linking' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'linking'](http://cfengine.com/docs/latest/search.html?q=linking).
+[search the CFEngine documentation for 'linking'](http://docs.cfengine.com/latest/search.html?q=linking).
 
-- [Linking files](http://cfengine.com/docs/latest/examples-example-snippets-basic-file-directory.html#linking-files)
-- [when_linking_children](http://cfengine.com/docs/latest/reference-promise-types-files.html#when_linking_children)
+- [Linking files](http://docs.cfengine.com/latest/examples-example-snippets-basic-file-directory.html#linking-files)
+- [when_linking_children](http://docs.cfengine.com/latest/reference-promise-types-files.html#when_linking_children)

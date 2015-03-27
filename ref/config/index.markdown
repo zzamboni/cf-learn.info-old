@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'config' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'config'](http://cfengine.com/docs/latest/search.html?q=config).
+[search the CFEngine documentation for 'config'](http://docs.cfengine.com/latest/search.html?q=config).
 
-- [Prepare the config.json file](http://cfengine.com/docs/latest/guide-design-center-configure-sketches-community-design-center-advanced.html#prepare-the-config-json-file)
-- [/var/cfengine/config \#\#\#](http://cfengine.com/docs/latest/guide-introduction-directory-structure.html#var-cfengine-config-###)
+- [Prepare the config.json file](http://docs.cfengine.com/latest/guide-design-center-configure-sketches-community-design-center-advanced.html#prepare-the-config-json-file)
+- [/var/cfengine/config \#\#\#](http://docs.cfengine.com/latest/guide-introduction-directory-structure.html#var-cfengine-config-###)

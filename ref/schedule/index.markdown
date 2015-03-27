@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'schedule' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'schedule'](http://cfengine.com/docs/latest/search.html?q=schedule).
+[search the CFEngine documentation for 'schedule'](http://docs.cfengine.com/latest/search.html?q=schedule).
 
-- [schedule](http://cfengine.com/docs/latest/reference-components-cf-execd.html#schedule)
-- [hub_schedule](http://cfengine.com/docs/latest/reference-components-cf-hub.html#hub_schedule)
+- [schedule](http://docs.cfengine.com/latest/reference-components-cf-execd.html#schedule)
+- [hub_schedule](http://docs.cfengine.com/latest/reference-components-cf-hub.html#hub_schedule)

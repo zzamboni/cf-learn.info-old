@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'domain' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'domain'](http://cfengine.com/docs/latest/search.html?q=domain).
+[search the CFEngine documentation for 'domain'](http://docs.cfengine.com/latest/search.html?q=domain).
 
-- [domain](http://cfengine.com/docs/latest/reference-components.html#domain)
-- [Domain knowledge](http://cfengine.com/docs/latest/reference-promise-types-packages.html#domain-knowledge)
-- [sys.domain](http://cfengine.com/docs/latest/reference-special-variables-sys.html#sys-domain)
+- [domain](http://docs.cfengine.com/latest/reference-components.html#domain)
+- [Domain knowledge](http://docs.cfengine.com/latest/reference-promise-types-packages.html#domain-knowledge)
+- [sys.domain](http://docs.cfengine.com/latest/reference-special-variables-sys.html#sys-domain)

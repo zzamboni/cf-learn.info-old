@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'tools' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'tools'](http://cfengine.com/docs/latest/search.html?q=tools).
+[search the CFEngine documentation for 'tools'](http://docs.cfengine.com/latest/search.html?q=tools).
 
-- [Installing cluster management tools \#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-high-availability-installation-guide.html#installing-cluster-management-tools-##)
-- [Tools \#\#](http://cfengine.com/docs/latest/guide-additional-resources.html#tools-##)
-- [Authoring Policy Tools & Workflow](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-authoring-policy-tools-and-workflow.html#authoring-policy-tools-&-workflow)
+- [Installing cluster management tools \#\#](http://docs.cfengine.com/latest/enterprise-cfengine-guide-high-availability-installation-guide.html#installing-cluster-management-tools-##)
+- [Tools \#\#](http://docs.cfengine.com/latest/guide-additional-resources.html#tools-##)
+- [Authoring Policy Tools & Workflow](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-authoring-policy-tools-and-workflow.html#authoring-policy-tools-&-workflow)

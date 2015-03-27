@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'collect' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'collect'](http://cfengine.com/docs/latest/search.html?q=collect).
+[search the CFEngine documentation for 'collect'](http://docs.cfengine.com/latest/search.html?q=collect).
 
-- [Call Collect \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#call-collect-####)
-- [call_collect_interval](http://cfengine.com/docs/latest/reference-components-cf-serverd.html#call_collect_interval)
-- [collect_window](http://cfengine.com/docs/latest/reference-components-cf-serverd.html#collect_window)
+- [Call Collect \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#call-collect-####)
+- [call_collect_interval](http://docs.cfengine.com/latest/reference-components-cf-serverd.html#call_collect_interval)
+- [collect_window](http://docs.cfengine.com/latest/reference-components-cf-serverd.html#collect_window)

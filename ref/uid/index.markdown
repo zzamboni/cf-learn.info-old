@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'uid' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'uid'](http://cfengine.com/docs/latest/search.html?q=uid).
+[search the CFEngine documentation for 'uid'](http://docs.cfengine.com/latest/search.html?q=uid).
 
-- [uid](http://cfengine.com/docs/latest/reference-promise-types-users.html#uid)
-- [this.promiser_uid](http://cfengine.com/docs/latest/reference-special-variables-this.html#this-promiser_uid)
+- [uid](http://docs.cfengine.com/latest/reference-promise-types-users.html#uid)
+- [this.promiser_uid](http://docs.cfengine.com/latest/reference-special-variables-this.html#this-promiser_uid)

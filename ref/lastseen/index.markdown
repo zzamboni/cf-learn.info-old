@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'lastseen' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'lastseen'](http://cfengine.com/docs/latest/search.html?q=lastseen).
+[search the CFEngine documentation for 'lastseen'](http://docs.cfengine.com/latest/search.html?q=lastseen).
 
-- [/var/cfengine/lastseen \#\#\#](http://cfengine.com/docs/latest/guide-introduction-directory-structure.html#var-cfengine-lastseen-###)
-- [lastseen](http://cfengine.com/docs/latest/reference-promise-types-reports.html#lastseen)
+- [/var/cfengine/lastseen \#\#\#](http://docs.cfengine.com/latest/guide-introduction-directory-structure.html#var-cfengine-lastseen-###)
+- [lastseen](http://docs.cfengine.com/latest/reference-promise-types-reports.html#lastseen)

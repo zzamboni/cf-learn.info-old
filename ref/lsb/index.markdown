@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'lsb' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'lsb'](http://cfengine.com/docs/latest/search.html?q=lsb).
+[search the CFEngine documentation for 'lsb'](http://docs.cfengine.com/latest/search.html?q=lsb).
 
-- [disable_inventory_lsb](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#disable_inventory_lsb)
-- [LSB \#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#lsb-###)
+- [disable_inventory_lsb](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-policy-framework.html#disable_inventory_lsb)
+- [LSB \#\#\#](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-policy-framework.html#lsb-###)

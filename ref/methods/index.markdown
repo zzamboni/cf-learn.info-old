@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'methods' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'methods'](http://cfengine.com/docs/latest/search.html?q=methods).
+[search the CFEngine documentation for 'methods'](http://docs.cfengine.com/latest/search.html?q=methods).
 
-- [methods](http://cfengine.com/docs/latest/reference-promise-types-methods.html#methods)
-- [methods - take on a whole bundle of other promises \#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-promises-available-in-cfengine.html#methods-take-on-a-whole-bundle-of-other-promises-###)
+- [methods](http://docs.cfengine.com/latest/reference-promise-types-methods.html#methods)
+- [methods - take on a whole bundle of other promises \#\#\#](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-promises-available-in-cfengine.html#methods-take-on-a-whole-bundle-of-other-promises-###)

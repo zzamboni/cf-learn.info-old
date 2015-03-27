@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'variable' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'variable'](http://cfengine.com/docs/latest/search.html?q=variable).
+[search the CFEngine documentation for 'variable'](http://docs.cfengine.com/latest/search.html?q=variable).
 
-- [Add variable definitions to a file](http://cfengine.com/docs/latest/examples-example-snippets-basic-file-directory.html#add-variable-definitions-to-a-file)
-- [How can I pass a data variable to template_data? \#\#\#\#](http://cfengine.com/docs/latest/guide-faq.html#how-can-i-pass-a-data-variable-to-template_data?-####)
-- [How do I pass a data type variable \#\#\#](http://cfengine.com/docs/latest/guide-faq.html#how-do-i-pass-a-data-type-variable-###)
+- [Add variable definitions to a file](http://docs.cfengine.com/latest/examples-example-snippets-basic-file-directory.html#add-variable-definitions-to-a-file)
+- [How can I pass a data variable to template_data? \#\#\#\#](http://docs.cfengine.com/latest/guide-faq.html#how-can-i-pass-a-data-variable-to-template_data?-####)
+- [How do I pass a data type variable \#\#\#](http://docs.cfengine.com/latest/guide-faq.html#how-do-i-pass-a-data-type-variable-###)

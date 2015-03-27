@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'servers' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'servers'](http://cfengine.com/docs/latest/search.html?q=servers).
+[search the CFEngine documentation for 'servers'](http://docs.cfengine.com/latest/search.html?q=servers).
 
-- [CFEngine Policy Servers and Hosts \#\#](http://cfengine.com/docs/latest/guide-introduction.html#cfengine-policy-servers-and-hosts-##)
-- [servers](http://cfengine.com/docs/latest/reference-promise-types-files.html#servers)
+- [CFEngine Policy Servers and Hosts \#\#](http://docs.cfengine.com/latest/guide-introduction.html#cfengine-policy-servers-and-hosts-##)
+- [servers](http://docs.cfengine.com/latest/reference-promise-types-files.html#servers)

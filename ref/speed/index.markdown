@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'speed' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'speed'](http://cfengine.com/docs/latest/search.html?q=speed).
+[search the CFEngine documentation for 'speed'](http://docs.cfengine.com/latest/search.html?q=speed).
 
-- [Disk speed](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise.html#disk-speed)
-- [speed - Link speed in MB/s](http://cfengine.com/docs/latest/reference-promise-types-interfaces.html#speed-link-speed-in-mb-s)
+- [Disk speed](http://docs.cfengine.com/latest/guide-installation-and-configuration-general-installation-installation-enterprise.html#disk-speed)
+- [speed - Link speed in MB/s](http://docs.cfengine.com/latest/reference-promise-types-interfaces.html#speed-link-speed-in-mb-s)

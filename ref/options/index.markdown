@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'options' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'options'](http://cfengine.com/docs/latest/search.html?q=options).
+[search the CFEngine documentation for 'options'](http://docs.cfengine.com/latest/search.html?q=options).
 
-- [Options controlling which variables to report have moved and changed \#\#\#\#](http://cfengine.com/docs/latest/guide-latest-release-policy-framework-updates.html#options-controlling-which-variables-to-report-have-moved-and-changed-####)
-- [mount_options](http://cfengine.com/docs/latest/reference-promise-types-storage.html#mount_options)
+- [Options controlling which variables to report have moved and changed \#\#\#\#](http://docs.cfengine.com/latest/guide-latest-release-policy-framework-updates.html#options-controlling-which-variables-to-report-have-moved-and-changed-####)
+- [mount_options](http://docs.cfengine.com/latest/reference-promise-types-storage.html#mount_options)

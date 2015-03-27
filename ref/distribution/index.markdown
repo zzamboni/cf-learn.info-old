@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'distribution' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'distribution'](http://cfengine.com/docs/latest/search.html?q=distribution).
+[search the CFEngine documentation for 'distribution'](http://docs.cfengine.com/latest/search.html?q=distribution).
 
-- [Software distribution](http://cfengine.com/docs/latest/examples-example-snippets-software-adminstration.html#software-distribution)
-- [Policy Distribution \#\#\#](http://cfengine.com/docs/latest/guide-faq.html#policy-distribution-###)
-- [Distribution \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#distribution-####)
+- [Software distribution](http://docs.cfengine.com/latest/examples-example-snippets-software-adminstration.html#software-distribution)
+- [Policy Distribution \#\#\#](http://docs.cfengine.com/latest/guide-faq.html#policy-distribution-###)
+- [Distribution \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#distribution-####)

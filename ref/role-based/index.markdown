@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'role-based' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'role-based'](http://cfengine.com/docs/latest/search.html?q=role-based).
+[search the CFEngine documentation for 'role-based'](http://docs.cfengine.com/latest/search.html?q=role-based).
 
-- [Role-based access control \#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide.html#role-based-access-control-###)
-- [Role-Based Access Control (RBAC) \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#role-based-access-control-rbac-####)
+- [Role-based access control \#\#\#](http://docs.cfengine.com/latest/enterprise-cfengine-guide.html#role-based-access-control-###)
+- [Role-Based Access Control (RBAC) \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#role-based-access-control-rbac-####)

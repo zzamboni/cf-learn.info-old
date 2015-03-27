@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'paid' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'paid'](http://cfengine.com/docs/latest/search.html?q=paid).
+[search the CFEngine documentation for 'paid'](http://docs.cfengine.com/latest/search.html?q=paid).
 
-- [Host licenses paid deprecated \#\#\#\#](http://cfengine.com/docs/latest/guide-latest-release-policy-framework-updates.html#host-licenses-paid-deprecated-####)
-- [host_licenses_paid](http://cfengine.com/docs/latest/reference-components.html#host_licenses_paid)
+- [Host licenses paid deprecated \#\#\#\#](http://docs.cfengine.com/latest/guide-latest-release-policy-framework-updates.html#host-licenses-paid-deprecated-####)
+- [host_licenses_paid](http://docs.cfengine.com/latest/reference-components.html#host_licenses_paid)

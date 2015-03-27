@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'yaml' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'yaml'](http://cfengine.com/docs/latest/search.html?q=yaml).
+[search the CFEngine documentation for 'yaml'](http://docs.cfengine.com/latest/search.html?q=yaml).
 
-- [JSON and YAML Support in CFEngine](http://cfengine.com/docs/latest/examples-tutorials-json-yaml-support-in-cfengine.html#json-and-yaml-support-in-cfengine)
-- [Reading YAML](http://cfengine.com/docs/latest/examples-tutorials-json-yaml-support-in-cfengine.html#reading-yaml)
+- [JSON and YAML Support in CFEngine](http://docs.cfengine.com/latest/examples-tutorials-json-yaml-support-in-cfengine.html#json-and-yaml-support-in-cfengine)
+- [Reading YAML](http://docs.cfengine.com/latest/examples-tutorials-json-yaml-support-in-cfengine.html#reading-yaml)

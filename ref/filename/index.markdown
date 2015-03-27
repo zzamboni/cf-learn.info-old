@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'filename' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'filename'](http://cfengine.com/docs/latest/search.html?q=filename).
+[search the CFEngine documentation for 'filename'](http://docs.cfengine.com/latest/search.html?q=filename).
 
-- [edit.filename](http://cfengine.com/docs/latest/reference-special-variables-edit.html#edit-filename)
-- [this.promise_filename](http://cfengine.com/docs/latest/reference-special-variables-this.html#this-promise_filename)
+- [edit.filename](http://docs.cfengine.com/latest/reference-special-variables-edit.html#edit-filename)
+- [this.promise_filename](http://docs.cfengine.com/latest/reference-special-variables-this.html#this-promise_filename)

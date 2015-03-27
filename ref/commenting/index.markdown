@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'commenting' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'commenting'](http://cfengine.com/docs/latest/search.html?q=commenting).
+[search the CFEngine documentation for 'commenting'](http://docs.cfengine.com/latest/search.html?q=commenting).
 
-- [Commenting lines in a file](http://cfengine.com/docs/latest/examples-example-snippets-basic-file-directory.html#commenting-lines-in-a-file)
-- [Commenting lines](http://cfengine.com/docs/latest/guide-language-concepts-pattern-matching-and-referencing.html#commenting-lines)
+- [Commenting lines in a file](http://docs.cfengine.com/latest/examples-example-snippets-basic-file-directory.html#commenting-lines-in-a-file)
+- [Commenting lines](http://docs.cfengine.com/latest/guide-language-concepts-pattern-matching-and-referencing.html#commenting-lines)

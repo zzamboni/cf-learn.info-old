@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'unmount' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'unmount'](http://cfengine.com/docs/latest/search.html?q=unmount).
+[search the CFEngine documentation for 'unmount'](http://docs.cfengine.com/latest/search.html?q=unmount).
 
-- [Unmount NFS filesystem](http://cfengine.com/docs/latest/examples-example-snippets-network.html#unmount-nfs-filesystem)
-- [unmount](http://cfengine.com/docs/latest/reference-promise-types-storage.html#unmount)
+- [Unmount NFS filesystem](http://docs.cfengine.com/latest/examples-example-snippets-network.html#unmount-nfs-filesystem)
+- [unmount](http://docs.cfengine.com/latest/reference-promise-types-storage.html#unmount)

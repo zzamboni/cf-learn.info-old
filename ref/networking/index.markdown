@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'networking' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'networking'](http://cfengine.com/docs/latest/search.html?q=networking).
+[search the CFEngine documentation for 'networking'](http://docs.cfengine.com/latest/search.html?q=networking).
 
-- [Networking \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#networking-####)
-- [Networking](http://cfengine.com/docs/latest/guide-introduction-networking.html#networking)
+- [Networking \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#networking-####)
+- [Networking](http://docs.cfengine.com/latest/guide-introduction-networking.html#networking)

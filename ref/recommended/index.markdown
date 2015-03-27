@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'recommended' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'recommended'](http://cfengine.com/docs/latest/search.html?q=recommended).
+[search the CFEngine documentation for 'recommended'](http://docs.cfengine.com/latest/search.html?q=recommended).
 
-- [Recommended Reading](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-free.html#recommended-reading)
-- [Recommended Reading \#\#\#](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-free-aws-rhel.html#recommended-reading-###)
+- [Recommended Reading](http://docs.cfengine.com/latest/guide-installation-and-configuration-general-installation-installation-enterprise-free.html#recommended-reading)
+- [Recommended Reading \#\#\#](http://docs.cfengine.com/latest/guide-installation-and-configuration-general-installation-installation-enterprise-free-aws-rhel.html#recommended-reading-###)

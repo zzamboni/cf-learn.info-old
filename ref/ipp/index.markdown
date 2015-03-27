@@ -7,11 +7,11 @@ navsection: none
 ---
 
 The term 'ipp' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'ipp'](http://cfengine.com/docs/latest/search.html?q=ipp).
+[search the CFEngine documentation for 'ipp'](http://docs.cfengine.com/latest/search.html?q=ipp).
 
-- [mon.value_ipp_in](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-value_ipp_in)
-- [mon.av_ipp_in](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-av_ipp_in)
-- [mon.dev_ipp_in](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-dev_ipp_in)
-- [mon.value_ipp_out](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-value_ipp_out)
-- [mon.av_ipp_out](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-av_ipp_out)
-- [mon.dev_ipp_out](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-dev_ipp_out)
+- [mon.value_ipp_in](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-value_ipp_in)
+- [mon.av_ipp_in](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-av_ipp_in)
+- [mon.dev_ipp_in](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-dev_ipp_in)
+- [mon.value_ipp_out](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-value_ipp_out)
+- [mon.av_ipp_out](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-av_ipp_out)
+- [mon.dev_ipp_out](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-dev_ipp_out)

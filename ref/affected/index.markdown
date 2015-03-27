@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'affected' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'affected'](http://cfengine.com/docs/latest/search.html?q=affected).
+[search the CFEngine documentation for 'affected'](http://docs.cfengine.com/latest/search.html?q=affected).
 
-- [Report on affected system inventory \#\#\#](http://cfengine.com/docs/latest/examples-tutorials-report_inventory_remediate_sec_vulnerabilities.html#report-on-affected-system-inventory-###)
-- [Report on affected systems inventory after remediation \#\#\#](http://cfengine.com/docs/latest/examples-tutorials-report_inventory_remediate_sec_vulnerabilities.html#report-on-affected-systems-inventory-after-remediation-###)
+- [Report on affected system inventory \#\#\#](http://docs.cfengine.com/latest/examples-tutorials-report_inventory_remediate_sec_vulnerabilities.html#report-on-affected-system-inventory-###)
+- [Report on affected systems inventory after remediation \#\#\#](http://docs.cfengine.com/latest/examples-tutorials-report_inventory_remediate_sec_vulnerabilities.html#report-on-affected-systems-inventory-after-remediation-###)

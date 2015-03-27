@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'frequency' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'frequency'](http://cfengine.com/docs/latest/search.html?q=frequency).
+[search the CFEngine documentation for 'frequency'](http://docs.cfengine.com/latest/search.html?q=frequency).
 
-- [Frequency \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#frequency-####)
-- [Controlling Frequency](http://cfengine.com/docs/latest/guide-language-concepts-controlling-frequency.html#controlling-frequency)
+- [Frequency \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#frequency-####)
+- [Controlling Frequency](http://docs.cfengine.com/latest/guide-language-concepts-controlling-frequency.html#controlling-frequency)

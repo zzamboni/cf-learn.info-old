@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'introduction' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'introduction'](http://cfengine.com/docs/latest/search.html?q=introduction).
+[search the CFEngine documentation for 'introduction'](http://docs.cfengine.com/latest/search.html?q=introduction).
 
-- [Introduction](http://cfengine.com/docs/latest/examples-tutorials-tags.html#introduction)
-- [Introduction and System Overview](http://cfengine.com/docs/latest/guide-introduction.html#introduction-and-system-overview)
+- [Introduction](http://docs.cfengine.com/latest/examples-tutorials-tags.html#introduction)
+- [Introduction and System Overview](http://docs.cfengine.com/latest/guide-introduction.html#introduction-and-system-overview)

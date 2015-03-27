@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'sys-interface' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'sys-interface'](http://cfengine.com/docs/latest/search.html?q=sys-interface).
+[search the CFEngine documentation for 'sys-interface'](http://docs.cfengine.com/latest/search.html?q=sys-interface).
 
-- [sys.interface](http://cfengine.com/docs/latest/reference-special-variables-sys.html#sys-interface)
-- [sys.interface_flags](http://cfengine.com/docs/latest/reference-special-variables-sys.html#sys-interface_flags)
+- [sys.interface](http://docs.cfengine.com/latest/reference-special-variables-sys.html#sys-interface)
+- [sys.interface_flags](http://docs.cfengine.com/latest/reference-special-variables-sys.html#sys-interface_flags)

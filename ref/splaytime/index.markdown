@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'splaytime' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'splaytime'](http://cfengine.com/docs/latest/search.html?q=splaytime).
+[search the CFEngine documentation for 'splaytime'](http://docs.cfengine.com/latest/search.html?q=splaytime).
 
-- [Setting the splaytime \#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-best-practices.html#setting-the-splaytime-###)
-- [splaytime](http://cfengine.com/docs/latest/reference-components-cf-execd.html#splaytime)
+- [Setting the splaytime \#\#\#](http://docs.cfengine.com/latest/enterprise-cfengine-guide-best-practices.html#setting-the-splaytime-###)
+- [splaytime](http://docs.cfengine.com/latest/reference-components-cf-execd.html#splaytime)

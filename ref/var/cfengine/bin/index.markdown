@@ -7,10 +7,10 @@ navsection: none
 ---
 
 The term '/var/cfengine/bin' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for '/var/cfengine/bin'](http://cfengine.com/docs/latest/search.html?q=/var/cfengine/bin).
+[search the CFEngine documentation for '/var/cfengine/bin'](http://docs.cfengine.com/latest/search.html?q=/var/cfengine/bin).
 
-- [/var/cfengine/bin \#\#](http://cfengine.com/docs/latest/guide-introduction-directory-structure.html#var-cfengine-bin-##)
-- [git in /var/cfengine/bin \#\#](http://cfengine.com/docs/latest/guide-introduction-directory-structure.html#git-in-var-cfengine-bin-##)
-- [Misc. in /var/cfengine/bin \#\#](http://cfengine.com/docs/latest/guide-introduction-directory-structure.html#misc-in-var-cfengine-bin-##)
-- [Postgres in /var/cfengine/bin \#\#](http://cfengine.com/docs/latest/guide-introduction-directory-structure.html#postgres-in-var-cfengine-bin-##)
-- [Redis in /var/cfengine/bin \#\#](http://cfengine.com/docs/latest/guide-introduction-directory-structure.html#redis-in-var-cfengine-bin-##)
+- [/var/cfengine/bin \#\#](http://docs.cfengine.com/latest/guide-introduction-directory-structure.html#var-cfengine-bin-##)
+- [git in /var/cfengine/bin \#\#](http://docs.cfengine.com/latest/guide-introduction-directory-structure.html#git-in-var-cfengine-bin-##)
+- [Misc. in /var/cfengine/bin \#\#](http://docs.cfengine.com/latest/guide-introduction-directory-structure.html#misc-in-var-cfengine-bin-##)
+- [Postgres in /var/cfengine/bin \#\#](http://docs.cfengine.com/latest/guide-introduction-directory-structure.html#postgres-in-var-cfengine-bin-##)
+- [Redis in /var/cfengine/bin \#\#](http://docs.cfengine.com/latest/guide-introduction-directory-structure.html#redis-in-var-cfengine-bin-##)

@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'health' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'health'](http://cfengine.com/docs/latest/search.html?q=health).
+[search the CFEngine documentation for 'health'](http://docs.cfengine.com/latest/search.html?q=health).
 
-- [Hosts and Health](http://cfengine.com/docs/latest/enterprise-cfengine-guide-hosts-health.html#hosts-and-health)
-- [Host Health \#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-hosts-health.html#host-health-##)
-- [Hosts and Health \#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-user-interface.html#hosts-and-health-##)
+- [Hosts and Health](http://docs.cfengine.com/latest/enterprise-cfengine-guide-hosts-health.html#hosts-and-health)
+- [Host Health \#\#](http://docs.cfengine.com/latest/enterprise-cfengine-guide-hosts-health.html#host-health-##)
+- [Hosts and Health \#\#](http://docs.cfengine.com/latest/enterprise-cfengine-guide-user-interface.html#hosts-and-health-##)

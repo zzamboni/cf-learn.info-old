@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'log in to the mission portal' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'log in to the mission portal'](http://cfengine.com/docs/latest/search.html?q=log+in+to+the+mission+portal).
+[search the CFEngine documentation for 'log in to the mission portal'](http://docs.cfengine.com/latest/search.html?q=log+in+to+the+mission+portal).
 
-- [5. Log in to the Mission Portal](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-free.html#5-log-in-to-the-mission-portal)
-- [Log in to the Mission Portal](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#log-in-to-the-mission-portal)
+- [5. Log in to the Mission Portal](http://docs.cfengine.com/latest/guide-installation-and-configuration-general-installation-installation-enterprise-free.html#5-log-in-to-the-mission-portal)
+- [Log in to the Mission Portal](http://docs.cfengine.com/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#log-in-to-the-mission-portal)

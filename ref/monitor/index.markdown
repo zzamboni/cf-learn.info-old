@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'monitor' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'monitor'](http://cfengine.com/docs/latest/search.html?q=monitor).
+[search the CFEngine documentation for 'monitor'](http://docs.cfengine.com/latest/search.html?q=monitor).
 
-- [Monitor normal ordering](http://cfengine.com/docs/latest/guide-language-concepts-normal-ordering.html#monitor-normal-ordering)
-- [Monitor Bundles and Bodies](http://cfengine.com/docs/latest/reference-standard-library-monitor.html#monitor-bundles-and-bodies)
+- [Monitor normal ordering](http://docs.cfengine.com/latest/guide-language-concepts-normal-ordering.html#monitor-normal-ordering)
+- [Monitor Bundles and Bodies](http://docs.cfengine.com/latest/reference-standard-library-monitor.html#monitor-bundles-and-bodies)

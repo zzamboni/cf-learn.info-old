@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'stop' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'stop'](http://cfengine.com/docs/latest/search.html?q=stop).
+[search the CFEngine documentation for 'stop'](http://docs.cfengine.com/latest/search.html?q=stop).
 
-- [Stop the environment (Halt/Suspend/Destroy)](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#stop-the-environment-halt-suspend-destroy)
-- [services - start or stop services \#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-promises-available-in-cfengine.html#services-start-or-stop-services-###)
-- [process_stop](http://cfengine.com/docs/latest/reference-promise-types-processes.html#process_stop)
+- [Stop the environment (Halt/Suspend/Destroy)](http://docs.cfengine.com/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#stop-the-environment-halt-suspend-destroy)
+- [services - start or stop services \#\#\#](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-promises-available-in-cfengine.html#services-start-or-stop-services-###)
+- [process_stop](http://docs.cfengine.com/latest/reference-promise-types-processes.html#process_stop)

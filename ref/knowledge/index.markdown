@@ -7,10 +7,10 @@ navsection: none
 ---
 
 The term 'knowledge' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'knowledge'](http://cfengine.com/docs/latest/search.html?q=knowledge).
+[search the CFEngine documentation for 'knowledge'](http://docs.cfengine.com/latest/search.html?q=knowledge).
 
-- [Bundles for Knowledge \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#bundles-for-knowledge-####)
-- [Required Knowledge \#\#](http://cfengine.com/docs/latest/guide-installation-and-configuration-pre-installation-checklist.html#required-knowledge-##)
-- [Negative Knowledge](http://cfengine.com/docs/latest/guide-language-concepts-classes.html#negative-knowledge)
-- [Knowledge normal ordering](http://cfengine.com/docs/latest/guide-language-concepts-normal-ordering.html#knowledge-normal-ordering)
-- [Domain knowledge](http://cfengine.com/docs/latest/reference-promise-types-packages.html#domain-knowledge)
+- [Bundles for Knowledge \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#bundles-for-knowledge-####)
+- [Required Knowledge \#\#](http://docs.cfengine.com/latest/guide-installation-and-configuration-pre-installation-checklist.html#required-knowledge-##)
+- [Negative Knowledge](http://docs.cfengine.com/latest/guide-language-concepts-classes.html#negative-knowledge)
+- [Knowledge normal ordering](http://docs.cfengine.com/latest/guide-language-concepts-normal-ordering.html#knowledge-normal-ordering)
+- [Domain knowledge](http://docs.cfengine.com/latest/reference-promise-types-packages.html#domain-knowledge)

@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'expireafter' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'expireafter'](http://cfengine.com/docs/latest/search.html?q=expireafter).
+[search the CFEngine documentation for 'expireafter'](http://docs.cfengine.com/latest/search.html?q=expireafter).
 
-- [expireafter](http://cfengine.com/docs/latest/reference-promise-types.html#expireafter)
-- [agent_expireafter](http://cfengine.com/docs/latest/reference-components-cf-execd.html#agent_expireafter)
+- [expireafter](http://docs.cfengine.com/latest/reference-promise-types.html#expireafter)
+- [agent_expireafter](http://docs.cfengine.com/latest/reference-components-cf-execd.html#agent_expireafter)

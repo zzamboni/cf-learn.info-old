@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'ifelapsed' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'ifelapsed'](http://cfengine.com/docs/latest/search.html?q=ifelapsed).
+[search the CFEngine documentation for 'ifelapsed'](http://docs.cfengine.com/latest/search.html?q=ifelapsed).
 
-- [ifelapsed](http://cfengine.com/docs/latest/reference-promise-types.html#ifelapsed)
-- [package_list_update_ifelapsed](http://cfengine.com/docs/latest/reference-promise-types-packages.html#package_list_update_ifelapsed)
+- [ifelapsed](http://docs.cfengine.com/latest/reference-promise-types.html#ifelapsed)
+- [package_list_update_ifelapsed](http://docs.cfengine.com/latest/reference-promise-types-packages.html#package_list_update_ifelapsed)

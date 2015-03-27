@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'gui' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'gui'](http://cfengine.com/docs/latest/search.html?q=gui).
+[search the CFEngine documentation for 'gui'](http://docs.cfengine.com/latest/search.html?q=gui).
 
-- [Mission Portal GUI](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-enterprise-sketch-flow.html#mission-portal-gui)
-- [Accessing via GUI](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#accessing-via-gui)
+- [Mission Portal GUI](http://docs.cfengine.com/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-enterprise-sketch-flow.html#mission-portal-gui)
+- [Accessing via GUI](http://docs.cfengine.com/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#accessing-via-gui)

@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'instructions' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'instructions'](http://cfengine.com/docs/latest/search.html?q=instructions).
+[search the CFEngine documentation for 'instructions'](http://docs.cfengine.com/latest/search.html?q=instructions).
 
-- [Instructions \#\#](http://cfengine.com/docs/latest/guide-design-center-configure-sketches-community.html#instructions-##)
-- [Instructions](http://cfengine.com/docs/latest/guide-design-center-design-center-write-sketch-advanced.html#instructions)
+- [Instructions \#\#](http://docs.cfengine.com/latest/guide-design-center-configure-sketches-community.html#instructions-##)
+- [Instructions](http://docs.cfengine.com/latest/guide-design-center-design-center-write-sketch-advanced.html#instructions)

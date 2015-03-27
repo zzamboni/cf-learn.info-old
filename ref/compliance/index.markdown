@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'compliance' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'compliance'](http://cfengine.com/docs/latest/search.html?q=compliance).
+[search the CFEngine documentation for 'compliance'](http://docs.cfengine.com/latest/search.html?q=compliance).
 
-- [Host Compliance \#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-hosts-health.html#host-compliance-##)
-- [PCI compliance \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#pci-compliance-####)
-- [Policy Language and Compliance \#\#](http://cfengine.com/docs/latest/guide-introduction.html#policy-language-and-compliance-##)
+- [Host Compliance \#\#](http://docs.cfengine.com/latest/enterprise-cfengine-guide-hosts-health.html#host-compliance-##)
+- [PCI compliance \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#pci-compliance-####)
+- [Policy Language and Compliance \#\#](http://docs.cfengine.com/latest/guide-introduction.html#policy-language-and-compliance-##)

@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'dir' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'dir'](http://cfengine.com/docs/latest/search.html?q=dir).
+[search the CFEngine documentation for 'dir'](http://docs.cfengine.com/latest/search.html?q=dir).
 
-- [collapse_destination_dir](http://cfengine.com/docs/latest/reference-promise-types-files.html#collapse_destination_dir)
-- [home_dir](http://cfengine.com/docs/latest/reference-promise-types-users.html#home_dir)
+- [collapse_destination_dir](http://docs.cfengine.com/latest/reference-promise-types-files.html#collapse_destination_dir)
+- [home_dir](http://docs.cfengine.com/latest/reference-promise-types-users.html#home_dir)

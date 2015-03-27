@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'loops' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'loops'](http://cfengine.com/docs/latest/search.html?q=loops).
+[search the CFEngine documentation for 'loops'](http://docs.cfengine.com/latest/search.html?q=loops).
 
-- [Loops \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#loops-####)
-- [Loops](http://cfengine.com/docs/latest/guide-language-concepts-loops.html#loops)
+- [Loops \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#loops-####)
+- [Loops](http://docs.cfengine.com/latest/guide-language-concepts-loops.html#loops)

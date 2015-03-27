@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'router' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'router'](http://cfengine.com/docs/latest/search.html?q=router).
+[search the CFEngine documentation for 'router'](http://docs.cfengine.com/latest/search.html?q=router).
 
-- [ospf_router_id](http://cfengine.com/docs/latest/reference-components-routing_services_control.html#ospf_router_id)
-- [bgp_router_id](http://cfengine.com/docs/latest/reference-components-routing_services_control.html#bgp_router_id)
+- [ospf_router_id](http://docs.cfengine.com/latest/reference-components-routing_services_control.html#ospf_router_id)
+- [bgp_router_id](http://docs.cfengine.com/latest/reference-components-routing_services_control.html#bgp_router_id)

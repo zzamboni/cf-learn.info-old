@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'execresult' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'execresult'](http://cfengine.com/docs/latest/search.html?q=execresult).
+[search the CFEngine documentation for 'execresult'](http://docs.cfengine.com/latest/search.html?q=execresult).
 
-- [Execresult example](http://cfengine.com/docs/latest/examples-example-snippets-commands-scripts-execution.html#execresult-example)
-- [execresult](http://cfengine.com/docs/latest/reference-functions-execresult.html#execresult)
+- [Execresult example](http://docs.cfengine.com/latest/examples-example-snippets-commands-scripts-execution.html#execresult-example)
+- [execresult](http://docs.cfengine.com/latest/reference-functions-execresult.html#execresult)

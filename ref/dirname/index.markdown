@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'dirname' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'dirname'](http://cfengine.com/docs/latest/search.html?q=dirname).
+[search the CFEngine documentation for 'dirname'](http://docs.cfengine.com/latest/search.html?q=dirname).
 
-- [dirname](http://cfengine.com/docs/latest/reference-functions-dirname.html#dirname)
-- [this.promise_dirname](http://cfengine.com/docs/latest/reference-special-variables-this.html#this-promise_dirname)
+- [dirname](http://docs.cfengine.com/latest/reference-functions-dirname.html#dirname)
+- [this.promise_dirname](http://docs.cfengine.com/latest/reference-special-variables-this.html#this-promise_dirname)

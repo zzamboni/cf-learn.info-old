@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'returncodes' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'returncodes'](http://cfengine.com/docs/latest/search.html?q=returncodes).
+[search the CFEngine documentation for 'returncodes'](http://docs.cfengine.com/latest/search.html?q=returncodes).
 
-- [kept_returncodes](http://cfengine.com/docs/latest/reference-promise-types.html#kept_returncodes)
-- [repaired_returncodes](http://cfengine.com/docs/latest/reference-promise-types.html#repaired_returncodes)
-- [failed_returncodes](http://cfengine.com/docs/latest/reference-promise-types.html#failed_returncodes)
+- [kept_returncodes](http://docs.cfengine.com/latest/reference-promise-types.html#kept_returncodes)
+- [repaired_returncodes](http://docs.cfengine.com/latest/reference-promise-types.html#repaired_returncodes)
+- [failed_returncodes](http://docs.cfengine.com/latest/reference-promise-types.html#failed_returncodes)

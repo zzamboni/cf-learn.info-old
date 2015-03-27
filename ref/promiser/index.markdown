@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'promiser' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'promiser'](http://cfengine.com/docs/latest/search.html?q=promiser).
+[search the CFEngine documentation for 'promiser'](http://docs.cfengine.com/latest/search.html?q=promiser).
 
-- [The Promiser](http://cfengine.com/docs/latest/guide-language-concepts-promises.html#the-promiser)
-- [this.promiser](http://cfengine.com/docs/latest/reference-special-variables-this.html#this-promiser)
+- [The Promiser](http://docs.cfengine.com/latest/guide-language-concepts-promises.html#the-promiser)
+- [this.promiser](http://docs.cfengine.com/latest/reference-special-variables-this.html#this-promiser)

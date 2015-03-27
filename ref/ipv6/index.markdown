@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'ipv6' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'ipv6'](http://cfengine.com/docs/latest/search.html?q=ipv6).
+[search the CFEngine documentation for 'ipv6'](http://docs.cfengine.com/latest/search.html?q=ipv6).
 
-- [bgp_ipv6_networks](http://cfengine.com/docs/latest/reference-components-routing_services_control.html#bgp_ipv6_networks)
-- [ipv6_addresses](http://cfengine.com/docs/latest/reference-promise-types-interfaces.html#ipv6_addresses)
-- [bgp_ipv6_neighbor_discovery_route_advertisement](http://cfengine.com/docs/latest/reference-promise-types-interfaces.html#bgp_ipv6_neighbor_discovery_route_advertisement)
+- [bgp_ipv6_networks](http://docs.cfengine.com/latest/reference-components-routing_services_control.html#bgp_ipv6_networks)
+- [ipv6_addresses](http://docs.cfengine.com/latest/reference-promise-types-interfaces.html#ipv6_addresses)
+- [bgp_ipv6_neighbor_discovery_route_advertisement](http://docs.cfengine.com/latest/reference-promise-types-interfaces.html#bgp_ipv6_neighbor_discovery_route_advertisement)

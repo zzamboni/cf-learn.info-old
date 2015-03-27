@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'convention' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'convention'](http://cfengine.com/docs/latest/search.html?q=convention).
+[search the CFEngine documentation for 'convention'](http://docs.cfengine.com/latest/search.html?q=convention).
 
-- [package_delete_convention](http://cfengine.com/docs/latest/reference-promise-types-packages.html#package_delete_convention)
-- [package_name_convention](http://cfengine.com/docs/latest/reference-promise-types-packages.html#package_name_convention)
+- [package_delete_convention](http://docs.cfengine.com/latest/reference-promise-types-packages.html#package_delete_convention)
+- [package_name_convention](http://docs.cfengine.com/latest/reference-promise-types-packages.html#package_name_convention)

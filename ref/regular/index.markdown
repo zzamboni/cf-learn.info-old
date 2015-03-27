@@ -7,10 +7,10 @@ navsection: none
 ---
 
 The term 'regular' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'regular'](http://cfengine.com/docs/latest/search.html?q=regular).
+[search the CFEngine documentation for 'regular'](http://docs.cfengine.com/latest/search.html?q=regular).
 
-- [Regular expressions in paths](http://cfengine.com/docs/latest/guide-language-concepts-pattern-matching-and-referencing.html#regular-expressions-in-paths)
-- [Anchored vs. unanchored regular expressions](http://cfengine.com/docs/latest/guide-language-concepts-pattern-matching-and-referencing.html#anchored-vs-unanchored-regular-expressions)
-- [Special topics on Regular Expressions](http://cfengine.com/docs/latest/guide-language-concepts-pattern-matching-and-referencing.html#special-topics-on-regular-expressions)
-- [Filenames and regular expressions](http://cfengine.com/docs/latest/reference-promise-types-files.html#filenames-and-regular-expressions)
-- [Promises involving regular expressions](http://cfengine.com/docs/latest/reference-promise-types-files.html#promises-involving-regular-expressions)
+- [Regular expressions in paths](http://docs.cfengine.com/latest/guide-language-concepts-pattern-matching-and-referencing.html#regular-expressions-in-paths)
+- [Anchored vs. unanchored regular expressions](http://docs.cfengine.com/latest/guide-language-concepts-pattern-matching-and-referencing.html#anchored-vs-unanchored-regular-expressions)
+- [Special topics on Regular Expressions](http://docs.cfengine.com/latest/guide-language-concepts-pattern-matching-and-referencing.html#special-topics-on-regular-expressions)
+- [Filenames and regular expressions](http://docs.cfengine.com/latest/reference-promise-types-files.html#filenames-and-regular-expressions)
+- [Promises involving regular expressions](http://docs.cfengine.com/latest/reference-promise-types-files.html#promises-involving-regular-expressions)

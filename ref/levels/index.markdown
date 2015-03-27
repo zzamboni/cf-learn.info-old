@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'levels' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'levels'](http://cfengine.com/docs/latest/search.html?q=levels).
+[search the CFEngine documentation for 'levels'](http://docs.cfengine.com/latest/search.html?q=levels).
 
-- [Policy Levels \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#policy-levels-####)
-- [CFEngine output levels](http://cfengine.com/docs/latest/guide-reporting-command-line-reports.html#cfengine-output-levels)
+- [Policy Levels \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#policy-levels-####)
+- [CFEngine output levels](http://docs.cfengine.com/latest/guide-reporting-command-line-reports.html#cfengine-output-levels)

@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'tutorial' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'tutorial'](http://cfengine.com/docs/latest/search.html?q=tutorial).
+[search the CFEngine documentation for 'tutorial'](http://docs.cfengine.com/latest/search.html?q=tutorial).
 
-- [Example configuration used in this tutorial \#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-high-availability-installation-guide.html#example-configuration-used-in-this-tutorial-###)
-- [Tutorial for Running Examples \#\#](http://cfengine.com/docs/latest/examples.html#tutorial-for-running-examples-##)
+- [Example configuration used in this tutorial \#\#\#](http://docs.cfengine.com/latest/enterprise-cfengine-guide-high-availability-installation-guide.html#example-configuration-used-in-this-tutorial-###)
+- [Tutorial for Running Examples \#\#](http://docs.cfengine.com/latest/examples.html#tutorial-for-running-examples-##)

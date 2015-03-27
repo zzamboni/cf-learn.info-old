@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'purge' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'purge'](http://cfengine.com/docs/latest/search.html?q=purge).
+[search the CFEngine documentation for 'purge'](http://docs.cfengine.com/latest/search.html?q=purge).
 
-- [cfengine_internal_purge_policies](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#cfengine_internal_purge_policies)
-- [purge](http://cfengine.com/docs/latest/reference-promise-types-files.html#purge)
-- [purge_addresses](http://cfengine.com/docs/latest/reference-promise-types-interfaces.html#purge_addresses)
+- [cfengine_internal_purge_policies](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-policy-framework.html#cfengine_internal_purge_policies)
+- [purge](http://docs.cfengine.com/latest/reference-promise-types-files.html#purge)
+- [purge_addresses](http://docs.cfengine.com/latest/reference-promise-types-interfaces.html#purge_addresses)

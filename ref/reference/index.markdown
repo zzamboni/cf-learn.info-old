@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'reference' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'reference'](http://cfengine.com/docs/latest/search.html?q=reference).
+[search the CFEngine documentation for 'reference'](http://docs.cfengine.com/latest/search.html?q=reference).
 
-- [Command reference \#\#](http://cfengine.com/docs/latest/reference-components-cf-serverd.html#command-reference-##)
-- [Enterprise API Reference](http://cfengine.com/docs/latest/reference-enterprise-api-ref.html#enterprise-api-reference)
-- [CFEngine Reference](http://cfengine.com/docs/latest/reference.html#cfengine-reference)
+- [Command reference \#\#](http://docs.cfengine.com/latest/reference-components-cf-serverd.html#command-reference-##)
+- [Enterprise API Reference](http://docs.cfengine.com/latest/reference-enterprise-api-ref.html#enterprise-api-reference)
+- [CFEngine Reference](http://docs.cfengine.com/latest/reference.html#cfengine-reference)

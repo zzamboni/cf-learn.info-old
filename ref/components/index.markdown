@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'components' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'components'](http://cfengine.com/docs/latest/search.html?q=components).
+[search the CFEngine documentation for 'components'](http://docs.cfengine.com/latest/search.html?q=components).
 
-- [Components \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#components-####)
-- [Components and Common Control](http://cfengine.com/docs/latest/reference-components.html#components-and-common-control)
+- [Components \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#components-####)
+- [Components and Common Control](http://docs.cfengine.com/latest/reference-components.html#components-and-common-control)

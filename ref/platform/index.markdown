@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'platform' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'platform'](http://cfengine.com/docs/latest/search.html?q=platform).
+[search the CFEngine documentation for 'platform'](http://docs.cfengine.com/latest/search.html?q=platform).
 
-- [Future platform support \#\#](http://cfengine.com/docs/latest/guide-latest-release-supported-platforms.html#future-platform-support-##)
-- [Enterprise Platform and API \#\#\#](http://cfengine.com/docs/latest/guide-latest-release-whatsnew.html#enterprise-platform-and-api-###)
-- [Platform notes](http://cfengine.com/docs/latest/reference-promise-types-processes.html#platform-notes)
+- [Future platform support \#\#](http://docs.cfengine.com/latest/guide-latest-release-supported-platforms.html#future-platform-support-##)
+- [Enterprise Platform and API \#\#\#](http://docs.cfengine.com/latest/guide-latest-release-whatsnew.html#enterprise-platform-and-api-###)
+- [Platform notes](http://docs.cfengine.com/latest/reference-promise-types-processes.html#platform-notes)

@@ -7,11 +7,11 @@ navsection: none
 ---
 
 The term 'alt' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'alt'](http://cfengine.com/docs/latest/search.html?q=alt).
+[search the CFEngine documentation for 'alt'](http://docs.cfengine.com/latest/search.html?q=alt).
 
-- [mon.value_www_alt_in](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-value_www_alt_in)
-- [mon.av_www_alt_in](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-av_www_alt_in)
-- [mon.dev_www_alt_in](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-dev_www_alt_in)
-- [mon.value_www_alt_out](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-value_www_alt_out)
-- [mon.av_www_alt_out](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-av_www_alt_out)
-- [mon.dev_www_alt_out](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-dev_www_alt_out)
+- [mon.value_www_alt_in](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-value_www_alt_in)
+- [mon.av_www_alt_in](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-av_www_alt_in)
+- [mon.dev_www_alt_in](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-dev_www_alt_in)
+- [mon.value_www_alt_out](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-value_www_alt_out)
+- [mon.av_www_alt_out](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-av_www_alt_out)
+- [mon.dev_www_alt_out](http://docs.cfengine.com/latest/reference-special-variables-mon.html#mon-dev_www_alt_out)

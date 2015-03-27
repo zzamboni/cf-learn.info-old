@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'decisions' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'decisions'](http://cfengine.com/docs/latest/search.html?q=decisions).
+[search the CFEngine documentation for 'decisions'](http://docs.cfengine.com/latest/search.html?q=decisions).
 
-- [Decisions \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#decisions-####)
-- [Classes and Decisions](http://cfengine.com/docs/latest/guide-language-concepts-classes.html#classes-and-decisions)
-- [Making Decisions based on classes](http://cfengine.com/docs/latest/guide-language-concepts-classes.html#making-decisions-based-on-classes)
+- [Decisions \#\#\#\#](http://docs.cfengine.com/latest/guide-glossary.html#decisions-####)
+- [Classes and Decisions](http://docs.cfengine.com/latest/guide-language-concepts-classes.html#classes-and-decisions)
+- [Making Decisions based on classes](http://docs.cfengine.com/latest/guide-language-concepts-classes.html#making-decisions-based-on-classes)

@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'filter' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'filter'](http://cfengine.com/docs/latest/search.html?q=filter).
+[search the CFEngine documentation for 'filter'](http://docs.cfengine.com/latest/search.html?q=filter).
 
-- [Filter commits by Mission Portal and users](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#filter-commits-by-mission-portal-and-users)
-- [filter](http://cfengine.com/docs/latest/reference-functions-filter.html#filter)
+- [Filter commits by Mission Portal and users](http://docs.cfengine.com/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#filter-commits-by-mission-portal-and-users)
+- [filter](http://docs.cfengine.com/latest/reference-functions-filter.html#filter)

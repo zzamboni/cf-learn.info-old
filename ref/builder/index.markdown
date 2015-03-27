@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'builder' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'builder'](http://cfengine.com/docs/latest/search.html?q=builder).
+[search the CFEngine documentation for 'builder'](http://docs.cfengine.com/latest/search.html?q=builder).
 
-- [Query Builder \#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-reporting-reporting_ui.html#query-builder-##)
-- [Create a query to narrow results using Report Builder in the Mission Portal](http://cfengine.com/docs/latest/examples-tutorials-deploy_sketch.html#create-a-query-to-narrow-results-using-report-builder-in-the-mission-portal)
+- [Query Builder \#\#](http://docs.cfengine.com/latest/enterprise-cfengine-guide-reporting-reporting_ui.html#query-builder-##)
+- [Create a query to narrow results using Report Builder in the Mission Portal](http://docs.cfengine.com/latest/examples-tutorials-deploy_sketch.html#create-a-query-to-narrow-results-using-report-builder-in-the-mission-portal)

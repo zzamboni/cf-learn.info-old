@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'cf configuration ####' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'cf configuration ####'](http://cfengine.com/docs/latest/search.html?q=cf+configuration+####).
+[search the CFEngine documentation for 'cf configuration ####'](http://docs.cfengine.com/latest/search.html?q=cf+configuration+####).
 
-- [update.cf configuration \#\#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#update-cf-configuration-####)
-- [def.cf configuration \#\#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#def-cf-configuration-####)
-- [promises.cf configuration \#\#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#promises-cf-configuration-####)
+- [update.cf configuration \#\#\#\#](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-policy-framework.html#update-cf-configuration-####)
+- [def.cf configuration \#\#\#\#](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-policy-framework.html#def-cf-configuration-####)
+- [promises.cf configuration \#\#\#\#](http://docs.cfengine.com/latest/guide-writing-and-serving-policy-policy-framework.html#promises-cf-configuration-####)
