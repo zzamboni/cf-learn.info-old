@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'noverify' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'noverify'](http://cfengine.com/docs/3.5/search.html?q=noverify).
+[search the CFEngine documentation for 'noverify'](http://cfengine.com/docs/latest/search.html?q=noverify).
 
-- [package_noverify_regex](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#package_noverify_regex)
-- [package_noverify_returncode](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#package_noverify_returncode)
+- [package_noverify_regex](http://cfengine.com/docs/latest/reference-promise-types-packages.html#package_noverify_regex)
+- [package_noverify_returncode](http://cfengine.com/docs/latest/reference-promise-types-packages.html#package_noverify_returncode)

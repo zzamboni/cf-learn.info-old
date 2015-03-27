@@ -7,11 +7,10 @@ navsection: none
 ---
 
 The term 'time' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'time'](http://cfengine.com/docs/3.5/search.html?q=time).
+[search the CFEngine documentation for 'time'](http://cfengine.com/docs/latest/search.html?q=time).
 
-- [Set up time management through NTP](http://cfengine.com/docs/3.5/examples-policy-setup-time-management-through-ntp.html#set-up-time-management-through-ntp)
-- [Time windows (races)](http://cfengine.com/docs/3.5/manuals-architecture-networking.html#time-windows-races)
-- [End to end waiting time](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#end-to-end-waiting-time)
-- [checksum_alert_time](http://cfengine.com/docs/3.5/reference-components-cfagent.html#checksum_alert_time)
-- [Functions Involving Date or Time](http://cfengine.com/docs/3.5/reference-functions.html#functions-involving-date-or-time)
-- [persist_time](http://cfengine.com/docs/3.5/reference-promise-types.html#persist_time)
+- [End to end wait time](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#end-to-end-wait-time)
+- [Set up time management through NTP](http://cfengine.com/docs/latest/examples-example-snippets-promise-patterns-example_ntp.html#set-up-time-management-through-ntp)
+- [Time windows (races)](http://cfengine.com/docs/latest/guide-introduction-networking.html#time-windows-races)
+- [checksum_alert_time](http://cfengine.com/docs/latest/reference-components-cf-agent.html#checksum_alert_time)
+- [persist_time](http://cfengine.com/docs/latest/reference-promise-types.html#persist_time)

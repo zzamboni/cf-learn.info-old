@@ -7,7 +7,8 @@ navsection: none
 ---
 
 The term 'xml' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'xml'](http://cfengine.com/docs/3.5/search.html?q=xml).
+[search the CFEngine documentation for 'xml'](http://cfengine.com/docs/latest/search.html?q=xml).
 
-- [bundle edit_xml](http://cfengine.com/docs/3.5/reference-promise-types-edit_xml.html#bundle-edit_xml)
-- [edit_xml](http://cfengine.com/docs/3.5/reference-promise-types-files.html#edit_xml)
+- [bundle edit_xml](http://cfengine.com/docs/latest/reference-promise-types-edit_xml.html#bundle-edit_xml)
+- [edit_xml](http://cfengine.com/docs/latest/reference-promise-types-files.html#edit_xml)
+- [guest_libvirt_xml](http://cfengine.com/docs/latest/reference-promise-types-guest_environments.html#guest_libvirt_xml)

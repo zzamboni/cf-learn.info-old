@@ -7,10 +7,11 @@ navsection: none
 ---
 
 The term 'requirements' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'requirements'](http://cfengine.com/docs/3.5/search.html?q=requirements).
+[search the CFEngine documentation for 'requirements'](http://cfengine.com/docs/latest/search.html?q=requirements).
 
-- [Policy Server Requirements](http://cfengine.com/docs/3.5/getting-started-installation-installing-enterprise.html#policy-server-requirements)
-- [MongoDB Requirements](http://cfengine.com/docs/3.5/getting-started-installation-installing-enterprise.html#mongodb-requirements)
-- [General Requirements](http://cfengine.com/docs/3.5/getting-started-installation.html#general-requirements)
-- [Specific Requirements](http://cfengine.com/docs/3.5/getting-started-installation.html#specific-requirements)
-- [Requirements](http://cfengine.com/docs/3.5/manuals-design-center.html#requirements)
+- [Requirements \#\#\#](http://cfengine.com/docs/latest/guide-design-center-configure-sketches-community.html#requirements-###)
+- [What are the requirements for installing CFEngine Enterprise \#\#\#\#](http://cfengine.com/docs/latest/guide-faq.html#what-are-the-requirements-for-installing-cfengine-enterprise-####)
+- [Requirements](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#requirements)
+- [General Requirements](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise.html#general-requirements)
+- [Policy Server Requirements](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise.html#policy-server-requirements)
+- [System requirements](http://cfengine.com/docs/latest/guide-installation-and-configuration-pre-installation-checklist.html#system-requirements)

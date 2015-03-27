@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'cpus' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'cpus'](http://cfengine.com/docs/3.5/search.html?q=cpus).
+[search the CFEngine documentation for 'cpus'](http://cfengine.com/docs/latest/search.html?q=cpus).
 
-- [env_cpus](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#env_cpus)
-- [sys.cpus](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-cpus)
+- [guest_cpus](http://cfengine.com/docs/latest/reference-promise-types-guest_environments.html#guest_cpus)
+- [sys.cpus](http://cfengine.com/docs/latest/reference-special-variables-sys.html#sys-cpus)

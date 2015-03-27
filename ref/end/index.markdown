@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'end' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'end'](http://cfengine.com/docs/3.5/search.html?q=end).
+[search the CFEngine documentation for 'end'](http://cfengine.com/docs/latest/search.html?q=end).
 
-- [End to end waiting time](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#end-to-end-waiting-time)
-- [include_end_delimiter](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line.html#include_end_delimiter)
-- [select_end](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line.html#select_end)
+- [End to end wait time](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#end-to-end-wait-time)
+- [include_end_delimiter](http://cfengine.com/docs/latest/reference-promise-types-edit_line.html#include_end_delimiter)
+- [select_end](http://cfengine.com/docs/latest/reference-promise-types-edit_line.html#select_end)

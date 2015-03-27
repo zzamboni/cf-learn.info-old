@@ -7,8 +7,10 @@ navsection: none
 ---
 
 The term 'policies' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'policies'](http://cfengine.com/docs/3.5/search.html?q=policies).
+[search the CFEngine documentation for 'policies'](http://cfengine.com/docs/latest/search.html?q=policies).
 
-- [Running the Example policies](http://cfengine.com/docs/3.5/examples.html#running-the-example-policies)
-- [Testing Policies](http://cfengine.com/docs/3.5/manuals-writing-policy-testing-policies.html#testing-policies)
-- [Significantly improved parsing and evaluation of policies](http://cfengine.com/docs/3.5/whats-new.html#significantly-improved-parsing-and-evaluation-of-policies)
+- [Enterprise Users can Deploy Policies through the Design Center App](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-design-center-deploy-sketch.html#enterprise-users-can-deploy-policies-through-the-design-center-app)
+- [Version your policies](http://cfengine.com/docs/latest/enterprise-cfengine-guide-install-get-started.html#version-your-policies)
+- [cfengine_internal_purge_policies](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#cfengine_internal_purge_policies)
+- [Testing Policies](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-testing-policies.html#testing-policies)
+- [About Policies and Promises \#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy.html#about-policies-and-promises-##)

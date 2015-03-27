@@ -7,13 +7,20 @@ navsection: none
 ---
 
 The term 'portal' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'portal'](http://cfengine.com/docs/3.5/search.html?q=portal).
+[search the CFEngine documentation for 'portal'](http://cfengine.com/docs/latest/search.html?q=portal).
 
-- [Mission Portal GUI](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#mission-portal-gui)
-- [Integrating Mission Portal with git](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#integrating-mission-portal-with-git)
-- [Connect Mission Portal to the git repository](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#connect-mission-portal-to-the-git-repository)
-- [Filtering commits by Mission Portal and users](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#filtering-commits-by-mission-portal-and-users)
-- [Show all commits done through Mission Portal](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#show-all-commits-done-through-mission-portal)
-- [Show commits by a Mission Portal user](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#show-commits-by-a-mission-portal-user)
-- [Sketches Available in the Mission Portal](http://cfengine.com/docs/3.5/mission-portal-design-center-sketches-available.html#sketches-available-in-the-mission-portal)
-- [Streamlined Mission Portal](http://cfengine.com/docs/3.5/whats-new.html#streamlined-mission-portal)
+- [Uploading the script to the Mission Portal \#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-alerts-custom-actions.html#uploading-the-script-to-the-mission-portal-##)
+- [Mission Portal GUI](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-enterprise-sketch-flow.html#mission-portal-gui)
+- [Integrating Mission Portal with git](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#integrating-mission-portal-with-git)
+- [Connect the Mission Portal to the git repository](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#connect-the-mission-portal-to-the-git-repository)
+- [Filter commits by Mission Portal and users](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#filter-commits-by-mission-portal-and-users)
+- [Show all commits made through the Mission Portal](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#show-all-commits-made-through-the-mission-portal)
+- [Show commits by a Mission Portal user](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#show-commits-by-a-mission-portal-user)
+- [Mission Portal \#\#\#](http://cfengine.com/docs/latest/guide-latest-release-whatsnew.html#mission-portal-###)
+- [Verify sketch deployment using Reports in the Mission Portal](http://cfengine.com/docs/latest/examples-tutorials-deploy_sketch.html#verify-sketch-deployment-using-reports-in-the-mission-portal)
+- [Create a query to narrow results using Report Builder in the Mission Portal](http://cfengine.com/docs/latest/examples-tutorials-deploy_sketch.html#create-a-query-to-narrow-results-using-report-builder-in-the-mission-portal)
+- [Set up trackers in the Mission Portal (Enterprise Users Only)](http://cfengine.com/docs/latest/examples-tutorials-distribute-files-from-a-central-location.html#set-up-trackers-in-the-mission-portal-enterprise-users-only)
+- [Mission Portal \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#mission-portal-####)
+- [Step 5. Log in to the Mission Portal \#\#\#](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-free-aws-rhel.html#step-5-log-in-to-the-mission-portal-###)
+- [5. Log in to the Mission Portal](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-free.html#5-log-in-to-the-mission-portal)
+- [Log in to the Mission Portal](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#log-in-to-the-mission-portal)

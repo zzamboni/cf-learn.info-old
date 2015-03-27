@@ -7,9 +7,12 @@ navsection: none
 ---
 
 The term 'method' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'method'](http://cfengine.com/docs/3.5/search.html?q=method).
+[search the CFEngine documentation for 'method'](http://cfengine.com/docs/latest/search.html?q=method).
 
-- [acl_method](http://cfengine.com/docs/3.5/reference-promise-types-files.html#acl_method)
-- [Default package method](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#default-package-method)
-- [package_method](http://cfengine.com/docs/3.5/reference-promise-types-packages.html#package_method)
-- [service_method](http://cfengine.com/docs/3.5/reference-promise-types-services.html#service_method)
+- [Method validation](http://cfengine.com/docs/latest/examples-example-snippets-commands-scripts-execution.html#method-validation)
+- [When to use a paramaterized bundle or method](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-bundles-best-practices.html#when-to-use-a-paramaterized-bundle-or-method)
+- [acl_method](http://cfengine.com/docs/latest/reference-promise-types-files.html#acl_method)
+- [template_method](http://cfengine.com/docs/latest/reference-promise-types-files.html#template_method)
+- [Default package method](http://cfengine.com/docs/latest/reference-promise-types-packages.html#default-package-method)
+- [package_method](http://cfengine.com/docs/latest/reference-promise-types-packages.html#package_method)
+- [service_method](http://cfengine.com/docs/latest/reference-promise-types-services.html#service_method)

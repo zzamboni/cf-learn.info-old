@@ -7,7 +7,9 @@ navsection: none
 ---
 
 The term 'validation' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'validation'](http://cfengine.com/docs/3.5/search.html?q=validation).
+[search the CFEngine documentation for 'validation'](http://cfengine.com/docs/latest/search.html?q=validation).
 
-- [define_validation](http://cfengine.com/docs/3.5/reference-design-center-api.html#define_validation)
-- [undefine_validation](http://cfengine.com/docs/3.5/reference-design-center-api.html#undefine_validation)
+- [Method validation](http://cfengine.com/docs/latest/examples-example-snippets-commands-scripts-execution.html#method-validation)
+- [cf-promises policy validation step](http://cfengine.com/docs/latest/guide-language-concepts-normal-ordering.html#cf-promises-policy-validation-step)
+- [/api/dc/validation](http://cfengine.com/docs/latest/reference-enterprise-api-ref-uri-resources.html#api-dc-validation)
+- [/api/dc/validation/:id](http://cfengine.com/docs/latest/reference-enterprise-api-ref-uri-resources.html#api-dc-validation-id)

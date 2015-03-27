@@ -7,13 +7,13 @@ navsection: none
 ---
 
 The term 'ldap' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'ldap'](http://cfengine.com/docs/3.5/search.html?q=ldap).
+[search the CFEngine documentation for 'ldap'](http://cfengine.com/docs/latest/search.html?q=ldap).
 
-- [Example: Configuring LDAP](http://cfengine.com/docs/3.5/examples-enterprise-api-managing-settings.html#example-configuring-ldap)
-- [Functions That Read LDAP Data](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-ldap-data)
-- [mon.value_ldap_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_ldap_in)
-- [mon.av_ldap_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_ldap_in)
-- [mon.dev_ldap_in](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_ldap_in)
-- [mon.value_ldap_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_ldap_out)
-- [mon.av_ldap_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_ldap_out)
-- [mon.dev_ldap_out](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_ldap_out)
+- [Example: Configuring LDAP](http://cfengine.com/docs/latest/examples-enterprise-api-examples-managing-settings.html#example-configuring-ldap)
+- [LDAP interactions](http://cfengine.com/docs/latest/examples-example-snippets-user-management-acl.html#ldap-interactions)
+- [mon.value_ldap_in](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-value_ldap_in)
+- [mon.av_ldap_in](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-av_ldap_in)
+- [mon.dev_ldap_in](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-dev_ldap_in)
+- [mon.value_ldap_out](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-value_ldap_out)
+- [mon.av_ldap_out](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-av_ldap_out)
+- [mon.dev_ldap_out](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-dev_ldap_out)

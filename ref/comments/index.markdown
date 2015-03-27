@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'comments' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'comments'](http://cfengine.com/docs/3.5/search.html?q=comments).
+[search the CFEngine documentation for 'comments'](http://cfengine.com/docs/latest/search.html?q=comments).
 
-- [Policy Comments](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#policy-comments)
-- [require_comments](http://cfengine.com/docs/3.5/reference-components.html#require_comments)
+- [Policy Comments](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-style.html#policy-comments)
+- [require_comments](http://cfengine.com/docs/latest/reference-components.html#require_comments)

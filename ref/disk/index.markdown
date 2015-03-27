@@ -7,7 +7,9 @@ navsection: none
 ---
 
 The term 'disk' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'disk'](http://cfengine.com/docs/3.5/search.html?q=disk).
+[search the CFEngine documentation for 'disk'](http://cfengine.com/docs/latest/search.html?q=disk).
 
-- [Functions That Read Disk Data](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-disk-data)
-- [env_disk](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#env_disk)
+- [Disk sizing and partitioning](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise.html#disk-sizing-and-partitioning)
+- [Disk speed](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise.html#disk-speed)
+- [Disk space \#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#disk-space-###)
+- [guest_disk](http://cfengine.com/docs/latest/reference-promise-types-guest_environments.html#guest_disk)

@@ -7,7 +7,8 @@ navsection: none
 ---
 
 The term 'show' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'show'](http://cfengine.com/docs/3.5/search.html?q=show).
+[search the CFEngine documentation for 'show'](http://cfengine.com/docs/latest/search.html?q=show).
 
-- [Show all commits done through Mission Portal](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#show-all-commits-done-through-mission-portal)
-- [Show commits by a Mission Portal user](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#show-commits-by-a-mission-portal-user)
+- [Show all commits made through the Mission Portal](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#show-all-commits-made-through-the-mission-portal)
+- [Show commits by a Mission Portal user](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#show-commits-by-a-mission-portal-user)
+- [Active directory show users example](http://cfengine.com/docs/latest/examples-example-snippets-user-management-acl.html#active-directory-show-users-example)

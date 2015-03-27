@@ -7,12 +7,23 @@ navsection: none
 ---
 
 The term 'repository' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'repository'](http://cfengine.com/docs/3.5/search.html?q=repository).
+[search the CFEngine documentation for 'repository'](http://cfengine.com/docs/latest/search.html?q=repository).
 
-- [Git repository service](http://cfengine.com/docs/3.5/manuals-design-center-enterprise-sketch-flow.html#git-repository-service)
-- [Initialize the git repository](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#initialize-the-git-repository)
-- [Connect Mission Portal to the git repository](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#connect-mission-portal-to-the-git-repository)
-- [Checkout the Design Center repository](http://cfengine.com/docs/3.5/manuals-design-center.html#checkout-the-design-center-repository)
-- [Repository synchronization](http://cfengine.com/docs/3.5/manuals-writing-policy-version-control.html#repository-synchronization)
-- [default_repository](http://cfengine.com/docs/3.5/reference-components-cfagent.html#default_repository)
-- [repository](http://cfengine.com/docs/3.5/reference-promise-types-files.html#repository)
+- [Choose your repository \#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-best-practices.html#choose-your-repository-###)
+- [Using the default local Git repository \#\#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-best-practices.html#using-the-default-local-git-repository-####)
+- [Using a remote repository \#\#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-best-practices.html#using-a-remote-repository-####)
+- [Make sure your current masterfiles are in the chosen repository \#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-best-practices.html#make-sure-your-current-masterfiles-are-in-the-chosen-repository-###)
+- [Git repository service](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-enterprise-sketch-flow.html#git-repository-service)
+- [Connect the Mission Portal to the git repository](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#connect-the-mission-portal-to-the-git-repository)
+- [Version Control Repository \#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-settings.html#version-control-repository-##)
+- [Check out masterfiles from your central repository](http://cfengine.com/docs/latest/examples-tutorials-distribute-files-from-a-central-location.html#check-out-masterfiles-from-your-central-repository)
+- [Step 1. Check out the Design Center repository \#\#\#](http://cfengine.com/docs/latest/guide-design-center-configure-sketches-community.html#step-1-check-out-the-design-center-repository-###)
+- [Repository synchronization](http://cfengine.com/docs/latest/guide-installation-and-configuration-version-control.html#repository-synchronization)
+- [Create a Repository on GitHub for Masterfiles \#\#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-authoring-policy-tools-and-workflow.html#create-a-repository-on-github-for-masterfiles-####)
+- [Initialize Git Repository in Masterfiles on the Hub \#\#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-authoring-policy-tools-and-workflow.html#initialize-git-repository-in-masterfiles-on-the-hub-####)
+- [default_repository](http://cfengine.com/docs/latest/reference-components-cf-agent.html#default_repository)
+- [Maintaining your own sketch repository](http://cfengine.com/docs/latest/reference-design-center-maintain-own-dc-repo.html#maintaining-your-own-sketch-repository)
+- [Upgrade a Design Center sketch repository from the Github master branch of Design Center](http://cfengine.com/docs/latest/reference-design-center-sketch.html#upgrade-a-design-center-sketch-repository-from-the-github-master-branch-of-design-center)
+- [Upgrade a Design Center sketch repository from the Github 3.6.x branch of Design Center](http://cfengine.com/docs/latest/reference-design-center-sketch.html#upgrade-a-design-center-sketch-repository-from-the-github-3-6-x-branch-of-design-center)
+- [Upgrade a Design Center sketch repository from your own sketch repository](http://cfengine.com/docs/latest/reference-design-center-sketch.html#upgrade-a-design-center-sketch-repository-from-your-own-sketch-repository)
+- [repository](http://cfengine.com/docs/latest/reference-promise-types-files.html#repository)

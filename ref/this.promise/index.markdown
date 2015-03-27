@@ -7,7 +7,8 @@ navsection: none
 ---
 
 The term 'this.promise' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'this.promise'](http://cfengine.com/docs/3.5/search.html?q=this.promise).
+[search the CFEngine documentation for 'this.promise'](http://cfengine.com/docs/latest/search.html?q=this.promise).
 
-- [this.promise_filename](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-promise_filename)
-- [this.promise_linenumber](http://cfengine.com/docs/3.5/reference-special-variables-context-this.html#this-promise_linenumber)
+- [this.promise_filename](http://cfengine.com/docs/latest/reference-special-variables-this.html#this-promise_filename)
+- [this.promise_dirname](http://cfengine.com/docs/latest/reference-special-variables-this.html#this-promise_dirname)
+- [this.promise_linenumber](http://cfengine.com/docs/latest/reference-special-variables-this.html#this-promise_linenumber)

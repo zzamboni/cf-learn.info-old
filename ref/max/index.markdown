@@ -7,7 +7,8 @@ navsection: none
 ---
 
 The term 'max' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'max'](http://cfengine.com/docs/3.5/search.html?q=max).
+[search the CFEngine documentation for 'max'](http://cfengine.com/docs/latest/search.html?q=max).
 
-- [max_children](http://cfengine.com/docs/3.5/reference-components-cfrunagent.html#max_children)
-- [max_file_size](http://cfengine.com/docs/3.5/reference-promise-types-files.html#max_file_size)
+- [max_children](http://cfengine.com/docs/latest/reference-components-cf-runagent.html#max_children)
+- [max](http://cfengine.com/docs/latest/reference-functions-max.html#max)
+- [max_file_size](http://cfengine.com/docs/latest/reference-promise-types-files.html#max_file_size)

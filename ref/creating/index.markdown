@@ -7,8 +7,10 @@ navsection: none
 ---
 
 The term 'creating' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'creating'](http://cfengine.com/docs/3.5/search.html?q=creating).
+[search the CFEngine documentation for 'creating'](http://cfengine.com/docs/latest/search.html?q=creating).
 
-- [Example: Creating a New User](http://cfengine.com/docs/3.5/examples-enterprise-api-managing-users-and-roles.html#example-creating-a-new-user)
-- [Example: Creating a New Role](http://cfengine.com/docs/3.5/examples-enterprise-api-managing-users-and-roles.html#example-creating-a-new-role)
-- [Subscribed Query Example: Creating A Subscribed Query](http://cfengine.com/docs/3.5/examples-enterprise-reporting-sql-queries.html#subscribed-query-example-creating-a-subscribed-query)
+- [Example: Creating a New User](http://cfengine.com/docs/latest/examples-enterprise-api-examples-managing-users-and-roles.html#example-creating-a-new-user)
+- [Example: Creating a New Role](http://cfengine.com/docs/latest/examples-enterprise-api-examples-managing-users-and-roles.html#example-creating-a-new-role)
+- [Subscribed Query Example: Creating A Subscribed Query](http://cfengine.com/docs/latest/examples-enterprise-api-examples-sql-queries.html#subscribed-query-example-creating-a-subscribed-query)
+- [Creating custom reports](http://cfengine.com/docs/latest/guide-reporting-command-line-reports.html#creating-custom-reports)
+- [Creating custom logs](http://cfengine.com/docs/latest/guide-reporting-command-line-reports.html#creating-custom-logs)

@@ -7,8 +7,9 @@ navsection: none
 ---
 
 The term 'attribute' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'attribute'](http://cfengine.com/docs/3.5/search.html?q=attribute).
+[search the CFEngine documentation for 'attribute'](http://cfengine.com/docs/latest/search.html?q=attribute).
 
-- [delete_attribute](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_xml-delete_attribute.html#delete_attribute)
-- [set_attribute](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_xml-set_attribute.html#set_attribute)
-- [attribute_value](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_xml-set_attribute.html#attribute_value)
+- [Choose an Attribute to Inventory \#\#](http://cfengine.com/docs/latest/examples-tutorials-custom_inventory.html#choose-an-attribute-to-inventory-##)
+- [set_attribute](http://cfengine.com/docs/latest/reference-promise-types-edit_xml.html#set_attribute)
+- [attribute_value](http://cfengine.com/docs/latest/reference-promise-types-edit_xml.html#attribute_value)
+- [delete_attribute](http://cfengine.com/docs/latest/reference-promise-types-edit_xml.html#delete_attribute)

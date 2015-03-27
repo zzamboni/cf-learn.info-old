@@ -7,8 +7,8 @@ navsection: none
 ---
 
 The term 'temp1' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'temp1'](http://cfengine.com/docs/3.5/search.html?q=temp1).
+[search the CFEngine documentation for 'temp1'](http://cfengine.com/docs/latest/search.html?q=temp1).
 
-- [mon.value_temp1](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-value_temp1)
-- [mon.av_temp1](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-av_temp1)
-- [mon.dev_temp1](http://cfengine.com/docs/3.5/reference-special-variables-context-mon.html#mon-dev_temp1)
+- [mon.value_temp1](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-value_temp1)
+- [mon.av_temp1](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-av_temp1)
+- [mon.dev_temp1](http://cfengine.com/docs/latest/reference-special-variables-mon.html#mon-dev_temp1)

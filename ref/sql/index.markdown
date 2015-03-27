@@ -7,9 +7,9 @@ navsection: none
 ---
 
 The term 'sql' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'sql'](http://cfengine.com/docs/3.5/search.html?q=sql).
+[search the CFEngine documentation for 'sql'](http://cfengine.com/docs/latest/search.html?q=sql).
 
-- [SQL Query Examples](http://cfengine.com/docs/3.5/examples-enterprise-reporting-sql-queries.html#sql-query-examples)
-- [SQL Queries](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-sql-queries.html#sql-queries)
-- [SQL Schema](http://cfengine.com/docs/3.5/reference-enterprise-api-sql-schema.html#sql-schema)
-- [Improved SQL reporting](http://cfengine.com/docs/3.5/whats-new.html#improved-sql-reporting)
+- [SQL Queries Using the Enterprise API](http://cfengine.com/docs/latest/enterprise-cfengine-guide-reporting-sql-queries-enterprise-api.html#sql-queries-using-the-enterprise-api)
+- [Federation and SQL Reporting \#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide.html#federation-and-sql-reporting-###)
+- [SQL Query Examples](http://cfengine.com/docs/latest/examples-enterprise-api-examples-sql-queries.html#sql-query-examples)
+- [SQL Schema](http://cfengine.com/docs/latest/reference-enterprise-api-ref-sql-schema.html#sql-schema)

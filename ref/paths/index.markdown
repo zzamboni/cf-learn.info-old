@@ -7,7 +7,9 @@ navsection: none
 ---
 
 The term 'paths' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'paths'](http://cfengine.com/docs/3.5/search.html?q=paths).
+[search the CFEngine documentation for 'paths'](http://cfengine.com/docs/latest/search.html?q=paths).
 
-- [Regular expressions in paths](http://cfengine.com/docs/3.5/manuals-language-concepts-pattern-matching-and-referencing.html#regular-expressions-in-paths)
-- [Filenames and Paths](http://cfengine.com/docs/3.5/reference-syntax-filenames-and-paths.html#filenames-and-paths)
+- [Regular expressions in paths](http://cfengine.com/docs/latest/guide-language-concepts-pattern-matching-and-referencing.html#regular-expressions-in-paths)
+- [Filenames and Paths](http://cfengine.com/docs/latest/guide-language-concepts.html#filenames-and-paths)
+- [bgp_maximum_paths](http://cfengine.com/docs/latest/reference-promise-types-interfaces.html#bgp_maximum_paths)
+- [Paths](http://cfengine.com/docs/latest/reference-standard-library.html#paths)

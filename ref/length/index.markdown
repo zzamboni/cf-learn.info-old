@@ -7,7 +7,8 @@ navsection: none
 ---
 
 The term 'length' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'length'](http://cfengine.com/docs/3.5/search.html?q=length).
+[search the CFEngine documentation for 'length'](http://cfengine.com/docs/latest/search.html?q=length).
 
-- [Whitespace and Line Length](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#whitespace-and-line-length)
-- [length](http://cfengine.com/docs/3.5/reference-functions-length.html#length)
+- [Whitespace and Line Length](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-style.html#whitespace-and-line-length)
+- [length](http://cfengine.com/docs/latest/reference-functions-length.html#length)
+- [string_length](http://cfengine.com/docs/latest/reference-functions-string_length.html#string_length)

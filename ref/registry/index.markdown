@@ -7,7 +7,9 @@ navsection: none
 ---
 
 The term 'registry' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'registry'](http://cfengine.com/docs/3.5/search.html?q=registry).
+[search the CFEngine documentation for 'registry'](http://cfengine.com/docs/latest/search.html?q=registry).
 
-- [Functions That Read the Windows Registry](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-the-windows-registry)
-- [registry_exclude](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#registry_exclude)
+- [Windows Registry Examples](http://cfengine.com/docs/latest/examples-example-snippets-windows-registry.html#windows-registry-examples)
+- [Windows registry](http://cfengine.com/docs/latest/examples-example-snippets-windows-registry.html#windows-registry)
+- [unit_registry_cache.cf](http://cfengine.com/docs/latest/examples-example-snippets-windows-registry.html#unit_registry_cache-cf)
+- [registry_exclude](http://cfengine.com/docs/latest/reference-promise-types-databases.html#registry_exclude)

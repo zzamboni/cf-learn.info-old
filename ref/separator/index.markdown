@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'separator' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'separator'](http://cfengine.com/docs/3.5/search.html?q=separator).
+[search the CFEngine documentation for 'separator'](http://cfengine.com/docs/latest/search.html?q=separator).
 
-- [field_separator](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-field_edits.html#field_separator)
-- [value_separator](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line-field_edits.html#value_separator)
+- [field_separator](http://cfengine.com/docs/latest/reference-promise-types-edit_line-field_edits.html#field_separator)
+- [value_separator](http://cfengine.com/docs/latest/reference-promise-types-edit_line-field_edits.html#value_separator)

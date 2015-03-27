@@ -7,8 +7,9 @@ navsection: none
 ---
 
 The term 'through' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'through'](http://cfengine.com/docs/3.5/search.html?q=through).
+[search the CFEngine documentation for 'through'](http://cfengine.com/docs/latest/search.html?q=through).
 
-- [Set up time management through NTP](http://cfengine.com/docs/3.5/examples-policy-setup-time-management-through-ntp.html#set-up-time-management-through-ntp)
-- [Agent package upgrade through the hub from v2.2.3](http://cfengine.com/docs/3.5/getting-started-upgrade.html#agent-package-upgrade-through-the-hub-from-v2-2-3)
-- [Show all commits done through Mission Portal](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#show-all-commits-done-through-mission-portal)
+- [Show all commits made through the Mission Portal](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#show-all-commits-made-through-the-mission-portal)
+- [Enterprise Users can Deploy Policies through the Design Center App](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-design-center-deploy-sketch.html#enterprise-users-can-deploy-policies-through-the-design-center-app)
+- [Set up time management through NTP](http://cfengine.com/docs/latest/examples-example-snippets-promise-patterns-example_ntp.html#set-up-time-management-through-ntp)
+- [reachable_through](http://cfengine.com/docs/latest/reference-promise-types-routes.html#reachable_through)

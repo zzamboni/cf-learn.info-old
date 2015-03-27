@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'test' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'test'](http://cfengine.com/docs/3.5/search.html?q=test).
+[search the CFEngine documentation for 'test'](http://cfengine.com/docs/latest/search.html?q=test).
 
-- [Always verify the upgrade in a test environment prior to upgrading production environments\!](http://cfengine.com/docs/3.5/getting-started-upgrade.html#always-verify-the-upgrade-in-a-test-environment-prior-to-upgrading-production-environments!)
-- [test](http://cfengine.com/docs/3.5/reference-design-center-api.html#test)
+- [Test the Design Center app](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#test-the-design-center-app)
+- [test_delete \#\#](http://cfengine.com/docs/latest/examples-tutorials-file_comparison.html#test_delete-##)

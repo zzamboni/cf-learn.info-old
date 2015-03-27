@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'does' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'does'](http://cfengine.com/docs/3.5/search.html?q=does).
+[search the CFEngine documentation for 'does'](http://cfengine.com/docs/latest/search.html?q=does).
 
-- [Enterprise upgrade using master_software_updates does not work for redhat derivitives](http://cfengine.com/docs/3.5/getting-started-known-issues.html#enterprise-upgrade-using-master_software_updates-does-not-work-for-redhat-derivitives)
-- [Why does Knowledge Matter?](http://cfengine.com/docs/3.5/manuals-knowledge-management.html#why-does-knowledge-matter?)
+- [What does this inventory policy do? \#\#\#](http://cfengine.com/docs/latest/examples-tutorials-report_inventory_remediate_sec_vulnerabilities.html#what-does-this-inventory-policy-do?-###)
+- [What does this remediation policy do? \#\#\#](http://cfengine.com/docs/latest/examples-tutorials-report_inventory_remediate_sec_vulnerabilities.html#what-does-this-remediation-policy-do?-###)

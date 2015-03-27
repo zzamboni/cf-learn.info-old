@@ -7,7 +7,8 @@ navsection: none
 ---
 
 The term 'basic' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'basic'](http://cfengine.com/docs/3.5/search.html?q=basic).
+[search the CFEngine documentation for 'basic'](http://cfengine.com/docs/latest/search.html?q=basic).
 
-- [Basic Formatting](http://cfengine.com/docs/3.5/markdown-cheatsheet.html#basic-formatting)
-- [Basic concepts](http://cfengine.com/docs/3.5/manuals-design-center.html#basic-concepts)
+- [Basic Formatting](http://cfengine.com/docs/latest/markdown-cheatsheet.html#basic-formatting)
+- [Basic Example \#\#](http://cfengine.com/docs/latest/examples-example-snippets-general.html#basic-example-##)
+- [Basic Concepts \#\#\#](http://cfengine.com/docs/latest/guide-design-center-configure-sketches-community.html#basic-concepts-###)

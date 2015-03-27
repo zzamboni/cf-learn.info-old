@@ -7,7 +7,8 @@ navsection: none
 ---
 
 The term 'versions' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'versions'](http://cfengine.com/docs/3.5/search.html?q=versions).
+[search the CFEngine documentation for 'versions'](http://cfengine.com/docs/latest/search.html?q=versions).
 
-- [Supported Platforms and Versions](http://cfengine.com/docs/3.5/getting-started-supported-platforms.html#supported-platforms-and-versions)
-- [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
+- [Prepare Client upgrade (all versions)](http://cfengine.com/docs/latest/guide-installation-and-configuration-upgrading-to-36.html#prepare-client-upgrade-all-versions)
+- [Complete Client upgrade (all versions) \#\#](http://cfengine.com/docs/latest/guide-installation-and-configuration-upgrading-to-36.html#complete-client-upgrade-all-versions-##)
+- [Supported Platforms and Versions](http://cfengine.com/docs/latest/guide-latest-release-supported-platforms.html#supported-platforms-and-versions)

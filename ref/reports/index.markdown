@@ -7,7 +7,17 @@ navsection: none
 ---
 
 The term 'reports' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'reports'](http://cfengine.com/docs/3.5/search.html?q=reports).
+[search the CFEngine documentation for 'reports'](http://cfengine.com/docs/latest/search.html?q=reports).
 
-- [Built-in Reports vs. Reporting Engine](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-porting-guide.html#built-in-reports-vs-reporting-engine)
-- [reports](http://cfengine.com/docs/3.5/reference-promise-types-reports.html#reports)
+- [Run Reports \#\#](http://cfengine.com/docs/latest/examples-tutorials-custom_inventory.html#run-reports-##)
+- [Verify sketch deployment using Reports in the Mission Portal](http://cfengine.com/docs/latest/examples-tutorials-deploy_sketch.html#verify-sketch-deployment-using-reports-in-the-mission-portal)
+- [Agent Email Reports \#\#\#](http://cfengine.com/docs/latest/guide-faq.html#agent-email-reports-###)
+- [How do I set the email where agent reports are sent \#\#\#\#](http://cfengine.com/docs/latest/guide-faq.html#how-do-i-set-the-email-where-agent-reports-are-sent-####)
+- [Reports \#\#\#\#](http://cfengine.com/docs/latest/guide-glossary.html#reports-####)
+- [/var/cfengine/reports \#\#\#](http://cfengine.com/docs/latest/guide-introduction-directory-structure.html#var-cfengine-reports-###)
+- [Enterprise reports not collected from 3.5](http://cfengine.com/docs/latest/guide-latest-release-known-issues.html#enterprise-reports-not-collected-from-3-5)
+- [Command-Line Reports](http://cfengine.com/docs/latest/guide-reporting-command-line-reports.html#command-line-reports)
+- [Creating custom reports](http://cfengine.com/docs/latest/guide-reporting-command-line-reports.html#creating-custom-reports)
+- [Including data in reports](http://cfengine.com/docs/latest/guide-reporting-command-line-reports.html#including-data-in-reports)
+- [reports - report a message \#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-promises-available-in-cfengine.html#reports-report-a-message-###)
+- [reports](http://cfengine.com/docs/latest/reference-promise-types-reports.html#reports)

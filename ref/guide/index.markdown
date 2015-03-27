@@ -7,8 +7,11 @@ navsection: none
 ---
 
 The term 'guide' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'guide'](http://cfengine.com/docs/3.5/search.html?q=guide).
+[search the CFEngine documentation for 'guide'](http://cfengine.com/docs/latest/search.html?q=guide).
 
-- [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
-- [API Porting Guide](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-porting-guide.html#api-porting-guide)
-- [Policy Style Guide](http://cfengine.com/docs/3.5/manuals-writing-policy-policy-style-guide.html#policy-style-guide)
+- [Installation Guide](http://cfengine.com/docs/latest/enterprise-cfengine-guide-high-availability-installation-guide.html#installation-guide)
+- [Quick-Start Guide to Using PuTTY](http://cfengine.com/docs/latest/guide-installation-and-configuration-pre-installation-checklist-putty-quick-start-guide.html#quick-start-guide-to-using-putty)
+- [Quick-Start Guide to Using vi](http://cfengine.com/docs/latest/guide-installation-and-configuration-pre-installation-checklist-vi-quick-start-guide.html#quick-start-guide-to-using-vi)
+- [Policy Style Guide](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-style.html#policy-style-guide)
+- [Guide](http://cfengine.com/docs/latest/guide.html#guide)
+- [CFEngine Guide \#\#](http://cfengine.com/docs/latest/guide.html#cfengine-guide-##)

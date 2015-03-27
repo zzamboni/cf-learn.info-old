@@ -7,7 +7,9 @@ navsection: none
 ---
 
 The term 'prepare' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'prepare'](http://cfengine.com/docs/3.5/search.html?q=prepare).
+[search the CFEngine documentation for 'prepare'](http://cfengine.com/docs/latest/search.html?q=prepare).
 
-- [Prepare policy files when upgrading from 2.2.x](http://cfengine.com/docs/3.5/getting-started-upgrade.html#prepare-policy-files-when-upgrading-from-2-2-x)
-- [Prepare config.json](http://cfengine.com/docs/3.5/manuals-design-center-advanced.html#prepare-config-json)
+- [Prepare the config.json file](http://cfengine.com/docs/latest/guide-design-center-configure-sketches-community-design-center-advanced.html#prepare-the-config-json-file)
+- [Prepare Private Key Using PuTTYgen \#\#\#](http://cfengine.com/docs/latest/guide-installation-and-configuration-pre-installation-checklist-putty-quick-start-guide.html#prepare-private-key-using-puttygen-###)
+- [Prepare masterfiles and the Policy Server for upgrade (3.5 to 3.6)](http://cfengine.com/docs/latest/guide-installation-and-configuration-upgrading-to-36.html#prepare-masterfiles-and-the-policy-server-for-upgrade-3-5-to-3-6)
+- [Prepare Client upgrade (all versions)](http://cfengine.com/docs/latest/guide-installation-and-configuration-upgrading-to-36.html#prepare-client-upgrade-all-versions)

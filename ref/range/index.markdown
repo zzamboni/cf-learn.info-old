@@ -7,11 +7,10 @@ navsection: none
 ---
 
 The term 'range' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'range'](http://cfengine.com/docs/3.5/search.html?q=range).
+[search the CFEngine documentation for 'range'](http://cfengine.com/docs/latest/search.html?q=range).
 
-- [Functions That Return (i,r)Range](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-return-i,r-range)
-- [in_range_define](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#in_range_define)
-- [match_range](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#match_range)
-- [out_of_range_define](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#out_of_range_define)
-- [stime_range](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#stime_range)
-- [ttime_range](http://cfengine.com/docs/3.5/reference-promise-types-processes.html#ttime_range)
+- [in_range_define](http://cfengine.com/docs/latest/reference-promise-types-processes.html#in_range_define)
+- [match_range](http://cfengine.com/docs/latest/reference-promise-types-processes.html#match_range)
+- [out_of_range_define](http://cfengine.com/docs/latest/reference-promise-types-processes.html#out_of_range_define)
+- [stime_range](http://cfengine.com/docs/latest/reference-promise-types-processes.html#stime_range)
+- [ttime_range](http://cfengine.com/docs/latest/reference-promise-types-processes.html#ttime_range)

@@ -7,14 +7,16 @@ navsection: none
 ---
 
 The term 'include' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'include'](http://cfengine.com/docs/3.5/search.html?q=include).
+[search the CFEngine documentation for 'include'](http://cfengine.com/docs/latest/search.html?q=include).
 
-- [classes_include](http://cfengine.com/docs/3.5/reference-promise-types-access.html#classes_include)
-- [variables_include](http://cfengine.com/docs/3.5/reference-promise-types-access.html#variables_include)
-- [promise_notkept_log_include](http://cfengine.com/docs/3.5/reference-promise-types-access.html#promise_notkept_log_include)
-- [promise_repaired_log_include](http://cfengine.com/docs/3.5/reference-promise-types-access.html#promise_repaired_log_include)
-- [monitoring_include](http://cfengine.com/docs/3.5/reference-promise-types-access.html#monitoring_include)
-- [include_start_delimiter](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line.html#include_start_delimiter)
-- [include_end_delimiter](http://cfengine.com/docs/3.5/reference-promise-types-files-edit_line.html#include_end_delimiter)
-- [include_basedir](http://cfengine.com/docs/3.5/reference-promise-types-files.html#include_basedir)
-- [include_dirs](http://cfengine.com/docs/3.5/reference-promise-types-files.html#include_dirs)
+- [metatags_include](http://cfengine.com/docs/latest/reference-promise-types-access.html#metatags_include)
+- [promise_handle_include](http://cfengine.com/docs/latest/reference-promise-types-access.html#promise_handle_include)
+- [monitoring_include](http://cfengine.com/docs/latest/reference-promise-types-access.html#monitoring_include)
+- [classes_include](http://cfengine.com/docs/latest/reference-promise-types-access.html#classes_include)
+- [variables_include](http://cfengine.com/docs/latest/reference-promise-types-access.html#variables_include)
+- [promise_notkept_log_include](http://cfengine.com/docs/latest/reference-promise-types-access.html#promise_notkept_log_include)
+- [promise_repaired_log_include](http://cfengine.com/docs/latest/reference-promise-types-access.html#promise_repaired_log_include)
+- [include_start_delimiter](http://cfengine.com/docs/latest/reference-promise-types-edit_line.html#include_start_delimiter)
+- [include_end_delimiter](http://cfengine.com/docs/latest/reference-promise-types-edit_line.html#include_end_delimiter)
+- [include_basedir](http://cfengine.com/docs/latest/reference-promise-types-files.html#include_basedir)
+- [include_dirs](http://cfengine.com/docs/latest/reference-promise-types-files.html#include_dirs)

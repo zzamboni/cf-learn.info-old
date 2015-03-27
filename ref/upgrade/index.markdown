@@ -7,11 +7,17 @@ navsection: none
 ---
 
 The term 'upgrade' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'upgrade'](http://cfengine.com/docs/3.5/search.html?q=upgrade).
+[search the CFEngine documentation for 'upgrade'](http://cfengine.com/docs/latest/search.html?q=upgrade).
 
-- [Enterprise upgrade using master_software_updates does not work for redhat derivitives](http://cfengine.com/docs/3.5/getting-started-known-issues.html#enterprise-upgrade-using-master_software_updates-does-not-work-for-redhat-derivitives)
-- [Upgrade Instructions](http://cfengine.com/docs/3.5/getting-started-upgrade.html#upgrade-instructions)
-- [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
-- [Always verify the upgrade in a test environment prior to upgrading production environments\!](http://cfengine.com/docs/3.5/getting-started-upgrade.html#always-verify-the-upgrade-in-a-test-environment-prior-to-upgrading-production-environments!)
-- [Upgrade procedure for the hosts](http://cfengine.com/docs/3.5/getting-started-upgrade.html#upgrade-procedure-for-the-hosts)
-- [Agent package upgrade through the hub from v2.2.3](http://cfengine.com/docs/3.5/getting-started-upgrade.html#agent-package-upgrade-through-the-hub-from-v2-2-3)
+- [Upgrade a Package](http://cfengine.com/docs/latest/examples-example-snippets-promise-patterns-package_bundles.html#upgrade-a-package)
+- [Ensure Present or Upgrade Named Package for Specific Architecture from File](http://cfengine.com/docs/latest/examples-example-snippets-promise-patterns-package_bundles.html#ensure-present-or-upgrade-named-package-for-specific-architecture-from-file)
+- [Ensure Present or Upgrade Named Package for Specific Architecture](http://cfengine.com/docs/latest/examples-example-snippets-promise-patterns-package_bundles.html#ensure-present-or-upgrade-named-package-for-specific-architecture)
+- [Upgrade masterfiles and Policy Server (3.6.X to 3.6.X\+1)](http://cfengine.com/docs/latest/guide-installation-and-configuration-upgrading-to-36.html#upgrade-masterfiles-and-policy-server-3-6-x-to-3-6-x+1)
+- [Prepare masterfiles and the Policy Server for upgrade (3.5 to 3.6)](http://cfengine.com/docs/latest/guide-installation-and-configuration-upgrading-to-36.html#prepare-masterfiles-and-the-policy-server-for-upgrade-3-5-to-3-6)
+- [Perform the upgrade of the Policy Server (3.5 to 3.6)](http://cfengine.com/docs/latest/guide-installation-and-configuration-upgrading-to-36.html#perform-the-upgrade-of-the-policy-server-3-5-to-3-6)
+- [Prepare Client upgrade (all versions)](http://cfengine.com/docs/latest/guide-installation-and-configuration-upgrading-to-36.html#prepare-client-upgrade-all-versions)
+- [Complete Client upgrade (all versions) \#\#](http://cfengine.com/docs/latest/guide-installation-and-configuration-upgrading-to-36.html#complete-client-upgrade-all-versions-##)
+- [Upgrade Gotchas \#\#](http://cfengine.com/docs/latest/guide-latest-release-policy-framework-updates.html#upgrade-gotchas-##)
+- [Upgrade a Design Center sketch repository from the Github master branch of Design Center](http://cfengine.com/docs/latest/reference-design-center-sketch.html#upgrade-a-design-center-sketch-repository-from-the-github-master-branch-of-design-center)
+- [Upgrade a Design Center sketch repository from the Github 3.6.x branch of Design Center](http://cfengine.com/docs/latest/reference-design-center-sketch.html#upgrade-a-design-center-sketch-repository-from-the-github-3-6-x-branch-of-design-center)
+- [Upgrade a Design Center sketch repository from your own sketch repository](http://cfengine.com/docs/latest/reference-design-center-sketch.html#upgrade-a-design-center-sketch-repository-from-your-own-sketch-repository)

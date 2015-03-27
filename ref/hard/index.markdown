@@ -7,7 +7,8 @@ navsection: none
 ---
 
 The term 'hard' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'hard'](http://cfengine.com/docs/3.5/search.html?q=hard).
+[search the CFEngine documentation for 'hard'](http://cfengine.com/docs/latest/search.html?q=hard).
 
-- [Hard Classes](http://cfengine.com/docs/3.5/reference-classes.html#hard-classes)
-- [Hard and Soft Classes](http://cfengine.com/docs/3.5/reference-classes.html#hard-and-soft-classes)
+- [Moving PostgreSQL to Separate Hard Drive \#\#\#](http://cfengine.com/docs/latest/enterprise-cfengine-guide-best-practices.html#moving-postgresql-to-separate-hard-drive-###)
+- [Hard Classes](http://cfengine.com/docs/latest/reference-classes.html#hard-classes)
+- [Hard and Soft Classes](http://cfengine.com/docs/latest/reference-classes.html#hard-and-soft-classes)

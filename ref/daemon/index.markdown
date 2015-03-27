@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'daemon' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'daemon'](http://cfengine.com/docs/3.5/search.html?q=daemon).
+[search the CFEngine documentation for 'daemon'](http://cfengine.com/docs/latest/search.html?q=daemon).
 
-- [persistent\\_disable\\_\*DAEMON\*](http://cfengine.com/docs/3.5/reference-classes.html#persistent_disable_-daemon)
-- [clear_persistent\\_disable\\_\*DAEMON\*](http://cfengine.com/docs/3.5/reference-classes.html#clear_persistent_disable_-daemon)
+- [persistent\\_disable\\_\*DAEMON\*](http://cfengine.com/docs/latest/reference-classes.html#persistent_disable_-daemon)
+- [clear_persistent\\_disable\\_\*DAEMON\*](http://cfengine.com/docs/latest/reference-classes.html#clear_persistent_disable_-daemon)

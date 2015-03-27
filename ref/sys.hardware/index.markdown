@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'sys.hardware' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'sys.hardware'](http://cfengine.com/docs/3.5/search.html?q=sys.hardware).
+[search the CFEngine documentation for 'sys.hardware'](http://cfengine.com/docs/latest/search.html?q=sys.hardware).
 
-- [sys.hardware_addresses](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-hardware_addresses)
-- [sys.hardware_mac\[interface_name\]](http://cfengine.com/docs/3.5/reference-special-variables-context-sys.html#sys-hardware_mac-interface_name)
+- [sys.hardware_addresses](http://cfengine.com/docs/latest/reference-special-variables-sys.html#sys-hardware_addresses)
+- [sys.hardware_mac\[interface_name\]](http://cfengine.com/docs/latest/reference-special-variables-sys.html#sys-hardware_mac-interface_name)

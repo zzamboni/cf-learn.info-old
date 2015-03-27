@@ -7,8 +7,9 @@ navsection: none
 ---
 
 The term 'history' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'history'](http://cfengine.com/docs/3.5/search.html?q=history).
+[search the CFEngine documentation for 'history'](http://cfengine.com/docs/latest/search.html?q=history).
 
-- [Review change history from git commit log](http://cfengine.com/docs/3.5/manuals-design-center-integrating-mission-portal-with-git.html#review-change-history-from-git-commit-log)
-- [history_type](http://cfengine.com/docs/3.5/reference-promise-types-measurements.html#history_type)
-- [History of CFEngine](http://cfengine.com/docs/3.5/index.html#history-of-cfengine)
+- [Review the change history from the git commit log](http://cfengine.com/docs/latest/enterprise-cfengine-guide-design-center-configure-sketches-enterprise-integrating-mission-portal-with-git.html#review-the-change-history-from-the-git-commit-log)
+- [Change History \#\#](http://cfengine.com/docs/latest/guide-latest-release-whatsnew.html#change-history-##)
+- [client_history_timeout](http://cfengine.com/docs/latest/reference-components-cf-hub.html#client_history_timeout)
+- [history_type](http://cfengine.com/docs/latest/reference-promise-types-measurements.html#history_type)

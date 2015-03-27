@@ -7,8 +7,10 @@ navsection: none
 ---
 
 The term 'connection' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'connection'](http://cfengine.com/docs/3.5/search.html?q=connection).
+[search the CFEngine documentation for 'connection'](http://cfengine.com/docs/latest/search.html?q=connection).
 
-- [Server Connection](http://cfengine.com/docs/3.5/manuals-architecture-networking.html#server-connection)
-- [Connection Error](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#connection-error)
-- [db_server_connection_db](http://cfengine.com/docs/3.5/reference-promise-types-databases.html#db_server_connection_db)
+- [db_server_connection_db](http://cfengine.com/docs/latest/reference-promise-types-databases.html#db_server_connection_db)
+- [connection](http://cfengine.com/docs/latest/reference-special-variables-connection.html#connection)
+- [connection.key](http://cfengine.com/docs/latest/reference-special-variables-connection.html#connection-key)
+- [connection.ip](http://cfengine.com/docs/latest/reference-special-variables-connection.html#connection-ip)
+- [connection.hostname](http://cfengine.com/docs/latest/reference-special-variables-connection.html#connection-hostname)

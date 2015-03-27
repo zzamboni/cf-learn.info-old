@@ -7,9 +7,8 @@ navsection: none
 ---
 
 The term 'lists' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'lists'](http://cfengine.com/docs/3.5/search.html?q=lists).
+[search the CFEngine documentation for 'lists'](http://cfengine.com/docs/latest/search.html?q=lists).
 
-- [Lists](http://cfengine.com/docs/3.5/manuals-language-concepts-variables.html#lists)
-- [Iterating Across Multiple Lists](http://cfengine.com/docs/3.5/manuals-language-concepts-loops.html#iterating-across-multiple-lists)
-- [Mapping Global and Local Lists](http://cfengine.com/docs/3.5/manuals-language-concepts-variables.html#mapping-global-and-local-lists)
-- [Functions That Read (i,r,s)Lists](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-i,r,s-lists)
+- [Iterating Across Multiple Lists](http://cfengine.com/docs/latest/guide-language-concepts-loops.html#iterating-across-multiple-lists)
+- [Lists](http://cfengine.com/docs/latest/guide-language-concepts-variables.html#lists)
+- [Mapping Global and Local Lists](http://cfengine.com/docs/latest/guide-language-concepts-variables.html#mapping-global-and-local-lists)

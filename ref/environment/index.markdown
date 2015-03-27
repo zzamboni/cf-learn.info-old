@@ -7,15 +7,17 @@ navsection: none
 ---
 
 The term 'environment' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'environment'](http://cfengine.com/docs/3.5/search.html?q=environment).
+[search the CFEngine documentation for 'environment'](http://cfengine.com/docs/latest/search.html?q=environment).
 
-- [Always verify the upgrade in a test environment prior to upgrading production environments\!](http://cfengine.com/docs/3.5/getting-started-upgrade.html#always-verify-the-upgrade-in-a-test-environment-prior-to-upgrading-production-environments!)
-- [environment](http://cfengine.com/docs/3.5/reference-components-cfagent.html#environment)
-- [define_environment](http://cfengine.com/docs/3.5/reference-design-center-api.html#define_environment)
-- [undefine_environment](http://cfengine.com/docs/3.5/reference-design-center-api.html#undefine_environment)
-- [Functions That Read the Environment](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-the-environment)
-- [environment_host](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_host)
-- [environment_interface](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_interface)
-- [environment_resources](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_resources)
-- [environment_state](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_state)
-- [environment_type](http://cfengine.com/docs/3.5/reference-promise-types-guest_environments.html#environment_type)
+- [Sample API call to Define environment](http://cfengine.com/docs/latest/examples-enterprise-api-examples-dc-interaction.html#sample-api-call-to-define-environment)
+- [Environment variables](http://cfengine.com/docs/latest/examples-example-snippets-system-administration.html#environment-variables)
+- [Define an environment \#\#\#\#](http://cfengine.com/docs/latest/guide-design-center-configure-sketches-community.html#define-an-environment-####)
+- [Production Environment](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-community.html#production-environment)
+- [Start the CFEngine Enterprise 3.6 Vagrant Environment](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#start-the-cfengine-enterprise-3-6-vagrant-environment)
+- [Exploring the Environment](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#exploring-the-environment)
+- [Start or resume the environment](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#start-or-resume-the-environment)
+- [Stop the environment (Halt/Suspend/Destroy)](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#stop-the-environment-halt-suspend-destroy)
+- [Uninstall Vagrant Environment](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-vagrant.html#uninstall-vagrant-environment)
+- [environment](http://cfengine.com/docs/latest/reference-components-cf-agent.html#environment)
+- [/api/dc/environment](http://cfengine.com/docs/latest/reference-enterprise-api-ref-uri-resources.html#api-dc-environment)
+- [/api/dc/environment/:environmentName](http://cfengine.com/docs/latest/reference-enterprise-api-ref-uri-resources.html#api-dc-environment-environmentname)

@@ -7,7 +7,12 @@ navsection: none
 ---
 
 The term 'group' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'group'](http://cfengine.com/docs/3.5/search.html?q=group).
+[search the CFEngine documentation for 'group'](http://cfengine.com/docs/latest/search.html?q=group).
 
-- [No hubs available to query for a group](http://cfengine.com/docs/3.5/manuals-enterprise-reporting-multi-site-queries.html#no-hubs-available-to-query-for-a-group)
-- [exec_group](http://cfengine.com/docs/3.5/reference-promise-types-commands.html#exec_group)
+- [Editing password or group files \#\#](http://cfengine.com/docs/latest/examples-example-snippets-system-file.html#editing-password-or-group-files-##)
+- [Editing password or group files custom \#\#](http://cfengine.com/docs/latest/examples-example-snippets-system-file.html#editing-password-or-group-files-custom-##)
+- [Add users to passwd and group \#\#](http://cfengine.com/docs/latest/examples-example-snippets-user-management-acl.html#add-users-to-passwd-and-group-##)
+- [Configure the Security Group \#\#\#](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-free-aws-rhel.html#configure-the-security-group-###)
+- [exec_group](http://cfengine.com/docs/latest/reference-promise-types-commands.html#exec_group)
+- [tunnel_multicast_group](http://cfengine.com/docs/latest/reference-promise-types-interfaces.html#tunnel_multicast_group)
+- [group_primary](http://cfengine.com/docs/latest/reference-promise-types-users.html#group_primary)

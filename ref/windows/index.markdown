@@ -7,9 +7,12 @@ navsection: none
 ---
 
 The term 'windows' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'windows'](http://cfengine.com/docs/3.5/search.html?q=windows).
+[search the CFEngine documentation for 'windows'](http://cfengine.com/docs/latest/search.html?q=windows).
 
-- [On Windows platforms, cf-serverd listens only to IPv6 interface](http://cfengine.com/docs/3.5/getting-started-known-issues.html#on-windows-platforms,-cf-serverd-listens-only-to-ipv6-interface)
-- [Time windows (races)](http://cfengine.com/docs/3.5/manuals-architecture-networking.html#time-windows-races)
-- [Functions That Read the Windows Registry](http://cfengine.com/docs/3.5/reference-functions.html#functions-that-read-the-windows-registry)
-- [Microsoft Windows specific improvements](http://cfengine.com/docs/3.5/whats-new.html#microsoft-windows-specific-improvements)
+- [Service management (windows)](http://cfengine.com/docs/latest/examples-example-snippets-software-adminstration.html#service-management-windows)
+- [Windows Registry Examples](http://cfengine.com/docs/latest/examples-example-snippets-windows-registry.html#windows-registry-examples)
+- [Windows registry](http://cfengine.com/docs/latest/examples-example-snippets-windows-registry.html#windows-registry)
+- [Accessing AWS Virtual Machines via SSH on Windows Using PuTTY and PuTTYgen \#\#](http://cfengine.com/docs/latest/guide-installation-and-configuration-pre-installation-checklist-putty-quick-start-guide.html#accessing-aws-virtual-machines-via-ssh-on-windows-using-putty-and-puttygen-##)
+- [Time windows (races)](http://cfengine.com/docs/latest/guide-introduction-networking.html#time-windows-races)
+- [Windows Support \#\#\#](http://cfengine.com/docs/latest/guide-latest-release-whatsnew.html#windows-support-###)
+- [Windows \#\#\#](http://cfengine.com/docs/latest/guide-writing-and-serving-policy-policy-framework.html#windows-###)

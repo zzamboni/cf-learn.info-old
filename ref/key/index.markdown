@@ -7,7 +7,10 @@ navsection: none
 ---
 
 The term 'key' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'key'](http://cfengine.com/docs/3.5/search.html?q=key).
+[search the CFEngine documentation for 'key'](http://cfengine.com/docs/latest/search.html?q=key).
 
-- [Key exchange](http://cfengine.com/docs/3.5/manuals-architecture-networking.html#key-exchange)
-- [cf-key](http://cfengine.com/docs/3.5/reference-components-cfkey.html#cf-key)
+- [Prepare Private Key Using PuTTYgen \#\#\#](http://cfengine.com/docs/latest/guide-installation-and-configuration-pre-installation-checklist-putty-quick-start-guide.html#prepare-private-key-using-puttygen-###)
+- [Key exchange](http://cfengine.com/docs/latest/guide-introduction-networking.html#key-exchange)
+- [cf-key \#\#\#\#](http://cfengine.com/docs/latest/guide-introduction.html#cf-key-####)
+- [cf-key](http://cfengine.com/docs/latest/reference-components-cf-key.html#cf-key)
+- [connection.key](http://cfengine.com/docs/latest/reference-special-variables-connection.html#connection-key)

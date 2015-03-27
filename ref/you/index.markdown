@@ -7,9 +7,8 @@ navsection: none
 ---
 
 The term 'you' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'you'](http://cfengine.com/docs/3.5/search.html?q=you).
+[search the CFEngine documentation for 'you'](http://cfengine.com/docs/latest/search.html?q=you).
 
-- [This upgrade guide assumes that you are upgrading an existing CFEngine installation of one of the following versions:](http://cfengine.com/docs/3.5/getting-started-upgrade.html#this-upgrade-guide-assumes-that-you-are-upgrading-an-existing-cfengine-installation-of-one-of-the-following-versions)
-- [Before you start: Make a Backup](http://cfengine.com/docs/3.5/getting-started-upgrade.html#before-you-start-make-a-backup)
-- [If you've never modified failsafe.cf or update.cf...](http://cfengine.com/docs/3.5/getting-started-upgrade.html#if-you-ve-never-modified-failsafe-cf-or-update-cf)
-- [If you have modified failsafe.cf or update.cf?...](http://cfengine.com/docs/3.5/getting-started-upgrade.html#if-you-have-modified-failsafe-cf-or-update-cf?)
+- [Before you Begin](http://cfengine.com/docs/latest/guide-design-center-design-center-write-sketch-advanced.html#before-you-begin)
+- [Before you Begin \#\#](http://cfengine.com/docs/latest/guide-design-center-configure-sketches-community.html#before-you-begin-##)
+- [You're Done\!](http://cfengine.com/docs/latest/guide-design-center-design-center-write-sketch.html#you-re-done!)

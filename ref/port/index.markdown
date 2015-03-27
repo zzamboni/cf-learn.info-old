@@ -7,8 +7,9 @@ navsection: none
 ---
 
 The term 'port' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'port'](http://cfengine.com/docs/3.5/search.html?q=port).
+[search the CFEngine documentation for 'port'](http://cfengine.com/docs/latest/search.html?q=port).
 
-- [Port 80](http://cfengine.com/docs/3.5/getting-started-installation-installing-enterprise.html#port-80)
-- [port](http://cfengine.com/docs/3.5/reference-components-cfserver.html#port)
-- [syslog_port](http://cfengine.com/docs/3.5/reference-components.html#syslog_port)
+- [Open Port 80 (HTTPD) \#\#\#\#](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-free-aws-rhel.html#open-port-80-httpd-####)
+- [Open Port 5308 (CFEngine) \#\#\#\#](http://cfengine.com/docs/latest/guide-installation-and-configuration-general-installation-installation-enterprise-free-aws-rhel.html#open-port-5308-cfengine-####)
+- [port](http://cfengine.com/docs/latest/reference-components-cf-serverd.html#port)
+- [syslog_port](http://cfengine.com/docs/latest/reference-components.html#syslog_port)

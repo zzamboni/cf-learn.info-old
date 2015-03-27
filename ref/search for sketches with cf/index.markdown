@@ -7,7 +7,7 @@ navsection: none
 ---
 
 The term 'search for sketches with cf' could refer to several sections in the documentation. Please choose one below, or
-[search the CFEngine documentation for 'search for sketches with cf'](http://cfengine.com/docs/3.5/search.html?q=search+for+sketches+with+cf).
+[search the CFEngine documentation for 'search for sketches with cf'](http://cfengine.com/docs/latest/search.html?q=search+for+sketches+with+cf).
 
-- [Search for sketches with \`cf-sketch\` in expert mode](http://cfengine.com/docs/3.5/manuals-design-center-advanced.html#search-for-sketches-with-cf-sketch-in-expert-mode)
-- [Search for sketches with \`cf-sketch\` in interactive mode](http://cfengine.com/docs/3.5/manuals-design-center-advanced.html#search-for-sketches-with-cf-sketch-in-interactive-mode)
+- [Search for sketches with \`cf-sketch\` in expert mode](http://cfengine.com/docs/latest/guide-design-center-configure-sketches-community-design-center-advanced.html#search-for-sketches-with-cf-sketch-in-expert-mode)
+- [Search for sketches with \`cf-sketch\` in interactive mode](http://cfengine.com/docs/latest/guide-design-center-configure-sketches-community-design-center-advanced.html#search-for-sketches-with-cf-sketch-in-interactive-mode)
